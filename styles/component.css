@@ -1,0 +1,212 @@
+/*--------------------------------------------------
+  menu
+--------------------------------------------------*/
+
+.c-site-menu {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  color: #FFF !important;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.c-site-menu__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.c-site-menu__inner {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: 3px;
+  background-color: #FFF;
+}
+
+.c-site-menu__inner::after, 
+.c-site-menu__inner::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #FFF;
+  transition: all 60ms linear;
+}
+
+.c-site-menu__text { margin: 4px 0 0; }
+.c-site-menu__inner::before { top: -8px; }
+.c-site-menu__inner::after { bottom: -8px; }
+
+.c-site-menu.active .c-site-menu__inner { background-color: rgba(0, 0, 0, 0); }
+.c-site-menu.active .c-site-menu__inner::before { top: 0; transform: rotate(-40deg); }
+.c-site-menu.active .c-site-menu__inner::after { bottom: 0; transform: rotate(40deg); }
+
+/*--------------------------------------------------
+  main-nav
+--------------------------------------------------*/
+
+.c-site-nav {
+  display: flex;
+  list-style: none;
+}
+
+.c-site-nav__item {
+  height: 50px;
+  overflow: hidden;
+}
+
+.c-site-nav__item.active {
+  text-decoration: underline;
+}
+
+.c-site-nav__item a {
+  display: block;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 721px) {
+
+  .c-site-nav { margin: 0 -10px; }
+  .c-site-nav { padding: 0 20px; }
+
+}
+
+@media (max-width: 720px) {
+
+  .c-site-nav { flex-direction: column; }
+
+}
+
+/*--------------------------------------------------
+  c-site-title
+--------------------------------------------------*/
+
+.c-site-title {
+  color: #FFF;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.c-site-title a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.c-site-title img {
+  max-width: 100%;
+}
+
+@media (min-width: 993px) {
+
+  .c-site-title { font-size: 2.2rem; }
+
+}
+@media (max-width: 720px) {
+
+  .c-site-title { margin: 0 10px; }
+
+}
+
+/*--------------------------------------------------
+  button
+--------------------------------------------------*/
+
+.c-button {
+  display: inline-block;
+  padding: 0 20px;
+  color: #FFF !important;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background-color: #424242;
+  white-space: nowrap;
+}
+
+.c-button:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.c-button--white {
+  color: #424242 !important;
+  background-color: #FFF;
+}
+
+.c-button--red {
+  color: #FFF !important;
+  background-color: #F44336;
+}
+
+.c-button--green {
+  color: #FFF !important;
+  background-color: #4CAF50;
+}
+
+.c-button--blue {
+  color: #FFF !important;
+  background-color: #2196F3;
+}
+
+.c-button--orange {
+  color: #FFF !important;
+  background-color: #FF9800;
+}
+
+/*--------------------------------------------------
+  card
+--------------------------------------------------*/
+
+.c-card {
+  height: auto;
+  background-color: #FAFAFA;
+  border: 1px solid #EEE;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.c-card__content { padding: 15px; }
+
+/*--------------------------------------------------
+  heading
+--------------------------------------------------*/
+
+.c-heading-above-the-fold {
+  font-size: 3rem;
+}
+
+.c-heading-section {
+  padding: 0 0 20px;
+  font-size: 2.4rem;
+  border-bottom: 2px solid #212121;
+}
+
+.c-heading-article {
+  padding: 0 0 10px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #424242;
+}
+
+.c-heading-style-1 {
+  color: #616161;
+  font-size: 1.5rem;
+  font-weight: 400;
+}

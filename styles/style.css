@@ -1,0 +1,33 @@
+/*
+#Front-end Web Development Template
+
+Author:   Jack Ryan Oracoy
+Website:  https://jackryanoracoy.github.io
+Email:    jackryanoracoy@gmail.com
+URL:      http://github.com/
+
+
+#Template info
+base.css - no prefix - reset and/or normalize styles, box-sizing definition, etc.
+utitity.css - prefix (u) - utilities and helper classes with ability to override anything.
+layout.css - prefix (l) - specific UI layouts.
+component.css - prefix (c) - specific UI components.
+
+
+#Naming convention
+.prefix-classname {...}
+.prefix-classname--modifier {...}
+.prefix-classname__child {...}
+.prefix-classname__child--modifier {...}
+.prefix-viewport-classname {...}
+
+E.g. .l-flex, .l-flex--gap-10, .l-flex__grid-s-1, .l-desktop-flex--gap-10
+
+Note: Naming conventions are inspired with BEM, OOCSS, SMACSS, ITCSS.
+
+*/
+
+@import "base.css";
+@import "utility.css";
+@import "layout.css";
+@import "component.css";
