@@ -223,6 +223,20 @@
   box-sizing: inherit;
 }
 
+@media print {
+
+  *, 
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+}
+
 /*--------------------------------------------------
   HTML
 --------------------------------------------------*/
@@ -283,6 +297,8 @@ a:visited { color: #FFC107; }
 
 a:hover, a:active, a:focus { color: #FF5722; }
 
+@media print { a, a:visited { text-decoration: underline;  } }
+
 /*--------------------------------------------------
   Typography
 --------------------------------------------------*/
@@ -305,6 +321,13 @@ pre {
   font-size: 1.4rem;
 }
 
+@media print {
+
+  p, h2, h3 { orphans: 3;  widows: 3; }
+  h2, h3 {  page-break-after: avoid;  }
+
+}
+
 /*--------------------------------------------------
   Main
 --------------------------------------------------*/
@@ -319,6 +342,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+@media print { thead { display: table-header-group; } }
 
 /*--------------------------------------------------
   Add the correct text decoration 
@@ -363,6 +388,8 @@ sup { top: -0.5em; }
 --------------------------------------------------*/
 
 img { border-style: none; }
+
+@media print { img {  page-break-inside: avoid; } }
 
 /*--------------------------------------------------
   Show the overflow in IE.
@@ -459,3 +486,13 @@ textarea { overflow: auto; }
 --------------------------------------------------*/
 
 [hidden] { display: none; }
+
+/*--------------------------------------------------
+  Browser Upgrade
+--------------------------------------------------*/
+
+.browser-upgrade {
+  background: #424242;
+  color: #FFF;
+  padding: 20px;
+}

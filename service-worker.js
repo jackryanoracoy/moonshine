@@ -1,77 +1,57 @@
-var CACHE = 'ServiceWorker-precache';
-var precacheFiles = [
-	'/',
-  'index.html',
-  'boilerplate/index.html',
+// This is the "Offline page" service worker
 
-	'scripts/jquery-3.3.1.min.js',
-	'scripts/object-fit.min.js',
-	'scripts/scripts.js',
+const CACHE = "jackro-templatee";
 
-  'styles/style.css',
-	'styles/style.min.css',
-	'styles/fontawesome.min.css',
+// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "offline.html";
 
-	'assets/fonts/font-awesome/fa-brands-400.ttf',
-	'assets/fonts/font-awesome/fa-brands-400.woff',
-	'assets/fonts/font-awesome/fa-brands-400.woff2',
-	'assets/fonts/font-awesome/fa-regular-400.ttf',
-	'assets/fonts/font-awesome/fa-regular-400.woff',
-	'assets/fonts/font-awesome/fa-regular-400.woff2',
-	'assets/fonts/font-awesome/fa-solid-900.ttf',
-	'assets/fonts/font-awesome/fa-solid-900.woff',
-	'assets/fonts/font-awesome/fa-solid-900.woff2',
-];
+// Install stage sets up the offline page in the cache and opens a new cache
+self.addEventListener("install", function (event) {
+  console.log("Service Worker: Install Event processing");
 
-//Install stage sets up the cache-array to configure pre-cache content
-self.addEventListener('install', function(evt) {
-  console.log('ServiceWorker: The service worker is being installed.');
-  evt.waitUntil(precache().then(function() {
-    console.log('ServiceWorker: Skip waiting on install');
-    return self.skipWaiting();
-  }));
+  event.waitUntil(
+    caches.open(CACHE).then(function (cache) {
+      console.log("Service Worker: Cached offline page during install");
+
+      if (offlineFallbackPage === "offline.html") {
+        return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
+      }
+
+      return cache.add(offlineFallbackPage);
+    })
+  );
 });
 
+// If any fetch fails, it will show the offline page.
+self.addEventListener("fetch", function (event) {
+  if (event.request.method !== "GET") return;
 
-//allow sw to control of current page
-self.addEventListener('activate', function(event) {
-  console.log('ServiceWorker: Claiming clients for current page');
-  return self.clients.claim();
+  event.respondWith(
+    fetch(event.request).catch(function (error) {
+      // The following validates that the request was for a navigation to a new document
+      if (
+        event.request.destination !== "document" ||
+        event.request.mode !== "navigate"
+      ) {
+        return;
+      }
+
+      console.error("Service Worker: Network request Failed. Serving offline page " + error);
+      return caches.open(CACHE).then(function (cache) {
+        return cache.match(offlineFallbackPage);
+      });
+    })
+  );
 });
 
-self.addEventListener('fetch', function(evt) {
-  console.log('ServiceWorker: The service worker is serving the asset.'+ evt.request.url);
-  evt.respondWith(fromCache(evt.request).catch(fromServer(evt.request)));
-  evt.waitUntil(update(evt.request));
-});
+// This is an event that can be fired from your page to tell the SW to update the offline page
+self.addEventListener("refreshOffline", function () {
+  const offlinePageRequest = new Request(offlineFallbackPage);
 
-
-function precache() {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.addAll(precacheFiles);
-  });
-}
-
-function fromCache(request) {
-  //we pull files from the cache first thing so we can show them fast
-  return caches.open(CACHE).then(function (cache) {
-    return cache.match(request).then(function (matching) {
-      return matching || Promise.reject('no-match');
+  return fetch(offlineFallbackPage).then(function (response) {
+    return caches.open(CACHE).then(function (cache) {
+      console.log("Service Worker: Offline page updated from refreshOffline event: " + response.url);
+      return cache.put(offlinePageRequest, response);
     });
   });
-}
-
-function update(request) {
-  //this is where we call the server to get the newest version of the 
-  //file to use the next time we show view
-  return caches.open(CACHE).then(function (cache) {
-    return fetch(request).then(function (response) {
-      return cache.put(request, response);
-    });
-  });
-}
-
-function fromServer(request){
-  //this is the fallback if it is not in the cache to go to the server and get it
-  return fetch(request).then(function(response){ return response});
-}
+});

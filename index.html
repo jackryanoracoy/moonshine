@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html class="no-js" lang="EN">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -49,6 +49,8 @@
   </head>
 
   <body id="site-body">
+
+    <!--[if IE]><p class="browser-upgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
     
     <header class="l-site-header">
       <div class="l-site-header__menu mobile">
@@ -84,7 +86,7 @@
   
           </section>
         </div>
-      </div><!-- End - above-the-fold -->
+      </div><!-- End - site-atf -->
 
       <article class="l-site-content">
 
@@ -288,20 +290,36 @@
     <link rel="stylesheet" type="text/css" media="all" href="styles/fontawesome.min.css">
 
     <!-- Common Javascripts -->
-    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script defer src="scripts/jquery-3.4.1.min.js"></script>
+    <script async src="scripts/modernizr-3.7.1.min.js"></script>
     <script async src="scripts/object-fit.min.js"></script>
     <script async src="scripts/script.js"></script>
 
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
     <!-- Service Worker -->
     <script>
-    if (navigator.serviceWorker.controller) {
-      console.log('ServiceWorker: active service worker found, no need to register')
-    } else {
-      navigator.serviceWorker.register('service-worker.js', {
-      scope: './'
-      }).then(function(reg) {
-        console.log('Service worker has been registered for scope:'+ reg.scope);
-      });
+    // This is the "Offline page" service worker
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("Service Worker: Active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+        .register("service-worker.js", {
+          scope: "./"
+        })
+        .then(function (reg) {
+          console.log("Service Worker: Service worker has been registered for scope: " + reg.scope);
+        });
+      }
     }
     </script>
 
