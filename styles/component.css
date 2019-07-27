@@ -177,8 +177,7 @@
 
 .c-card {
   height: auto;
-  background-color: #FAFAFA;
-  border: 1px solid #EEE;
+  background-color: #FFF;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
@@ -190,18 +189,18 @@
 --------------------------------------------------*/
 
 .c-heading-above-the-fold {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .c-heading-section {
   padding: 0 0 20px;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   border-bottom: 2px solid #212121;
 }
 
 .c-heading-article {
   padding: 0 0 10px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   border-bottom: 1px solid #424242;
 }
 
@@ -209,4 +208,22 @@
   color: #616161;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media (min-width: 721px) {
+
+  .c-heading-above-the-fold {
+    font-size: 3rem;
+  }
+  
+  .c-heading-section {
+    padding: 0 0 20px;
+    font-size: 2.4rem;
+  }
+  
+  .c-heading-article {
+    padding: 0 0 10px;
+    font-size: 1.8rem;
+  }
+
 }

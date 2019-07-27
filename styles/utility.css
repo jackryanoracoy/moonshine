@@ -18,6 +18,7 @@
 /*--------------------------------------------------
   clearfix, group, row
 --------------------------------------------------*/
+
 .row::after, .group::after, .clearfix::after {
   content: "";
   display: block;
@@ -1193,34 +1194,34 @@
   Color
 --------------------------------------------------*/
 
-.u-color-white { color: #FFF; }
-.u-color-black { color: #000; }
+.u-color-white { color: #FFF !important; }
+.u-color-black { color: #000 !important; }
 
-.u-color-grey-50 { color: #FAFAFA; }
-.u-color-grey-100 { color: #F5F5F5; }
-.u-color-grey-200 { color: #EEEEEE; }
-.u-color-grey-300 { color: #E0E0E0; }
-.u-color-grey-400 { color: #BDBDBD; }
-.u-color-grey-500 { color: #999999; }
-.u-color-grey-600 { color: #757575; }
-.u-color-grey-700 { color: #616161; }
-.u-color-grey-800 { color: #424242; }
-.u-color-grey-900 { color: #212121; }
+.u-color-grey-50 { color: #FAFAFA !important; }
+.u-color-grey-100 { color: #F5F5F5 !important; }
+.u-color-grey-200 { color: #EEEEEE !important; }
+.u-color-grey-300 { color: #E0E0E0 !important; }
+.u-color-grey-400 { color: #BDBDBD !important; }
+.u-color-grey-500 { color: #999999 !important; }
+.u-color-grey-600 { color: #757575 !important; }
+.u-color-grey-700 { color: #616161 !important; }
+.u-color-grey-800 { color: #424242 !important; }
+.u-color-grey-900 { color: #212121 !important; }
 
 /*--------------------------------------------------
   Background
 --------------------------------------------------*/
 
-.u-background-white { background-color: #FFF; }
-.u-background-black { background-color: #000; }
+.u-background-white { background-color: #FFF !important; }
+.u-background-black { background-color: #000 !important; }
 
-.u-background-grey-50 { background-color: #FAFAFA; }
-.u-background-grey-100 { background-color: #F5F5F5; }
-.u-background-grey-200 { background-color: #EEEEEE; }
-.u-background-grey-300 { background-color: #E0E0E0; }
-.u-background-grey-400 { background-color: #BDBDBD; }
-.u-background-grey-500 { background-color: #999999; }
-.u-background-grey-600 { background-color: #757575; }
-.u-background-grey-700 { background-color: #616161; }
-.u-background-grey-800 { background-color: #424242; }
-.u-background-grey-900 { background-color: #212121; }
+.u-background-grey-50 { background-color: #FAFAFA !important; }
+.u-background-grey-100 { background-color: #F5F5F5 !important; }
+.u-background-grey-200 { background-color: #EEEEEE !important; }
+.u-background-grey-300 { background-color: #E0E0E0 !important; }
+.u-background-grey-400 { background-color: #BDBDBD !important; }
+.u-background-grey-500 { background-color: #999999 !important; }
+.u-background-grey-600 { background-color: #757575 !important; }
+.u-background-grey-700 { background-color: #616161 !important; }
+.u-background-grey-800 { background-color: #424242 !important; }
+.u-background-grey-900 { background-color: #212121 !important; }
