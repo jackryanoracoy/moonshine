@@ -4,7 +4,7 @@
 Author:   Jack Ryan Oracoy
 Website:  https://jackryanoracoy.github.io
 Email:    jackryanoracoy@gmail.com
-URL:      http://github.com/
+URL:      https://github.com/jackryanoracoy/front-end-template
 
 
 #Template info
@@ -22,8 +22,6 @@ component.css - prefix (c) - specific UI components.
 .prefix-viewport-classname {...}
 
 E.g. .l-flex, .l-flex--gap-10, .l-flex__grid-s-1, .l-desktop-flex--gap-10
-
-Note: Naming conventions are inspired with BEM, OOCSS, SMACSS, ITCSS.
 
 */
 

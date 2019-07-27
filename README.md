@@ -1,5 +1,7 @@
 # Front-end Web Development Template
 Created and Developed by Jack Ryan Oracoy  
+
+https://github.com/jackryanoracoy/front-end-template
   
 jackryanoracoy@gmail.com  
 lngrzproject@gmail.com   

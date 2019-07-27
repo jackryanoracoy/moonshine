@@ -521,9 +521,19 @@
   article
 --------------------------------------------------*/
 
-.l-article { padding: 40px 0 0; }
+.l-article { padding: 20px 0 0; }
 
 .l-article--padding-no { padding: 0; }
+.l-article--padding-wide { padding: 40px 0 0; }
+.l-article--padding-narrow { padding: 10px 0 0; }
+
+@media (min-width: 721px) {
+
+  .l-article { padding: 40px 0 0; }
+  .l-article--padding-wide { padding: 80px 0 0; }
+  .l-article--padding-narrow { padding: 20px 0 0; }
+
+}
 
 /*--------------------------------------------------
   site-header
