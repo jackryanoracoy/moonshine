@@ -16,7 +16,7 @@
 }
 
 /*--------------------------------------------------
-  clearfix, group, row 
+  Clearfix, Group, Row 
 --------------------------------------------------*/
 
 .row::after, .group::after, .clearfix::after {
