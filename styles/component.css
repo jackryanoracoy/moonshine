@@ -46,9 +46,9 @@
 .c-site-menu__inner::before { top: -8px; }
 .c-site-menu__inner::after { bottom: -8px; }
 
-.c-site-menu.active .c-site-menu__inner { background-color: rgba(0, 0, 0, 0); }
-.c-site-menu.active .c-site-menu__inner::before { top: 0; transform: rotate(-40deg); }
-.c-site-menu.active .c-site-menu__inner::after { bottom: 0; transform: rotate(40deg); }
+.c-site-menu--active .c-site-menu__inner { background-color: rgba(0, 0, 0, 0); }
+.c-site-menu--active .c-site-menu__inner::before { top: 0; transform: rotate(-40deg); }
+.c-site-menu--active .c-site-menu__inner::after { bottom: 0; transform: rotate(40deg); }
 
 /*--------------------------------------------------
   Site-nav
