@@ -31,7 +31,7 @@
   background-color: #FFF;
 }
 
-.c-site-menu__inner::after, 
+.c-site-menu__inner::after,
 .c-site-menu__inner::before {
   position: absolute;
   content: "";
@@ -64,10 +64,6 @@
   overflow: hidden;
 }
 
-.c-site-nav__item.active {
-  text-decoration: underline;
-}
-
 .c-site-nav__item a {
   display: block;
   padding: 0 10px;
@@ -80,9 +76,13 @@
   white-space: nowrap;
 }
 
+.c-site-nav__item a:hover,
+.c-site-nav__item--active a {
+  background-color: #616161;
+}
+
 @media (min-width: 721px) {
 
-  .c-site-nav { margin: 0 -10px; }
   .c-site-nav { padding: 0 20px; }
 
 }
@@ -119,11 +119,6 @@
   .c-site-title { font-size: 2.2rem; }
 
 }
-@media (max-width: 720px) {
-
-  .c-site-title { margin: 0 10px; }
-
-}
 
 /*--------------------------------------------------
   Button
@@ -134,7 +129,7 @@
   padding: 0 20px;
   color: #FFF !important;
   font-size: 1.5rem;
-  line-height: 50px;
+  line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
@@ -215,12 +210,12 @@
   .c-heading-above-the-fold {
     font-size: 3rem;
   }
-  
+
   .c-heading-section {
     padding: 0 0 20px;
     font-size: 2.4rem;
   }
-  
+
   .c-heading-article {
     padding: 0 0 10px;
     font-size: 1.8rem;
