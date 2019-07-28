@@ -1,5 +1,6 @@
 /*!
-#Front-end Web Development Template
+# Front-end Template
+A Progressive Web App (PWA) Template.
 
 Author:   Jack Ryan Oracoy
 Website:  https://jackryanoracoy.github.io
@@ -8,17 +9,9 @@ URL:      https://github.com/jackryanoracoy/front-end-template
 */
 
 /*
-#Template info
+## Getting Started
 
-base.css - reset and/or normalize styles, box-sizing definition, etc.
-utitity.css - utilities and helper classes with ability to override anything.
-layout.css - specific UI layouts.
-component.css - specific UI components.
-
-You can remove unnecessary file/class/object that won't be needed in the project.  
-
-
-#Naming convention
+Naming Convention:
 
 .prefix-classname {...}
 .prefix-classname--modifier {...}
@@ -26,56 +19,84 @@ You can remove unnecessary file/class/object that won't be needed in the project
 .prefix-classname__child--modifier {...}
 .prefix-viewport-classname {...}
 
+Naming Convention Examples:
+
 E.g. .l-flex, .l-flex--gap-10, .l-flex__grid-s-1, .l-desktop-flex--gap-10
 
+Note:
 
-#Table of contents
+You can use the compiled/minified style (style.min.css) for better performance, update the file if necessary.
 
-*Base (no-prefix)
--Font-face
--Reset
--HTML
--Outline
--Body
--Links
--Typography
--Normalize
+This template uses EditorConfig that helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs. https://editorconfig.org/
 
-*Utility (u-)
--Screen-reader-text
--Clearfix, Group, Row
--Viewport
--Hidden
--Float
--Typoghrapy
--Object-fit
--Gutter
--Gap
--Color
--Background
+You can remove unnecessary files that won't be needed in the project.
+e.g. markups, styles, scripts, fonts, service worker (if project wont be over HTTPS), etc.
 
-*Layout (l-)
--Float
--Flex
--Grid
--Wrap, Site-container
--Section
--Article
--Site-header
--Site-main
--Site-footer
--Site-atf
--Site-headline
--Site-content
 
-*Component (c-)
--Site-menu
--Site-nav
--Site-title
--Button
--Card
--Heading
--and more...
+## Styles
+
+* style.min.css - compiled/minified version of all the syles.
+* style.css - contains template information and style imports.
+* base.css - reset and/or normalize styles, box-sizing definition, etc.
+* utitity.css - utilities and helper classes with ability to override anything.
+* layout.css - specific UI layouts.
+* component.css - specific UI components.
+* font-awesome.css/font-awesome.min.css - use for font-awesome webfonts.
+
+### Base (no-prefix)
+
+* Font-face
+* Reset
+* HTML
+* Outline
+* Body
+* Links
+* Typography
+* Normalize
+* Browser Upgrade
+
+### Utility (u-)
+
+* Screen-reader-text
+* Clearfix, Group, Row
+* Viewport
+* Hidden
+* Float
+* Typoghrapy
+* Object-fit
+* Gutter
+* Gap
+* Color
+* Background
+
+### Layout (l-)
+
+* Float
+* Flex
+* Grid
+* Wrap, Site-container
+* Section
+* Article
+* Site-header
+* Site-main
+* Site-footer
+* Site-atf
+* Site-headline
+* Site-content
+
+### Component (c-)
+
+* Site-menu
+* Site-nav
+* Site-title
+* Button
+* Card
+* Heading
+* and more...
+
+## License
+
+This project is licensed under the MIT License - see the "LICENSE.txt" file for details.
 */
 
 @import "base.css";
