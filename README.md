@@ -1,4 +1,4 @@
-# Front-end Web Development Template
+# Front-end Template
   
 A Progressive Web App (PWA) Template.
   
