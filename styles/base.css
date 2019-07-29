@@ -4,6 +4,7 @@
 
 @font-face {
   font-family: 'Noto Sans';
+  font-display: auto;
   font-style: normal;
   font-weight: 400;
   src: local('Noto Sans'),
@@ -15,10 +16,11 @@
 
 @font-face {
   font-family: 'Noto Sans';
+  font-display: auto;
   font-style: normal;
   font-weight: 700;
   src: local('Noto Sans Bold'),
-       local('NotoSans-Bold'), 
+       local('NotoSans-Bold'),
        url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff2) format('woff2'),
        url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff) format('woff'),
        url(../assets/fonts/noto-sans/Noto-Sans-Bold.ttf) format('truetype');
@@ -30,10 +32,11 @@
 
 /* @font-face {
   font-family: 'Noto Sans JP';
+  font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: local('Noto Sans Japanese Light'), 
-       local('NotoSansJapanese-Light'), 
+  src: local('Noto Sans Japanese Light'),
+       local('NotoSansJapanese-Light'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff2) format('woff2'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff) format('woff'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.ttf) format('truetype');
@@ -41,10 +44,11 @@
 
 @font-face {
   font-family: 'Noto Sans JP';
+  font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: local('Noto Sans Japanese Regular'), 
-       local('NotoSansJapanese-Regular'), 
+  src: local('Noto Sans Japanese Regular'),
+       local('NotoSansJapanese-Regular'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff2) format('woff2'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff) format('woff'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.ttf) format('truetype');
@@ -52,10 +56,11 @@
 
 @font-face {
   font-family: 'Noto Sans JP';
+  font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: local('Noto Sans Japanese Bold'), 
-       local('NotoSansJapanese-Bold'), 
+  src: local('Noto Sans Japanese Bold'),
+       local('NotoSansJapanese-Bold'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff2) format('woff2'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff) format('woff'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.ttf) format('truetype');
@@ -67,34 +72,37 @@
 
 /* @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: local("Open Sans Light"), 
-       local("OpenSans-Light"), 
-       url(../assets/fonts/open-sans/Open-Sans-Light.woff2) format("woff2"), 
-       url(../assets/fonts/open-sans/Open-Sans-Light.woff) format("woff"), 
+  src: local("Open Sans Light"),
+       local("OpenSans-Light"),
+       url(../assets/fonts/open-sans/Open-Sans-Light.woff2) format("woff2"),
+       url(../assets/fonts/open-sans/Open-Sans-Light.woff) format("woff"),
        url(../assets/fonts/open-sans/Open-Sans-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans Regular"), 
-       local("OpenSans-Regular"), 
-       url(../assets/fonts/open-sans/Open-Sans-Regular.woff2) format("woff2"), 
-       url(../assets/fonts/open-sans/Open-Sans-Regular.woff) format("woff"), 
+  src: local("Open Sans Regular"),
+       local("OpenSans-Regular"),
+       url(../assets/fonts/open-sans/Open-Sans-Regular.woff2) format("woff2"),
+       url(../assets/fonts/open-sans/Open-Sans-Regular.woff) format("woff"),
        url(../assets/fonts/open-sans/Open-Sans-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: local("Open Sans Bold"), 
-       local("OpenSans-Bold"), 
-       url(../assets/fonts/open-sans/Open-Sans-Bold.woff2) format("woff2"), 
-       url(../assets/fonts/open-sans/Open-Sans-Bold.woff) format("woff"), 
+  src: local("Open Sans Bold"),
+       local("OpenSans-Bold"),
+       url(../assets/fonts/open-sans/Open-Sans-Bold.woff2) format("woff2"),
+       url(../assets/fonts/open-sans/Open-Sans-Bold.woff) format("woff"),
        url(../assets/fonts/open-sans/Open-Sans-Bold.ttf) format("truetype");
 } */
 
@@ -104,23 +112,25 @@
 
 /* @font-face {
   font-family: 'Open Sans Condensed';
+  font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: local("Open Sans Condensed Light"), 
-       local("OpenSansCondensed-Light"), 
-       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff2) format("woff2"), 
-       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff) format("woff"), 
+  src: local("Open Sans Condensed Light"),
+       local("OpenSansCondensed-Light"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff2) format("woff2"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff) format("woff"),
        url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Open Sans Condensed';
+  font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: local("Open Sans Condensed Bold"), 
-       local("OpenSansCondensed-Bold"), 
-       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.ttf) format("woff2"), 
-       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.woff) format("woff"), 
+  src: local("Open Sans Condensed Bold"),
+       local("OpenSansCondensed-Bold"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.ttf) format("woff2"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.woff) format("woff"),
        url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.ttf) format("truetype");
 } */
 
@@ -130,6 +140,7 @@
 
 /* @font-face {
   font-family: 'Roboto';
+  font-display: auto;
   font-style: normal;
   font-weight: 300;
   src: local('Roboto Light'),
@@ -141,6 +152,7 @@
 
 @font-face {
   font-family: 'Roboto';
+  font-display: auto;
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'),
@@ -152,6 +164,7 @@
 
 @font-face {
   font-family: 'Roboto';
+  font-display: auto;
   font-style: normal;
   font-weight: 500;
   src: local('Roboto Medium'),
@@ -163,6 +176,7 @@
 
 @font-face {
   font-family: 'Roboto';
+  font-display: auto;
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'),
@@ -178,10 +192,11 @@
 
 /* @font-face {
   font-family: 'Roboto Condensed';
+  font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Condensed Light'), 
-       local('RobotoCondensed-Light'), 
+  src: local('Roboto Condensed Light'),
+       local('RobotoCondensed-Light'),
        url(../assets/fonts/roboto_condensed/Roboto-Condensed-Light.woff2) format('woff2'),
        url(../assets/fonts/roboto_condensed/Roboto-Condensed-Light.woff) format('woff'),
        url(../assets/fonts/roboto_condensed/Roboto-Condensed-Light.ttf) format('truetype');
@@ -189,6 +204,7 @@
 
 @font-face {
   font-family: 'Roboto Condensed';
+  font-display: auto;
   font-style: normal;
   font-weight: 400;
   src: local('Roboto Condensed'),
@@ -200,6 +216,7 @@
 
 @font-face {
   font-family: 'Roboto Condensed';
+  font-display: auto;
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Condensed Bold'),
@@ -213,7 +230,7 @@
   Reset
 --------------------------------------------------*/
 
-*, 
+*,
 *:before,
 *:after {
   padding: 0;
@@ -225,7 +242,7 @@
 
 @media print {
 
-  *, 
+  *,
   *:before,
   *:after {
     background: transparent !important;
@@ -243,7 +260,7 @@
 
 html {
   min-width: 320px;
-  color: rgba(0, 0, 0, 0.85);
+  color: #212121;
   font-family: "Noto Sans", sans-serif;
   font-size: 62.5%;
   line-height: 1.5;
@@ -291,11 +308,11 @@ body ::-webkit-scrollbar-thumb {
   Links
 --------------------------------------------------*/
 
-a { color: #009688; }
+a { color: #2196F3; }
 
-a:visited { color: #FFC107; }
+a:visited { color: #FF5722; }
 
-a:hover, a:active, a:focus { color: #FF5722; }
+a:hover, a:active, a:focus { color: #4CAF50; }
 
 @media print { a, a:visited { text-decoration: underline;  } }
 
@@ -346,7 +363,7 @@ table {
 @media print { thead { display: table-header-group; } }
 
 /*--------------------------------------------------
-  Add the correct text decoration 
+  Add the correct text decoration
   in Chrome, Edge, IE, Opera, and Safari.
 --------------------------------------------------*/
 
@@ -357,7 +374,7 @@ abbr[title] {
 }
 
 /*--------------------------------------------------
-  Correct the inheritance and scaling of font size 
+  Correct the inheritance and scaling of font size
   in all browsers.
   Correct the odd `em` font sizing in all browsers.
 --------------------------------------------------*/
@@ -368,7 +385,7 @@ code, kbd, samp {
 }
 
 /*--------------------------------------------------
-  Prevent `sub` and `sup` elements from 
+  Prevent `sub` and `sup` elements from
   affecting the line height in all browsers.
 --------------------------------------------------*/
 
@@ -397,9 +414,9 @@ img { border-style: none; }
 --------------------------------------------------*/
 
 button, input { overflow: visible; }
- 
+
 /*--------------------------------------------------
-  Remove the inheritance of text transform in 
+  Remove the inheritance of text transform in
   Edge, Firefox, and IE.
   Remove the inheritance of text transform in Firefox.
 --------------------------------------------------*/
@@ -409,7 +426,7 @@ button, select { text-transform: none; }
 /*--------------------------------------------------
   Remove the inner border and padding in Firefox.
 --------------------------------------------------*/
- 
+
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -421,7 +438,7 @@ button::-moz-focus-inner,
 /*--------------------------------------------------
   Restore the focus styles unset by the previous rule.
 --------------------------------------------------*/
- 
+
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -442,7 +459,7 @@ fieldset { padding: 0.35em 0.75em 0.625em; }
 textarea { overflow: auto; }
 
 /*--------------------------------------------------
-  Correct the cursor style of increment and 
+  Correct the cursor style of increment and
   decrement buttons in Chrome.
 --------------------------------------------------*/
 
@@ -455,13 +472,13 @@ textarea { overflow: auto; }
   Correct the odd appearance in Chrome and Safari.
   Correct the outline style in Safari.
 --------------------------------------------------*/
- 
+
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 /*--------------------------------------------------
-  Remove the inner padding and cancel buttons 
+  Remove the inner padding and cancel buttons
   in Chrome and Safari on macOS.
 --------------------------------------------------*/
 
@@ -471,8 +488,8 @@ textarea { overflow: auto; }
 }
 
 /*--------------------------------------------------
-  Correct the inability to style clickable types 
-  in iOS and Safari.  
+  Correct the inability to style clickable types
+  in iOS and Safari.
   Change font properties to `inherit` in Safari.
 --------------------------------------------------*/
 

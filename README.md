@@ -18,7 +18,27 @@ Naming Convention:
 Naming Convention Examples:  
   
 ```
-E.g. .l-flex, .l-flex--gap-10, .l-flex__grid-s-1, .l-desktop-flex--gap-10  
+.l-flex, .l-flex--gap-10, .l-flex__grid-s-1, .l-desktop-flex--gap-10  
+```
+from
+```
+.l-flex {...}  
+.l-flex.gap-10 {...}
+.l-flex .grid-s-1 {...}
+
+@media (...) {
+  .l-desktop-flex.gap-10 {...}
+}
+```
+to
+```
+.l-flex {...}  
+.l-flex--gap-10 {...}
+.l-flex__grid-s-1 {...}
+
+@media (...) {
+  .l-desktop-flex--gap-10 {...}
+}
 ```
   
 Note:  
@@ -43,70 +63,62 @@ e.g. markups, styles, scripts, fonts, service worker (if project wont be over HT
   
 ### Base (no-prefix)  
   
-```
-Font-face  
-Reset  
-HTML  
-Outline  
-Body  
-Links  
-Typography  
-Normalize  
-Browser Upgrade  
-```
+* Font-face  
+* Reset  
+* HTML  
+* Outline  
+* Body  
+* Links  
+* Typography  
+* Normalize  
+* Browser Upgrade  
   
 ### Utility (u-)  
   
-```
-Screen-reader-text  
-Clearfix, Group, Row  
-Viewport  
-Hidden  
-Float  
-Typoghrapy  
-Object-fit  
-Gutter  
-Gap  
-Color  
-Background  
-```
+* Screen-reader-text  
+* Clearfix, Group, Row  
+* Viewport  
+* Hidden  
+* Float  
+* Typoghrapy  
+* Object-fit  
+* Gutter  
+* Gap  
+* Color  
+* Background  
   
 ### Layout (l-)  
   
-```
-Float  
-Flex  
-Grid  
-Wrap, Site-container  
-Section  
-Article  
-Site-header  
-Site-main  
-Site-footer  
-Site-atf  
-Site-headline  
-Site-content  
-```
+* Float  
+* Flex  
+* Grid  
+* Wrap, Site-container  
+* Section  
+* Article  
+* Site-header  
+* Site-main  
+* Site-footer  
+* Site-atf  
+* Site-headline  
+* Site-content  
   
 ### Component (c-)  
   
-```
-Site-menu  
-Site-nav  
-Site-title  
-Button  
-Card  
-Heading  
-and more...  
-```
+* Site-menu  
+* Site-nav  
+* Site-title  
+* Button  
+* Card  
+* Heading  
+* and more...  
     
   
 ## Author  
   
 Jack Ryan Oracoy  
 https://jackryanoracoy.github.io  
+jackryanoracoy@gmail.com  
   
-[Email](jackryanoracoy@gmail.com)  
 [Github](https://github.com/jackryanoracoy)  
 [Facebook](https://facebook.com/JackRyanOracoy)  
 [Twitter](https://twitter.com/JackRyanOracoy)  
