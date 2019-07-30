@@ -15,7 +15,6 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="This is a front-end web development template, created by Jack Ryan Oracoy">
 
-    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4">
 
     <meta name="mobile-web-app-capable" content="yes">
@@ -36,6 +35,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/app-icon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/app-icon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icon/apple-icon-180x180.png">
+
     <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/app-icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/app-icon/favicon-96x96.png">
@@ -299,27 +299,21 @@
     <script async src="scripts/script.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
     <script>
       window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
       ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
 
     <!-- Service Worker -->
     <script>
-    // This is the "Offline page" service worker
     if ("serviceWorker" in navigator) {
       if (navigator.serviceWorker.controller) {
         console.log("Service Worker: Active service worker found, no need to register");
       } else {
-        // Register the service worker
         navigator.serviceWorker
-        .register("service-worker.js", {
-          scope: "/"
-        })
-        .then(function (reg) {
-          console.log("Service Worker: Service worker has been registered for scope: " + reg.scope);
-        });
+        .register("service-worker.js", { scope: "./" })
+        .then(function (reg) { console.log("Service Worker: Service worker has been registered for scope: " + reg.scope); });
       }
     }
     </script>
