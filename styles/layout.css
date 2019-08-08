@@ -8,7 +8,26 @@
   clear: both;
 }
 
-.l-float__content { float: left; }
+.l-float__content,
+.l-float__content--left { float: left; }
+.l-float__content--right { float: right; }
+.l-float__content--none { float: none; }
+
+@media (min-width: 721px) {
+
+  .l-desktop-float__content--left { float: left; }
+  .l-desktop-float__content--right { float: right; }
+  .l-desktop-float__content--none { float: none; }
+
+}
+
+@media (max-width: 720px) {
+
+  .l-mobile-float__content--left { float: left; }
+  .l-mobile-float__content--right { float: right; }
+  .l-mobile-float__content--none { float: none; }
+
+}
 
 /*--------------------------------------------------
   Flex
@@ -40,12 +59,11 @@
 .l-flex--justify-spacebetween { justify-content: space-between; }
 .l-flex--justify-spaceevenly { justify-content: space-evenly; }
 
-.l-flex__grow { flex-grow: 1; }
-.l-flex__grow-no { flex-grow: 0; }
-.l-flex__shrink { flex-shrink: 1; }
-.l-flex__shrink-no { flex-shrink: 0; }
-
 .l-flex__content { width: 100%; }
+.l-flex__content--grow { flex-grow: 1; }
+.l-flex__content--grow-no { flex-grow: 0; }
+.l-flex__content--shrink { flex-shrink: 1; }
+.l-flex__content--shrink-no { flex-shrink: 0; }
 
 @media (min-width: 721px) {
 
@@ -69,10 +87,10 @@
   .l-desktop-flex--justify-spacebetween { justify-content: space-between; }
   .l-desktop-flex--justify-spaceevenly { justify-content: space-evenly; }
 
-  .l-desktop-flex__grow { flex-grow: 1; }
-  .l-desktop-flex__grow-no { flex-grow: 0; }
-  .l-desktop-flex__shrink { flex-shrink: 1; }
-  .l-desktop-flex__shrink-no { flex-shrink: 0; }
+  .l-desktop-flex__content--grow { flex-grow: 1; }
+  .l-desktop-flex__content--grow-no { flex-grow: 0; }
+  .l-desktop-flex__content--shrink { flex-shrink: 1; }
+  .l-desktop-flex__content--shrink-no { flex-shrink: 0; }
 
 }
 
@@ -98,10 +116,10 @@
   .l-mobile-flex--justify-spacebetween { justify-content: space-between; }
   .l-mobile-flex--justify-spaceevenly { justify-content: space-evenly; }
 
-  .l-mobile-flex__grow { flex-grow: 1; }
-  .l-mobile-flex__grow-no { flex-grow: 0; }
-  .l-mobile-flex__shrink { flex-shrink: 1; }
-  .l-mobile-flex__shrink-no { flex-shrink: 0; }
+  .l-mobile-flex__content--grow { flex-grow: 1; }
+  .l-mobile-flex__content--grow-no { flex-grow: 0; }
+  .l-mobile-flex__content--shrink { flex-shrink: 1; }
+  .l-mobile-flex__content--shrink-no { flex-shrink: 0; }
 
 }
 
