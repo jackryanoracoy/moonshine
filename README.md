@@ -1,6 +1,6 @@
-# COP25 JAPAN PAVILION
+# Front-end Template
   
-Lead the world forward
+A Progressive Web App (PWA) Template.
   
   
 ## Getting Started  
