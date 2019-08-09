@@ -1,6 +1,6 @@
-# Front-end Template
+# COP25 JAPAN PAVILION
   
-A Progressive Web App (PWA) Template.
+Lead the world forward
   
   
 ## Getting Started  
@@ -9,37 +9,16 @@ Naming Convention:
   
 ```
 .prefix-classname {...}  
+.prefix-classname-int {...}  
+.prefix-classname-viewport {...}  
+.prefix-classname-viewport-int {...}
 .prefix-classname--modifier {...}  
 .prefix-classname__child {...}  
 .prefix-classname__child--modifier {...}  
-.prefix-viewport-classname {...}  
+.prefix-classname__child--modifier-viewport {...}    
+.prefix-classname__child--modifier-viewport-int {...}    
 ```
   
-Naming Convention Examples:  
-  
-```
-.l-flex, .l-flex--gap-10, .l-flex__grid-s-1, .l-desktop-flex--gap-10  
-```
-from
-```
-.l-flex {...}  
-.l-flex.gap-10 {...}
-.l-flex .grid-s-1 {...}
-
-@media (...) {
-  .l-desktop-flex.gap-10 {...}
-}
-```
-to
-```
-.l-flex {...}  
-.l-flex--gap-10 {...}
-.l-flex__grid-s-1 {...}
-
-@media (...) {
-  .l-desktop-flex--gap-10 {...}
-}
-```
   
 Note:  
   
@@ -77,21 +56,21 @@ e.g. markups, styles, scripts, fonts, service worker (if project wont be over HT
   
 * Screen-reader-text  
 * Clearfix, Group, Row  
-* Viewport  
 * Hidden  
-* Float  
-* Typoghrapy  
-* Object-fit  
+* Float    
+* Flex  
+* Grid  
+* Column  
+* Column Gap  
 * Gutter  
 * Gap  
+* Typoghrapy  
+* Object-fit  
 * Color  
 * Background  
   
 ### Layout (l-)  
   
-* Float  
-* Flex  
-* Grid  
 * Wrap, Site-container  
 * Section  
 * Article  
