@@ -170,7 +170,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
   .u-flex--wrap-md { flex-wrap: wrap; }
   .u-flex--nowrap-md { flex-wrap: nowrap; }
@@ -195,7 +195,7 @@
 
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 
   .u-flex--wrap-lg { flex-wrap: wrap; }
   .u-flex--nowrap-lg { flex-wrap: nowrap; }
@@ -220,7 +220,7 @@
 
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 
   .u-flex--wrap-xl { flex-wrap: wrap; }
   .u-flex--nowrap-xl { flex-wrap: nowrap; }
