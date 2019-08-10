@@ -148,7 +148,7 @@
 @media (min-width: 576px) {
 
   .u-flex--wrap-sm { flex-wrap: wrap; }
-  .u-flex--nowrap-sm { flex-wrap: nowrap; }
+  .u-flex--wrap-no-sm { flex-wrap: nowrap; }
   .u-flex--column-sm { flex-direction: column; }
   .u-flex--column-reverse-sm { flex-direction: column-reverse; }
   .u-flex--row-sm { flex-direction: row; }
@@ -173,7 +173,7 @@
 @media (min-width: 768px) {
 
   .u-flex--wrap-md { flex-wrap: wrap; }
-  .u-flex--nowrap-md { flex-wrap: nowrap; }
+  .u-flex--wrap-no-md { flex-wrap: nowrap; }
   .u-flex--column-md { flex-direction: column; }
   .u-flex--column-reverse-md { flex-direction: column-reverse; }
   .u-flex--row-md { flex-direction: row; }
@@ -198,7 +198,7 @@
 @media (min-width: 992px) {
 
   .u-flex--wrap-lg { flex-wrap: wrap; }
-  .u-flex--nowrap-lg { flex-wrap: nowrap; }
+  .u-flex--wrap-no-lg { flex-wrap: nowrap; }
   .u-flex--column-lg { flex-direction: column; }
   .u-flex--column-reverse-lg { flex-direction: column-reverse; }
   .u-flex--row-lg { flex-direction: row; }
@@ -223,7 +223,7 @@
 @media (min-width: 992px) {
 
   .u-flex--wrap-xl { flex-wrap: wrap; }
-  .u-flex--nowrap-xl { flex-wrap: nowrap; }
+  .u-flex--wrap-no-xl { flex-wrap: nowrap; }
   .u-flex--column-xl { flex-direction: column; }
   .u-flex--column-reverse-xl { flex-direction: column-reverse; }
   .u-flex--row-xl { flex-direction: row; }
