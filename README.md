@@ -19,15 +19,28 @@ Naming Convention:
 .prefix-classname__child--modifier-viewport-int {...}    
 ```
   
+Examples:  
   
-Note:  
+```
+.u-flex {...}  
+.u-flex--wrap-no {...}  
+.u-flex--wrap-no-sm {...}  
+.u-flex__shrink-no {...}  
+.u-column-sm-12 {...}  
+.u-column-md-12 {...}  
+.u-column-lg-12 {...}  
+.u-column-xl-12 {...}  
+```
   
-You can use the compiled/minified style (style.min.css) for better performance, update the file if necessary.  
-
-This template uses EditorConfig that helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs. [Read more...](https://editorconfig.org/)
+Description:  
   
-You can remove unnecessary files that won't be needed in the project.  
-e.g. markups, styles, scripts, fonts, service worker (if project wont be over HTTPS), etc. 
+```
+prefix = "u" for utility, "l" for layout, "c" for component.
+classname = preferred class name.  
+modifier = preferred modifier name.
+viewport = "sm" for small viewport, "md" for medium viewport, "lg" for large viewport, "xl" for extra large viewport.  
+int = 0-9, min, max.  
+```
   
   
 ## Styles  
@@ -37,8 +50,7 @@ e.g. markups, styles, scripts, fonts, service worker (if project wont be over HT
 * base.css - reset and/or normalize styles, box-sizing definition, etc.  
 * utitity.css - utilities and helper classes with ability to override anything.  
 * layout.css - specific UI layouts.  
-* component.css - specific UI components.  
-* font-awesome.css/font-awesome.min.css - use for font-awesome webfonts.  
+* component.css - specific UI components.   
   
 ### Base (no-prefix)  
   
@@ -90,7 +102,17 @@ e.g. markups, styles, scripts, fonts, service worker (if project wont be over HT
 * Card  
 * Heading  
 * and more...  
-    
+  
+  
+## Note
+  
+You can use the compiled/minified style (style.min.css) for better performance, update the file if necessary.  
+
+This template uses EditorConfig that helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs. [Read more...](https://editorconfig.org/)
+  
+You can remove unnecessary files that won't be needed in the project.  
+e.g. markups, styles, scripts, fonts, service worker (if project wont be over HTTPS), etc.  
+  
   
 ## Author  
   
