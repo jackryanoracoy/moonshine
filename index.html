@@ -133,13 +133,11 @@
 
               <h3 class="c-heading-article u-gutter-bot-20">A Card Cluster Using Float</h3>
 
-              <!---------------------------------------------------------------------------------------------------
-                Using Float
-              ---------------------------------------------------------------------------------------------------->
+              <!-- GUIDE NOTE: Using Float and Column -->
 
               <div class="row u-column-gap-10 u-column-gap-md-20">
 
-                <div class="u-float-left u-column-12 u-column-md-4">
+                <div class="u-float u-column-12 u-column-md-4">
                   <div class="c-card">
                     <div class="c-card__content">
 
@@ -150,7 +148,7 @@
                   </div><!-- End - card -->
                 </div><!-- End - float left -->
 
-                <div class="u-float-left u-column-12 u-column-md-4">
+                <div class="u-float u-column-12 u-column-md-4">
                   <div class="c-card">
                     <div class="c-card__content">
 
@@ -161,7 +159,7 @@
                   </div><!-- End - card -->
                 </div><!-- End - float left -->
 
-                <div class="u-float-left u-column-12 u-column-md-4">
+                <div class="u-float u-column-12 u-column-md-4">
                   <div class="c-card">
                     <div class="c-card__content">
 
@@ -177,11 +175,9 @@
 
             <article class="l-article">
 
-              <h3 class="c-heading-article u-gutter-bot-20">A Card Cluster Using Flexbox</h3>
+              <h3 class="c-heading-article u-gutter-bot-20">A card cluster using flexbox (u-flex) and using width (u-column) for child items</h3>
 
-              <!---------------------------------------------------------------------------------------------------
-                Using Flex
-              ---------------------------------------------------------------------------------------------------->
+              <!-- GUIDE: using flexbox (u-flex) and using width (u-column) for child items -->
 
               <div class="u-flex u-column-gap-10 u-column-gap-md-20">
                 <div class="u-column-12 u-column-sm-6 u-column-md-4 u-column-lg-3">
@@ -230,6 +226,126 @@
                   </div><!-- End - card -->
                 </div><!-- End - flex content -->
               </div><!-- End - flex -->
+
+            </article><!-- End - article-->
+
+            <article class="l-article">
+
+              <h3 class="c-heading-article u-gutter-bot-20">A card cluster using flexbox (u-flex) and flex-basis (u-flex__content) for child items.</h3>
+
+              <!-- GUIDE: Using flexbox (u-flex) and flex-basis (u-flex__content) for child items. -->
+
+              <div class="u-flex u-flex--wrap u-column-gap-10 u-column-gap-md-20">
+                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 1</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      Cum sociis natoque penatibus</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+
+                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 2</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+
+                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 3</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+
+                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 4</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+              </div><!-- End - flex -->
+
+            </article><!-- End - article-->
+
+            <article class="l-article">
+
+              <h3 class="c-heading-article u-gutter-bot-20">A card cluster using flexbox. Some use case below</h3>
+
+              <!-- GUIDE: Using flexbox. Some use case below -->
+
+              <div class="u-flex u-flex--wrap-no-md u-column-gap-10 u-column-gap-md-20">
+                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-md-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 1</h4>
+                      <p>"No Shrink Item" - Lorem ipsum dolor sit amet</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+
+                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-shrink-md">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 2</h4>
+                      <p>"Shrink Item/Auto" - Lorem ipsum dolor sit amet</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+
+                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-shrink-md-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 3</h4>
+                      <p>"Shrink Item" - Lorem ipsum dolor sit amet</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+
+                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-shrink-md-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 4</h4>
+                      <p>"Shrink Item" - Lorem ipsum dolor sit amet</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
+
+                <div class="u-flex__content-12 u-flex__content-grow-sm-4 u-flex__content-shrink-md-3">
+                  <div class="c-card">
+                    <div class="c-card__content">
+
+                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 5</h4>
+                      <p>"Grow Item (sm)/Shrink Item (md)" - Lorem ipsum dolor sit amet</p>
+
+                    </div><!-- End - card content -->
+                  </div><!-- End - card -->
+                </div><!-- End - flex content -->
 
             </article><!-- End - article-->
 

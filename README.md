@@ -39,7 +39,8 @@ prefix = "u" for utility, "l" for layout, "c" for component.
 classname = preferred class name.  
 modifier = preferred modifier name.
 viewport = "sm" for small viewport, "md" for medium viewport, "lg" for large viewport, "xl" for extra large viewport.  
-int = 0-9, min, max.  
+int = 0-9.  
+others = min, max.
 ```
   
   
