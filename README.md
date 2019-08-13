@@ -121,11 +121,11 @@ Jack Ryan Oracoy
 https://jackryanoracoy.github.io  
 jackryanoracoy@gmail.com  
   
-[Github](https://github.com/jackryanoracoy)  
-[Facebook](https://facebook.com/JackRyanOracoy)  
-[Twitter](https://twitter.com/JackRyanOracoy)  
-[Behance](https://www.behance.net/jackryanor7dac)  
-[LinkedIn](https://www.linkedin.com/in/jackryanoracoy)  
+[Github @jackryanoracoy](https://github.com/jackryanoracoy)  
+[Facebook @JackRyanOracoy](https://facebook.com/JackRyanOracoy)  
+[Twitter @JackRyanOracoy](https://twitter.com/JackRyanOracoy)  
+[Behance @jackryanor7dacy](https://www.behance.net/jackryanor7dac)  
+[LinkedIn @jackryanoracoy](https://www.linkedin.com/in/jackryanoracoy)  
   
   
 ## License  
