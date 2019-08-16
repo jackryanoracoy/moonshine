@@ -101,7 +101,7 @@ u-font-size {
 * u-parallax = adds parallax effect on image.
 * u-image-xxx = syle for images.  
 
-*note: please see [utility](styles/utility.css) for more info.
+* Note: you can check [utility](styles/utility.css) for more details.
   
 Samples:  
   
@@ -118,7 +118,7 @@ Samples:
   
 ## Includes  
   
-Some great works are that are included in this template.  
+Some great works that are included in this template.  
    
 * [Normalize](https://necolas.github.io/normalize.css/)  
 * [jQuery](https://jquery.com/)  
