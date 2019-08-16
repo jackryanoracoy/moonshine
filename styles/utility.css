@@ -26,11 +26,25 @@
 }
 
 /*--------------------------------------------------
+  Container
+--------------------------------------------------*/
+
+.u-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) { .u-container { max-width: 540px; } }
+@media (min-width: 768px) { .u-container { max-width: 720px; } }
+@media (min-width: 992px) { .u-container { max-width: 960px; } }
+@media (min-width: 1200px) { .u-container { max-width: 1140px; } }
+
+/*--------------------------------------------------
   Hidden
 --------------------------------------------------*/
 
-.u-hidden {
-  display: none !important; visibility: hidden !important; }
+.u-hidden { display: none !important; visibility: hidden !important; }
 
 @media (min-width: 576px) { .u-hidden-sm-min { display: none !important; visibility: hidden !important; } }
 @media (min-width: 768px) { .u-hidden-md-min { display: none !important; visibility: hidden !important; } }
@@ -46,13 +60,13 @@
   Float
 --------------------------------------------------*/
 
-.u-float { float: left !important; }
+.u-float-left { float: left !important; }
 .u-float-right { float: right !important; }
 .u-float-none { float: none !important; }
 
 @media (min-width: 576px) {
 
-  .u-float-sm { float: left !important; }
+  .u-float-left-sm { float: left !important; }
   .u-float-right-sm { float: right !important; }
   .u-float-none-sm { float: none !important; }
 
@@ -60,7 +74,7 @@
 
 @media (min-width: 768px) {
 
-  .u-float-md { float: left !important; }
+  .u-float-left-md { float: left !important; }
   .u-float-right-md { float: right !important; }
   .u-float-none-md { float: none !important; }
 
@@ -68,7 +82,7 @@
 
 @media (min-width: 992px) {
 
-  .u-float-lg { float: left !important; }
+  .u-float-left-lg { float: left !important; }
   .u-float-right-lg { float: right !important; }
   .u-float-none-lg { float: none !important; }
 
@@ -76,7 +90,7 @@
 
 @media (min-width: 1200px) {
 
-  .u-float-xl { float: left !important; }
+  .u-float-left-xl { float: left !important; }
   .u-float-right-xl { float: right !important; }
   .u-float-none-xl { float: none !important; }
 
@@ -3109,6 +3123,6 @@
   Image
 --------------------------------------------------*/
 
-.u-image { max-width: 100%; }
-.u-image--block { display: block; }
-.u-image--center { margin: auto; }
+.u-image-fluid { max-width: 100%; }
+.u-image-block { display: block; }
+.u-image-center { display: block; margin: auto; }

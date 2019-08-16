@@ -6,6 +6,13 @@ A Progressive Web App (PWA) Template.
 ## Getting Started  
   
 Naming Convention:  
+
+prefix = "u" for utility, "l" for layout, "c" for component.
+classname = preferred class name.  
+modifier = preferred modifier name.
+viewport = "sm" for small viewport, "md" for medium viewport, "lg" for large viewport, "xl" for extra large viewport.  
+int = 0-9.  
+others = min, max.
   
 ```
 .prefix-classname {...}  
@@ -19,7 +26,7 @@ Naming Convention:
 .prefix-classname__child--modifier-viewport-int {...}    
 ```
   
-Examples:  
+Naming Convention Examples:  
   
 ```
 .u-flex {...}  
@@ -32,15 +39,21 @@ Examples:
 .u-column-xl-12 {...}  
 ```
   
-Description:  
+  
+CSS Variables:  
+  
+Offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser.  
+
+```
+.prefix-classname { var(--varname, fallback) }  
+```
+
+CSS Variables Examples:  
   
 ```
-prefix = "u" for utility, "l" for layout, "c" for component.
-classname = preferred class name.  
-modifier = preferred modifier name.
-viewport = "sm" for small viewport, "md" for medium viewport, "lg" for large viewport, "xl" for extra large viewport.  
-int = 0-9.  
-others = min, max.
+color { var(--red-500, red) }  
+font-size { var(--normal-size, 1.5rem) }
+@media (min-width(var(--breakpoint-sm))) {...}
 ```
   
   
@@ -48,14 +61,19 @@ others = min, max.
 
 * style.min.css - compiled/minified version of all the syles.  
 * style.css - contains template information and style imports.  
+* setting.css - contains custom properties (css variables), font-face, etc.
 * base.css - reset and/or normalize styles, box-sizing definition, etc.  
 * utitity.css - utilities and helper classes with ability to override anything.  
 * layout.css - specific UI layouts.  
 * component.css - specific UI components.   
   
+### Setting  
+
+* Custom Properties (CSS Variables)  
+* Font-face
+  
 ### Base (no-prefix)  
   
-* Font-face  
 * Reset  
 * HTML  
 * Outline  
@@ -70,6 +88,7 @@ others = min, max.
 * Screen-reader-text  
 * Clearfix, Group, Row  
 * Hidden  
+* Container  
 * Float    
 * Flex  
 * Grid  
@@ -84,7 +103,6 @@ others = min, max.
   
 ### Layout (l-)  
   
-* Wrap, Site-container  
 * Section  
 * Article  
 * Site-header  
