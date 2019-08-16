@@ -7,13 +7,13 @@ A Scalable Front End Template.
   
 A methodology of writing code that’s scalable and easy to manipulate.  
 
-* style.min.css - compiled/minified version of all the syles.  
-* style.css - contains template information and style imports.  
-* setting.css - contains custom properties (css variables), font-face, etc.
-* base.css - reset and/or normalize styles, box-sizing definition, etc.  
-* utitity.css - utilities and helper classes with ability to override anything.  
-* layout.css - specific UI layouts.  
-* component.css - specific UI components.   
+* style.min.css = compiled/minified version of all the syles.  
+* style.css = contains template information and style imports.  
+* setting.css = contains custom properties (css variables), font-face, etc.
+* base.css = reset and/or normalize styles, box-sizing definition, etc.  
+* utitity.css = utilities and helper classes with ability to override anything.  
+* layout.css = specific UI layouts.  
+* component.css = specific UI components.   
   
 ### Naming Convention 
     
@@ -80,26 +80,28 @@ u-font-size {
   
 ### CSS Utilities  
   
-* screen-reader-text - for screen readers.  
-* row, groupr, clearfix - fix float overflow.  
-* u-container - element container.  
-* u-hidden - hides element.  
-* u-float-xxx - floats element.  
-* u-flex - a flexbox.  
-* u-grid - a grid (experemental).  
-* u-column-xxx - sets column width.
-* u-gutter-xxx - adds margin.    
-* u-gap-xxx - adds padding.  
-* u-text-xxx - style for typoghrapy.  
-* u-font-xxx - style for typoghrapy.  
-* u-line-height-xxx - style that controls line-height.  
-* u-white-space-xxx - style that controls white space.
-* u-object-fit - makes images fit.  
-* u-list - style for list items.
-* u-color-xxx - adds font color.
-* u-background-xxx - adds background style.  
-* u-parallax - adds parallax effect on image.
-* u-image-xxx - syle for images.
+* screen-reader-text = for screen readers.  
+* row, groupr, clearfix = fix float overflow.  
+* u-container = element container.  
+* u-hidden = hides element.  
+* u-float-xxx = floats element.  
+* u-flex = a flexbox.  
+* u-grid = a grid (experemental).  
+* u-column-xxx = sets column width.
+* u-gutter-xxx = adds margin.    
+* u-gap-xxx = adds padding.  
+* u-text-xxx = style for typoghrapy.  
+* u-font-xxx = style for typoghrapy.  
+* u-line-height-xxx = style that controls line-height.  
+* u-white-space-xxx = style that controls white space.
+* u-object-fit = makes images fit.  
+* u-list = style for list items.
+* u-color-xxx = adds font color.
+* u-background-xxx = adds background style.  
+* u-parallax = adds parallax effect on image.
+* u-image-xxx = syle for images.  
+
+*note: please see [utility](styles/utility.css) for more info.
   
 Samples:  
   
@@ -114,9 +116,11 @@ Samples:
 ```
   
   
-## Includes
+## Includes  
   
-* [EditorConfig](https://editorconfig.org/)  
+Some great works are that are included in this template.  
+   
+* [Normalize](https://necolas.github.io/normalize.css/)  
 * [jQuery](https://jquery.com/)  
 * [Modernizr](https://modernizr.com/)  
 * [ObjectFit](https://github.com/fregante/object-fit-images/)  
