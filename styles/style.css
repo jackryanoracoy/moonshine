@@ -9,53 +9,9 @@ URL:      https://github.com/jackryanoracoy/front-end-template
 */
 
 /*
-## Getting Started
+## CSS Methodologies
 
-Naming Convention:
-
-prefix = "u" for utility, "l" for layout, "c" for component.
-classname = preferred class name.
-modifier = preferred modifier name.
-viewport = "sm" for small viewport, "md" for medium viewport, "lg" for large viewport, "xl" for extra large viewport.
-int = 0-9.
-others = min, max.
-
-.prefix-classname {...}
-.prefix-classname-int {...}
-.prefix-classname-viewport {...}
-.prefix-classname-viewport-int {...}
-.prefix-classname--modifier {...}
-.prefix-classname__child {...}
-.prefix-classname__child--modifier {...}
-.prefix-classname__child--modifier-viewport {...}
-.prefix-classname__child--modifier-viewport-int {...}
-
-Naming Convention Examples:
-
-.u-flex {...}
-.u-flex--wrap-no {...}
-.u-flex--wrap-no-sm {...}
-.u-flex__shrink-no {...}
-.u-column-sm-12 {...}
-.u-column-md-12 {...}
-.u-column-lg-12 {...}
-.u-column-xl-12 {...}
-
-
-CSS Variables:
-
-Offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser.
-
-.prefix-classname { var(--varname, fallback) }
-
-CSS Variables Examples:
-
-color { var(--red-500, red) }
-font-size { var(--normal-size, 1.5rem) }
-@media (min-width(var(--breakpoint-sm))) {...}
-
-
-## Styles
+A methodology of writing code that’s scalable and easy to manipulate.
 
 * style.min.css - compiled/minified version of all the syles.
 * style.css - contains template information and style imports.
@@ -65,60 +21,44 @@ font-size { var(--normal-size, 1.5rem) }
 * layout.css - specific UI layouts.
 * component.css - specific UI components.
 
-### Setting
+### Naming Convention
 
-* Custom Properties (CSS Variables)
-* Font-face
+Create reusable components and code sharing in front-end development
 
-### Base (no-prefix)
+.prefix-classname {...}
+.prefix-classname-int {...}
+.prefix-classname-viewport {...}
+.prefix-classname-viewport-int {...}
+.prefix-classname--modifier {...}
+.prefix-classname__child {...}
+.prefix-classname__child--modifier {...}
+.prefix-classname__child--viewport {...}
+.prefix-classname__child--viewport-int {...}
 
-* Reset
-* HTML
-* Outline
-* Body
-* Links
-* Typography
-* Normalize
-* Browser Upgrade
+prefix    = (u) utility, (l) layout, (c) component.
+classname = preferred class name.
+modifier  = preferred modifier name.
+viewport  = (sm) small, (md) medium, (lg) large, (xl) extra large.
+int       = 0-9.
+others    = min, max.
 
-### Utility (u-)
 
-* Screen-reader-text
-* Clearfix, Group, Row
-* Hidden
-* Container
-* Float
-* Flex
-* Grid
-* Column
-* Column Gap
-* Gutter
-* Gap
-* Typoghrapy
-* Object-fit
-* Color
-* Background
+### CSS Variables
 
-### Layout (l-)
+CSS variables offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser.
 
-* Section
-* Article
-* Site-header
-* Site-main
-* Site-footer
-* Site-atf
-* Site-headline
-* Site-content
+```
+var(custom-name, value)
 
-### Component (c-)
+```
 
-* Site-menu
-* Site-nav
-* Site-title
-* Button
-* Card
-* Heading
-* and more...
+## Includes
+
+* EditorConfig  - https://editorconfig.org/
+* jQuery        - https://jquery.com/
+* Modernizr     - https://modernizr.com/
+* ObjectFit     - https://github.com/fregante/object-fit-images/
+* FontAwesome   - https://fontawesome.com)
 
 ## License
 
