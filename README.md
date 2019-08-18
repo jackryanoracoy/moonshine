@@ -35,7 +35,7 @@ others    = min, max.
 .prefix-classname__child {...}  
 .prefix-classname__child--modifier {...}  
 .prefix-classname__child--viewport {...}    
-.prefix-classname__child--viewport-int {...}    
+.prefix-classname__child--viewport-int {...}
 ```  
   
 Samples:  
@@ -48,7 +48,7 @@ Samples:
 .u-column-sm-12 {...}  
 .u-column-md-12 {...}  
 .u-column-lg-12 {...}  
-.u-column-xl-12 {...}  
+.u-column-xl-12 {...}
 ```
   
 ### CSS Variables  
@@ -57,7 +57,6 @@ CSS variables offer similar flexibility to Sass’s variables, but without the n
 
 ```
 var(custom-name, value)
-
 ```
 
 Samples:  
@@ -75,7 +74,7 @@ u-font-size {
   u-font-size-sm {  
     var(--normal-size, 1.5rem)  
   }
-}  
+}
 ```  
   
 ### CSS Utilities  
@@ -100,8 +99,8 @@ u-font-size {
 * u-background-xxx = adds background style.  
 * u-parallax = adds parallax effect on image.
 * u-image-xxx = syle for images.  
-
-* Note: you can check [utility](styles/utility.css) for more details.
+  
+* You can check the [utility.css](styles/utility.css) for more details.
   
 Samples:  
   
@@ -112,7 +111,6 @@ Samples:
     <div class="u-flex__content-12 u-flex__content-md-6">...</div>
   </div>
 </div>
-
 ```
   
   

@@ -1,69 +1,41 @@
 /*!
-# Front-end Template
-A Progressive Web App (PWA) Template.
+ * Front-end Template
+ * A Scalable Front End Template.
+ *
+ * Author:   Jack Ryan Oracoy
+ * Website:  https://jackryanoracoy.github.io
+ * Email:    jackryanoracoy@gmail.com
+ * URL:      https://github.com/jackryanoracoy/front-end-template
+ * License:  https://github.com/jackryanoracoy/front-end-template/blob/master/LICENSE.txt
+ */
 
-Author:   Jack Ryan Oracoy
-Website:  https://jackryanoracoy.github.io
-Email:    jackryanoracoy@gmail.com
-URL:      https://github.com/jackryanoracoy/front-end-template
-*/
 
 /*
-## CSS Methodologies
+ * CSS Methodologies
+ *
+ * A methodology of writing code that’s scalable and easy to manipulate.
+ *
+ * style.min.css - compiled/minified version of all the syles.
+ * style.css - contains template information and style imports.
+ * setting.css - contains custom properties (css variables), font-face, etc.
+ * base.css - reset and/or normalize styles, box-sizing definition, etc.
+ * utitity.css - utilities and helper classes with ability to override anything.
+ * layout.css - specific UI layouts.
+ * component.css - specific UI components.
+ *
+ *
+ * Naming Convention
+ *
+ * Create reusable components and code sharing in front-end development
+ *
+ * prefix    = (u) utility, (l) layout, (c) component.
+ * classname = preferred class name.
+ * modifier  = preferred modifier name.
+ * viewport  = (sm) small, (md) medium, (lg) large, (xl) extra large.
+ * int       = 0-9.
+ * others    = min, max.
+ */
 
-A methodology of writing code that’s scalable and easy to manipulate.
-
-* style.min.css - compiled/minified version of all the syles.
-* style.css - contains template information and style imports.
-* setting.css - contains custom properties (css variables), font-face, etc.
-* base.css - reset and/or normalize styles, box-sizing definition, etc.
-* utitity.css - utilities and helper classes with ability to override anything.
-* layout.css - specific UI layouts.
-* component.css - specific UI components.
-
-### Naming Convention
-
-Create reusable components and code sharing in front-end development
-
-.prefix-classname {...}
-.prefix-classname-int {...}
-.prefix-classname-viewport {...}
-.prefix-classname-viewport-int {...}
-.prefix-classname--modifier {...}
-.prefix-classname__child {...}
-.prefix-classname__child--modifier {...}
-.prefix-classname__child--viewport {...}
-.prefix-classname__child--viewport-int {...}
-
-prefix    = (u) utility, (l) layout, (c) component.
-classname = preferred class name.
-modifier  = preferred modifier name.
-viewport  = (sm) small, (md) medium, (lg) large, (xl) extra large.
-int       = 0-9.
-others    = min, max.
-
-
-### CSS Variables
-
-CSS variables offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser.
-
-```
-var(custom-name, value)
-
-```
-
-## Includes
-
-* EditorConfig  - https://editorconfig.org/
-* jQuery        - https://jquery.com/
-* Modernizr     - https://modernizr.com/
-* ObjectFit     - https://github.com/fregante/object-fit-images/
-* FontAwesome   - https://fontawesome.com)
-
-## License
-
-This project is licensed under the MIT License - see the "LICENSE.txt" file for details.
-*/
 
 @import "setting.css";
 @import "base.css";

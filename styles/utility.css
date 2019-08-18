@@ -3066,37 +3066,33 @@
   Color
 --------------------------------------------------*/
 
+.u-color-primary { color: var(--primary, #424242) !important; }
+.u-color-secondary { color: var(--secondary, #555555) !important; }
+.u-color-success { color: var(--success, #4CAF50) !important; }
+.u-color-warning { color: var(--warning, #FF9800) !important; }
+.u-color-danger { color: var(--danger, #E53935) !important; }
+.u-color-info { color: var(--info, #03A9F4) !important; }
+.u-color-light { color: var(--light, #FAFAFA) !important; }
+.u-color-dark { color: var(--dark, #424242) !important; }
+
 .u-color-white { color: #FFF !important; }
 .u-color-black { color: #000 !important; }
-
-.u-color-grey-50 { color: #FAFAFA !important; }
-.u-color-grey-100 { color: #F5F5F5 !important; }
-.u-color-grey-200 { color: #EEEEEE !important; }
-.u-color-grey-300 { color: #E0E0E0 !important; }
-.u-color-grey-400 { color: #BDBDBD !important; }
-.u-color-grey-500 { color: #999999 !important; }
-.u-color-grey-600 { color: #757575 !important; }
-.u-color-grey-700 { color: #616161 !important; }
-.u-color-grey-800 { color: #424242 !important; }
-.u-color-grey-900 { color: #212121 !important; }
 
 /*--------------------------------------------------
   Background
 --------------------------------------------------*/
 
+.u-background-primary { background-color: var(--primary, #424242) !important; }
+.u-background-secondary { background-color: var(--secondary, #555555) !important; }
+.u-background-success { background-color: var(--success, #4CAF50) !important; }
+.u-background-warning { background-color: var(--warning, #FF9800) !important; }
+.u-background-danger { background-color: var(--danger, #E53935) !important; }
+.u-background-info { background-color: var(--info, #03A9F4) !important; }
+.u-background-light { background-color: var(--light, #FAFAFA) !important; }
+.u-background-dark { background-color: var(--dark, #424242) !important; }
+
 .u-background-white { background-color: #FFF !important; }
 .u-background-black { background-color: #000 !important; }
-
-.u-background-grey-50 { background-color: #FAFAFA !important; }
-.u-background-grey-100 { background-color: #F5F5F5 !important; }
-.u-background-grey-200 { background-color: #EEEEEE !important; }
-.u-background-grey-300 { background-color: #E0E0E0 !important; }
-.u-background-grey-400 { background-color: #BDBDBD !important; }
-.u-background-grey-500 { background-color: #999999 !important; }
-.u-background-grey-600 { background-color: #757575 !important; }
-.u-background-grey-700 { background-color: #616161 !important; }
-.u-background-grey-800 { background-color: #424242 !important; }
-.u-background-grey-900 { background-color: #212121 !important; }
 
 /*--------------------------------------------------
   Parallax
