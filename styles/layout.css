@@ -65,6 +65,7 @@
   justify-content: space-between;
   width: 100%;
   min-width: 320px;
+  background-color: #424242;
   background-color: var(--primary, #424242);
   z-index: 9;
 }
@@ -98,6 +99,7 @@
 .l-site-header__navigation {
   width: 100%;
   max-height: 0;
+  background-color: #555;
   background-color: var(--secondary, #555);
   transition: all 120ms ease-in-out 60ms;
   overflow: hidden;

@@ -33,8 +33,8 @@
 html {
   min-width: 320px;
   color: #212121;
-  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-family: var(--font-family-sans-serif, "Noto Sans JP");
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-family-sans-serif, "Noto Sans");
   font-size: 62.5%;
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
@@ -290,5 +290,5 @@ textarea { overflow: auto; }
   color: #FFF;
   text-align: center;
   background-color: #E53935;
-  background-color: var(--danger);
+  background-color: var(--danger, #E53935);
 }
