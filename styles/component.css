@@ -55,7 +55,6 @@
 --------------------------------------------------*/
 
 .c-site-nav {
-  display: flex;
   list-style: none;
 }
 
@@ -79,18 +78,6 @@
 .c-site-nav__item a:hover,
 .c-site-nav__item--active a {
   background-color: #616161;
-}
-
-@media (min-width: 768px) {
-
-  .c-site-nav { padding: 0 20px; }
-
-}
-
-@media (max-width: 767px) {
-
-  .c-site-nav { flex-direction: column; }
-
 }
 
 /*--------------------------------------------------

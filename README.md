@@ -42,13 +42,9 @@ Samples:
   
 ```
 .u-flex {...}  
-.u-flex--wrap-no {...}  
-.u-flex--wrap-no-sm {...}  
-.u-flex__shrink-no {...}  
-.u-column-sm-12 {...}  
-.u-column-md-12 {...}  
-.u-column-lg-12 {...}  
-.u-column-xl-12 {...}
+.u-flex--wrp-no {...}  
+.u-flex__content {...}  
+.u-flex__shrink {...}  
 ```
   
 ### CSS Variables  
@@ -86,7 +82,9 @@ u-font-size {
 * u-float-xxx = floats element.  
 * u-flex = a flexbox.  
 * u-grid = a grid (experemental).  
-* u-column-xxx = sets column width.
+* u-width-xxx = sets width.
+* u-height-xxx = sets height.
+* u-cluster-gap-xxx = sets cluster gap.
 * u-gutter-xxx = adds margin.    
 * u-gap-xxx = adds padding.  
 * u-text-xxx = style for typoghrapy.  
@@ -98,6 +96,7 @@ u-font-size {
 * u-color-xxx = adds font color.
 * u-background-xxx = adds background style.  
 * u-parallax = adds parallax effect on image.
+* u-tab-link = tab content view.  
 * u-image-xxx = syle for images.  
   
 * You can check the [utility.css](styles/utility.css) for more details.

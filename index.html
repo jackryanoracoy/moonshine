@@ -4,13 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
 
-    <title>Front-end Template | This is for Development</title>
+    <title>Front-end Template | A Scalable Front End Template</title>
 
     <meta name="keywords" content="Template, Template, Template">
     <meta name="description" content="This is a front-end web development template, created by Jack Ryan Oracoy">
 
     <meta property="og:site_name" content="Front-end Template">
-    <meta property="og:title" content="Front-end Template | This is in Development">
+    <meta property="og:title" content="Front-end Template | A Scalable Front End Templatet">
     <meta property="og:image" content="A string of Unicode characters forming a valid URL having the http or https scheme.">
     <meta property="og:type" content="website">
     <meta property="og:description" content="This is a front-end web development template, created by Jack Ryan Oracoy">
@@ -56,44 +56,50 @@
     <![endif]-->
 
     <header class="l-site-header">
-      <div class="l-site-header__menu u-hidden-md-min">
-        <a class="c-site-menu" href="javascript:void(0)">
-        <span class="c-site-menu__box"><span class="c-site-menu__inner"></span></span></a>
-      </div><!-- End - menu -->
+      <div class="u-background-primary u-flex u-flex--jus-spbetween u-flex--alt-center u-gap-hor-md-20 u-gap-ver-md-10">
+        <div class="l-site-header__menu u-hidden-md-min">
+          <a class="c-site-menu" href="javascript:void(0)">
+          <span class="c-site-menu__box"><span class="c-site-menu__inner"></span></span></a>
+        </div><!-- End - menu -->
 
-      <div class="l-site-header__branding">
-        <h1 class="c-site-title"><a href="index.html">SITE TITLE</a></h1>
-      </div><!-- End - branding -->
+        <div class="l-site-header__branding">
+          <h1 class="c-site-title"><a href="index.html">SITE TITLE</a></h1>
+        </div><!-- End - branding -->
 
-      <div class="l-site-header__action u-hidden-md-max">
-        <a class="c-button c-button--white" href="#"><i class="fas fa-star"></i>&nbsp;CTA Button</a>
-      </div><!-- End - cta -->
+        <div class="l-site-header__action u-hidden-md-max">
+          <a class="c-button c-button--white" href="#"><i class="fas fa-star"></i>&nbsp;CTA Button</a>
+        </div><!-- End - cta -->
+      </div><!-- End - background -->
 
-      <nav class="l-site-header__navigation">
-        <ul class="c-site-nav">
-          <li class="c-site-nav__item c-site-nav__item--active"><a href="index.html">Home</a></li>
-          <li class="c-site-nav__item"><a href="#">About</a></li>
-          <li class="c-site-nav__item"><a href="#">Service</a></li>
-          <li class="c-site-nav__item"><a href="#">Contact</a></li>
-        </ul>
-      </nav><!-- End - navigation -->
+      <div class="u-background-secondary u-gap-hor-md-20">
+        <nav class="l-site-header__navigation">
+          <ul class="c-site-nav u-flex u-flex--col u-flex--row-md">
+            <li class="c-site-nav__item c-site-nav__item--active"><a href="index.html">Home</a></li>
+            <li class="c-site-nav__item"><a href="#">Link one</a></li>
+            <li class="c-site-nav__item"><a href="#">Link two</a></li>
+            <li class="c-site-nav__item"><a href="#">Link three</a></li>
+          </ul>
+        </nav><!-- End - navigation -->
+      </div><!-- End - background -->
     </header><!-- End - site-header -->
 
     <main class="l-site-main">
 
-      <div class="l-site-atf">
-        <div class="l-site-atf__content u-container">
-          <section class="l-section l-section--padding-narrow">
+      <div class="l-site-atf u-background-grey-200">
+        <div class="u-container u-flex u-flex--alt-center u-height-100">
+          <div class="u-flex__content-12">
+            <section class="l-section l-section--padding-narrow">
 
-            <h2 class="c-heading-above-the-fold u-text-center">ABOVE THE FOLD (ATF)</h2>
+              <h2 class="c-heading-above-the-fold u-text-center">ABOVE THE FOLD (ATF)</h2>
 
-          </section>
+            </section>
+          </div>
         </div>
       </div><!-- End - site-atf -->
 
       <article class="l-site-content">
 
-        <!-- Your <TITLE> here! This heading is for screen reader -->
+        <!-- This heading is for screen reader -->
         <h6 class="screen-reader-text">Front-end Template (Title For Screen Readers)</h6>
 
         <div class="u-container">
@@ -122,232 +128,14 @@
         <div class="u-container">
           <section class="l-section">
 
-            <h2 class="c-heading-section u-gutter-bot-50">Here are some samples</h2>
+            <h2 class="c-heading-section u-gutter-bot-50">Another Section</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
             pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
             vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
 
-            <article class="l-article">
-
-              <h3 class="c-heading-article u-gutter-bot-20">A Card Cluster Using Float</h3>
-
-              <!-- GUIDE NOTE: Using Float and Column -->
-
-              <div class="row u-column-gap-10 u-column-gap-md-20">
-
-                <div class="u-float-left u-column-12 u-column-md-4">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 4</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - float left -->
-
-                <div class="u-float-left u-column-12 u-column-md-4">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 5</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - float left -->
-
-                <div class="u-float-left u-column-12 u-column-md-4">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 6</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - float left -->
-              </div><!-- End - float -->
-
             </article><!-- End - article -->
-
-            <article class="l-article">
-
-              <h3 class="c-heading-article u-gutter-bot-20">A card cluster using flexbox (u-flex) and using width (u-column) for child items</h3>
-
-              <!-- GUIDE: using flexbox (u-flex) and using width (u-column) for child items -->
-
-              <div class="u-flex u-column-gap-10 u-column-gap-md-20">
-                <div class="u-column-12 u-column-sm-6 u-column-md-4 u-column-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 1</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                      Cum sociis natoque penatibus</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-column-12 u-column-sm-6 u-column-md-4 u-column-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 2</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-column-12 u-column-sm-6 u-column-md-4 u-column-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 3</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-column-12 u-column-sm-6 u-column-md-4 u-column-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 4</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-              </div><!-- End - flex -->
-
-            </article><!-- End - article-->
-
-            <article class="l-article">
-
-              <h3 class="c-heading-article u-gutter-bot-20">A card cluster using flexbox (u-flex) and flex-basis (u-flex__content) for child items.</h3>
-
-              <!-- GUIDE: Using flexbox (u-flex) and flex-basis (u-flex__content) for child items. -->
-
-              <div class="u-flex u-flex--wrap u-column-gap-10 u-column-gap-md-20">
-                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 1</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                      Cum sociis natoque penatibus</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 2</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 3</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-flex__content-12 u-flex__content-sm-6 u-flex__content-md-4 u-flex__content-lg-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 4</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-              </div><!-- End - flex -->
-
-            </article><!-- End - article-->
-
-            <article class="l-article">
-
-              <h3 class="c-heading-article u-gutter-bot-20">A card cluster using flexbox. Some use case below</h3>
-
-              <!-- GUIDE: Using flexbox. Some use case below -->
-
-              <div class="u-flex u-column-gap-10 u-column-gap-md-20">
-                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-md-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 1</h4>
-                      <p>"No Shrink Item" - Lorem ipsum dolor sit amet</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-md-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 2</h4>
-                      <p>"Shrink Item/Auto" - Lorem ipsum dolor sit amet</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-md-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 3</h4>
-                      <p>"Shrink Item" - Lorem ipsum dolor sit amet</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-flex__content-12 u-flex__content-sm-4 u-flex__content-md-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 4</h4>
-                      <p>"Shrink Item" - Lorem ipsum dolor sit amet</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-                <div class="u-flex__content-12 u-flex__content-sm u-flex__content-md-3">
-                  <div class="c-card">
-                    <div class="c-card__content">
-
-                      <h4 class="c-heading-style-1 u-gutter-bot-10">Card 5</h4>
-                      <p>"Grow Item (sm)/Shrink Item (md)" - Lorem ipsum dolor sit amet</p>
-
-                    </div><!-- End - card content -->
-                  </div><!-- End - card -->
-                </div><!-- End - flex content -->
-
-            </article><!-- End - article-->
 
           </section><!-- End - section -->
         </div><!-- End - site-container -->
@@ -358,21 +146,21 @@
 
 
     <footer class="l-site-footer">
-      <div class="l-site-footer__ext-footer">
+      <div class="u-background-grey-300">
         <div class="u-container">
           <section class="l-section l-section--padding-narrow">
 
-            <h5 class="u-text-center u-color-white">EXTENDED FOOTER</h5>
+            <h5 class="u-text-center">EXTENDED FOOTER</h5>
 
           </section><!-- End - section -->
         </div><!-- End - site-container -->
       </div><!-- End - ext-footer -->
-      <div class="l-site-footer__main-footer">
+      <div class="u-background-grey-500">
         <div class="u-container">
           <section class="l-section l-section--padding-narrow">
 
-            <h5 class="u-text-center u-color-white">SITE FOOTER</h5>
-            <p class="u-text-center u-color-white u-font-small u-font-medium-md">&copy; 2019 - Front-end Template</p>
+            <h5 class="u-text-center">SITE FOOTER</h5>
+            <p class="u-text-center u-font-small u-font-medium-md">&copy; 2019 - Front-end Template</p>
 
           </section><!-- End - section -->
         </div><!-- End - site-container -->

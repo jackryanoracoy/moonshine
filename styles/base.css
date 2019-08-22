@@ -64,7 +64,7 @@ body:not(.tab-used) *:focus { outline: none; }
 body {
   min-width: inherit;
   color: inherit;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: inherit;
 }
 
@@ -84,11 +84,11 @@ body ::-webkit-scrollbar-thumb {
   Links
 --------------------------------------------------*/
 
-a { color: #186096; }
+a { color: #2196F3; }
 
-a:visited { color: #FF5722; }
+a:visited { color: #0D47A1; }
 
-a:hover, a:active, a:focus { color: #424E5B; }
+a:hover, a:active, a:focus { color: #2962FF; }
 
 @media print { a, a:visited { text-decoration: underline;  } }
 
