@@ -33,7 +33,8 @@
 html {
   min-width: 320px;
   color: #212121;
-  font-family: var(--font-family-sans-serif, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-family-sans-serif, "Noto Sans JP");
   font-size: 62.5%;
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
@@ -63,7 +64,7 @@ body:not(.tab-used) *:focus { outline: none; }
 body {
   min-width: inherit;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: inherit;
 }
 
@@ -83,11 +84,11 @@ body ::-webkit-scrollbar-thumb {
   Links
 --------------------------------------------------*/
 
-a { color: #2196F3; }
+a { color: #186096; }
 
 a:visited { color: #FF5722; }
 
-a:hover, a:active, a:focus { color: #4CAF50; }
+a:hover, a:active, a:focus { color: #424E5B; }
 
 @media print { a, a:visited { text-decoration: underline;  } }
 
@@ -97,7 +98,6 @@ a:hover, a:active, a:focus { color: #4CAF50; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  line-height: 1.15;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -109,7 +109,8 @@ strong { font-weight: bolder; }
 small { font-size: 75%; }
 
 pre {
-  font-family: var(--font-family-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-family-monospace, monospace);
   font-size: 1.4rem;
 }
 
@@ -155,7 +156,8 @@ abbr[title] {
 --------------------------------------------------*/
 
 code, kbd, samp {
-  font-family: var(--font-family-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-family-monospace, monospace);
   font-size: 1em;
 }
 
@@ -284,7 +286,9 @@ textarea { overflow: auto; }
 --------------------------------------------------*/
 
 .browser-notice {
-  background: #424242;
-  color: #FFF;
   padding: 20px;
+  color: #FFF;
+  text-align: center;
+  background-color: #E53935;
+  background-color: var(--danger);
 }
