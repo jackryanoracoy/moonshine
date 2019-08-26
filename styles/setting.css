@@ -141,8 +141,8 @@
 :root {
 
   /* Color */
-  --primary: #212121;
-  --secondary: #424242;
+  --primary: #263238;
+  --secondary: #37474F;
   --success: #4CAF50;
   --warning: #FF9800;
   --danger: #E53935;
@@ -181,7 +181,7 @@
   --grey-900: #212121;
 
   /* Transition */
-  --transition: all 300ms ease-in-out;
+  --transition: all 300ms ease-in-out 120ms;
 
   /* Breakpoint */
   --breakpoint-sm: 576px;

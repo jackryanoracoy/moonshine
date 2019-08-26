@@ -3678,13 +3678,13 @@
 --------------------------------------------------*/
 
 .u-color-primary {
-  color: #424242 !important;
-  color: var(--primary, #424242) !important;
+  color: #263238 !important;
+  color: var(--primary, #263238) !important;
 }
 
 .u-color-secondary {
-  color: #555555 !important;
-  color: var(--secondary, #555555) !important;
+  color: #37474F !important;
+  color: var(--secondary, #37474F) !important;
 }
 
 .u-color-success {
@@ -3717,19 +3717,59 @@
   color: var(--dark, #424242) !important;
 }
 
+
+.u-color-grey-50 {
+  color: #FAFAFA !important;
+  color: var(--grey-50, #FAFAFA) !important;
+}
+
+.u-color-grey-100 {
+  color: #F5F5F5 !important;
+  color: var(--grey-100, #F5F5F5) !important;
+}
+
+.u-color-grey-200 {
+  color: #EEEEEE !important;
+  color: var(--grey-200, #EEEEEE) !important;
+}
+
+.u-color-grey-300 {
+  color: #E0E0E0 !important;
+  color: var(--grey-300, #E0E0E0) !important;
+}
+
+.u-color-grey-400 {
+  color: #BDBDBD !important;
+  color: var(--grey-400, #BDBDBD) !important;
+}
+
+.u-color-grey-500 {
+  color: #9E9E9E !important;
+  color: var(--grey-500, #9E9E9E) !important;
+}
+
+.u-color-grey-600 {
+  color: #757575 !important;
+  color: var(--grey-600, #757575) !important;
+}
+
+.u-color-grey-700 {
+  color: #616161 !important;
+  color: var(--grey-700, #616161) !important;
+}
+
+.u-color-grey-800 {
+  color: #424242 !important;
+  color: var(--grey-800, #212121) !important;
+}
+
+.u-color-grey-900 {
+  color: #212121 !important;
+  color: var(--grey-900, #212121) !important;
+}
+
 .u-color-white { color: #FFF !important; }
 .u-color-black { color: #000 !important; }
-
-.u-color-grey-50 { color: #FAFAFA !important; }
-.u-color-grey-100 { color: #F5F5F5 !important; }
-.u-color-grey-200 { color: #EEEEEE !important; }
-.u-color-grey-300 { color: #E0E0E0 !important; }
-.u-color-grey-400 { color: #BDBDBD !important; }
-.u-color-grey-500 { color: #999999 !important; }
-.u-color-grey-600 { color: #757575 !important; }
-.u-color-grey-700 { color: #616161 !important; }
-.u-color-grey-800 { color: #424242 !important; }
-.u-color-grey-900 { color: #212121 !important; }
 
 
 /*--------------------------------------------------
@@ -3737,13 +3777,13 @@
 --------------------------------------------------*/
 
 .u-background-primary {
-  background-color: #212121 !important;
-  background-color: var(--primary, #212121) !important;
+  background-color: #263238 !important;
+  background-color: var(--primary, #263238) !important;
 }
 
 .u-background-secondary {
-  background-color: #424242 !important;
-  background-color: var(--secondary, #424242) !important;
+  background-color: #37474F !important;
+  background-color: var(--secondary, #37474F) !important;
 }
 
 .u-background-success {
