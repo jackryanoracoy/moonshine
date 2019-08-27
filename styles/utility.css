@@ -15,6 +15,16 @@
   word-wrap: normal !important;
 }
 
+.screen-reader-text--focusable:active,
+.screen-reader-text--focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
 /*--------------------------------------------------
   Clearfix, Group, Row
 --------------------------------------------------*/
@@ -35,7 +45,7 @@
   margin: 0 auto;
 }
 
-.u-container--full { max-width: 100% !important; padding: 0 !important; }
+.u-container--full { max-width: 100% !important; }
 
 @media (min-width: 576px) { .u-container { max-width: 540px; } }
 @media (min-width: 768px) { .u-container { max-width: 720px; } }

@@ -27,15 +27,18 @@ int       = 0-9.
 others    = min, max.  
   
 ```
-.prefix-classname {...}  
-.prefix-classname-int {...}  
-.prefix-classname-viewport {...}  
+.prefix-classname {...}
+.prefix-classname-int {...}
+.prefix-classname-viewport {...}
 .prefix-classname-viewport-int {...}
-.prefix-classname--modifier {...}  
-.prefix-classname__child {...}  
-.prefix-classname__child--modifier {...}  
-.prefix-classname__child--viewport {...}    
-.prefix-classname__child--viewport-int {...}
+.prefix-classname--modifier {...}
+.prefix-classname--modifier-int {...}
+.prefix-classname--modifier-viewport {...}
+.prefix-classname--modifier-viewport-int {...}
+.prefix-classname__child {...}
+.prefix-classname__child-int {...}
+.prefix-classname__child-viewport {...}
+.prefix-classname__child-viewport-int {...}
 ```  
   
 Samples:  
