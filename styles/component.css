@@ -127,11 +127,12 @@
   border-radius: 20px;
   background-color: #263238;
   background-color: var(--primary, #263238);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   white-space: nowrap;
 }
 
 .c-button:hover {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 
 .c-button--large {
@@ -239,8 +240,7 @@
 --------------------------------------------------*/
 
 .c-heading-above-the-fold,
-.c-heading-section,
-.c-heading-article {
+.c-heading-section {
   font-family: "Open Sans Condensed", sans-serif;
   font-family: var(--font-family-condensed, "Open Sans Condensed");
 }
@@ -249,21 +249,20 @@
   color: #263238;
   color: var(--primary, #263238);
   font-size: 2.4rem;
+  letter-spacing: 0.5rem;
 }
 
 .c-heading-section {
-  padding: 0 0 20px;
-  color: #263238;
-  color: var(--primary, #263238);
-  font-size: 1.8rem;
+  color: #212121;
+  color: var(--grey-700, #212121);
+  font-size: 2.4rem;
   text-transform: uppercase;
-  border-bottom: 2px solid #263238;
-  border-bottom: 2px solid var(--primary, #263238);
+  letter-spacing: 0.2rem;
 }
 
 .c-heading-article {
   color: #37474F;
-  color: var(--secondary, #37474F);
+  color: var(--grey-900, #37474F);
   font-size: 1.6rem;
 }
 
@@ -274,8 +273,7 @@
   }
 
   .c-heading-section {
-    padding: 0 0 20px;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 
   .c-heading-article {

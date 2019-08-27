@@ -44,14 +44,10 @@ $(document).ready(function() {
 $(document).ready(function($) {
   $('#font-large').click(function() {
     $("html").css("font-size", "75%");
-    $("#font-large").addClass("c-button--secondary");
-    $("#font-normal").removeClass("c-button--secondary");
   });
 
   $('#font-normal').click(function() {
     $("html").css("font-size", "62.5%");
-    $("#font-normal").addClass("c-button--secondary");
-    $("#font-large").removeClass("c-button--secondary");
   });
 });
 
@@ -102,6 +98,7 @@ $('.u-parallax__image').each(function() {
       transform: 'translate(-50%, -' + imgPercent + '%)'
     });
   }
+
   $(document).on({
     scroll: function () {
       parallaxImg();

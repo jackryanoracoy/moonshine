@@ -3487,6 +3487,115 @@
 }
 
 /*--------------------------------------------------
+  Bordered
+--------------------------------------------------*/
+
+.u-bordered {
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #E0E0E0;
+}
+
+.u-bordered--top { border-width: 1px 0 0 0; }
+.u-bordered--right { border-width: 0 1px 0 0; }
+.u-bordered--bottom { border-width: 0 0 1px 0; }
+.u-bordered--left { border-width: 0 0 0 1px; }
+.u-bordered--none { border-width: 0; }
+
+.u-bordered--hidden { border-style: hidden; }
+.u-bordered--dashed { border-style: dashed; }
+.u-bordered--dotted { border-style: dotted; }
+.u-bordered--double { border-style: double; }
+.u-bordered--groove { border-style: groove; }
+.u-bordered--outset { border-style: outset; }
+.u-bordered--inset { border-style: inset; }
+.u-bordered--ridge { border-style: ridge; }
+.u-bordered--solid { border-style: solid; }
+
+.u-bordered--seq:last-of-type { border: none !important; }
+
+@media (min-width: 576px) {
+
+  .u-bordered--top-sm { border-width: 1px 0 0 0; }
+  .u-bordered--right-sm { border-width: 0 1px 0 0; }
+  .u-bordered--bottom-sm { border-width: 0 0 1px 0; }
+  .u-bordered--left-sm { border-width: 0 0 0 1px; }
+  .u-bordered--none-sm { border: none !important; }
+
+  .u-bordered--hidden-sm { border-style: hidden; }
+  .u-bordered--dashed-sm { border-style: dashed; }
+  .u-bordered--dotted-sm { border-style: dotted; }
+  .u-bordered--double-sm { border-style: double; }
+  .u-bordered--groove-sm { border-style: groove; }
+  .u-bordered--outset-sm { border-style: outset; }
+  .u-bordered--inset-sm { border-style: inset; }
+  .u-bordered--ridge-sm { border-style: ridge; }
+  .u-bordered--solid-sm { border-style: solid; }
+
+}
+
+@media (min-width: 768px) {
+
+  .u-bordered--top-md { border-width: 1px 0 0 0; }
+  .u-bordered--right-md { border-width: 0 1px 0 0; }
+  .u-bordered--bottom-md { border-width: 0 0 1px 0; }
+  .u-bordered--left-md { border-width: 0 0 0 1px; }
+  .u-bordered--none-md { border: none !important; }
+
+  .u-bordered--hidden-md { border-style: hidden; }
+  .u-bordered--dashed-md { border-style: dashed; }
+  .u-bordered--dotted-md { border-style: dotted; }
+  .u-bordered--double-md { border-style: double; }
+  .u-bordered--groove-md { border-style: groove; }
+  .u-bordered--outset-md { border-style: outset; }
+  .u-bordered--inset-md { border-style: inset; }
+  .u-bordered--ridge-md { border-style: ridge; }
+  .u-bordered--solid-md { border-style: solid; }
+
+}
+
+@media (min-width: 992px) {
+
+  .u-bordered--top-lg { border-width: 1px 0 0 0; }
+  .u-bordered--right-lg { border-width: 0 1px 0 0; }
+  .u-bordered--bottom-lg { border-width: 0 0 1px 0; }
+  .u-bordered--left-lg { border-width: 0 0 0 1px; }
+  .u-bordered--none-lg { border: none !important; }
+
+  .u-bordered--hidden-lg { border-style: hidden; }
+  .u-bordered--dashed-lg { border-style: dashed; }
+  .u-bordered--dotted-lg { border-style: dotted; }
+  .u-bordered--double-lg { border-style: double; }
+  .u-bordered--groove-lg { border-style: groove; }
+  .u-bordered--outset-lg { border-style: outset; }
+  .u-bordered--inset-lg { border-style: inset; }
+  .u-bordered--ridge-lg { border-style: ridge; }
+  .u-bordered--solid-lg { border-style: solid; }
+
+}
+
+@media (min-width: 1200px) {
+
+  .u-bordered--top-xl { border-width: 1px 0 0 0; }
+  .u-bordered--right-xl { border-width: 0 1px 0 0; }
+  .u-bordered--bottom-xl { border-width: 0 0 1px 0; }
+  .u-bordered--left-xl { border-width: 0 0 0 1px; }
+  .u-bordered--none-xl { border: none !important; }
+
+  .u-bordered--hidden-xl { border-style: hidden; }
+  .u-bordered--dashed-xl { border-style: dashed; }
+  .u-bordered--dotted-xl { border-style: dotted; }
+  .u-bordered--double-xl { border-style: double; }
+  .u-bordered--groove-xl { border-style: groove; }
+  .u-bordered--outset-xl { border-style: outset; }
+  .u-bordered--inset-xl { border-style: inset; }
+  .u-bordered--ridge-xl { border-style: ridge; }
+  .u-bordered--solid-xl { border-style: solid; }
+
+}
+
+/*--------------------------------------------------
   List
 --------------------------------------------------*/
 
@@ -3941,3 +4050,4 @@
 
 .u-image-fluid { max-width: 100%; }
 .u-image-block { display: block; }
+
