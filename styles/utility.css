@@ -45,7 +45,7 @@
   margin: 0 auto;
 }
 
-.u-container--full { max-width: 100% !important; }
+.u-container--fluid { max-width: 100% !important; }
 
 @media (min-width: 576px) { .u-container { max-width: 540px; } }
 @media (min-width: 768px) { .u-container { max-width: 720px; } }
