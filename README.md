@@ -1,23 +1,97 @@
-# Front-end Template
+# Moonshine
   
-A Scalable Front End Template.
+Scalable and Maintainable Architecture.
   
+  
+## Getting Started  
+
+This is a soft launch of Moonshine, Documentation are not ready yet. Sorry for the inconvenience...
+
+### Content  
+  
+Discover what’s included in the package. Once downloaded, unzip the compressed folder and you’ll see something similar to this:  
+  
+```
+moonshine/
+├── addon/
+│   └── fontawesome/
+├── assets/
+│   ├── app-icon/
+│   ├── fonts/
+│   └── image/
+├── scripts/
+│   ├── jquery-3.4.1.min.js
+│   ├── modernizr-3.7.1.min.js
+│   ├── object-fit.min.js
+│   ├── scripts.js
+│   └── script.min.js
+├── styles/
+│   ├── base.css
+│   ├── component.css
+│   ├── layout.css
+│   ├── setting.map
+│   ├── style.css
+│   └── style.min.css
+├── 404.html
+├── boilerplate.html
+├── browserconfig.xml
+├── index.html
+├── manifrest.json
+├── robots.txt
+└── service-worker.js
+```
+  
+### Accessibility  
+  
+Content which should be visually hidden,
+but remain accessible to assistive technologies such as screen readers, can be styled using the .sr-only class.
+This will ensure that the control becomes visible once focused (for sighted keyboard users).  
+  
+```
+<p class="text-danger">
+  <span class="sr-only">Danger: </span>
+  This action is not reversible
+</p>
+```
+  
+For visually hidden interactive controls, such as traditional “skip” links, .sr-only can be combined with the .sr-only--focusable class. This will ensure that the control becomes visible once focused (for sighted keyboard users).  
+  
+```
+<a class="sr-only sr-only--focusable" href="#site-content">Skip to main content</a>
+```
+  
+Note: To extend template's accessibility please see [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/), [WCAG 2.0](https://www.w3.org/TR/WCAG20/) and similar accessibility standards and requirements.  
   
 ## CSS Methodologies  
   
-A methodology of writing code that’s scalable and easy to manipulate.  
-
-* style.min.css = compiled/minified version of all the syles.  
-* style.css = contains template information and style imports.  
-* setting.css = contains custom properties (css variables), font-face, etc.
-* base.css = reset and/or normalize styles, box-sizing definition, etc.  
-* utitity.css = utilities and helper classes with ability to override anything.  
-* layout.css = specific UI layouts.  
-* component.css = specific UI components.   
+Organize project files that can better deal with CSS specifics like global namespace, cascade and selectors specificity.  
+Shares the same methodology of some popular methodologies like ITCSS, BEM, SMACSS and OOCSS.  
+This approach is to ensure everyone who participates in the development of a website works with a single codebase and speaks the same language.  
+  
+### Separated CSS codebase  
+  
+Separate CSS codebase to several sections, similar below:  
+  
+setting.css - contains custom properties (css variables), font-face, etc.  
+base.css - reset and/or normalize styles, box-sizing definition, etc.  
+utitity.css - utilities and helper classes with ability to override anything.  
+layout.css - specific UI layouts.  
+component.css - specific UI components.  
+  
+```
+moonshine/
+└── styles/
+    ├── base.css
+    ├── component.css
+    ├── layout.css
+    ├── setting.map
+    ├── style.css
+    └── style.min.css
+```  
   
 ### Naming Convention 
-    
-Create reusable components and code sharing in front-end development  
+  
+Highly useful, powerful, and simple naming convention that makes your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit, and a lot more strict.  
   
 prefix    = (u) utility, (l) layout, (c) component.  
 classname = preferred class name.  
@@ -44,10 +118,16 @@ others    = min, max.
 Samples:  
   
 ```
-.u-flex {...}  
-.u-flex--wrp-no {...}  
-.u-flex__content {...}  
-.u-flex__shrink {...}  
+.l-flex {...}
+.l-flex--wrp-no {...}
+.l-flex--wrp-no-md {...}
+.l-flex__content {...}
+.l-flex__content-12 {...}
+.l-flex__content-md {...}
+.l-flex__content-md-12 {...}
+.u-gutter-top-10 {...}
+.u-gutter-top-sm-20 {...}
+.u-gutter-top-md-50 {...} 
 ```
   
 ### CSS Variables  
@@ -102,8 +182,6 @@ u-font-size {
 * u-tab-link = tab content view.  
 * u-image-xxx = syle for images.  
   
-* You can check the [utility.css](styles/utility.css) for more details.
-  
 Samples:  
   
 ```
@@ -114,6 +192,8 @@ Samples:
   </div>
 </div>
 ```
+  
+Note: You can check the [utility.css](styles/utility.css) for more details.  
   
   
 ## Includes  

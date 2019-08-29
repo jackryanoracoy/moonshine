@@ -1,17 +1,17 @@
 // This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
 
-const CACHE = "front-end-template-offline-page";
+const CACHE = "moonshine-offline-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 const offlineFallbackPage = "ToDo-replace-this-name.html";
 
 // Install stage sets up the offline page in the cache and opens a new cache
 self.addEventListener("install", function (event) {
-  console.log("[Front-end Template] Install Event processing");
+  console.log("[Moonshine] Install Event processing");
 
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      console.log("[Front-end Template] Cached offline page during install");
+      console.log("[Moonshine] Cached offline page during install");
 
       if (offlineFallbackPage === "ToDo-replace-this-name.html") {
         return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
@@ -27,7 +27,7 @@ self.addEventListener("fetch", function (event) {
   event.respondWith(
     fetch(event.request)
     .then(function (response) {
-      console.log("[Front-end Template] add page to offline cache: " + response.url);
+      console.log("[Moonshine] add page to offline cache: " + response.url);
 
       // If request was success, add or update it in the cache
       event.waitUntil(updateCache(event.request, response.clone()));
@@ -35,7 +35,7 @@ self.addEventListener("fetch", function (event) {
       return response;
     })
     .catch(function (error) {
-      console.log("[Front-end Template] Network request Failed. Serving content from cache: " + error);
+      console.log("[Moonshine] Network request Failed. Serving content from cache: " + error);
       return fromCache(event.request);
     })
   );

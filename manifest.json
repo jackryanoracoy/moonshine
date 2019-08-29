@@ -1,6 +1,6 @@
 {
- "short_name": "Front-end Template",
- "name": "Jack Ryan's Template | This is for Development",
+ "short_name": "Moonshine",
+ "name": "Moonshine | Scalable and Maintainable Architecture",
  "icons": [
   {
    "src": "assets/app-icon/android-icon-36x36.png",
@@ -40,7 +40,7 @@
   }
  ],
  "start_url": "index.html",
- "background_color": "#212121",
+ "background_color": "#263238",
  "display": "standalone",
- "theme_color": "#424242"
+ "theme_color": "#263238"
 }
