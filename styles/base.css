@@ -1,3 +1,5 @@
+@-ms-viewport { width: device-width; }
+
 /*--------------------------------------------------
   Reset
 --------------------------------------------------*/
@@ -47,8 +49,6 @@ html {
   box-sizing: border-box;
 }
 
-@-ms-viewport { width: device-width; }
-
 /*--------------------------------------------------
   Outline
 --------------------------------------------------*/
@@ -69,9 +69,9 @@ body {
 }
 
 body ::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
-  background-color: #F5F5F5;
+  width: 4px;
+  height: 4px;
+  background-color: #E0E0E0;
 }
 
 body ::-webkit-scrollbar-thumb {
@@ -281,14 +281,3 @@ textarea { overflow: auto; }
 
 [hidden] { display: none; }
 
-/*--------------------------------------------------
-  Browser Upgrade
---------------------------------------------------*/
-
-.browser-notice {
-  padding: 20px;
-  color: #FFF;
-  text-align: center;
-  background-color: #E53935;
-  background-color: var(--danger, #E53935);
-}
