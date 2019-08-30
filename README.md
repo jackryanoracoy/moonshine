@@ -18,7 +18,7 @@ moonshine/
 ├── assets/
 │   ├── app-icon/
 │   ├── fonts/
-│   └── image/
+│   └── images/
 ├── scripts/
 │   ├── jquery-3.4.1.min.js
 │   ├── modernizr-3.7.1.min.js
@@ -29,9 +29,8 @@ moonshine/
 │   ├── base.css
 │   ├── component.css
 │   ├── layout.css
-│   ├── setting.map
-│   ├── style.css
-│   └── style.min.css
+│   ├── setting.css
+│   └── style.css
 ├── 404.html
 ├── boilerplate.html
 ├── browserconfig.xml
@@ -85,8 +84,7 @@ moonshine/
     ├── component.css
     ├── layout.css
     ├── setting.map
-    ├── style.css
-    └── style.min.css
+    └── style.css
 ```  
   
 ### Naming Convention 

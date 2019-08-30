@@ -16,15 +16,15 @@ $(document).ready(function($) {
     setTimeout(function() {
       var scroll = $(window).scrollTop();
       if (scroll > lastScroll + 10) {
-        $(".l-site-header").removeClass("l-site-header--show");
+        $(".l-site-header").removeClass("js-show");
       } else if (scroll < lastScroll - 10) {
-        $(".l-site-header").addClass("l-site-header--show");
+        $(".l-site-header").addClass("js-show");
       }
 
       if (scroll >= 100) {
-        $(".l-site-header").addClass("l-site-header--active");
+        $(".l-site-header").addClass("js-active");
       } else {
-        $(".l-site-header").removeClass("l-site-header--active");
+        $(".l-site-header").removeClass("js-active");
       } lastScroll = scroll;
     }, 300);
   });
@@ -56,9 +56,9 @@ $(document).ready(function($) {
 // Toggle class on click
 $(document).ready(function($) {
   $('.c-site-menu').click(function() {
-    $('.c-site-menu').stop().toggleClass('c-site-menu--active');
-    $('.l-site-header').stop().toggleClass('l-site-header--menu-opened');
-    $('.l-site-header__navigation').stop().toggleClass('l-site-header__navigation--show');
+    $('.c-site-menu').stop().toggleClass('js-active');
+    $('.l-site-header').stop().toggleClass('js-menu-opened');
+    $('.l-site-header__navigation').stop().toggleClass('js-show');
   });
 });
 
@@ -72,7 +72,7 @@ function handleFirstTab(e) {
 window.addEventListener('keydown', handleFirstTab);
 
 // Parallax
-$('.u-parallax__image').each(function() {
+$('.l-parallax__image').each(function() {
   var img = $(this);
   var imgParent = $(this).parent();
   function parallaxImg () {
@@ -113,13 +113,13 @@ $('.u-parallax__image').each(function() {
 // Tabs
 $(document).ready(function() {
 
-	$('.u-tab-link li').click(function() {
+	$('.c-tab-link li').click(function() {
 		var tab_id = $(this).attr('data-tab');
 
-		$('.u-tab-link li').removeClass('current');
-		$('.u-tab-content').removeClass('current');
+		$('.c-tab-link li').removeClass('js-current');
+		$('.c-tab-content').removeClass('js-current');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
+		$(this).addClass('js-current');
+		$("#"+tab_id).addClass('js-current');
 	})
 });

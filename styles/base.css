@@ -64,7 +64,7 @@ body:not(.tab-used) *:focus { outline: none; }
 body {
   min-width: inherit;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: inherit;
 }
 
@@ -78,17 +78,23 @@ body ::-webkit-scrollbar-thumb {
   background-color: #BDBDBD;
 }
 
+@media (min-width: 768px) { body { font-size: 1.5rem; } }
+
 @media print { body { font-family: inherit; width: 100%; } }
 
 /*--------------------------------------------------
   Links
 --------------------------------------------------*/
 
-a { color: #2196F3; }
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
 
-a:visited { color: #0D47A1; }
-
-a:hover, a:active, a:focus { color: #2962FF; }
+a:hover, a:visited, a:active, a:focus {
+  color: #2962FF;
+  text-decoration: underline;
+}
 
 @media print { a, a:visited { text-decoration: underline;  } }
 
