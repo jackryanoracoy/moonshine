@@ -79,6 +79,7 @@
             <li class="c-site-nav__item"><a href="#layouts">Layouts</a></li>
             <li class="c-site-nav__item"><a href="#components">Components</a></li>
             <li class="c-site-nav__item"><a href="#utilities">Utilities</a></li>
+            <li class="c-site-nav__item"><a href="#others">Others</a></li>
           </ul>
         </nav><!-- End - navigation -->
 
@@ -126,13 +127,11 @@
 
               <h2 class="c-heading-section u-mar-bot-20 u-mar-bot-md-50">Getting Started</h2>
 
-              <p class="u-bordered u-bordered--bottom u-pad-bot-20 u-pad-bot-md-50">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-              Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-              In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-              Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-              Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+              <p class="u-bordered u-bordered--bottom u-pad-bot-20 u-pad-bot-md-50"><strong>Get started with Moonshine</strong>, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.
+              <br>Moonshine helps you build not only fast but scalable and maintainable web apps or sites. With Moonshine you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...
+              <br>
+              <br>Ready to kick-start your project using Moonshine? <a href="https://github.com/jackryanoracoy/moonshine/archive/1.4.zip">Download Moonshine package</a> or <a href="https://github.com/jackryanoracoy/moonshine/releases">check Moonshine releases</a>.
+              <br>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Or you can use our <code class="u-color-danger">boilerplate.html</code> included in the package.</p>
 
               <div class="l-flex l-gap-20 l-gap-md-40">
                 <div class="l-flex__content-12 l-flex__content-md-9 l-flex__content-lg-10 l-gap__item">
@@ -162,6 +161,10 @@
                       │   ├── layout.css
                       │   ├── setting.css
                       │   └── style.css
+                      ├── .editorconfig
+                      ├── .gitattributes
+                      ├── .gitignore
+                      ├── .htaccess
                       ├── 404.html
                       ├── boilerplate.html
                       ├── browserconfig.xml
@@ -179,13 +182,92 @@
 
                     <h3 class="c-heading-article u-mar-bot-20 u-mar-bot-md-40">Theming</h3>
 
-                    <p class="u-mar-bot-20 u-mar-bot-md-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <p class="u-mar-bot-20 u-mar-bot-md-40">Customize Moonshine with CSS variables for global style preferences for easy theming and component changes.
+                    <br>Here are the CSS variables we include (note that the <code class="u-color-warning">:root</code> is required). Located at <code class="u-color-warning">setting.css</code> file.</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="c-highlight">
+                      <pre><code>
+                      :root {
+
+                        /* Color */
+                        --primary: #263238;
+                        --secondary: #37474F;
+                        --success: #4CAF50;
+                        --warning: #FF5722;
+                        --danger: #F44336;
+                        --info: #2196F3;
+                        --light: #FAFAFA;
+                        --dark: #212121;
+
+                        --red: #F44336;
+                        --pink: #E91E63;
+                        --purple: #9C27B0;
+                        --deep-purple: #673AB7;
+                        --indigo: #3F51B5;
+                        --blue: #2196F3;
+                        --light-blue: #03A9F4;
+                        --cyan: #00BCD4;
+                        --teal: #009688;
+                        --green: #4CAF50;
+                        --light-green: #8BC34A;
+                        --lime: #CDDC39;
+                        --yellow: #FFEB3B;
+                        --amber: #FFC107;
+                        --orange: #FF9800;
+                        --deep-orange: #FF5722;
+                        --brown: #795548;
+                        --blue-grey: #607D8B;
+
+                        --grey-50: #FAFAFA;
+                        --grey-100: #F5F5F5;
+                        --grey-200: #EEEEEE;
+                        --grey-300: #E0E0E0;
+                        --grey-400: #BDBDBD;
+                        --grey-500: #9E9E9E;
+                        --grey-600: #757575;
+                        --grey-700: #616161;
+                        --grey-800: #424242;
+                        --grey-900: #212121;
+
+                        /* Transition */
+                        --transition: all 300ms ease-in-out 120ms;
+
+                        /* font-family */
+                        --font-family-custom-condensed: "Open Sans Condensed", sans-serif;
+                        --font-family-custom-sans-serif: "Open Sans", sans-serif;
+                        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+                      }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
+
+                  <article id="breakpoints" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bot-20 u-mar-bot-md-40">Breakpoints</h3>
+
+                    <p class="u-mar-bot-20 u-mar-bot-md-40">Moonshine use a handful of media queries to create sensible breakpoints for layouts and interfaces.
+                    <br>These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
+
+                    <div class="c-highlight">
+                      <pre><code>
+                      // Small devices (576px and up)
+                      @media (min-width: 576px) {...}
+
+                      // Medium devices (768px and up)
+                      @media (min-width: 768px) {...}
+
+                      // Large devices (992px and up)
+                      @media (min-width: 992px) {...}
+
+                      // Extra large devices (1200px and up)
+                      @media (min-width: 1200px) {...}
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
 
                   </article><!-- End - article -->
 
@@ -194,7 +276,7 @@
                     <h3 class="c-heading-article u-mar-bot-20 u-mar-bot-md-40">Accessibility</h3>
 
                     <p class="u-mar-bot-20 u-mar-bot-md-40">Content which should be visually hidden,
-                    but remain accessible to assistive technologies such as screen readers, can be styled using the <code class="u-color-warning">.sr-only</code> class.
+                    but remain accessible to assistive technologies such as screen readers, can be styled using the <code class="u-color-danger">.sr-only</code> class.
                     This will ensure that the control becomes visible once focused (for sighted keyboard users).</p>
 
                     <div class="c-highlight u-mar-bot-20 u-mar-bot-md-40">
@@ -208,7 +290,7 @@
                     </div>
 
                     <p class="u-mar-bot-20 u-mar-bot-md-40">For visually hidden interactive controls, such as traditional “skip” links,
-                    <code class="u-color-warning">.sr-only</code> can be combined with the <code class="u-color-warning">.sr-only--focusable</code> class.
+                    <code class="u-color-danger">.sr-only</code> can be combined with the <code class="u-color-danger">.sr-only--focusable</code> class.
                     This will ensure that the control becomes visible once focused (for sighted keyboard users).</p>
 
                     <div class="c-highlight u-mar-bot-20 u-mar-bot-md-40">
@@ -231,6 +313,7 @@
                     <ul class="u-list u-list--none u-font-medium u-color-grey-600">
                       <li><a class="u-color-grey-600" href="#content"><i class="fas fa-angle-right"></i>&nbsp;Content</a></li>
                       <li><a class="u-color-grey-600" href="#theming"><i class="fas fa-angle-right"></i>&nbsp;Theming</a></li>
+                      <li><a class="u-color-grey-600" href="#breakpoints"><i class="fas fa-angle-right"></i>&nbsp;Breakpoints</a></li>
                       <li><a class="u-color-grey-600" href="#accessibility"><i class="fas fa-angle-right"></i>&nbsp;Accessibility</a></li>
                     </ul>
                   </aside>
@@ -287,11 +370,11 @@
 
                     <p class="u-mar-bot-20 u-mar-bot-md-40">Highly useful, powerful, and simple naming convention that makes your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit, and a lot more strict.</p>
 
-                    <p class="u-mar-bot-20 u-mar-bot-md-40"><span class="u-color-success">prefix</span> - <code class="u-color-warning">(u)</code> utility, <code class="u-color-warning">(l)</code> layout, <code class="u-color-warning">(c)</code> component.
+                    <p class="u-mar-bot-20 u-mar-bot-md-40"><span class="u-color-success">prefix</span> - <code class="u-color-danger">(u)</code> utility, <code class="u-color-danger">(l)</code> layout, <code class="u-color-danger">(c)</code> component.
                     <br><span class="u-color-success">classname</span> - preferred class name.
                     <br><span class="u-color-success">modifier</span> - preferred modifier name.
-                    <br><span class="u-color-success">viewport</span> - <code class="u-color-warning">(sm)</code> small, <code class="u-color-warning">(md)</code> medium, <code class="u-color-warning">(lg)</code> large, <code class="u-color-warning">(xl)</code> extra large.
-                    <br><span class="u-color-success">int</span> - integer <code class="u-color-warning">(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</code>.
+                    <br><span class="u-color-success">viewport</span> - <code class="u-color-danger">(sm)</code> small, <code class="u-color-danger">(md)</code> medium, <code class="u-color-danger">(lg)</code> large, <code class="u-color-danger">(xl)</code> extra large.
+                    <br><span class="u-color-success">int</span> - integer <code class="u-color-danger">(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</code>.
                     <br><span class="u-color-success">others</span> - min, max, auto.</p>
 
                     <div class="c-highlight u-mar-bot-20 u-mar-bot-md-40">

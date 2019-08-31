@@ -64,8 +64,14 @@
   white-space: nowrap;
 }
 
-.c-button:hover {
+.c-button:hover,
+.c-button:visited,
+.c-button:active,
+.c-button:focus {
   text-decoration: none;
+}
+
+.c-button:hover {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 
@@ -297,7 +303,7 @@
 .c-heading-above-the-fold,
 .c-heading-section {
   font-family: "Open Sans Condensed", sans-serif;
-  font-family: var(--font-family-condensed, "Open Sans Condensed");
+  font-family: var(--font-family-custom-condensed, "Open Sans Condensed");
 }
 
 .c-heading-above-the-fold {

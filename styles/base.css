@@ -35,8 +35,8 @@
 html {
   min-width: 320px;
   color: #212121;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-family: var(--font-family-sans-serif, "Open Sans");
+  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family-custom-sans-serif, "Open Sans");
   font-size: 62.5%;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
