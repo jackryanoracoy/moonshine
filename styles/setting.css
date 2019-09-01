@@ -184,8 +184,10 @@
   --transition: all 300ms ease-in-out 120ms;
 
   /* font-family */
-  --font-family-custom-condensed: "Open Sans Condensed", sans-serif;
-  --font-family-custom-sans-serif: "Open Sans", sans-serif;
+  /* --font-family-noto-sans: "Noto Sans", sans-serif; */
+  /* --font-family-noto-sans-jp: "Noto Sans JP", sans-serif; */
+  --font-family-open-sans-condensed: "Open Sans Condensed", sans-serif;
+  --font-family-open-sans: "Open Sans", sans-serif;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 

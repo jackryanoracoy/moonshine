@@ -36,7 +36,7 @@ html {
   min-width: 320px;
   color: #212121;
   font-family: "Open Sans", sans-serif;
-  font-family: var(--font-family-custom-sans-serif, "Open Sans");
+  font-family: var(--font-family-open-sans, "Open Sans");
   font-size: 62.5%;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;

@@ -303,7 +303,7 @@
 .c-heading-above-the-fold,
 .c-heading-section {
   font-family: "Open Sans Condensed", sans-serif;
-  font-family: var(--font-family-custom-condensed, "Open Sans Condensed");
+  font-family: var(--font-family-open-sans-condensed, "Open Sans Condensed");
 }
 
 .c-heading-above-the-fold {

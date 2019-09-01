@@ -1,12 +1,16 @@
 # Moonshine
   
-Scalable and Maintainable Architecture.
+Moonshine (Front-end Web Development Template) - A Scalable and Maintainable Architecture.  
   
   
 ## Getting Started  
 
-This is a soft launch of Moonshine, Documentation are not ready yet. Sorry for the inconvenience...
-
+Get started with Moonshine, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
+Moonshine helps you build not only fast but scalable and maintainable web apps or sites. With Moonshine you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
+  
+Ready to kick-start your project using Moonshine? Download Moonshine package or check Moonshine releases.  
+Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Or you can use our boilerplate.html included in the package.  
+  
 ### Content  
   
 Discover what’s included in the package. Once downloaded, unzip the compressed folder and you’ll see something similar to this:  
@@ -23,14 +27,17 @@ moonshine/
 │   ├── jquery-3.4.1.min.js
 │   ├── modernizr-3.7.1.min.js
 │   ├── object-fit.min.js
-│   ├── scripts.js
-│   └── script.min.js
+│   └── script.js
 ├── styles/
 │   ├── base.css
 │   ├── component.css
 │   ├── layout.css
 │   ├── setting.css
 │   └── style.css
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── .htaccess
 ├── 404.html
 ├── boilerplate.html
 ├── browserconfig.xml
@@ -38,6 +45,87 @@ moonshine/
 ├── manifrest.json
 ├── robots.txt
 └── service-worker.js
+```
+  
+### Theming  
+  
+Customize Moonshine with CSS variables for global style preferences for easy theming and component changes.  
+Here are the CSS variables we include (note that the :root is required). Located at setting.css file.  
+  
+```
+:root {
+
+  /* Color */
+  --primary: #263238;
+  --secondary: #37474F;
+  --success: #4CAF50;
+  --warning: #FF5722;
+  --danger: #F44336;
+  --info: #2196F3;
+  --light: #FAFAFA;
+  --dark: #212121;
+
+  --red: #F44336;
+  --pink: #E91E63;
+  --purple: #9C27B0;
+  --deep-purple: #673AB7;
+  --indigo: #3F51B5;
+  --blue: #2196F3;
+  --light-blue: #03A9F4;
+  --cyan: #00BCD4;
+  --teal: #009688;
+  --green: #4CAF50;
+  --light-green: #8BC34A;
+  --lime: #CDDC39;
+  --yellow: #FFEB3B;
+  --amber: #FFC107;
+  --orange: #FF9800;
+  --deep-orange: #FF5722;
+  --brown: #795548;
+  --blue-grey: #607D8B;
+
+  --grey-50: #FAFAFA;
+  --grey-100: #F5F5F5;
+  --grey-200: #EEEEEE;
+  --grey-300: #E0E0E0;
+  --grey-400: #BDBDBD;
+  --grey-500: #9E9E9E;
+  --grey-600: #757575;
+  --grey-700: #616161;
+  --grey-800: #424242;
+  --grey-900: #212121;
+
+  /* Transition */
+  --transition: all 300ms ease-in-out 120ms;
+
+  /* font-family */
+  /* --font-family-noto-sans: "Noto Sans", sans-serif; */  
+  /* --font-family-noto-sans-jp: "Noto Sans", sans-serif; */  
+  --font-family-open-sans-condensed: "Open Sans Condensed", sans-serif;  
+  --font-family-open-sans: "Open Sans", sans-serif;  
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";  
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  
+
+}
+```
+  
+### Breakpoints  
+  
+Moonshine use a handful of media queries to create sensible breakpoints for layouts and interfaces. 
+These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.  
+  
+```
+// Small devices (576px and up)
+@media (min-width: 576px) {...}
+
+// Medium devices (768px and up)
+@media (min-width: 768px) {...}
+
+// Large devices (992px and up)
+@media (min-width: 992px) {...}
+
+// Extra large devices (1200px and up)
+@media (min-width: 1200px) {...}
 ```
   
 ### Accessibility  
@@ -60,6 +148,7 @@ For visually hidden interactive controls, such as traditional “skip” links, 
 ```
   
 Note: To extend template's accessibility please see [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/), [WCAG 2.0](https://www.w3.org/TR/WCAG20/) and similar accessibility standards and requirements.  
+  
   
 ## CSS Methodologies  
   
@@ -91,12 +180,12 @@ moonshine/
   
 Highly useful, powerful, and simple naming convention that makes your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit, and a lot more strict.  
   
-prefix    = (u) utility, (l) layout, (c) component.  
-classname = preferred class name.  
-modifier  = preferred modifier name.  
-viewport  = (sm) small, (md) medium, (lg) large, (xl) extra large.  
-int       = 0-9.  
-others    = min, max.  
+prefix - (u) utility, (l) layout, (c) component, and (js) javascript related classes.  
+classname - preferred class/object name.  
+modifier - preferred modifier name.  
+viewport - (sm) small, (md) medium, (lg) large, (xl) extra large.  
+int - integer (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).  
+others - min, max, auto.  
   
 ```
 .prefix-classname {...}
@@ -123,75 +212,10 @@ Samples:
 .l-flex__content-12 {...}
 .l-flex__content-md {...}
 .l-flex__content-md-12 {...}
-.u-gutter-top-10 {...}
-.u-gutter-top-sm-20 {...}
-.u-gutter-top-md-50 {...} 
+.u-mar-top-10 {...}
+.u-mar-top-sm-20 {...}
+.u-mar-top-md-50 {...} 
 ```
-  
-### CSS Variables  
-  
-CSS variables offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser.  
-
-```
-var(custom-name, value)
-```
-
-Samples:  
-  
-```
-u-red {  
-  var(--red-500, red)
-}  
-
-u-font-size {  
-  var(--normal-size, 1.5rem)  
-}
-
-@media (min-width(var(--breakpoint-sm))) {  
-  u-font-size-sm {  
-    var(--normal-size, 1.5rem)  
-  }
-}
-```  
-  
-### CSS Utilities  
-  
-* screen-reader-text = for screen readers.  
-* row, groupr, clearfix = fix float overflow.  
-* u-container = element container.  
-* u-hidden = hides element.  
-* u-float-xxx = floats element.  
-* u-flex = a flexbox.  
-* u-grid = a grid (experemental).  
-* u-width-xxx = sets width.
-* u-height-xxx = sets height.
-* u-cluster-gap-xxx = sets cluster gap.
-* u-gutter-xxx = adds margin.    
-* u-gap-xxx = adds padding.  
-* u-text-xxx = style for typoghrapy.  
-* u-font-xxx = style for typoghrapy.  
-* u-line-height-xxx = style that controls line-height.  
-* u-white-space-xxx = style that controls white space.
-* u-object-fit = makes images fit.  
-* u-list = style for list items.
-* u-color-xxx = adds font color.
-* u-background-xxx = adds background style.  
-* u-parallax = adds parallax effect on image.
-* u-tab-link = tab content view.  
-* u-image-xxx = syle for images.  
-  
-Samples:  
-  
-```
-<div class="u-container">
-  <div class="u-flex">
-    <div class="u-flex__content-12 u-flex__content-md-6">...</div>
-    <div class="u-flex__content-12 u-flex__content-md-6">...</div>
-  </div>
-</div>
-```
-  
-Note: You can check the [utility.css](styles/utility.css) for more details.  
   
   
 ## Includes  
@@ -203,7 +227,7 @@ Some great works that are included in this template.
 * [Modernizr](https://modernizr.com/)  
 * [ObjectFit](https://github.com/fregante/object-fit-images/)  
 * [FontAwesome](https://fontawesome.com/)  
-    
+  
   
 ## Author  
   
