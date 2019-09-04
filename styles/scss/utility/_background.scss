@@ -1,0 +1,96 @@
+/*--------------------------------------------------
+  Background
+--------------------------------------------------*/
+
+.u-background-primary {
+  background-color: #263238;
+  background-color: var(--primary, #263238);
+}
+
+.u-background-secondary {
+  background-color: #37474F;
+  background-color: var(--secondary, #37474F);
+}
+
+.u-background-success {
+  background-color: #4CAF50;
+  background-color: var(--success, #4CAF50);
+}
+
+.u-background-warning {
+  background-color: #FF5722;
+  background-color: var(--warning, #FF5722);
+}
+
+.u-background-danger {
+  background-color: #E53935;
+  background-color: var(--danger, #E53935);
+}
+
+.u-background-info {
+  background-color: #03A9F4;
+  background-color: var(--info, #03A9F4);
+}
+
+.u-background-light {
+  background-color: #FAFAFA;
+  background-color: var(--light, #FAFAFA);
+}
+
+.u-background-dark {
+  background-color: #212121;
+  background-color: var(--dark, #212121);
+}
+
+.u-background-grey-50 {
+  background-color: #FAFAFA;
+  background-color: var(--grey-50, #FAFAFA);
+}
+
+.u-background-grey-100 {
+  background-color: #F5F5F5;
+  background-color: var(--grey-100, #F5F5F5);
+}
+
+.u-background-grey-200 {
+  background-color: #EEEEEE;
+  background-color: var(--grey-200, #EEEEEE);
+}
+
+.u-background-grey-300 {
+  background-color: #E0E0E0;
+  background-color: var(--grey-300, #E0E0E0);
+}
+
+.u-background-grey-400 {
+  background-color: #BDBDBD;
+  background-color: var(--grey-400, #BDBDBD);
+}
+
+.u-background-grey-500 {
+  background-color: #9E9E9E;
+  background-color: var(--grey-500, #9E9E9E);
+}
+
+.u-background-grey-600 {
+  background-color: #757575;
+  background-color: var(--grey-600, #757575);
+}
+
+.u-background-grey-700 {
+  background-color: #616161;
+  background-color: var(--grey-700, #616161);
+}
+
+.u-background-grey-800 {
+  background-color: #424242;
+  background-color: var(--grey-800, #212121);
+}
+
+.u-background-grey-900 {
+  background-color: #212121;
+  background-color: var(--grey-900, #212121);
+}
+
+.u-background-white { background-color: #FFF; }
+.u-background-black { background-color: #000; }

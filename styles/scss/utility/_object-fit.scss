@@ -1,0 +1,180 @@
+/*--------------------------------------------------
+  Object-fit
+--------------------------------------------------*/
+
+.u-object-fit {
+  object-fit: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.u-object-fit--contain {
+  object-fit: contain;
+  font-family: "object-fit: contain;";
+}
+
+.u-object-fit--cover {
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+}
+
+.u-object-fit--fill {
+  object-fit: fill;
+  font-family: "object-fit: fill;";
+}
+
+.u-object-fit--scale_down {
+  object-fit: scale-down;
+  font-family: "object-fit: scale-down;";
+}
+
+.u-object-fit--none {
+  object-fit: none;
+  font-family: "object-fit: none;";
+}
+
+.u-object-fit--top { object-position: top; }
+.u-object-fit--right { object-position: right; }
+.u-object-fit--bottom { object-position: bottom; }
+.u-object-fit--left { object-position: left; }
+.u-object-fit--center { object-position: center; }
+
+@media (min-width: 576px) {
+
+  .u-object-fit--contain-sm {
+    object-fit: contain;
+    font-family: "object-fit: contain;";
+  }
+
+  .u-object-fit--cover-sm {
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  .u-object-fit--fill-sm {
+    object-fit: fill;
+    font-family: "object-fit: fill;";
+  }
+
+  .u-object-fit--scale_down-sm {
+    object-fit: scale-down;
+    font-family: "object-fit: scale-down;";
+  }
+
+  .u-object-fit--none-sm {
+    object-fit: none;
+    font-family: "object-fit: none;";
+  }
+
+  .u-object-fit--top-sm { object-position: top; }
+  .u-object-fit--right-sm { object-position: right; }
+  .u-object-fit--bottom-sm { object-position: bottom; }
+  .u-object-fit--left-sm { object-position: left; }
+  .u-object-fit--center-sm { object-position: center; }
+
+}
+
+@media (min-width: 768px) {
+
+  .u-object-fit--contain-md {
+    object-fit: contain;
+    font-family: "object-fit: contain;";
+  }
+
+  .u-object-fit--cover-md {
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  .u-object-fit--fill-md {
+    object-fit: fill;
+    font-family: "object-fit: fill;";
+  }
+
+  .u-object-fit--scale_down-md {
+    object-fit: scale-down;
+    font-family: "object-fit: scale-down;";
+  }
+
+  .u-object-fit--none-md {
+    object-fit: none;
+    font-family: "object-fit: none;";
+  }
+
+  .u-object-fit--top-md { object-position: top; }
+  .u-object-fit--right-md { object-position: right; }
+  .u-object-fit--bottom-md { object-position: bottom; }
+  .u-object-fit--left-md { object-position: left; }
+  .u-object-fit--center-md { object-position: center; }
+
+}
+
+@media (min-width: 992px) {
+
+  .u-object-fit--contain-lg {
+    object-fit: contain;
+    font-family: "object-fit: contain;";
+  }
+
+  .u-object-fit--cover-lg {
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  .u-object-fit--fill-lg {
+    object-fit: fill;
+    font-family: "object-fit: fill;";
+  }
+
+  .u-object-fit--scale_down-lg {
+    object-fit: scale-down;
+    font-family: "object-fit: scale-down;";
+  }
+
+  .u-object-fit--none-lg {
+    object-fit: none;
+    font-family: "object-fit: none;";
+  }
+
+  .u-object-fit--top-lg { object-position: top; }
+  .u-object-fit--right-lg { object-position: right; }
+  .u-object-fit--bottom-lg { object-position: bottom; }
+  .u-object-fit--left-lg { object-position: left; }
+  .u-object-fit--center-lg { object-position: center; }
+
+}
+
+@media (min-width: 1200px) {
+
+  .u-object-fit--contain-xl {
+    object-fit: contain;
+    font-family: "object-fit: contain;";
+  }
+
+  .u-object-fit--cover-xl {
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  .u-object-fit--fill-xl {
+    object-fit: fill;
+    font-family: "object-fit: fill;";
+  }
+
+  .u-object-fit--scale_down-xl {
+    object-fit: scale-down;
+    font-family: "object-fit: scale-down;";
+  }
+
+  .u-object-fit--none-xl {
+    object-fit: none;
+    font-family: "object-fit: none;";
+  }
+
+  .u-object-fit--top-xl { object-position: top; }
+  .u-object-fit--right-xl { object-position: right; }
+  .u-object-fit--bottom-xl { object-position: bottom; }
+  .u-object-fit--left-xl { object-position: left; }
+  .u-object-fit--center-xl { object-position: center; }
+
+}

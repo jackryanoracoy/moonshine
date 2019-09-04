@@ -1,7 +1,16 @@
+/*!
+ * Moonshine
+ * Scalable and Maintainable Architecture.
+ *
+ * Author:   Jack Ryan Oracoy
+ * Website:  https://jackryanoracoy.github.io
+ * Email:    jackryanoracoy@gmail.com
+ * URL:      https://github.com/jackryanoracoy/moonshine
+ * License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
+ */
 /*--------------------------------------------------
-  Browser Upgrade
+  Browser Notice
 --------------------------------------------------*/
-
 .c-browser-notice {
   padding: 20px;
   color: #FFF;
@@ -13,7 +22,6 @@
 /*--------------------------------------------------
   Tab
 --------------------------------------------------*/
-
 .c-tab-link {
   margin: 0px;
   padding: 0px;
@@ -46,7 +54,6 @@
 /*--------------------------------------------------
   Button
 --------------------------------------------------*/
-
 .c-button {
   display: inline-block;
   min-width: 50px;
@@ -127,7 +134,6 @@
 /*--------------------------------------------------
   Card
 --------------------------------------------------*/
-
 .c-card {
   height: auto;
   color: #212121 !important;
@@ -145,12 +151,13 @@
   background-color: var(--dark, #212121);
 }
 
-.c-card__content { padding: 20px; }
+.c-card__content {
+  padding: 20px;
+}
 
 /*--------------------------------------------------
   Highlight
 --------------------------------------------------*/
-
 .c-highlight {
   color: #FAFAFA !important;
   color: var(--light, #FAFAFA) !important;
@@ -176,9 +183,50 @@
 }
 
 /*--------------------------------------------------
+  Heading
+--------------------------------------------------*/
+.c-heading-above-the-fold,
+.c-heading-section {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-family: var(--font-family-open-sans-condensed, "Open Sans Condensed");
+}
+
+.c-heading-above-the-fold {
+  color: #263238;
+  color: var(--primary, #263238);
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+.c-heading-section {
+  color: #212121;
+  color: var(--grey-700, #212121);
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.c-heading-article {
+  color: #37474F;
+  color: var(--grey-900, #37474F);
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .c-heading-above-the-fold {
+    font-size: 3.5rem;
+  }
+
+  .c-heading-section {
+    font-size: 2.8rem;
+  }
+
+  .c-heading-article {
+    font-size: 1.8rem;
+  }
+}
+/*--------------------------------------------------
   Site-menu
 --------------------------------------------------*/
-
 .c-site-menu {
   position: relative;
   display: block;
@@ -219,18 +267,35 @@
   transition: all 200ms ease-in-out;
 }
 
-.c-site-menu__text { margin: 4px 0 0; }
-.c-site-menu__inner::before { top: -8px; }
-.c-site-menu__inner::after { bottom: -8px; }
+.c-site-menu__text {
+  margin: 4px 0 0;
+}
 
-.c-site-menu.js-active .c-site-menu__inner { background-color: rgba(0, 0, 0, 0); }
-.c-site-menu.js-active .c-site-menu__inner::before { top: 0; transform: rotate(-40deg); }
-.c-site-menu.js-active .c-site-menu__inner::after { bottom: 0; transform: rotate(40deg); }
+.c-site-menu__inner::before {
+  top: -8px;
+}
+
+.c-site-menu__inner::after {
+  bottom: -8px;
+}
+
+.c-site-menu.js-active .c-site-menu__inner {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.c-site-menu.js-active .c-site-menu__inner::before {
+  top: 0;
+  transform: rotate(-40deg);
+}
+
+.c-site-menu.js-active .c-site-menu__inner::after {
+  bottom: 0;
+  transform: rotate(40deg);
+}
 
 /*--------------------------------------------------
   Site-nav
 --------------------------------------------------*/
-
 .c-site-nav {
   display: flex;
   flex-direction: column;
@@ -257,21 +322,17 @@
 .c-site-nav__item a:hover,
 .c-site-nav__item--active a {
   background-color: #263238;
-  background-color: var(--primary, #263238)
+  background-color: var(--primary, #263238);
 }
 
 @media (min-width: 768px) {
-
   .c-site-nav {
     flex-direction: row;
   }
-
 }
-
 /*--------------------------------------------------
   Site-title
 --------------------------------------------------*/
-
 .c-site-title {
   padding-left: 10px;
   color: #FFF;
@@ -291,53 +352,9 @@
 }
 
 @media (min-width: 768px) {
-
-  .c-site-title { font-size: 2.2rem; }
-
-}
-
-/*--------------------------------------------------
-  Heading
---------------------------------------------------*/
-
-.c-heading-above-the-fold,
-.c-heading-section {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-family: var(--font-family-open-sans-condensed, "Open Sans Condensed");
-}
-
-.c-heading-above-the-fold {
-  color: #263238;
-  color: var(--primary, #263238);
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
-}
-
-.c-heading-section {
-  color: #212121;
-  color: var(--grey-700, #212121);
-  font-size: 2.4rem;
-  letter-spacing: 0.2rem;
-}
-
-.c-heading-article {
-  color: #37474F;
-  color: var(--grey-900, #37474F);
-  font-size: 1.6rem;
-}
-
-@media (min-width: 768px) {
-
-  .c-heading-above-the-fold {
-    font-size: 3.5rem;
+  .c-site-title {
+    font-size: 2.2rem;
   }
-
-  .c-heading-section {
-    font-size: 2.8rem;
-  }
-
-  .c-heading-article {
-    font-size: 1.8rem;
-  }
-
 }
+
+/*# sourceMappingURL=component.css.map */

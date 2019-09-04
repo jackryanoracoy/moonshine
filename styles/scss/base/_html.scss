@@ -1,0 +1,20 @@
+/*--------------------------------------------------
+  HTML
+--------------------------------------------------*/
+
+html {
+  min-width: 320px;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family-open-sans, "Open Sans");
+  font-size: 62.5%;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

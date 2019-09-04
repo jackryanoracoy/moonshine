@@ -1,9 +1,19 @@
-@-ms-viewport { width: device-width; }
-
+/*!
+ * Moonshine
+ * Scalable and Maintainable Architecture.
+ *
+ * Author:   Jack Ryan Oracoy
+ * Website:  https://jackryanoracoy.github.io
+ * Email:    jackryanoracoy@gmail.com
+ * URL:      https://github.com/jackryanoracoy/moonshine
+ * License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
+ */
+@-ms-viewport {
+  width: device-width;
+}
 /*--------------------------------------------------
   Reset
 --------------------------------------------------*/
-
 *,
 *:before,
 *:after {
@@ -15,7 +25,6 @@
 }
 
 @media print {
-
   *,
   *:before,
   *:after {
@@ -25,13 +34,10 @@
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
 }
-
 /*--------------------------------------------------
   HTML
 --------------------------------------------------*/
-
 html {
   min-width: 320px;
   color: #212121;
@@ -50,17 +56,19 @@ html {
 }
 
 /*--------------------------------------------------
-  Outline
+  Focus
 --------------------------------------------------*/
+*:focus {
+  outline: 1px dotted #2196F3;
+}
 
-*:focus { outline: 1px dotted #2196F3; }
-
-body:not(.tab-used) *:focus { outline: none; }
+body:not(.tab-used) *:focus {
+  outline: none;
+}
 
 /*--------------------------------------------------
   Body
 --------------------------------------------------*/
-
 body {
   min-width: inherit;
   color: inherit;
@@ -78,14 +86,20 @@ body ::-webkit-scrollbar-thumb {
   background-color: #BDBDBD;
 }
 
-@media (min-width: 768px) { body { font-size: 1.5rem; } }
-
-@media print { body { font-family: inherit; width: 100%; } }
-
+@media (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+@media print {
+  body {
+    font-family: inherit;
+    width: 100%;
+  }
+}
 /*--------------------------------------------------
   Links
 --------------------------------------------------*/
-
 a {
   color: #2196F3;
   text-decoration: none;
@@ -96,23 +110,33 @@ a:hover, a:visited, a:active, a:focus {
   text-decoration: underline;
 }
 
-@media print { a, a:visited { text-decoration: underline;  } }
-
+@media print {
+  a, a:visited {
+    text-decoration: underline;
+  }
+}
 /*--------------------------------------------------
   Typography
 --------------------------------------------------*/
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
-strong { font-weight: bolder; }
+strong {
+  font-weight: bolder;
+}
 
-small { font-size: 75%; }
+small {
+  font-size: 75%;
+}
 
 pre {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -121,34 +145,39 @@ pre {
 }
 
 @media print {
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-  p, h2, h3 { orphans: 3;  widows: 3; }
-  h2, h3 {  page-break-after: avoid;  }
-
+  h2, h3 {
+    page-break-after: avoid;
+  }
 }
-
 /*--------------------------------------------------
   Main
 --------------------------------------------------*/
-
-main { display: block; }
+main {
+  display: block;
+}
 
 /*--------------------------------------------------
   Table
 --------------------------------------------------*/
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media print { thead { display: table-header-group; } }
-
+@media print {
+  thead {
+    display: table-header-group;
+  }
+}
 /*--------------------------------------------------
   Add the correct text decoration
   in Chrome, Edge, IE, Opera, and Safari.
 --------------------------------------------------*/
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -160,7 +189,6 @@ abbr[title] {
   in all browsers.
   Correct the odd `em` font sizing in all browsers.
 --------------------------------------------------*/
-
 code, kbd, samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-family: var(--font-family-monospace, monospace);
@@ -171,7 +199,6 @@ code, kbd, samp {
   Prevent `sub` and `sup` elements from
   affecting the line height in all browsers.
 --------------------------------------------------*/
-
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -179,37 +206,46 @@ sub, sup {
   vertical-align: baseline;
 }
 
-sub { bottom: -0.25em; }
+sub {
+  bottom: -0.25em;
+}
 
-sup { top: -0.5em; }
+sup {
+  top: -0.5em;
+}
 
 /*--------------------------------------------------
   Remove the border on images inside links in IE 10-.
 --------------------------------------------------*/
+img {
+  border-style: none;
+}
 
-img { border-style: none; }
-
-@media print { img {  page-break-inside: avoid; } }
-
+@media print {
+  img {
+    page-break-inside: avoid;
+  }
+}
 /*--------------------------------------------------
   Show the overflow in IE.
   Show the overflow in Edge.
 --------------------------------------------------*/
-
-button, input { overflow: visible; }
+button, input {
+  overflow: visible;
+}
 
 /*--------------------------------------------------
   Remove the inheritance of text transform in
   Edge, Firefox, and IE.
   Remove the inheritance of text transform in Firefox.
 --------------------------------------------------*/
-
-button, select { text-transform: none; }
+button, select {
+  text-transform: none;
+}
 
 /*--------------------------------------------------
   Remove the inner border and padding in Firefox.
 --------------------------------------------------*/
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -221,7 +257,6 @@ button::-moz-focus-inner,
 /*--------------------------------------------------
   Restore the focus styles unset by the previous rule.
 --------------------------------------------------*/
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -232,20 +267,21 @@ button:-moz-focusring,
 /*--------------------------------------------------
   Correct the padding in Firefox.
 --------------------------------------------------*/
-
-fieldset { padding: 0.35em 0.75em 0.625em; }
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
 
 /*--------------------------------------------------
   Remove the default vertical scrollbar in IE.
 --------------------------------------------------*/
-
-textarea { overflow: auto; }
+textarea {
+  overflow: auto;
+}
 
 /*--------------------------------------------------
   Correct the cursor style of increment and
   decrement buttons in Chrome.
 --------------------------------------------------*/
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -255,16 +291,17 @@ textarea { overflow: auto; }
   Correct the odd appearance in Chrome and Safari.
   Correct the outline style in Safari.
 --------------------------------------------------*/
-
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
+
 /*--------------------------------------------------
   Remove the inner padding and cancel buttons
   in Chrome and Safari on macOS.
 --------------------------------------------------*/
-
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -275,7 +312,6 @@ textarea { overflow: auto; }
   in iOS and Safari.
   Change font properties to `inherit` in Safari.
 --------------------------------------------------*/
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
@@ -284,6 +320,8 @@ textarea { overflow: auto; }
 /*--------------------------------------------------
   Add the correct display in IE 10-.
 --------------------------------------------------*/
+[hidden] {
+  display: none;
+}
 
-[hidden] { display: none; }
-
+/*# sourceMappingURL=base.css.map */

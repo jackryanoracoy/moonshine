@@ -1,0 +1,39 @@
+/*--------------------------------------------------
+  Float
+--------------------------------------------------*/
+
+.u-float-left { float: left; }
+.u-float-right { float: right; }
+.u-float-none { float: none; }
+
+@include media-breakpoint(sm) {
+
+  .u-float-left-sm { float: left; }
+  .u-float-right-sm { float: right; }
+  .u-float-none-sm { float: none; }
+
+}
+
+@include media-breakpoint(md) {
+
+  .u-float-left-md { float: left; }
+  .u-float-right-md { float: right; }
+  .u-float-none-md { float: none; }
+
+}
+
+@include media-breakpoint(lg) {
+
+  .u-float-left-lg { float: left; }
+  .u-float-right-lg { float: right; }
+  .u-float-none-lg { float: none; }
+
+}
+
+@include media-breakpoint(xl) {
+
+  .u-float-left-xl { float: left; }
+  .u-float-right-xl { float: right; }
+  .u-float-none-xl { float: none; }
+
+}

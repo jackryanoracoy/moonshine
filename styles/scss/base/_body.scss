@@ -1,0 +1,24 @@
+/*--------------------------------------------------
+  Body
+--------------------------------------------------*/
+
+body {
+  min-width: inherit;
+  color: inherit;
+  font-size: 1.4rem;
+  font-family: inherit;
+}
+
+body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #E0E0E0;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+}
+
+@media (min-width: 768px) { body { font-size: 1.5rem; } }
+
+@media print { body { font-family: inherit; width: 100%; } }

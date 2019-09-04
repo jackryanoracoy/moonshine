@@ -1,0 +1,51 @@
+/*--------------------------------------------------
+  Site-menu
+--------------------------------------------------*/
+
+.c-site-menu {
+  position: relative;
+  display: block;
+  padding: 10px;
+  color: #FAFAFA !important;
+  color: var(--light, #FAFAFA) !important;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.c-site-menu__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.c-site-menu__inner {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: 3px;
+  background-color: #FAFAFA;
+  background-color: var(--light, #FAFAFA);
+}
+
+.c-site-menu__inner::after,
+.c-site-menu__inner::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #FAFAFA;
+  background-color: var(--light, #FAFAFA);
+  transition: all 200ms ease-in-out;
+}
+
+.c-site-menu__text { margin: 4px 0 0; }
+.c-site-menu__inner::before { top: -8px; }
+.c-site-menu__inner::after { bottom: -8px; }
+
+.c-site-menu.js-active .c-site-menu__inner { background-color: rgba(0, 0, 0, 0); }
+.c-site-menu.js-active .c-site-menu__inner::before { top: 0; transform: rotate(-40deg); }
+.c-site-menu.js-active .c-site-menu__inner::after { bottom: 0; transform: rotate(40deg); }

@@ -1,0 +1,16 @@
+/*--------------------------------------------------
+  Container
+--------------------------------------------------*/
+
+.l-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.l-container--fluid { max-width: 100% !important; }
+
+@media (min-width: 576px) { .l-container { max-width: 540px; } }
+@media (min-width: 768px) { .l-container { max-width: 720px; } }
+@media (min-width: 992px) { .l-container { max-width: 960px; } }
+@media (min-width: 1200px) { .l-container { max-width: 1140px; } }

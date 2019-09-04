@@ -1,0 +1,14 @@
+/*--------------------------------------------------
+  Site-main
+--------------------------------------------------*/
+
+.l-site-main {
+  position: relative;
+  padding: 60px 0 0;
+}
+
+@media (min-width: 768px) {
+
+  .l-site-main { padding: 125px 0 0; }
+
+}

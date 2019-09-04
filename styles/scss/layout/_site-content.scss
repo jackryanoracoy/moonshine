@@ -1,0 +1,17 @@
+/*--------------------------------------------------
+  Site-content
+--------------------------------------------------*/
+
+.l-site-content {
+  position: relative;
+  padding: 20px 0;
+  background-color: #F5F5F5;
+}
+
+@media (min-width: 768px) {
+
+  .l-site-content {
+    padding: 50px 0;
+  }
+
+}

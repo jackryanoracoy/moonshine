@@ -1,0 +1,27 @@
+/*--------------------------------------------------
+  Site-title
+--------------------------------------------------*/
+
+.c-site-title {
+  padding-left: 10px;
+  color: #FFF;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.c-site-title a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.c-site-title img {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .c-site-title { font-size: 2.2rem; }
+
+}

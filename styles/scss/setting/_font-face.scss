@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+ font-face - Noto Sans
+--------------------------------------------------------------*/
+
+/* @font-face {
+  font-family: 'Noto Sans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'),
+       local('NotoSans'),
+       url(../assets/fonts/noto-sans/Noto-Sans.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans/Noto-Sans.woff) format('woff'),
+       url(../assets/fonts/noto-sans/Noto-Sans.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'),
+       local('NotoSans-Bold'),
+       url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff) format('woff'),
+       url(../assets/fonts/noto-sans/Noto-Sans-Bold.ttf) format('truetype');
+} */
+
+/*--------------------------------------------------------------
+ font-face - Noto Sans JP
+--------------------------------------------------------------*/
+
+/* @font-face {
+  font-family: 'Noto Sans JP';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Japanese Light'),
+       local('NotoSansJapanese-Light'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff) format('woff'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Japanese Regular'),
+       local('NotoSansJapanese-Regular'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff) format('woff'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Japanese Bold'),
+       local('NotoSansJapanese-Bold'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff) format('woff'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.ttf) format('truetype');
+} */
+
+/*--------------------------------------------------------------
+ font-face - Open Sans
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"),
+       local("OpenSans-Light"),
+       url(../assets/fonts/open-sans/Open-Sans-Light.woff2) format("woff2"),
+       url(../assets/fonts/open-sans/Open-Sans-Light.woff) format("woff"),
+       url(../assets/fonts/open-sans/Open-Sans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"),
+       local("OpenSans-Regular"),
+       url(../assets/fonts/open-sans/Open-Sans-Regular.woff2) format("woff2"),
+       url(../assets/fonts/open-sans/Open-Sans-Regular.woff) format("woff"),
+       url(../assets/fonts/open-sans/Open-Sans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"),
+       local("OpenSans-Bold"),
+       url(../assets/fonts/open-sans/Open-Sans-Bold.woff2) format("woff2"),
+       url(../assets/fonts/open-sans/Open-Sans-Bold.woff) format("woff"),
+       url(../assets/fonts/open-sans/Open-Sans-Bold.ttf) format("truetype");
+}
+
+/*--------------------------------------------------------------
+ font-face - Open Sans Condensed
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Condensed Light"),
+       local("OpenSansCondensed-Light"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff2) format("woff2"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff) format("woff"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Condensed Bold"),
+       local("OpenSansCondensed-Bold"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.ttf) format("woff2"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.woff) format("woff"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.ttf) format("truetype");
+}

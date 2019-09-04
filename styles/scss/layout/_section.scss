@@ -1,0 +1,21 @@
+/*--------------------------------------------------
+  Section
+--------------------------------------------------*/
+
+.l-section {
+  position: relative;
+  padding: 30px 10px;
+}
+
+.l-section--padding-no { padding: 0; }
+.l-section--padding-wide { padding: 50px 10px; }
+.l-section--padding-narrow { padding: 10px; }
+
+@media (min-width: 768px) {
+
+  .l-section { padding: 50px 20px; }
+  .l-section--padding-no { padding: 0; }
+  .l-section--padding-wide { padding: 100px 20px; }
+  .l-section--padding-narrow { padding: 20px 20px; }
+
+}

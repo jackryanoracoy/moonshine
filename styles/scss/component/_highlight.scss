@@ -1,0 +1,27 @@
+/*--------------------------------------------------
+  Highlight
+--------------------------------------------------*/
+
+.c-highlight {
+  color: #FAFAFA !important;
+  color: var(--light, #FAFAFA) !important;
+  padding: 20px;
+  background-color: #37474F;
+  background-color: var(--secondary, #37474F);
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.c-highlight--light {
+  color: #212121 !important;
+  color: var(--dark) !important;
+  background-color: #FAFAFA;
+  background-color: var(--light, #FAFAFA);
+}
+
+.c-highlight--dark {
+  color: #FAFAFA !important;
+  color: var(--light, #FAFAFA) !important;
+  background-color: #212121;
+  background-color: var(--dark, #212121);
+}
