@@ -10,9 +10,10 @@
  */
 
 
- @import 'setting/mixin';
  @import 'setting/variable';
- @import 'setting/font-face';
+ @import 'setting/mixin';
+ @import 'setting/font-open-sans';
+ @import 'setting/font-open-sans-condensed';
  @import 'setting/root';
  @import 'base/reset';
  @import 'base/html';

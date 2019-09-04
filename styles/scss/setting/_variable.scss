@@ -1,7 +1,13 @@
-// Breakpoint
+// Breakpoints
 $breakpoints: (
-  'sm'  : ( min-width:  576px ),
-  'md'  : ( min-width:  767px ),
-  'lg'  : ( min-width:  992px ),
-  'xl'  : ( min-width:  1200px )
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
 );
+
+// Container
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;

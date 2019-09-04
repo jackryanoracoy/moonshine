@@ -28,7 +28,7 @@
 
 .u-bordered--seq:last-of-type { border: none; }
 
-@include media-breakpoint(sm) {
+@include media-breakpoint-min(sm) {
 
   .u-bordered--top-sm { border-width: 1px 0 0 0; }
   .u-bordered--right-sm { border-width: 0 1px 0 0; }
@@ -50,7 +50,7 @@
 
 }
 
-@include media-breakpoint(md) {
+@include media-breakpoint-min(md) {
 
   .u-bordered--top-md { border-width: 1px 0 0 0; }
   .u-bordered--right-md { border-width: 0 1px 0 0; }
@@ -72,7 +72,7 @@
 
 }
 
-@include media-breakpoint(lg) {
+@include media-breakpoint-min(lg) {
 
   .u-bordered--top-lg { border-width: 1px 0 0 0; }
   .u-bordered--right-lg { border-width: 0 1px 0 0; }
@@ -94,7 +94,7 @@
 
 }
 
-@include media-breakpoint(xl) {
+@include media-breakpoint-min(xl) {
 
   .u-bordered--top-xl { border-width: 1px 0 0 0; }
   .u-bordered--right-xl { border-width: 0 1px 0 0; }

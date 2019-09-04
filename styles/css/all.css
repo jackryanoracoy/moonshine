@@ -9,70 +9,6 @@
  * License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
  */
 /*--------------------------------------------------------------
- font-face - Noto Sans
---------------------------------------------------------------*/
-/* @font-face {
-  font-family: 'Noto Sans';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  src: local('Noto Sans'),
-       local('NotoSans'),
-       url(../assets/fonts/noto-sans/Noto-Sans.woff2) format('woff2'),
-       url(../assets/fonts/noto-sans/Noto-Sans.woff) format('woff'),
-       url(../assets/fonts/noto-sans/Noto-Sans.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Noto Sans';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  src: local('Noto Sans Bold'),
-       local('NotoSans-Bold'),
-       url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff2) format('woff2'),
-       url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff) format('woff'),
-       url(../assets/fonts/noto-sans/Noto-Sans-Bold.ttf) format('truetype');
-} */
-/*--------------------------------------------------------------
- font-face - Noto Sans JP
---------------------------------------------------------------*/
-/* @font-face {
-  font-family: 'Noto Sans JP';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 300;
-  src: local('Noto Sans Japanese Light'),
-       local('NotoSansJapanese-Light'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff2) format('woff2'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff) format('woff'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Noto Sans JP';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  src: local('Noto Sans Japanese Regular'),
-       local('NotoSansJapanese-Regular'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff2) format('woff2'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff) format('woff'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Noto Sans JP';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  src: local('Noto Sans Japanese Bold'),
-       local('NotoSansJapanese-Bold'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff2) format('woff2'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff) format('woff'),
-       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.ttf) format('truetype');
-} */
-/*--------------------------------------------------------------
  font-face - Open Sans
 --------------------------------------------------------------*/
 @font-face {
@@ -487,13 +423,12 @@ textarea {
 .l-container {
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
-
 .l-container--fluid {
   max-width: 100% !important;
 }
-
 @media (min-width: 576px) {
   .l-container {
     max-width: 540px;
@@ -514,6 +449,7 @@ textarea {
     max-width: 1140px;
   }
 }
+
 /*--------------------------------------------------
   Flex
 --------------------------------------------------*/
@@ -669,80 +605,80 @@ textarea {
 }
 
 /*  Shorthand (Recommended) */
-.l-flex__content {
+.l-flex__item {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
 
-.l-flex__content-1 {
+.l-flex__item-1 {
   -ms-flex: 0 0 8.333333%;
   flex: 0 0 8.333333%;
   max-width: 8.333333%;
 }
 
-.l-flex__content-2 {
+.l-flex__item-2 {
   -ms-flex: 0 0 16.666667%;
   flex: 0 0 16.666667%;
   max-width: 16.666667%;
 }
 
-.l-flex__content-3 {
+.l-flex__item-3 {
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
 
-.l-flex__content-4 {
+.l-flex__item-4 {
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
 
-.l-flex__content-5 {
+.l-flex__item-5 {
   -ms-flex: 0 0 41.666667%;
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
 }
 
-.l-flex__content-6 {
+.l-flex__item-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.l-flex__content-7 {
+.l-flex__item-7 {
   -ms-flex: 0 0 58.333333%;
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
 }
 
-.l-flex__content-8 {
+.l-flex__item-8 {
   -ms-flex: 0 0 66.666667%;
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
 }
 
-.l-flex__content-9 {
+.l-flex__item-9 {
   -ms-flex: 0 0 75%;
   flex: 0 0 75%;
   max-width: 75%;
 }
 
-.l-flex__content-10 {
+.l-flex__item-10 {
   -ms-flex: 0 0 83.333333%;
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
 }
 
-.l-flex__content-11 {
+.l-flex__item-11 {
   -ms-flex: 0 0 91.666667%;
   flex: 0 0 91.666667%;
   max-width: 91.666667%;
 }
 
-.l-flex__content-12 {
+.l-flex__item-12 {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
@@ -1038,80 +974,80 @@ textarea {
     align-items: baseline;
   }
 
-  .l-flex__content-sm {
+  .l-flex__item-sm {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .l-flex__content-sm-1 {
+  .l-flex__item-sm-1 {
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
 
-  .l-flex__content-sm-2 {
+  .l-flex__item-sm-2 {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
 
-  .l-flex__content-sm-3 {
+  .l-flex__item-sm-3 {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .l-flex__content-sm-4 {
+  .l-flex__item-sm-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
 
-  .l-flex__content-sm-5 {
+  .l-flex__item-sm-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
 
-  .l-flex__content-sm-6 {
+  .l-flex__item-sm-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .l-flex__content-sm-7 {
+  .l-flex__item-sm-7 {
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
 
-  .l-flex__content-sm-8 {
+  .l-flex__item-sm-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
 
-  .l-flex__content-sm-9 {
+  .l-flex__item-sm-9 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .l-flex__content-sm-10 {
+  .l-flex__item-sm-10 {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
 
-  .l-flex__content-sm-11 {
+  .l-flex__item-sm-11 {
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
 
-  .l-flex__content-sm-12 {
+  .l-flex__item-sm-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -1406,80 +1342,80 @@ textarea {
     align-items: baseline;
   }
 
-  .l-flex__content-md {
+  .l-flex__item-md {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .l-flex__content-md-1 {
+  .l-flex__item-md-1 {
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
 
-  .l-flex__content-md-2 {
+  .l-flex__item-md-2 {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
 
-  .l-flex__content-md-3 {
+  .l-flex__item-md-3 {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .l-flex__content-md-4 {
+  .l-flex__item-md-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
 
-  .l-flex__content-md-5 {
+  .l-flex__item-md-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
 
-  .l-flex__content-md-6 {
+  .l-flex__item-md-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .l-flex__content-md-7 {
+  .l-flex__item-md-7 {
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
 
-  .l-flex__content-md-8 {
+  .l-flex__item-md-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
 
-  .l-flex__content-md-9 {
+  .l-flex__item-md-9 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .l-flex__content-md-10 {
+  .l-flex__item-md-10 {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
 
-  .l-flex__content-md-11 {
+  .l-flex__item-md-11 {
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
 
-  .l-flex__content-md-12 {
+  .l-flex__item-md-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -1774,80 +1710,80 @@ textarea {
     align-items: baseline;
   }
 
-  .l-flex__content-lg {
+  .l-flex__item-lg {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .l-flex__content-lg-1 {
+  .l-flex__item-lg-1 {
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
 
-  .l-flex__content-lg-2 {
+  .l-flex__item-lg-2 {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
 
-  .l-flex__content-lg-3 {
+  .l-flex__item-lg-3 {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .l-flex__content-lg-4 {
+  .l-flex__item-lg-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
 
-  .l-flex__content-lg-5 {
+  .l-flex__item-lg-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
 
-  .l-flex__content-lg-6 {
+  .l-flex__item-lg-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .l-flex__content-lg-7 {
+  .l-flex__item-lg-7 {
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
 
-  .l-flex__content-lg-8 {
+  .l-flex__item-lg-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
 
-  .l-flex__content-lg-9 {
+  .l-flex__item-lg-9 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .l-flex__content-lg-10 {
+  .l-flex__item-lg-10 {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
 
-  .l-flex__content-lg-11 {
+  .l-flex__item-lg-11 {
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
 
-  .l-flex__content-lg-12 {
+  .l-flex__item-lg-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -2142,80 +2078,80 @@ textarea {
     align-items: baseline;
   }
 
-  .l-flex__content-xl {
+  .l-flex__item-xl {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .l-flex__content-xl-1 {
+  .l-flex__item-xl-1 {
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
 
-  .l-flex__content-xl-2 {
+  .l-flex__item-xl-2 {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
 
-  .l-flex__content-xl-3 {
+  .l-flex__item-xl-3 {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .l-flex__content-xl-4 {
+  .l-flex__item-xl-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
 
-  .l-flex__content-xl-5 {
+  .l-flex__item-xl-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
 
-  .l-flex__content-xl-6 {
+  .l-flex__item-xl-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .l-flex__content-xl-7 {
+  .l-flex__item-xl-7 {
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
 
-  .l-flex__content-xl-8 {
+  .l-flex__item-xl-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
 
-  .l-flex__content-xl-9 {
+  .l-flex__item-xl-9 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .l-flex__content-xl-10 {
+  .l-flex__item-xl-10 {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
 
-  .l-flex__content-xl-11 {
+  .l-flex__item-xl-11 {
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
 
-  .l-flex__content-xl-12 {
+  .l-flex__item-xl-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -2613,36 +2549,30 @@ textarea {
   position: relative;
   padding: 30px 10px;
 }
-
 .l-section--padding-no {
   padding: 0;
 }
-
 .l-section--padding-wide {
   padding: 50px 10px;
 }
-
 .l-section--padding-narrow {
   padding: 10px;
 }
-
 @media (min-width: 768px) {
   .l-section {
     padding: 50px 20px;
   }
-
   .l-section--padding-no {
     padding: 0;
   }
-
   .l-section--padding-wide {
     padding: 100px 20px;
   }
-
   .l-section--padding-narrow {
     padding: 20px 20px;
   }
 }
+
 /*--------------------------------------------------
   Article
 --------------------------------------------------*/
@@ -3223,7 +3153,7 @@ textarea {
     visibility: hidden;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .u-hidden-md-min {
     display: none;
     visibility: hidden;
@@ -3293,7 +3223,7 @@ textarea {
     float: none;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .u-float-left-md {
     float: left;
   }
@@ -10533,7 +10463,7 @@ textarea {
     border-style: solid;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .u-bordered--top-md {
     border-width: 1px 0 0 0;
   }

@@ -6,7 +6,7 @@
 .u-float-right { float: right; }
 .u-float-none { float: none; }
 
-@include media-breakpoint(sm) {
+@include media-breakpoint-min(sm) {
 
   .u-float-left-sm { float: left; }
   .u-float-right-sm { float: right; }
@@ -14,7 +14,7 @@
 
 }
 
-@include media-breakpoint(md) {
+@include media-breakpoint-min(md) {
 
   .u-float-left-md { float: left; }
   .u-float-right-md { float: right; }
@@ -22,7 +22,7 @@
 
 }
 
-@include media-breakpoint(lg) {
+@include media-breakpoint-min(lg) {
 
   .u-float-left-lg { float: left; }
   .u-float-right-lg { float: right; }
@@ -30,7 +30,7 @@
 
 }
 
-@include media-breakpoint(xl) {
+@include media-breakpoint-min(xl) {
 
   .u-float-left-xl { float: left; }
   .u-float-right-xl { float: right; }

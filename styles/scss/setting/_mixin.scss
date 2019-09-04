@@ -1,17 +1,84 @@
-// Breakpoints
+// Breakpoint (min)
+// @include media-breakpoint-min(sm) {...}
+@mixin media-breakpoint-min($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
 
-@mixin media-breakpoint($name) {
-  // If the key exists in the map
-  @if map-has-key($breakpoints, $name) {
-    // Prints a media query based on the value
-    @media #{inspect(map-get($breakpoints, $name))} {
+// Breakpoint (max)
+// @include media-breakpoint-max(sm) {...}
+@mixin media-breakpoint-max($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+// Breakpoint (mix)
+// @include media-breakpoint-mix(sm, md) {...}
+@mixin media-breakpoint-mix($lower, $upper) {
+
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+    $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
+
+    @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+      @content;
+    }
+  } @else {
+    @if (map-has-key($breakpoints, $lower) == false) {
+      @warn 'Invalid breakpoint (min): #{$lower}.';
+    }
+    @if (map-has-key($breakpoints, $upper) == false) {
+      @warn 'Invalid breakpoint (max): #{$upper}.';
+    }
+  }
+}
+
+// Media Queries
+// div {... @include media-breakpoint-min('md') {...} }
+@mixin media-breakpoint-min($width, $type: min) {
+  @if map-has-key($breakpoints, $width) {
+    $width: map-get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media (#{$type}-width: $width) {
       @content;
     }
   }
+}
 
-  // If the key doesn't exist in the map
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
+// Responsive ratio
+// div { @include responsive-ratio(16,9); }
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+  $padding: unquote( ( $y / $x ) * 100 + '%' );
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  } @else {
+    padding-top: $padding;
   }
+}
+
+// Container
+
+@mixin container() {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }

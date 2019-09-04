@@ -10,6 +10,8 @@
  */
 
 
+ @import 'setting/variable';
+ @import 'setting/mixin';
  @import 'component/browser-notice';
  @import 'component/tab-link';
  @import 'component/button';
