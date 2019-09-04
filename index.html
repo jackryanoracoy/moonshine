@@ -92,7 +92,7 @@
       <div class="l-site-atf l-parallax u-background-grey-200">
 
         <div class="l-container l-flex l-flex--alt-center u-height-100">
-          <div class="l-flex__content-12">
+          <div class="l-flex__item-12">
             <section class="l-section l-section--padding-narrow">
 
               <h2 class="c-heading-above-the-fold u-text-center">Hello Moonshine</h2>
@@ -133,7 +133,7 @@
               <br>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Or you can use our <code class="u-color-danger">boilerplate.html</code> included in the package.</p>
 
               <div class="l-flex l-cluster-gap-20 l-cluster-gap-md-40">
-                <div class="l-flex__content-12 l-flex__content-md-9 l-flex__content-lg-10 l-cluster-gap__item">
+                <div class="l-flex__item-12 l-flex__item-md-9 l-flex__item-lg-10 l-cluster-gap__item">
                   <article id="content" class="l-article">
 
                     <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Content</h3>
@@ -308,7 +308,7 @@
                   </article><!-- End - article -->
                 </div><!-- End - flex content -->
 
-                <div class="l-flex__content-12 l-flex__content-md-3 l-flex__content-lg-2 l-cluster-gap__item">
+                <div class="l-flex__item-12 l-flex__item-md-3 l-flex__item-lg-2 l-cluster-gap__item">
                   <aside class="l-aside u-mar-top-md-50">
                     <h4 class="u-font-normal u-mar-bottom-20 u-mar-bottom-md-40">Getting Started</h4>
                     <ul class="u-list u-list--none u-font-medium u-color-grey-600">
@@ -336,7 +336,7 @@
               <br>This approach is to ensure everyone who participates in the development of a website works with a single codebase and speaks the same language.</p>
 
               <div class="l-flex l-cluster-gap-20 l-cluster-gap-md-40">
-                <div class="l-flex__content-12 l-flex__content-md-9 l-flex__content-lg-10 l-cluster-gap__item">
+                <div class="l-flex__item-12 l-flex__item-md-9 l-flex__item-lg-10 l-cluster-gap__item">
 
                   <article id="separated" class="l-article">
 
@@ -409,10 +409,10 @@
                       .l-flex { ... }
                       .l-flex--wrp-no { ... }
                       .l-flex--wrp-no-md { ... }
-                      .l-flex__content { ... }
-                      .l-flex__content-12 { ... }
-                      .l-flex__content-md { ... }
-                      .l-flex__content-md-12 { ... }
+                      .l-flex__item { ... }
+                      .l-flex__item-12 { ... }
+                      .l-flex__item-md { ... }
+                      .l-flex__item-md-12 { ... }
                       .u-mar-top-10 { ... }
                       .u-mar-top-sm-20 { ... }
                       .u-mar-top-md-50 { ... }
@@ -428,7 +428,7 @@
                   </article><!-- End - article -->
                 </div><!-- End - flex content -->
 
-                <div class="l-flex__content-12 l-flex__content-md-3 l-flex__content-lg-2 l-cluster-gap__item">
+                <div class="l-flex__item-12 l-flex__item-md-3 l-flex__item-lg-2 l-cluster-gap__item">
                   <aside class="l-aside u-mar-top-md-50">
                     <h4 class="u-font-normal u-mar-bottom-20 u-mar-bottom-md-40">Methodology</h4>
                     <ul class="u-list u-list--none u-font-medium u-color-grey-600">
@@ -452,7 +452,7 @@
               <p class="u-bordered u-bordered--bottom u-pad-bottom-20 u-pad-bottom-md-50">Here are some sample of what to expect on the Moonshine codebase, to know more about moonshine's codebase check <code class="u-color-danger">*.css</code> files.</p>
 
               <div class="l-flex l-cluster-gap-20 l-cluster-gap-md-40">
-                <div class="l-flex__content-12 l-flex__content-md-9 l-flex__content-lg-10 l-cluster-gap__item">
+                <div class="l-flex__item-12 l-flex__item-md-9 l-flex__item-lg-10 l-cluster-gap__item">
 
                   <article id="hidden" class="l-article">
 
@@ -1068,8 +1068,8 @@
                     <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
                       <pre><code>
                       <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex"</span><span>&gt;</span>
-                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__content-12 l-flex__content-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
-                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__content-12 l-flex__content-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
+                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__item-12 l-flex__item-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
+                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__item-12 l-flex__item-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
                       <span>&lt;/div&gt;</span>
                       <!-- Sample Codes -->
                       </code></pre>
@@ -1128,80 +1128,80 @@
                       .l-flex--alt-stretch { align-items: stretch; }
                       .l-flex--alt-baseline { align-items: baseline; }
 
-                      .l-flex__content {
+                      .l-flex__item {
                         -ms-flex: 0 0 auto;
                         flex: 0 0 auto;
                         width: auto;
                         max-width: 100%;
                       }
 
-                      .l-flex__content-1 {
+                      .l-flex__item-1 {
                         -ms-flex: 0 0 8.333333%;
                         flex: 0 0 8.333333%;
                         max-width: 8.333333%;
                       }
 
-                      .l-flex__content-2 {
+                      .l-flex__item-2 {
                         -ms-flex: 0 0 16.666667%;
                         flex: 0 0 16.666667%;
                         max-width: 16.666667%;
                       }
 
-                      .l-flex__content-3 {
+                      .l-flex__item-3 {
                         -ms-flex: 0 0 25%;
                         flex: 0 0 25%;
                         max-width: 25%;
                       }
 
-                      .l-flex__content-4 {
+                      .l-flex__item-4 {
                         -ms-flex: 0 0 33.333333%;
                         flex: 0 0 33.333333%;
                         max-width: 33.333333%;
                       }
 
-                      .l-flex__content-5 {
+                      .l-flex__item-5 {
                         -ms-flex: 0 0 41.666667%;
                         flex: 0 0 41.666667%;
                         max-width: 41.666667%;
                       }
 
-                      .l-flex__content-6 {
+                      .l-flex__item-6 {
                         -ms-flex: 0 0 50%;
                         flex: 0 0 50%;
                         max-width: 50%;
                       }
 
-                      .l-flex__content-7 {
+                      .l-flex__item-7 {
                         -ms-flex: 0 0 58.333333%;
                         flex: 0 0 58.333333%;
                         max-width: 58.333333%;
                       }
 
-                      .l-flex__content-8 {
+                      .l-flex__item-8 {
                         -ms-flex: 0 0 66.666667%;
                         flex: 0 0 66.666667%;
                         max-width: 66.666667%;
                       }
 
-                      .l-flex__content-9 {
+                      .l-flex__item-9 {
                         -ms-flex: 0 0 75%;
                         flex: 0 0 75%;
                         max-width: 75%;
                       }
 
-                      .l-flex__content-10 {
+                      .l-flex__item-10 {
                         -ms-flex: 0 0 83.333333%;
                         flex: 0 0 83.333333%;
                         max-width: 83.333333%;
                       }
 
-                      .l-flex__content-11 {
+                      .l-flex__item-11 {
                         -ms-flex: 0 0 91.666667%;
                         flex: 0 0 91.666667%;
                         max-width: 91.666667%;
                       }
 
-                      .l-flex__content-12 {
+                      .l-flex__item-12 {
                         -ms-flex: 0 0 100%;
                         flex: 0 0 100%;
                         max-width: 100%;
@@ -1511,7 +1511,7 @@
 
                 </div><!-- End - flex content -->
 
-                <div class="l-flex__content-12 l-flex__content-md-3 l-flex__content-lg-2 l-cluster-gap__item">
+                <div class="l-flex__item-12 l-flex__item-md-3 l-flex__item-lg-2 l-cluster-gap__item">
                   <aside class="l-aside u-mar-top-md-50">
                     <h4 class="u-font-normal u-mar-bottom-20 u-mar-bottom-md-40">Sample</h4>
                     <ul class="u-list u-list--none u-font-medium u-color-grey-600">
