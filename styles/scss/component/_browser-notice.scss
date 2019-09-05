@@ -4,8 +4,7 @@
 
 .c-browser-notice {
   padding: 20px;
-  color: #FFF;
+  color: $white;
   text-align: center;
-  background-color: #E53935;
-  background-color: var(--danger, #E53935);
+  background-color: $danger;
 }

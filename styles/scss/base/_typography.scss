@@ -15,8 +15,7 @@ strong { font-weight: bolder; }
 small { font-size: 75%; }
 
 pre {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-family: var(--font-family-monospace, monospace);
+  font-family: $monospace;
   font-size: 1.4rem;
 }
 

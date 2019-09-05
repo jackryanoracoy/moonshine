@@ -10,7 +10,7 @@
   &--padding-wide { padding: 50px 10px; }
   &--padding-narrow { padding: 10px; }
 
-  @include media-breakpoint-min('md') {
+  @include media-breakpoint-min(md) {
     padding: 50px 20px;
 
     &--padding-no { padding: 0; }

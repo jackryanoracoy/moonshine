@@ -1,5 +1,3 @@
-@-ms-viewport { width: device-width; }
-
 /*--------------------------------------------------
   Reset
 --------------------------------------------------*/
@@ -7,23 +5,14 @@
 *,
 *:before,
 *:after {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
+  @include ua-pad-mar-reset;
+  @include box-sizing(inherit);
 
-@media print {
-
-  *,
-  *:before,
-  *:after {
+  @media print {
     background: transparent !important;
     color: #000 !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
 }

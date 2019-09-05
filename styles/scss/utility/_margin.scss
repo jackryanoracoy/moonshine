@@ -154,646 +154,163 @@
 .u-mar-hor-95 { margin-right: 95px; margin-left: 95px; }
 .u-mar-hor-100 { margin-right: 100px; margin-left: 100px; }
 
-@media (min-width: 576px) {
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .u-mar-#{$breakpoint} { margin: auto; }
+    .u-mar-#{$breakpoint}-0 { margin: 0; }
+    .u-mar-#{$breakpoint}-5 { margin: 5px; }
+    .u-mar-#{$breakpoint}-10 { margin: 10px; }
+    .u-mar-#{$breakpoint}-15 { margin: 15px; }
+    .u-mar-#{$breakpoint}-20 { margin: 20px; }
+    .u-mar-#{$breakpoint}-25 { margin: 25px; }
+    .u-mar-#{$breakpoint}-30 { margin: 30px; }
+    .u-mar-#{$breakpoint}-35 { margin: 35px; }
+    .u-mar-#{$breakpoint}-40 { margin: 40px; }
+    .u-mar-#{$breakpoint}-45 { margin: 45px; }
+    .u-mar-#{$breakpoint}-50 { margin: 50px; }
+    .u-mar-#{$breakpoint}-55 { margin: 55px; }
+    .u-mar-#{$breakpoint}-60 { margin: 60px; }
+    .u-mar-#{$breakpoint}-65 { margin: 65px; }
+    .u-mar-#{$breakpoint}-70 { margin: 70px; }
+    .u-mar-#{$breakpoint}-75 { margin: 75px; }
+    .u-mar-#{$breakpoint}-80 { margin: 80px; }
+    .u-mar-#{$breakpoint}-85 { margin: 85px; }
+    .u-mar-#{$breakpoint}-90 { margin: 90px; }
+    .u-mar-#{$breakpoint}-95 { margin: 95px; }
+    .u-mar-#{$breakpoint}-100 { margin: 100px; }
 
-  .u-mar-sm { margin: auto; }
-  .u-mar-sm-0 { margin: 0; }
-  .u-mar-sm-5 { margin: 5px; }
-  .u-mar-sm-10 { margin: 10px; }
-  .u-mar-sm-15 { margin: 15px; }
-  .u-mar-sm-20 { margin: 20px; }
-  .u-mar-sm-25 { margin: 25px; }
-  .u-mar-sm-30 { margin: 30px; }
-  .u-mar-sm-35 { margin: 35px; }
-  .u-mar-sm-40 { margin: 40px; }
-  .u-mar-sm-45 { margin: 45px; }
-  .u-mar-sm-50 { margin: 50px; }
-  .u-mar-sm-55 { margin: 55px; }
-  .u-mar-sm-60 { margin: 60px; }
-  .u-mar-sm-65 { margin: 65px; }
-  .u-mar-sm-70 { margin: 70px; }
-  .u-mar-sm-75 { margin: 75px; }
-  .u-mar-sm-80 { margin: 80px; }
-  .u-mar-sm-85 { margin: 85px; }
-  .u-mar-sm-90 { margin: 90px; }
-  .u-mar-sm-95 { margin: 95px; }
-  .u-mar-sm-100 { margin: 100px; }
+    .u-mar-top-#{$breakpoint} { margin-top: auto; }
+    .u-mar-top-#{$breakpoint}-0 { margin-top: 0; }
+    .u-mar-top-#{$breakpoint}-5 { margin-top: 5px; }
+    .u-mar-top-#{$breakpoint}-10 { margin-top: 10px; }
+    .u-mar-top-#{$breakpoint}-15 { margin-top: 15px; }
+    .u-mar-top-#{$breakpoint}-20 { margin-top: 20px; }
+    .u-mar-top-#{$breakpoint}-25 { margin-top: 25px; }
+    .u-mar-top-#{$breakpoint}-30 { margin-top: 30px; }
+    .u-mar-top-#{$breakpoint}-35 { margin-top: 35px; }
+    .u-mar-top-#{$breakpoint}-40 { margin-top: 40px; }
+    .u-mar-top-#{$breakpoint}-45 { margin-top: 45px; }
+    .u-mar-top-#{$breakpoint}-50 { margin-top: 50px; }
+    .u-mar-top-#{$breakpoint}-55 { margin-top: 55px; }
+    .u-mar-top-#{$breakpoint}-60 { margin-top: 60px; }
+    .u-mar-top-#{$breakpoint}-65 { margin-top: 65px; }
+    .u-mar-top-#{$breakpoint}-70 { margin-top: 70px; }
+    .u-mar-top-#{$breakpoint}-75 { margin-top: 75px; }
+    .u-mar-top-#{$breakpoint}-80 { margin-top: 80px; }
+    .u-mar-top-#{$breakpoint}-85 { margin-top: 85px; }
+    .u-mar-top-#{$breakpoint}-90 { margin-top: 90px; }
+    .u-mar-top-#{$breakpoint}-95 { margin-top: 95px; }
+    .u-mar-top-#{$breakpoint}-100 { margin-top: 100px; }
 
-  .u-mar-top-sm { margin-top: auto; }
-  .u-mar-top-sm-0 { margin-top: 0; }
-  .u-mar-top-sm-5 { margin-top: 5px; }
-  .u-mar-top-sm-10 { margin-top: 10px; }
-  .u-mar-top-sm-15 { margin-top: 15px; }
-  .u-mar-top-sm-20 { margin-top: 20px; }
-  .u-mar-top-sm-25 { margin-top: 25px; }
-  .u-mar-top-sm-30 { margin-top: 30px; }
-  .u-mar-top-sm-35 { margin-top: 35px; }
-  .u-mar-top-sm-40 { margin-top: 40px; }
-  .u-mar-top-sm-45 { margin-top: 45px; }
-  .u-mar-top-sm-50 { margin-top: 50px; }
-  .u-mar-top-sm-55 { margin-top: 55px; }
-  .u-mar-top-sm-60 { margin-top: 60px; }
-  .u-mar-top-sm-65 { margin-top: 65px; }
-  .u-mar-top-sm-70 { margin-top: 70px; }
-  .u-mar-top-sm-75 { margin-top: 75px; }
-  .u-mar-top-sm-80 { margin-top: 80px; }
-  .u-mar-top-sm-85 { margin-top: 85px; }
-  .u-mar-top-sm-90 { margin-top: 90px; }
-  .u-mar-top-sm-95 { margin-top: 95px; }
-  .u-mar-top-sm-100 { margin-top: 100px; }
+    .u-mar-right-#{$breakpoint} { margin-right: auto; }
+    .u-mar-right-#{$breakpoint}-0 { margin-right: 0; }
+    .u-mar-right-#{$breakpoint}-5 { margin-right: 5px; }
+    .u-mar-right-#{$breakpoint}-10 { margin-right: 10px; }
+    .u-mar-right-#{$breakpoint}-15 { margin-right: 15px; }
+    .u-mar-right-#{$breakpoint}-20 { margin-right: 20px; }
+    .u-mar-right-#{$breakpoint}-25 { margin-right: 25px; }
+    .u-mar-right-#{$breakpoint}-30 { margin-right: 30px; }
+    .u-mar-right-#{$breakpoint}-35 { margin-right: 35px; }
+    .u-mar-right-#{$breakpoint}-40 { margin-right: 40px; }
+    .u-mar-right-#{$breakpoint}-45 { margin-right: 45px; }
+    .u-mar-right-#{$breakpoint}-50 { margin-right: 50px; }
+    .u-mar-right-#{$breakpoint}-55 { margin-right: 55px; }
+    .u-mar-right-#{$breakpoint}-60 { margin-right: 60px; }
+    .u-mar-right-#{$breakpoint}-65 { margin-right: 65px; }
+    .u-mar-right-#{$breakpoint}-70 { margin-right: 70px; }
+    .u-mar-right-#{$breakpoint}-75 { margin-right: 75px; }
+    .u-mar-right-#{$breakpoint}-80 { margin-right: 80px; }
+    .u-mar-right-#{$breakpoint}-85 { margin-right: 85px; }
+    .u-mar-right-#{$breakpoint}-90 { margin-right: 90px; }
+    .u-mar-right-#{$breakpoint}-95 { margin-right: 95px; }
+    .u-mar-right-#{$breakpoint}-100 { margin-right: 100px; }
 
-  .u-mar-right-sm { margin-right: auto; }
-  .u-mar-right-sm-0 { margin-right: 0; }
-  .u-mar-right-sm-5 { margin-right: 5px; }
-  .u-mar-right-sm-10 { margin-right: 10px; }
-  .u-mar-right-sm-15 { margin-right: 15px; }
-  .u-mar-right-sm-20 { margin-right: 20px; }
-  .u-mar-right-sm-25 { margin-right: 25px; }
-  .u-mar-right-sm-30 { margin-right: 30px; }
-  .u-mar-right-sm-35 { margin-right: 35px; }
-  .u-mar-right-sm-40 { margin-right: 40px; }
-  .u-mar-right-sm-45 { margin-right: 45px; }
-  .u-mar-right-sm-50 { margin-right: 50px; }
-  .u-mar-right-sm-55 { margin-right: 55px; }
-  .u-mar-right-sm-60 { margin-right: 60px; }
-  .u-mar-right-sm-65 { margin-right: 65px; }
-  .u-mar-right-sm-70 { margin-right: 70px; }
-  .u-mar-right-sm-75 { margin-right: 75px; }
-  .u-mar-right-sm-80 { margin-right: 80px; }
-  .u-mar-right-sm-85 { margin-right: 85px; }
-  .u-mar-right-sm-90 { margin-right: 90px; }
-  .u-mar-right-sm-95 { margin-right: 95px; }
-  .u-mar-right-sm-100 { margin-right: 100px; }
+    .u-mar-bottom-#{$breakpoint} { margin-bottom: auto; }
+    .u-mar-bottom-#{$breakpoint}-0 { margin-bottom: 0; }
+    .u-mar-bottom-#{$breakpoint}-5 { margin-bottom: 5px; }
+    .u-mar-bottom-#{$breakpoint}-10 { margin-bottom: 10px; }
+    .u-mar-bottom-#{$breakpoint}-15 { margin-bottom: 15px; }
+    .u-mar-bottom-#{$breakpoint}-20 { margin-bottom: 20px; }
+    .u-mar-bottom-#{$breakpoint}-25 { margin-bottom: 25px; }
+    .u-mar-bottom-#{$breakpoint}-30 { margin-bottom: 30px; }
+    .u-mar-bottom-#{$breakpoint}-35 { margin-bottom: 35px; }
+    .u-mar-bottom-#{$breakpoint}-40 { margin-bottom: 40px; }
+    .u-mar-bottom-#{$breakpoint}-45 { margin-bottom: 45px; }
+    .u-mar-bottom-#{$breakpoint}-50 { margin-bottom: 50px; }
+    .u-mar-bottom-#{$breakpoint}-55 { margin-bottom: 55px; }
+    .u-mar-bottom-#{$breakpoint}-60 { margin-bottom: 60px; }
+    .u-mar-bottom-#{$breakpoint}-65 { margin-bottom: 65px; }
+    .u-mar-bottom-#{$breakpoint}-70 { margin-bottom: 70px; }
+    .u-mar-bottom-#{$breakpoint}-75 { margin-bottom: 75px; }
+    .u-mar-bottom-#{$breakpoint}-80 { margin-bottom: 80px; }
+    .u-mar-bottom-#{$breakpoint}-85 { margin-bottom: 85px; }
+    .u-mar-bottom-#{$breakpoint}-90 { margin-bottom: 90px; }
+    .u-mar-bottom-#{$breakpoint}-95 { margin-bottom: 95px; }
+    .u-mar-bottom-#{$breakpoint}-100 { margin-bottom: 100px; }
 
-  .u-mar-bottom-sm { margin-bottom: auto; }
-  .u-mar-bottom-sm-0 { margin-bottom: 0; }
-  .u-mar-bottom-sm-5 { margin-bottom: 5px; }
-  .u-mar-bottom-sm-10 { margin-bottom: 10px; }
-  .u-mar-bottom-sm-15 { margin-bottom: 15px; }
-  .u-mar-bottom-sm-20 { margin-bottom: 20px; }
-  .u-mar-bottom-sm-25 { margin-bottom: 25px; }
-  .u-mar-bottom-sm-30 { margin-bottom: 30px; }
-  .u-mar-bottom-sm-35 { margin-bottom: 35px; }
-  .u-mar-bottom-sm-40 { margin-bottom: 40px; }
-  .u-mar-bottom-sm-45 { margin-bottom: 45px; }
-  .u-mar-bottom-sm-50 { margin-bottom: 50px; }
-  .u-mar-bottom-sm-55 { margin-bottom: 55px; }
-  .u-mar-bottom-sm-60 { margin-bottom: 60px; }
-  .u-mar-bottom-sm-65 { margin-bottom: 65px; }
-  .u-mar-bottom-sm-70 { margin-bottom: 70px; }
-  .u-mar-bottom-sm-75 { margin-bottom: 75px; }
-  .u-mar-bottom-sm-80 { margin-bottom: 80px; }
-  .u-mar-bottom-sm-85 { margin-bottom: 85px; }
-  .u-mar-bottom-sm-90 { margin-bottom: 90px; }
-  .u-mar-bottom-sm-95 { margin-bottom: 95px; }
-  .u-mar-bottom-sm-100 { margin-bottom: 100px; }
+    .u-mar-left-#{$breakpoint} { margin-left: auto; }
+    .u-mar-left-#{$breakpoint}-0 { margin-left: 0; }
+    .u-mar-left-#{$breakpoint}-5 { margin-left: 5px; }
+    .u-mar-left-#{$breakpoint}-10 { margin-left: 10px; }
+    .u-mar-left-#{$breakpoint}-15 { margin-left: 15px; }
+    .u-mar-left-#{$breakpoint}-20 { margin-left: 20px; }
+    .u-mar-left-#{$breakpoint}-25 { margin-left: 25px; }
+    .u-mar-left-#{$breakpoint}-30 { margin-left: 30px; }
+    .u-mar-left-#{$breakpoint}-35 { margin-left: 35px; }
+    .u-mar-left-#{$breakpoint}-40 { margin-left: 40px; }
+    .u-mar-left-#{$breakpoint}-45 { margin-left: 45px; }
+    .u-mar-left-#{$breakpoint}-50 { margin-left: 50px; }
+    .u-mar-left-#{$breakpoint}-55 { margin-left: 55px; }
+    .u-mar-left-#{$breakpoint}-60 { margin-left: 60px; }
+    .u-mar-left-#{$breakpoint}-65 { margin-left: 65px; }
+    .u-mar-left-#{$breakpoint}-70 { margin-left: 70px; }
+    .u-mar-left-#{$breakpoint}-75 { margin-left: 75px; }
+    .u-mar-left-#{$breakpoint}-80 { margin-left: 80px; }
+    .u-mar-left-#{$breakpoint}-85 { margin-left: 85px; }
+    .u-mar-left-#{$breakpoint}-90 { margin-left: 90px; }
+    .u-mar-left-#{$breakpoint}-95 { margin-left: 95px; }
+    .u-mar-left-#{$breakpoint}-100 { margin-left: 100px; }
 
-  .u-mar-left-sm { margin-left: auto; }
-  .u-mar-left-sm-0 { margin-left: 0; }
-  .u-mar-left-sm-5 { margin-left: 5px; }
-  .u-mar-left-sm-10 { margin-left: 10px; }
-  .u-mar-left-sm-15 { margin-left: 15px; }
-  .u-mar-left-sm-20 { margin-left: 20px; }
-  .u-mar-left-sm-25 { margin-left: 25px; }
-  .u-mar-left-sm-30 { margin-left: 30px; }
-  .u-mar-left-sm-35 { margin-left: 35px; }
-  .u-mar-left-sm-40 { margin-left: 40px; }
-  .u-mar-left-sm-45 { margin-left: 45px; }
-  .u-mar-left-sm-50 { margin-left: 50px; }
-  .u-mar-left-sm-55 { margin-left: 55px; }
-  .u-mar-left-sm-60 { margin-left: 60px; }
-  .u-mar-left-sm-65 { margin-left: 65px; }
-  .u-mar-left-sm-70 { margin-left: 70px; }
-  .u-mar-left-sm-75 { margin-left: 75px; }
-  .u-mar-left-sm-80 { margin-left: 80px; }
-  .u-mar-left-sm-85 { margin-left: 85px; }
-  .u-mar-left-sm-90 { margin-left: 90px; }
-  .u-mar-left-sm-95 { margin-left: 95px; }
-  .u-mar-left-sm-100 { margin-left: 100px; }
+    .u-mar-ver-#{$breakpoint}-5 { margin-top: 5px; margin-bottom: 5px; }
+    .u-mar-ver-#{$breakpoint}-10 { margin-top: 10px; margin-bottom: 10px; }
+    .u-mar-ver-#{$breakpoint}-15 { margin-top: 15px; margin-bottom: 15px; }
+    .u-mar-ver-#{$breakpoint}-20 { margin-top: 20px; margin-bottom: 20px; }
+    .u-mar-ver-#{$breakpoint}-25 { margin-top: 25px; margin-bottom: 25px; }
+    .u-mar-ver-#{$breakpoint}-30 { margin-top: 30px; margin-bottom: 30px; }
+    .u-mar-ver-#{$breakpoint}-35 { margin-top: 35px; margin-bottom: 35px; }
+    .u-mar-ver-#{$breakpoint}-40 { margin-top: 40px; margin-bottom: 40px; }
+    .u-mar-ver-#{$breakpoint}-45 { margin-top: 45px; margin-bottom: 45px; }
+    .u-mar-ver-#{$breakpoint}-50 { margin-top: 50px; margin-bottom: 50px; }
+    .u-mar-ver-#{$breakpoint}-55 { margin-top: 55px; margin-bottom: 55px; }
+    .u-mar-ver-#{$breakpoint}-60 { margin-top: 60px; margin-bottom: 60px; }
+    .u-mar-ver-#{$breakpoint}-65 { margin-top: 65px; margin-bottom: 65px; }
+    .u-mar-ver-#{$breakpoint}-70 { margin-top: 70px; margin-bottom: 70px; }
+    .u-mar-ver-#{$breakpoint}-75 { margin-top: 75px; margin-bottom: 75px; }
+    .u-mar-ver-#{$breakpoint}-80 { margin-top: 80px; margin-bottom: 80px; }
+    .u-mar-ver-#{$breakpoint}-85 { margin-top: 85px; margin-bottom: 85px; }
+    .u-mar-ver-#{$breakpoint}-90 { margin-top: 90px; margin-bottom: 90px; }
+    .u-mar-ver-#{$breakpoint}-95 { margin-top: 95px; margin-bottom: 95px; }
+    .u-mar-ver-#{$breakpoint}-100 { margin-top: 100px; margin-bottom: 100px; }
 
-  .u-mar-ver-sm-5 { margin-top: 5px; margin-bottom: 5px; }
-  .u-mar-ver-sm-10 { margin-top: 10px; margin-bottom: 10px; }
-  .u-mar-ver-sm-15 { margin-top: 15px; margin-bottom: 15px; }
-  .u-mar-ver-sm-20 { margin-top: 20px; margin-bottom: 20px; }
-  .u-mar-ver-sm-25 { margin-top: 25px; margin-bottom: 25px; }
-  .u-mar-ver-sm-30 { margin-top: 30px; margin-bottom: 30px; }
-  .u-mar-ver-sm-35 { margin-top: 35px; margin-bottom: 35px; }
-  .u-mar-ver-sm-40 { margin-top: 40px; margin-bottom: 40px; }
-  .u-mar-ver-sm-45 { margin-top: 45px; margin-bottom: 45px; }
-  .u-mar-ver-sm-50 { margin-top: 50px; margin-bottom: 50px; }
-  .u-mar-ver-sm-55 { margin-top: 55px; margin-bottom: 55px; }
-  .u-mar-ver-sm-60 { margin-top: 60px; margin-bottom: 60px; }
-  .u-mar-ver-sm-65 { margin-top: 65px; margin-bottom: 65px; }
-  .u-mar-ver-sm-70 { margin-top: 70px; margin-bottom: 70px; }
-  .u-mar-ver-sm-75 { margin-top: 75px; margin-bottom: 75px; }
-  .u-mar-ver-sm-80 { margin-top: 80px; margin-bottom: 80px; }
-  .u-mar-ver-sm-85 { margin-top: 85px; margin-bottom: 85px; }
-  .u-mar-ver-sm-90 { margin-top: 90px; margin-bottom: 90px; }
-  .u-mar-ver-sm-95 { margin-top: 95px; margin-bottom: 95px; }
-  .u-mar-ver-sm-100 { margin-top: 100px; margin-bottom: 100px; }
-
-  .u-mar-hor-sm-5 { margin-right: 5px; margin-left: 5px; }
-  .u-mar-hor-sm-10 { margin-right: 10px; margin-left: 10px; }
-  .u-mar-hor-sm-15 { margin-right: 15px; margin-left: 15px; }
-  .u-mar-hor-sm-20 { margin-right: 20px; margin-left: 20px; }
-  .u-mar-hor-sm-25 { margin-right: 25px; margin-left: 25px; }
-  .u-mar-hor-sm-30 { margin-right: 30px; margin-left: 30px; }
-  .u-mar-hor-sm-35 { margin-right: 35px; margin-left: 35px; }
-  .u-mar-hor-sm-40 { margin-right: 40px; margin-left: 40px; }
-  .u-mar-hor-sm-45 { margin-right: 45px; margin-left: 45px; }
-  .u-mar-hor-sm-50 { margin-right: 50px; margin-left: 50px; }
-  .u-mar-hor-sm-55 { margin-right: 55px; margin-left: 55px; }
-  .u-mar-hor-sm-60 { margin-right: 60px; margin-left: 60px; }
-  .u-mar-hor-sm-65 { margin-right: 65px; margin-left: 65px; }
-  .u-mar-hor-sm-70 { margin-right: 70px; margin-left: 70px; }
-  .u-mar-hor-sm-75 { margin-right: 75px; margin-left: 75px; }
-  .u-mar-hor-sm-80 { margin-right: 80px; margin-left: 80px; }
-  .u-mar-hor-sm-85 { margin-right: 85px; margin-left: 85px; }
-  .u-mar-hor-sm-90 { margin-right: 90px; margin-left: 90px; }
-  .u-mar-hor-sm-95 { margin-right: 95px; margin-left: 95px; }
-  .u-mar-hor-sm-100 { margin-right: 100px; margin-left: 100px; }
-
-}
-
-@media (min-width: 768px) {
-
-  .u-mar-md { margin: auto; }
-  .u-mar-md-0 { margin: 0; }
-  .u-mar-md-5 { margin: 5px; }
-  .u-mar-md-10 { margin: 10px; }
-  .u-mar-md-15 { margin: 15px; }
-  .u-mar-md-20 { margin: 20px; }
-  .u-mar-md-25 { margin: 25px; }
-  .u-mar-md-30 { margin: 30px; }
-  .u-mar-md-35 { margin: 35px; }
-  .u-mar-md-40 { margin: 40px; }
-  .u-mar-md-45 { margin: 45px; }
-  .u-mar-md-50 { margin: 50px; }
-  .u-mar-md-55 { margin: 55px; }
-  .u-mar-md-60 { margin: 60px; }
-  .u-mar-md-65 { margin: 65px; }
-  .u-mar-md-70 { margin: 70px; }
-  .u-mar-md-75 { margin: 75px; }
-  .u-mar-md-80 { margin: 80px; }
-  .u-mar-md-85 { margin: 85px; }
-  .u-mar-md-90 { margin: 90px; }
-  .u-mar-md-95 { margin: 95px; }
-  .u-mar-md-100 { margin: 100px; }
-
-  .u-mar-top-md { margin-top: auto; }
-  .u-mar-top-md-0 { margin-top: 0; }
-  .u-mar-top-md-5 { margin-top: 5px; }
-  .u-mar-top-md-10 { margin-top: 10px; }
-  .u-mar-top-md-15 { margin-top: 15px; }
-  .u-mar-top-md-20 { margin-top: 20px; }
-  .u-mar-top-md-25 { margin-top: 25px; }
-  .u-mar-top-md-30 { margin-top: 30px; }
-  .u-mar-top-md-35 { margin-top: 35px; }
-  .u-mar-top-md-40 { margin-top: 40px; }
-  .u-mar-top-md-45 { margin-top: 45px; }
-  .u-mar-top-md-50 { margin-top: 50px; }
-  .u-mar-top-md-55 { margin-top: 55px; }
-  .u-mar-top-md-60 { margin-top: 60px; }
-  .u-mar-top-md-65 { margin-top: 65px; }
-  .u-mar-top-md-70 { margin-top: 70px; }
-  .u-mar-top-md-75 { margin-top: 75px; }
-  .u-mar-top-md-80 { margin-top: 80px; }
-  .u-mar-top-md-85 { margin-top: 85px; }
-  .u-mar-top-md-90 { margin-top: 90px; }
-  .u-mar-top-md-95 { margin-top: 95px; }
-  .u-mar-top-md-100 { margin-top: 100px; }
-
-  .u-mar-right-md { margin-right: auto; }
-  .u-mar-right-md-0 { margin-right: 0; }
-  .u-mar-right-md-5 { margin-right: 5px; }
-  .u-mar-right-md-10 { margin-right: 10px; }
-  .u-mar-right-md-15 { margin-right: 15px; }
-  .u-mar-right-md-20 { margin-right: 20px; }
-  .u-mar-right-md-25 { margin-right: 25px; }
-  .u-mar-right-md-30 { margin-right: 30px; }
-  .u-mar-right-md-35 { margin-right: 35px; }
-  .u-mar-right-md-40 { margin-right: 40px; }
-  .u-mar-right-md-45 { margin-right: 45px; }
-  .u-mar-right-md-50 { margin-right: 50px; }
-  .u-mar-right-md-55 { margin-right: 55px; }
-  .u-mar-right-md-60 { margin-right: 60px; }
-  .u-mar-right-md-65 { margin-right: 65px; }
-  .u-mar-right-md-70 { margin-right: 70px; }
-  .u-mar-right-md-75 { margin-right: 75px; }
-  .u-mar-right-md-80 { margin-right: 80px; }
-  .u-mar-right-md-85 { margin-right: 85px; }
-  .u-mar-right-md-90 { margin-right: 90px; }
-  .u-mar-right-md-95 { margin-right: 95px; }
-  .u-mar-right-md-100 { margin-right: 100px; }
-
-  .u-mar-bottom-md { margin-bottom: auto; }
-  .u-mar-bottom-md-0 { margin-bottom: 0; }
-  .u-mar-bottom-md-5 { margin-bottom: 5px; }
-  .u-mar-bottom-md-10 { margin-bottom: 10px; }
-  .u-mar-bottom-md-15 { margin-bottom: 15px; }
-  .u-mar-bottom-md-20 { margin-bottom: 20px; }
-  .u-mar-bottom-md-25 { margin-bottom: 25px; }
-  .u-mar-bottom-md-30 { margin-bottom: 30px; }
-  .u-mar-bottom-md-35 { margin-bottom: 35px; }
-  .u-mar-bottom-md-40 { margin-bottom: 40px; }
-  .u-mar-bottom-md-45 { margin-bottom: 45px; }
-  .u-mar-bottom-md-50 { margin-bottom: 50px; }
-  .u-mar-bottom-md-55 { margin-bottom: 55px; }
-  .u-mar-bottom-md-60 { margin-bottom: 60px; }
-  .u-mar-bottom-md-65 { margin-bottom: 65px; }
-  .u-mar-bottom-md-70 { margin-bottom: 70px; }
-  .u-mar-bottom-md-75 { margin-bottom: 75px; }
-  .u-mar-bottom-md-80 { margin-bottom: 80px; }
-  .u-mar-bottom-md-85 { margin-bottom: 85px; }
-  .u-mar-bottom-md-90 { margin-bottom: 90px; }
-  .u-mar-bottom-md-95 { margin-bottom: 95px; }
-  .u-mar-bottom-md-100 { margin-bottom: 100px; }
-
-  .u-mar-left-md { margin-left: auto; }
-  .u-mar-left-md-0 { margin-left: 0; }
-  .u-mar-left-md-5 { margin-left: 5px; }
-  .u-mar-left-md-10 { margin-left: 10px; }
-  .u-mar-left-md-15 { margin-left: 15px; }
-  .u-mar-left-md-20 { margin-left: 20px; }
-  .u-mar-left-md-25 { margin-left: 25px; }
-  .u-mar-left-md-30 { margin-left: 30px; }
-  .u-mar-left-md-35 { margin-left: 35px; }
-  .u-mar-left-md-40 { margin-left: 40px; }
-  .u-mar-left-md-45 { margin-left: 45px; }
-  .u-mar-left-md-50 { margin-left: 50px; }
-  .u-mar-left-md-55 { margin-left: 55px; }
-  .u-mar-left-md-60 { margin-left: 60px; }
-  .u-mar-left-md-65 { margin-left: 65px; }
-  .u-mar-left-md-70 { margin-left: 70px; }
-  .u-mar-left-md-75 { margin-left: 75px; }
-  .u-mar-left-md-80 { margin-left: 80px; }
-  .u-mar-left-md-85 { margin-left: 85px; }
-  .u-mar-left-md-90 { margin-left: 90px; }
-  .u-mar-left-md-95 { margin-left: 95px; }
-  .u-mar-left-md-100 { margin-left: 100px; }
-
-  .u-mar-ver-md-5 { margin-top: 5px; margin-bottom: 5px; }
-  .u-mar-ver-md-10 { margin-top: 10px; margin-bottom: 10px; }
-  .u-mar-ver-md-15 { margin-top: 15px; margin-bottom: 15px; }
-  .u-mar-ver-md-20 { margin-top: 20px; margin-bottom: 20px; }
-  .u-mar-ver-md-25 { margin-top: 25px; margin-bottom: 25px; }
-  .u-mar-ver-md-30 { margin-top: 30px; margin-bottom: 30px; }
-  .u-mar-ver-md-35 { margin-top: 35px; margin-bottom: 35px; }
-  .u-mar-ver-md-40 { margin-top: 40px; margin-bottom: 40px; }
-  .u-mar-ver-md-45 { margin-top: 45px; margin-bottom: 45px; }
-  .u-mar-ver-md-50 { margin-top: 50px; margin-bottom: 50px; }
-  .u-mar-ver-md-55 { margin-top: 55px; margin-bottom: 55px; }
-  .u-mar-ver-md-60 { margin-top: 60px; margin-bottom: 60px; }
-  .u-mar-ver-md-65 { margin-top: 65px; margin-bottom: 65px; }
-  .u-mar-ver-md-70 { margin-top: 70px; margin-bottom: 70px; }
-  .u-mar-ver-md-75 { margin-top: 75px; margin-bottom: 75px; }
-  .u-mar-ver-md-80 { margin-top: 80px; margin-bottom: 80px; }
-  .u-mar-ver-md-85 { margin-top: 85px; margin-bottom: 85px; }
-  .u-mar-ver-md-90 { margin-top: 90px; margin-bottom: 90px; }
-  .u-mar-ver-md-95 { margin-top: 95px; margin-bottom: 95px; }
-  .u-mar-ver-md-100 { margin-top: 100px; margin-bottom: 100px; }
-
-  .u-mar-hor-md-5 { margin-right: 5px; margin-left: 5px; }
-  .u-mar-hor-md-10 { margin-right: 10px; margin-left: 10px; }
-  .u-mar-hor-md-15 { margin-right: 15px; margin-left: 15px; }
-  .u-mar-hor-md-20 { margin-right: 20px; margin-left: 20px; }
-  .u-mar-hor-md-25 { margin-right: 25px; margin-left: 25px; }
-  .u-mar-hor-md-30 { margin-right: 30px; margin-left: 30px; }
-  .u-mar-hor-md-35 { margin-right: 35px; margin-left: 35px; }
-  .u-mar-hor-md-40 { margin-right: 40px; margin-left: 40px; }
-  .u-mar-hor-md-45 { margin-right: 45px; margin-left: 45px; }
-  .u-mar-hor-md-50 { margin-right: 50px; margin-left: 50px; }
-  .u-mar-hor-md-55 { margin-right: 55px; margin-left: 55px; }
-  .u-mar-hor-md-60 { margin-right: 60px; margin-left: 60px; }
-  .u-mar-hor-md-65 { margin-right: 65px; margin-left: 65px; }
-  .u-mar-hor-md-70 { margin-right: 70px; margin-left: 70px; }
-  .u-mar-hor-md-75 { margin-right: 75px; margin-left: 75px; }
-  .u-mar-hor-md-80 { margin-right: 80px; margin-left: 80px; }
-  .u-mar-hor-md-85 { margin-right: 85px; margin-left: 85px; }
-  .u-mar-hor-md-90 { margin-right: 90px; margin-left: 90px; }
-  .u-mar-hor-md-95 { margin-right: 95px; margin-left: 95px; }
-  .u-mar-hor-md-100 { margin-right: 100px; margin-left: 100px; }
-
-}
-
-@media (min-width: 992px) {
-
-  .u-mar-lg { margin: auto; }
-  .u-mar-lg-0 { margin: 0; }
-  .u-mar-lg-5 { margin: 5px; }
-  .u-mar-lg-10 { margin: 10px; }
-  .u-mar-lg-15 { margin: 15px; }
-  .u-mar-lg-20 { margin: 20px; }
-  .u-mar-lg-25 { margin: 25px; }
-  .u-mar-lg-30 { margin: 30px; }
-  .u-mar-lg-35 { margin: 35px; }
-  .u-mar-lg-40 { margin: 40px; }
-  .u-mar-lg-45 { margin: 45px; }
-  .u-mar-lg-50 { margin: 50px; }
-  .u-mar-lg-55 { margin: 55px; }
-  .u-mar-lg-60 { margin: 60px; }
-  .u-mar-lg-65 { margin: 65px; }
-  .u-mar-lg-70 { margin: 70px; }
-  .u-mar-lg-75 { margin: 75px; }
-  .u-mar-lg-80 { margin: 80px; }
-  .u-mar-lg-85 { margin: 85px; }
-  .u-mar-lg-90 { margin: 90px; }
-  .u-mar-lg-95 { margin: 95px; }
-  .u-mar-lg-100 { margin: 100px; }
-
-  .u-mar-top-lg { margin-top: auto; }
-  .u-mar-top-lg-0 { margin-top: 0; }
-  .u-mar-top-lg-5 { margin-top: 5px; }
-  .u-mar-top-lg-10 { margin-top: 10px; }
-  .u-mar-top-lg-15 { margin-top: 15px; }
-  .u-mar-top-lg-20 { margin-top: 20px; }
-  .u-mar-top-lg-25 { margin-top: 25px; }
-  .u-mar-top-lg-30 { margin-top: 30px; }
-  .u-mar-top-lg-35 { margin-top: 35px; }
-  .u-mar-top-lg-40 { margin-top: 40px; }
-  .u-mar-top-lg-45 { margin-top: 45px; }
-  .u-mar-top-lg-50 { margin-top: 50px; }
-  .u-mar-top-lg-55 { margin-top: 55px; }
-  .u-mar-top-lg-60 { margin-top: 60px; }
-  .u-mar-top-lg-65 { margin-top: 65px; }
-  .u-mar-top-lg-70 { margin-top: 70px; }
-  .u-mar-top-lg-75 { margin-top: 75px; }
-  .u-mar-top-lg-80 { margin-top: 80px; }
-  .u-mar-top-lg-85 { margin-top: 85px; }
-  .u-mar-top-lg-90 { margin-top: 90px; }
-  .u-mar-top-lg-95 { margin-top: 95px; }
-  .u-mar-top-lg-100 { margin-top: 100px; }
-
-  .u-mar-right-lg { margin-right: auto; }
-  .u-mar-right-lg-0 { margin-right: 0; }
-  .u-mar-right-lg-5 { margin-right: 5px; }
-  .u-mar-right-lg-10 { margin-right: 10px; }
-  .u-mar-right-lg-15 { margin-right: 15px; }
-  .u-mar-right-lg-20 { margin-right: 20px; }
-  .u-mar-right-lg-25 { margin-right: 25px; }
-  .u-mar-right-lg-30 { margin-right: 30px; }
-  .u-mar-right-lg-35 { margin-right: 35px; }
-  .u-mar-right-lg-40 { margin-right: 40px; }
-  .u-mar-right-lg-45 { margin-right: 45px; }
-  .u-mar-right-lg-50 { margin-right: 50px; }
-  .u-mar-right-lg-55 { margin-right: 55px; }
-  .u-mar-right-lg-60 { margin-right: 60px; }
-  .u-mar-right-lg-65 { margin-right: 65px; }
-  .u-mar-right-lg-70 { margin-right: 70px; }
-  .u-mar-right-lg-75 { margin-right: 75px; }
-  .u-mar-right-lg-80 { margin-right: 80px; }
-  .u-mar-right-lg-85 { margin-right: 85px; }
-  .u-mar-right-lg-90 { margin-right: 90px; }
-  .u-mar-right-lg-95 { margin-right: 95px; }
-  .u-mar-right-lg-100 { margin-right: 100px; }
-
-  .u-mar-bottom-lg { margin-bottom: auto; }
-  .u-mar-bottom-lg-0 { margin-bottom: 0; }
-  .u-mar-bottom-lg-5 { margin-bottom: 5px; }
-  .u-mar-bottom-lg-10 { margin-bottom: 10px; }
-  .u-mar-bottom-lg-15 { margin-bottom: 15px; }
-  .u-mar-bottom-lg-20 { margin-bottom: 20px; }
-  .u-mar-bottom-lg-25 { margin-bottom: 25px; }
-  .u-mar-bottom-lg-30 { margin-bottom: 30px; }
-  .u-mar-bottom-lg-35 { margin-bottom: 35px; }
-  .u-mar-bottom-lg-40 { margin-bottom: 40px; }
-  .u-mar-bottom-lg-45 { margin-bottom: 45px; }
-  .u-mar-bottom-lg-50 { margin-bottom: 50px; }
-  .u-mar-bottom-lg-55 { margin-bottom: 55px; }
-  .u-mar-bottom-lg-60 { margin-bottom: 60px; }
-  .u-mar-bottom-lg-65 { margin-bottom: 65px; }
-  .u-mar-bottom-lg-70 { margin-bottom: 70px; }
-  .u-mar-bottom-lg-75 { margin-bottom: 75px; }
-  .u-mar-bottom-lg-80 { margin-bottom: 80px; }
-  .u-mar-bottom-lg-85 { margin-bottom: 85px; }
-  .u-mar-bottom-lg-90 { margin-bottom: 90px; }
-  .u-mar-bottom-lg-95 { margin-bottom: 95px; }
-  .u-mar-bottom-lg-100 { margin-bottom: 100px; }
-
-  .u-mar-left-lg { margin-left: auto; }
-  .u-mar-left-lg-0 { margin-left: 0; }
-  .u-mar-left-lg-5 { margin-left: 5px; }
-  .u-mar-left-lg-10 { margin-left: 10px; }
-  .u-mar-left-lg-15 { margin-left: 15px; }
-  .u-mar-left-lg-20 { margin-left: 20px; }
-  .u-mar-left-lg-25 { margin-left: 25px; }
-  .u-mar-left-lg-30 { margin-left: 30px; }
-  .u-mar-left-lg-35 { margin-left: 35px; }
-  .u-mar-left-lg-40 { margin-left: 40px; }
-  .u-mar-left-lg-45 { margin-left: 45px; }
-  .u-mar-left-lg-50 { margin-left: 50px; }
-  .u-mar-left-lg-55 { margin-left: 55px; }
-  .u-mar-left-lg-60 { margin-left: 60px; }
-  .u-mar-left-lg-65 { margin-left: 65px; }
-  .u-mar-left-lg-70 { margin-left: 70px; }
-  .u-mar-left-lg-75 { margin-left: 75px; }
-  .u-mar-left-lg-80 { margin-left: 80px; }
-  .u-mar-left-lg-85 { margin-left: 85px; }
-  .u-mar-left-lg-90 { margin-left: 90px; }
-  .u-mar-left-lg-95 { margin-left: 95px; }
-  .u-mar-left-lg-100 { margin-left: 100px; }
-
-  .u-mar-ver-lg-5 { margin-top: 5px; margin-bottom: 5px; }
-  .u-mar-ver-lg-10 { margin-top: 10px; margin-bottom: 10px; }
-  .u-mar-ver-lg-15 { margin-top: 15px; margin-bottom: 15px; }
-  .u-mar-ver-lg-20 { margin-top: 20px; margin-bottom: 20px; }
-  .u-mar-ver-lg-25 { margin-top: 25px; margin-bottom: 25px; }
-  .u-mar-ver-lg-30 { margin-top: 30px; margin-bottom: 30px; }
-  .u-mar-ver-lg-35 { margin-top: 35px; margin-bottom: 35px; }
-  .u-mar-ver-lg-40 { margin-top: 40px; margin-bottom: 40px; }
-  .u-mar-ver-lg-45 { margin-top: 45px; margin-bottom: 45px; }
-  .u-mar-ver-lg-50 { margin-top: 50px; margin-bottom: 50px; }
-  .u-mar-ver-lg-55 { margin-top: 55px; margin-bottom: 55px; }
-  .u-mar-ver-lg-60 { margin-top: 60px; margin-bottom: 60px; }
-  .u-mar-ver-lg-65 { margin-top: 65px; margin-bottom: 65px; }
-  .u-mar-ver-lg-70 { margin-top: 70px; margin-bottom: 70px; }
-  .u-mar-ver-lg-75 { margin-top: 75px; margin-bottom: 75px; }
-  .u-mar-ver-lg-80 { margin-top: 80px; margin-bottom: 80px; }
-  .u-mar-ver-lg-85 { margin-top: 85px; margin-bottom: 85px; }
-  .u-mar-ver-lg-90 { margin-top: 90px; margin-bottom: 90px; }
-  .u-mar-ver-lg-95 { margin-top: 95px; margin-bottom: 95px; }
-  .u-mar-ver-lg-100 { margin-top: 100px; margin-bottom: 100px; }
-
-  .u-mar-hor-lg-5 { margin-right: 5px; margin-left: 5px; }
-  .u-mar-hor-lg-10 { margin-right: 10px; margin-left: 10px; }
-  .u-mar-hor-lg-15 { margin-right: 15px; margin-left: 15px; }
-  .u-mar-hor-lg-20 { margin-right: 20px; margin-left: 20px; }
-  .u-mar-hor-lg-25 { margin-right: 25px; margin-left: 25px; }
-  .u-mar-hor-lg-30 { margin-right: 30px; margin-left: 30px; }
-  .u-mar-hor-lg-35 { margin-right: 35px; margin-left: 35px; }
-  .u-mar-hor-lg-40 { margin-right: 40px; margin-left: 40px; }
-  .u-mar-hor-lg-45 { margin-right: 45px; margin-left: 45px; }
-  .u-mar-hor-lg-50 { margin-right: 50px; margin-left: 50px; }
-  .u-mar-hor-lg-55 { margin-right: 55px; margin-left: 55px; }
-  .u-mar-hor-lg-60 { margin-right: 60px; margin-left: 60px; }
-  .u-mar-hor-lg-65 { margin-right: 65px; margin-left: 65px; }
-  .u-mar-hor-lg-70 { margin-right: 70px; margin-left: 70px; }
-  .u-mar-hor-lg-75 { margin-right: 75px; margin-left: 75px; }
-  .u-mar-hor-lg-80 { margin-right: 80px; margin-left: 80px; }
-  .u-mar-hor-lg-85 { margin-right: 85px; margin-left: 85px; }
-  .u-mar-hor-lg-90 { margin-right: 90px; margin-left: 90px; }
-  .u-mar-hor-lg-95 { margin-right: 95px; margin-left: 95px; }
-  .u-mar-hor-lg-100 { margin-right: 100px; margin-left: 100px; }
-
-}
-
-@media (min-width: 1200px) {
-
-  .u-mar-xl { margin: auto; }
-  .u-mar-xl-0 { margin: 0; }
-  .u-mar-xl-5 { margin: 5px; }
-  .u-mar-xl-10 { margin: 10px; }
-  .u-mar-xl-15 { margin: 15px; }
-  .u-mar-xl-20 { margin: 20px; }
-  .u-mar-xl-25 { margin: 25px; }
-  .u-mar-xl-30 { margin: 30px; }
-  .u-mar-xl-35 { margin: 35px; }
-  .u-mar-xl-40 { margin: 40px; }
-  .u-mar-xl-45 { margin: 45px; }
-  .u-mar-xl-50 { margin: 50px; }
-  .u-mar-xl-55 { margin: 55px; }
-  .u-mar-xl-60 { margin: 60px; }
-  .u-mar-xl-65 { margin: 65px; }
-  .u-mar-xl-70 { margin: 70px; }
-  .u-mar-xl-75 { margin: 75px; }
-  .u-mar-xl-80 { margin: 80px; }
-  .u-mar-xl-85 { margin: 85px; }
-  .u-mar-xl-90 { margin: 90px; }
-  .u-mar-xl-95 { margin: 95px; }
-  .u-mar-xl-100 { margin: 100px; }
-
-  .u-mar-top-xl { margin-top: auto; }
-  .u-mar-top-xl-0 { margin-top: 0; }
-  .u-mar-top-xl-5 { margin-top: 5px; }
-  .u-mar-top-xl-10 { margin-top: 10px; }
-  .u-mar-top-xl-15 { margin-top: 15px; }
-  .u-mar-top-xl-20 { margin-top: 20px; }
-  .u-mar-top-xl-25 { margin-top: 25px; }
-  .u-mar-top-xl-30 { margin-top: 30px; }
-  .u-mar-top-xl-35 { margin-top: 35px; }
-  .u-mar-top-xl-40 { margin-top: 40px; }
-  .u-mar-top-xl-45 { margin-top: 45px; }
-  .u-mar-top-xl-50 { margin-top: 50px; }
-  .u-mar-top-xl-55 { margin-top: 55px; }
-  .u-mar-top-xl-60 { margin-top: 60px; }
-  .u-mar-top-xl-65 { margin-top: 65px; }
-  .u-mar-top-xl-70 { margin-top: 70px; }
-  .u-mar-top-xl-75 { margin-top: 75px; }
-  .u-mar-top-xl-80 { margin-top: 80px; }
-  .u-mar-top-xl-85 { margin-top: 85px; }
-  .u-mar-top-xl-90 { margin-top: 90px; }
-  .u-mar-top-xl-95 { margin-top: 95px; }
-  .u-mar-top-xl-100 { margin-top: 100px; }
-
-  .u-mar-right-xl { margin-right: auto; }
-  .u-mar-right-xl-0 { margin-right: 0; }
-  .u-mar-right-xl-5 { margin-right: 5px; }
-  .u-mar-right-xl-10 { margin-right: 10px; }
-  .u-mar-right-xl-15 { margin-right: 15px; }
-  .u-mar-right-xl-20 { margin-right: 20px; }
-  .u-mar-right-xl-25 { margin-right: 25px; }
-  .u-mar-right-xl-30 { margin-right: 30px; }
-  .u-mar-right-xl-35 { margin-right: 35px; }
-  .u-mar-right-xl-40 { margin-right: 40px; }
-  .u-mar-right-xl-45 { margin-right: 45px; }
-  .u-mar-right-xl-50 { margin-right: 50px; }
-  .u-mar-right-xl-55 { margin-right: 55px; }
-  .u-mar-right-xl-60 { margin-right: 60px; }
-  .u-mar-right-xl-65 { margin-right: 65px; }
-  .u-mar-right-xl-70 { margin-right: 70px; }
-  .u-mar-right-xl-75 { margin-right: 75px; }
-  .u-mar-right-xl-80 { margin-right: 80px; }
-  .u-mar-right-xl-85 { margin-right: 85px; }
-  .u-mar-right-xl-90 { margin-right: 90px; }
-  .u-mar-right-xl-95 { margin-right: 95px; }
-  .u-mar-right-xl-100 { margin-right: 100px; }
-
-  .u-mar-bottom-xl { margin-bottom: auto; }
-  .u-mar-bottom-xl-0 { margin-bottom: 0; }
-  .u-mar-bottom-xl-5 { margin-bottom: 5px; }
-  .u-mar-bottom-xl-10 { margin-bottom: 10px; }
-  .u-mar-bottom-xl-15 { margin-bottom: 15px; }
-  .u-mar-bottom-xl-20 { margin-bottom: 20px; }
-  .u-mar-bottom-xl-25 { margin-bottom: 25px; }
-  .u-mar-bottom-xl-30 { margin-bottom: 30px; }
-  .u-mar-bottom-xl-35 { margin-bottom: 35px; }
-  .u-mar-bottom-xl-40 { margin-bottom: 40px; }
-  .u-mar-bottom-xl-45 { margin-bottom: 45px; }
-  .u-mar-bottom-xl-50 { margin-bottom: 50px; }
-  .u-mar-bottom-xl-55 { margin-bottom: 55px; }
-  .u-mar-bottom-xl-60 { margin-bottom: 60px; }
-  .u-mar-bottom-xl-65 { margin-bottom: 65px; }
-  .u-mar-bottom-xl-70 { margin-bottom: 70px; }
-  .u-mar-bottom-xl-75 { margin-bottom: 75px; }
-  .u-mar-bottom-xl-80 { margin-bottom: 80px; }
-  .u-mar-bottom-xl-85 { margin-bottom: 85px; }
-  .u-mar-bottom-xl-90 { margin-bottom: 90px; }
-  .u-mar-bottom-xl-95 { margin-bottom: 95px; }
-  .u-mar-bottom-xl-100 { margin-bottom: 100px; }
-
-  .u-mar-left-xl { margin-left: auto; }
-  .u-mar-left-xl-0 { margin-left: 0; }
-  .u-mar-left-xl-5 { margin-left: 5px; }
-  .u-mar-left-xl-10 { margin-left: 10px; }
-  .u-mar-left-xl-15 { margin-left: 15px; }
-  .u-mar-left-xl-20 { margin-left: 20px; }
-  .u-mar-left-xl-25 { margin-left: 25px; }
-  .u-mar-left-xl-30 { margin-left: 30px; }
-  .u-mar-left-xl-35 { margin-left: 35px; }
-  .u-mar-left-xl-40 { margin-left: 40px; }
-  .u-mar-left-xl-45 { margin-left: 45px; }
-  .u-mar-left-xl-50 { margin-left: 50px; }
-  .u-mar-left-xl-55 { margin-left: 55px; }
-  .u-mar-left-xl-60 { margin-left: 60px; }
-  .u-mar-left-xl-65 { margin-left: 65px; }
-  .u-mar-left-xl-70 { margin-left: 70px; }
-  .u-mar-left-xl-75 { margin-left: 75px; }
-  .u-mar-left-xl-80 { margin-left: 80px; }
-  .u-mar-left-xl-85 { margin-left: 85px; }
-  .u-mar-left-xl-90 { margin-left: 90px; }
-  .u-mar-left-xl-95 { margin-left: 95px; }
-  .u-mar-left-xl-100 { margin-left: 100px; }
-
-  .u-mar-ver-xl-5 { margin-top: 5px; margin-bottom: 5px; }
-  .u-mar-ver-xl-10 { margin-top: 10px; margin-bottom: 10px; }
-  .u-mar-ver-xl-15 { margin-top: 15px; margin-bottom: 15px; }
-  .u-mar-ver-xl-20 { margin-top: 20px; margin-bottom: 20px; }
-  .u-mar-ver-xl-25 { margin-top: 25px; margin-bottom: 25px; }
-  .u-mar-ver-xl-30 { margin-top: 30px; margin-bottom: 30px; }
-  .u-mar-ver-xl-35 { margin-top: 35px; margin-bottom: 35px; }
-  .u-mar-ver-xl-40 { margin-top: 40px; margin-bottom: 40px; }
-  .u-mar-ver-xl-45 { margin-top: 45px; margin-bottom: 45px; }
-  .u-mar-ver-xl-50 { margin-top: 50px; margin-bottom: 50px; }
-  .u-mar-ver-xl-55 { margin-top: 55px; margin-bottom: 55px; }
-  .u-mar-ver-xl-60 { margin-top: 60px; margin-bottom: 60px; }
-  .u-mar-ver-xl-65 { margin-top: 65px; margin-bottom: 65px; }
-  .u-mar-ver-xl-70 { margin-top: 70px; margin-bottom: 70px; }
-  .u-mar-ver-xl-75 { margin-top: 75px; margin-bottom: 75px; }
-  .u-mar-ver-xl-80 { margin-top: 80px; margin-bottom: 80px; }
-  .u-mar-ver-xl-85 { margin-top: 85px; margin-bottom: 85px; }
-  .u-mar-ver-xl-90 { margin-top: 90px; margin-bottom: 90px; }
-  .u-mar-ver-xl-95 { margin-top: 95px; margin-bottom: 95px; }
-  .u-mar-ver-xl-100 { margin-top: 100px; margin-bottom: 100px; }
-
-  .u-mar-hor-xl-5 { margin-right: 5px; margin-left: 5px; }
-  .u-mar-hor-xl-10 { margin-right: 10px; margin-left: 10px; }
-  .u-mar-hor-xl-15 { margin-right: 15px; margin-left: 15px; }
-  .u-mar-hor-xl-20 { margin-right: 20px; margin-left: 20px; }
-  .u-mar-hor-xl-25 { margin-right: 25px; margin-left: 25px; }
-  .u-mar-hor-xl-30 { margin-right: 30px; margin-left: 30px; }
-  .u-mar-hor-xl-35 { margin-right: 35px; margin-left: 35px; }
-  .u-mar-hor-xl-40 { margin-right: 40px; margin-left: 40px; }
-  .u-mar-hor-xl-45 { margin-right: 45px; margin-left: 45px; }
-  .u-mar-hor-xl-50 { margin-right: 50px; margin-left: 50px; }
-  .u-mar-hor-xl-55 { margin-right: 55px; margin-left: 55px; }
-  .u-mar-hor-xl-60 { margin-right: 60px; margin-left: 60px; }
-  .u-mar-hor-xl-65 { margin-right: 65px; margin-left: 65px; }
-  .u-mar-hor-xl-70 { margin-right: 70px; margin-left: 70px; }
-  .u-mar-hor-xl-75 { margin-right: 75px; margin-left: 75px; }
-  .u-mar-hor-xl-80 { margin-right: 80px; margin-left: 80px; }
-  .u-mar-hor-xl-85 { margin-right: 85px; margin-left: 85px; }
-  .u-mar-hor-xl-90 { margin-right: 90px; margin-left: 90px; }
-  .u-mar-hor-xl-95 { margin-right: 95px; margin-left: 95px; }
-  .u-mar-hor-xl-100 { margin-right: 100px; margin-left: 100px; }
-
+    .u-mar-hor-#{$breakpoint}-5 { margin-right: 5px; margin-left: 5px; }
+    .u-mar-hor-#{$breakpoint}-10 { margin-right: 10px; margin-left: 10px; }
+    .u-mar-hor-#{$breakpoint}-15 { margin-right: 15px; margin-left: 15px; }
+    .u-mar-hor-#{$breakpoint}-20 { margin-right: 20px; margin-left: 20px; }
+    .u-mar-hor-#{$breakpoint}-25 { margin-right: 25px; margin-left: 25px; }
+    .u-mar-hor-#{$breakpoint}-30 { margin-right: 30px; margin-left: 30px; }
+    .u-mar-hor-#{$breakpoint}-35 { margin-right: 35px; margin-left: 35px; }
+    .u-mar-hor-#{$breakpoint}-40 { margin-right: 40px; margin-left: 40px; }
+    .u-mar-hor-#{$breakpoint}-45 { margin-right: 45px; margin-left: 45px; }
+    .u-mar-hor-#{$breakpoint}-50 { margin-right: 50px; margin-left: 50px; }
+    .u-mar-hor-#{$breakpoint}-55 { margin-right: 55px; margin-left: 55px; }
+    .u-mar-hor-#{$breakpoint}-60 { margin-right: 60px; margin-left: 60px; }
+    .u-mar-hor-#{$breakpoint}-65 { margin-right: 65px; margin-left: 65px; }
+    .u-mar-hor-#{$breakpoint}-70 { margin-right: 70px; margin-left: 70px; }
+    .u-mar-hor-#{$breakpoint}-75 { margin-right: 75px; margin-left: 75px; }
+    .u-mar-hor-#{$breakpoint}-80 { margin-right: 80px; margin-left: 80px; }
+    .u-mar-hor-#{$breakpoint}-85 { margin-right: 85px; margin-left: 85px; }
+    .u-mar-hor-#{$breakpoint}-90 { margin-right: 90px; margin-left: 90px; }
+    .u-mar-hor-#{$breakpoint}-95 { margin-right: 95px; margin-left: 95px; }
+    .u-mar-hor-#{$breakpoint}-100 { margin-right: 100px; margin-left: 100px; }
+  }
 }

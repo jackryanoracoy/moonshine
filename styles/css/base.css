@@ -8,9 +8,6 @@
  * URL:      https://github.com/jackryanoracoy/moonshine
  * License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
  */
-@-ms-viewport {
-  width: device-width;
-}
 /*--------------------------------------------------
   Reset
 --------------------------------------------------*/
@@ -23,7 +20,6 @@
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-
 @media print {
   *,
   *:before,
@@ -35,6 +31,7 @@
     text-shadow: none !important;
   }
 }
+
 /*--------------------------------------------------
   HTML
 --------------------------------------------------*/
@@ -42,7 +39,6 @@ html {
   min-width: 320px;
   color: #212121;
   font-family: "Open Sans", sans-serif;
-  font-family: var(--font-family-open-sans, "Open Sans");
   font-size: 62.5%;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
@@ -75,17 +71,14 @@ body {
   font-size: 1.4rem;
   font-family: inherit;
 }
-
 body ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
   background-color: #E0E0E0;
 }
-
 body ::-webkit-scrollbar-thumb {
   background-color: #BDBDBD;
 }
-
 @media (min-width: 768px) {
   body {
     font-size: 1.5rem;
@@ -97,6 +90,7 @@ body ::-webkit-scrollbar-thumb {
     width: 100%;
   }
 }
+
 /*--------------------------------------------------
   Links
 --------------------------------------------------*/
@@ -104,17 +98,16 @@ a {
   color: #2196F3;
   text-decoration: none;
 }
-
 a:hover, a:visited, a:active, a:focus {
   color: #2962FF;
   text-decoration: underline;
 }
-
 @media print {
   a, a:visited {
     text-decoration: underline;
   }
 }
+
 /*--------------------------------------------------
   Typography
 --------------------------------------------------*/
@@ -140,7 +133,6 @@ small {
 
 pre {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-family: var(--font-family-monospace, monospace);
   font-size: 1.4rem;
 }
 
@@ -168,12 +160,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 @media print {
-  thead {
+  table thead {
     display: table-header-group;
   }
 }
+
 /*--------------------------------------------------
   Add the correct text decoration
   in Chrome, Edge, IE, Opera, and Safari.
@@ -220,12 +212,12 @@ sup {
 img {
   border-style: none;
 }
-
 @media print {
   img {
     page-break-inside: avoid;
   }
 }
+
 /*--------------------------------------------------
   Show the overflow in IE.
   Show the overflow in Edge.

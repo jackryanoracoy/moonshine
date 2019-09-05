@@ -2,96 +2,15 @@
   Color
 --------------------------------------------------*/
 
-.u-color-primary {
-  color: #263238;
-  color: var(--primary, #263238);
+@each $color, $value in $theme-colors {
+  .u-color-#{$color} { color: #{$value}; }
 }
 
-.u-color-secondary {
-  color: #37474F;
-  color: var(--secondary, #37474F);
+@each $color, $value in $colors {
+  .u-color-#{$color} { color: #{$value}; }
 }
 
-.u-color-success {
-  color: #4CAF50;
-  color: var(--success, #4CAF50);
+@each $shade, $value in $greys {
+  .u-color-grey-#{$shade} { color: #{$value}; }
 }
-
-.u-color-warning {
-  color: #FF5722;
-  color: var(--warning, #FF5722);
-}
-
-.u-color-danger {
-  color: #E53935;
-  color: var(--danger, #E53935);
-}
-
-.u-color-info {
-  color: #03A9F4;
-  color: var(--info, #03A9F4);
-}
-
-.u-color-light {
-  color: #FAFAFA;
-  color: var(--light, #FAFAFA);
-}
-
-.u-color-dark {
-  color: #424242;
-  color: var(--dark, #424242);
-}
-
-.u-color-grey-50 {
-  color: #FAFAFA;
-  color: var(--grey-50, #FAFAFA);
-}
-
-.u-color-grey-100 {
-  color: #F5F5F5;
-  color: var(--grey-100, #F5F5F5);
-}
-
-.u-color-grey-200 {
-  color: #EEEEEE;
-  color: var(--grey-200, #EEEEEE);
-}
-
-.u-color-grey-300 {
-  color: #E0E0E0;
-  color: var(--grey-300, #E0E0E0);
-}
-
-.u-color-grey-400 {
-  color: #BDBDBD;
-  color: var(--grey-400, #BDBDBD);
-}
-
-.u-color-grey-500 {
-  color: #9E9E9E;
-  color: var(--grey-500, #9E9E9E);
-}
-
-.u-color-grey-600 {
-  color: #757575;
-  color: var(--grey-600, #757575);
-}
-
-.u-color-grey-700 {
-  color: #616161;
-  color: var(--grey-700, #616161);
-}
-
-.u-color-grey-800 {
-  color: #424242;
-  color: var(--grey-800, #212121);
-}
-
-.u-color-grey-900 {
-  color: #212121;
-  color: var(--grey-900, #212121);
-}
-
-.u-color-white { color: #FFF; }
-.u-color-black { color: #000; }
 

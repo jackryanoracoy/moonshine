@@ -11,9 +11,9 @@ main { display: block; }
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
 
-@media print { thead { display: table-header-group; } }
+  @media print { thead { display: table-header-group; } }
+}
 
 /*--------------------------------------------------
   Add the correct text decoration
@@ -58,9 +58,11 @@ sup { top: -0.5em; }
   Remove the border on images inside links in IE 10-.
 --------------------------------------------------*/
 
-img { border-style: none; }
+img {
+  border-style: none;
 
-@media print { img {  page-break-inside: avoid; } }
+  @media print { page-break-inside: avoid; }
+}
 
 /*--------------------------------------------------
   Show the overflow in IE.

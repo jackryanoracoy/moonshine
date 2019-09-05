@@ -4,12 +4,8 @@
 
 .l-site-atf {
   height: 480px;
-}
 
-@media (min-width: 768px) {
-
-  .l-site-atf {
+  @include media-breakpoint-min(md) {
     height: 500px;
   }
-
 }

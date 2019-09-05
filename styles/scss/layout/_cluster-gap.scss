@@ -2,78 +2,75 @@
   Cluster Gap (Use this on Flex )
 --------------------------------------------------*/
 
-.l-cluster-gap-10 { margin: -5px; }
-.l-cluster-gap-20 { margin: -10px; }
-.l-cluster-gap-30 { margin: -15px; }
-.l-cluster-gap-40 { margin: -20px; }
-.l-cluster-gap-50 { margin: -25px; }
+.l-cluster-gap-10 {
+  margin: -5px;
 
-.l-cluster-gap-10 > div, .l-cluster-gap-10 > .l-cluster-gap__item { padding: 5px; }
-.l-cluster-gap-20 > div, .l-cluster-gap-20 > .l-cluster-gap__item { padding: 10px; }
-.l-cluster-gap-30 > div, .l-cluster-gap-30 > .l-cluster-gap__item { padding: 15px; }
-.l-cluster-gap-40 > div, .l-cluster-gap-40 > .l-cluster-gap__item { padding: 20px; }
-.l-cluster-gap-50 > div, .l-cluster-gap-50 > .l-cluster-gap__item { padding: 25px; }
+  & > div,
+  & > .l-cluster-gap__item { padding: 5px; }
+}
+.l-cluster-gap-20 {
+  margin: -10px;
 
-@media (min-width: 576px) {
-
-  .l-cluster-gap-sm-10 { margin: -5px; }
-  .l-cluster-gap-sm-20 { margin: -10px; }
-  .l-cluster-gap-sm-30 { margin: -15px; }
-  .l-cluster-gap-sm-40 { margin: -20px; }
-  .l-cluster-gap-sm-50 { margin: -25px; }
-
-  .l-cluster-gap-sm-10 > div, .l-cluster-gap-sm-10 > .l-cluster-gap__item { padding: 5px; }
-  .l-cluster-gap-sm-20 > div, .l-cluster-gap-sm-20 > .l-cluster-gap__item { padding: 10px; }
-  .l-cluster-gap-sm-30 > div, .l-cluster-gap-sm-30 > .l-cluster-gap__item { padding: 15px; }
-  .l-cluster-gap-sm-40 > div, .l-cluster-gap-sm-40 > .l-cluster-gap__item { padding: 20px; }
-  .l-cluster-gap-sm-50 > div, .l-cluster-gap-sm-50 > .l-cluster-gap__item { padding: 25px; }
-
+  & > div,
+  & > .l-cluster-gap__item { padding: 10px; }
 }
 
-@media (min-width: 768px) {
+.l-cluster-gap-30 {
+  margin: -15px;
 
-  .l-cluster-gap-md-10 { margin: -5px; }
-  .l-cluster-gap-md-20 { margin: -10px; }
-  .l-cluster-gap-md-30 { margin: -15px; }
-  .l-cluster-gap-md-40 { margin: -20px; }
-  .l-cluster-gap-md-50 { margin: -25px; }
-
-  .l-cluster-gap-md-10 > div, .l-cluster-gap-md-10 > .l-cluster-gap__item { padding: 5px; }
-  .l-cluster-gap-md-20 > div, .l-cluster-gap-md-20 > .l-cluster-gap__item { padding: 10px; }
-  .l-cluster-gap-md-30 > div, .l-cluster-gap-md-30 > .l-cluster-gap__item { padding: 15px; }
-  .l-cluster-gap-md-40 > div, .l-cluster-gap-md-40 > .l-cluster-gap__item { padding: 20px; }
-  .l-cluster-gap-md-50 > div, .l-cluster-gap-md-50 > .l-cluster-gap__item { padding: 25px; }
-
+  & > div,
+  & > .l-cluster-gap__item { padding: 15px; }
 }
 
-@media (min-width: 992px) {
+.l-cluster-gap-40 {
+  margin: -20px;
 
-  .l-cluster-gap-lg-10 { margin: -5px; }
-  .l-cluster-gap-lg-20 { margin: -10px; }
-  .l-cluster-gap-lg-30 { margin: -15px; }
-  .l-cluster-gap-lg-40 { margin: -20px; }
-  .l-cluster-gap-lg-50 { margin: -25px; }
-
-  .l-cluster-gap-lg-10 > div, .l-cluster-gap-lg-10 > .l-cluster-gap__item { padding: 5px; }
-  .l-cluster-gap-lg-20 > div, .l-cluster-gap-lg-20 > .l-cluster-gap__item { padding: 10px; }
-  .l-cluster-gap-lg-30 > div, .l-cluster-gap-lg-30 > .l-cluster-gap__item { padding: 15px; }
-  .l-cluster-gap-lg-40 > div, .l-cluster-gap-lg-40 > .l-cluster-gap__item { padding: 20px; }
-  .l-cluster-gap-lg-50 > div, .l-cluster-gap-lg-50 > .l-cluster-gap__item { padding: 25px; }
-
+  & > div,
+  & > .l-cluster-gap__item { padding: 20px; }
 }
 
-@media (min-width: 1200px) {
+.l-cluster-gap-50 {
+  margin: -25px;
 
-  .l-cluster-gap-xl-10 { margin: -5px; }
-  .l-cluster-gap-xl-20 { margin: -10px; }
-  .l-cluster-gap-xl-30 { margin: -15px; }
-  .l-cluster-gap-xl-40 { margin: -20px; }
-  .l-cluster-gap-xl-50 { margin: -25px; }
+  & > div,
+  & > .l-cluster-gap__item { padding: 25px; }
+}
 
-  .l-cluster-gap-xl-10 > div, .l-cluster-gap-xl-10 > .l-cluster-gap__item { padding: 5px; }
-  .l-cluster-gap-xl-20 > div, .l-cluster-gap-xl-20 > .l-cluster-gap__item { padding: 10px; }
-  .l-cluster-gap-xl-30 > div, .l-cluster-gap-xl-30 > .l-cluster-gap__item { padding: 15px; }
-  .l-cluster-gap-xl-40 > div, .l-cluster-gap-xl-40 > .l-cluster-gap__item { padding: 20px; }
-  .l-cluster-gap-xl-50 > div, .l-cluster-gap-xl-50 > .l-cluster-gap__item { padding: 25px; }
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .l-cluster-gap-#{$breakpoint}-10 {
+      margin: -5px;
 
+      & > div,
+      & > .l-cluster-gap__item { padding: 5px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-20 {
+      margin: -10px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 10px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-30 {
+      margin: -15px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 15px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-40 {
+      margin: -20px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 20px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-50 {
+      margin: -25px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 25px; }
+    }
+  }
 }

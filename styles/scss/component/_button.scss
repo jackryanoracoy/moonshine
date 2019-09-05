@@ -6,75 +6,62 @@
   display: inline-block;
   min-width: 50px;
   padding: 0 15px;
-  color: #FFF !important;
+  color: $light !important;
   font-size: 1.5rem;
   line-height: 50px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
-  background-color: #263238;
-  background-color: var(--primary, #263238);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: $primary;
+  box-shadow: $z-depth-1;
   white-space: nowrap;
-}
 
-.c-button:hover,
-.c-button:visited,
-.c-button:active,
-.c-button:focus {
-  text-decoration: none;
-}
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
 
-.c-button:hover {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    box-shadow: $z-depth-2;
+  }
 
-.c-button--large {
-  min-width: 60px;
-  line-height: 60px;
-  border-radius: 30px;
-  padding: 0 20px;
-}
+  &--large {
+    min-width: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    padding: 0 20px;
+  }
 
-.c-button--light {
-  color: #212121 !important;
-  color: var(--dark) !important;
-  background-color: #FAFAFA;
-  background-color: var(--light, #FAFAFA);
-}
+  &--light {
+    color: $dark !important;
+    background-color: $light;
+  }
 
-.c-button--dark {
-  color: #FAFAFA !important;
-  color: var(--light, #FAFAFA) !important;
-  background-color: #212121;
-  background-color: var(--dark, #212121);
-}
+  &--dark {
+    color: $light !important;
+    background-color: $dark;
+  }
 
-.c-button--success {
-  color: #FAFAFA !important;
-  color: var(--light, #FAFAFA) !important;
-  background-color: #4CAF50;
-  background-color: var(--success, #4CAF50);
-}
+  &--success {
+    color: $light !important;
+    background-color: $success;
+  }
 
-.c-button--warnig {
-  color: #FAFAFA !important;
-  color: var(--light, #FAFAFA) !important;
-  background-color: #FF5722;
-  background-color: var(--warning, #FF5722);
-}
+  &--warnig {
+    color: $light !important;
+    background-color: $warning;
+  }
 
-.c-button--danger {
-  color: #FAFAFA !important;
-  color: var(--light, #FAFAFA) !important;
-  background-color: #F44336;
-  background-color: var(--danger, #F44336);
-}
+  &--danger {
+    color: $light!important;
+    background-color: $danger;
+  }
 
-.c-button--info {
-  color: #FAFAFA !important;
-  color: var(--light, #FAFAFA) !important;
-  background-color: #2196F3;
-  background-color: var(--info, #2196F3);
+  &--info {
+    color: $light !important;
+    background-color: $info;
+  }
 }

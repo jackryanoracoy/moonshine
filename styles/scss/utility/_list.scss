@@ -2,196 +2,80 @@
   List
 --------------------------------------------------*/
 
-.u-list { position: relative; }
+.u-list {
+  position: relative;
 
-.u-list--none { list-style: none; }
-.u-list--circle { list-style: circle; }
-.u-list--square { list-style: square; }
-.u-list--uroman { list-style: upper-roman; }
-.u-list--lroman { list-style: lower-roman; }
-.u-list--ualpha { list-style: upper-alpha; }
-.u-list--lalpha { list-style: lower-alpha; }
-.u-list--decimal { list-style: decimal; }
-.u-list--decimalz { list-style: decimal-leading-zero; }
+  &--none { list-style: none; }
+  &--circle { list-style: circle; }
+  &--square { list-style: square; }
+  &--uroman { list-style: upper-roman; }
+  &--lroman { list-style: lower-roman; }
+  &--ualpha { list-style: upper-alpha; }
+  &--lalpha { list-style: lower-alpha; }
+  &--decimal { list-style: decimal; }
+  &--decimalz { list-style: decimal-leading-zero; }
 
-.u-list--inside { list-style-position: inside; }
-.u-list--outside { list-style-position: outside; }
+  &--inside { list-style-position: inside; }
+  &--outside { list-style-position: outside; }
 
-.u-list--column-1 { column-count: 1; }
-.u-list--column-2 { column-count: 2; }
-.u-list--column-3 { column-count: 3; }
-.u-list--column-4 { column-count: 4; }
-.u-list--column-5 { column-count: 5; }
-.u-list--column-6 { column-count: 6; }
-.u-list--column-7 { column-count: 7; }
-.u-list--column-8 { column-count: 8; }
-.u-list--column-9 { column-count: 9; }
-.u-list--column-10 { column-count: 10; }
+  &--column-1 { column-count: 1; }
+  &--column-2 { column-count: 2; }
+  &--column-3 { column-count: 3; }
+  &--column-4 { column-count: 4; }
+  &--column-5 { column-count: 5; }
+  &--column-6 { column-count: 6; }
+  &--column-7 { column-count: 7; }
+  &--column-8 { column-count: 8; }
+  &--column-9 { column-count: 9; }
+  &--column-10 { column-count: 10; }
 
-.u-list--gap-10 { column-gap: 10px; }
-.u-list--gap-20 { column-gap: 20px; }
-.u-list--gap-30 { column-gap: 30px; }
-.u-list--gap-40 { column-gap: 40px; }
-.u-list--gap-50 { column-gap: 50px; }
-.u-list--gap-60 { column-gap: 60px; }
-.u-list--gap-70 { column-gap: 70px; }
-.u-list--gap-80 { column-gap: 80px; }
-.u-list--gap-90 { column-gap: 90px; }
-.u-list--gap-100 { column-gap: 100px; }
+  &--gap-10 { column-gap: 10px; }
+  &--gap-20 { column-gap: 20px; }
+  &--gap-30 { column-gap: 30px; }
+  &--gap-40 { column-gap: 40px; }
+  &--gap-50 { column-gap: 50px; }
+  &--gap-60 { column-gap: 60px; }
+  &--gap-70 { column-gap: 70px; }
+  &--gap-80 { column-gap: 80px; }
+  &--gap-90 { column-gap: 90px; }
+  &--gap-100 { column-gap: 100px; }
 
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      &--none-#{$breakpoint} { list-style: none; }
+      &--circle-#{$breakpoint} { list-style: circle; }
+      &--square-#{$breakpoint} { list-style: square; }
+      &--uroman-#{$breakpoint} { list-style: upper-roman; }
+      &--lroman-#{$breakpoint} { list-style: lower-roman; }
+      &--ualpha-#{$breakpoint} { list-style: upper-alpha; }
+      &--lalpha-#{$breakpoint} { list-style: lower-alpha; }
+      &--decimal-#{$breakpoint} { list-style: decimal; }
+      &--decimalz-#{$breakpoint} { list-style: decimal-leading-zero; }
 
-@media (min-width: 576px) {
+      &--inside-#{$breakpoint} { list-style-position: inside; }
+      &--outside-#{$breakpoint} { list-style-position: outside; }
 
-  .u-list--none-sm { list-style: none; }
-  .u-list--circle-sm { list-style: circle; }
-  .u-list--square-sm { list-style: square; }
-  .u-list--uroman-sm { list-style: upper-roman; }
-  .u-list--lroman-sm { list-style: lower-roman; }
-  .u-list--ualpha-sm { list-style: upper-alpha; }
-  .u-list--lalpha-sm { list-style: lower-alpha; }
-  .u-list--decimal-sm { list-style: decimal; }
-  .u-list--decimalz-sm { list-style: decimal-leading-zero; }
+      &--column-#{$breakpoint}-1 { column-count: 1; }
+      &--column-#{$breakpoint}-2 { column-count: 2; }
+      &--column-#{$breakpoint}-3 { column-count: 3; }
+      &--column-#{$breakpoint}-4 { column-count: 4; }
+      &--column-#{$breakpoint}-5 { column-count: 5; }
+      &--column-#{$breakpoint}-6 { column-count: 6; }
+      &--column-#{$breakpoint}-7 { column-count: 7; }
+      &--column-#{$breakpoint}-8 { column-count: 8; }
+      &--column-#{$breakpoint}-9 { column-count: 9; }
+      &--column-#{$breakpoint}-10 { column-count: 10; }
 
-  .u-list--inside-sm { list-style-position: inside; }
-  .u-list--outside-sm { list-style-position: outside; }
-
-  .u-list--column-sm-1 { column-count: 1; }
-  .u-list--column-sm-2 { column-count: 2; }
-  .u-list--column-sm-3 { column-count: 3; }
-  .u-list--column-sm-4 { column-count: 4; }
-  .u-list--column-sm-5 { column-count: 5; }
-  .u-list--column-sm-6 { column-count: 6; }
-  .u-list--column-sm-7 { column-count: 7; }
-  .u-list--column-sm-8 { column-count: 8; }
-  .u-list--column-sm-9 { column-count: 9; }
-  .u-list--column-sm-10 { column-count: 10; }
-
-  .u-list--gap-sm-10 { column-gap: 10px; }
-  .u-list--gap-sm-20 { column-gap: 20px; }
-  .u-list--gap-sm-30 { column-gap: 30px; }
-  .u-list--gap-sm-40 { column-gap: 40px; }
-  .u-list--gap-sm-50 { column-gap: 50px; }
-  .u-list--gap-sm-60 { column-gap: 60px; }
-  .u-list--gap-sm-70 { column-gap: 70px; }
-  .u-list--gap-sm-80 { column-gap: 80px; }
-  .u-list--gap-sm-90 { column-gap: 90px; }
-  .u-list--gap-sm-100 { column-gap: 100px; }
-
-}
-
-@media (min-width: 768px) {
-
-  .u-list--none-md { list-style: none; }
-  .u-list--circle-md { list-style: circle; }
-  .u-list--square-md { list-style: square; }
-  .u-list--uroman-md { list-style: upper-roman; }
-  .u-list--lroman-md { list-style: lower-roman; }
-  .u-list--ualpha-md { list-style: upper-alpha; }
-  .u-list--lalpha-md { list-style: lower-alpha; }
-  .u-list--decimal-md { list-style: decimal; }
-  .u-list--decimalz-md { list-style: decimal-leading-zero; }
-
-  .u-list--inside-md { list-style-position: inside; }
-  .u-list--outside-md { list-style-position: outside; }
-
-  .u-list--column-md-1 { column-count: 1; }
-  .u-list--column-md-2 { column-count: 2; }
-  .u-list--column-md-3 { column-count: 3; }
-  .u-list--column-md-4 { column-count: 4; }
-  .u-list--column-md-5 { column-count: 5; }
-  .u-list--column-md-6 { column-count: 6; }
-  .u-list--column-md-7 { column-count: 7; }
-  .u-list--column-md-8 { column-count: 8; }
-  .u-list--column-md-9 { column-count: 9; }
-  .u-list--column-md-10 { column-count: 10; }
-
-  .u-list--gap-md-10 { column-gap: 10px; }
-  .u-list--gap-md-20 { column-gap: 20px; }
-  .u-list--gap-md-30 { column-gap: 30px; }
-  .u-list--gap-md-40 { column-gap: 40px; }
-  .u-list--gap-md-50 { column-gap: 50px; }
-  .u-list--gap-md-60 { column-gap: 60px; }
-  .u-list--gap-md-70 { column-gap: 70px; }
-  .u-list--gap-md-80 { column-gap: 80px; }
-  .u-list--gap-md-90 { column-gap: 90px; }
-  .u-list--gap-md-100 { column-gap: 100px; }
-
-}
-
-@media (min-width: 992px) {
-
-  .u-list--none-lg { list-style: none; }
-  .u-list--circle-lg { list-style: circle; }
-  .u-list--square-lg { list-style: square; }
-  .u-list--uroman-lg { list-style: upper-roman; }
-  .u-list--lroman-lg { list-style: lower-roman; }
-  .u-list--ualpha-lg { list-style: upper-alpha; }
-  .u-list--lalpha-lg { list-style: lower-alpha; }
-  .u-list--decimal-lg { list-style: decimal; }
-  .u-list--decimalz-lg { list-style: decimal-leading-zero; }
-
-  .u-list--inside-lg { list-style-position: inside; }
-  .u-list--outside-lg { list-style-position: outside; }
-
-  .u-list--column-lg-1 { column-count: 1; }
-  .u-list--column-lg-2 { column-count: 2; }
-  .u-list--column-lg-3 { column-count: 3; }
-  .u-list--column-lg-4 { column-count: 4; }
-  .u-list--column-lg-5 { column-count: 5; }
-  .u-list--column-lg-6 { column-count: 6; }
-  .u-list--column-lg-7 { column-count: 7; }
-  .u-list--column-lg-8 { column-count: 8; }
-  .u-list--column-lg-9 { column-count: 9; }
-  .u-list--column-lg-10 { column-count: 10; }
-
-  .u-list--gap-lg-10 { column-gap: 10px; }
-  .u-list--gap-lg-20 { column-gap: 20px; }
-  .u-list--gap-lg-30 { column-gap: 30px; }
-  .u-list--gap-lg-40 { column-gap: 40px; }
-  .u-list--gap-lg-50 { column-gap: 50px; }
-  .u-list--gap-lg-60 { column-gap: 60px; }
-  .u-list--gap-lg-70 { column-gap: 70px; }
-  .u-list--gap-lg-80 { column-gap: 80px; }
-  .u-list--gap-lg-90 { column-gap: 90px; }
-  .u-list--gap-lg-100 { column-gap: 100px; }
-
-}
-
-@media (min-width: 1200px) {
-
-  .u-list--none-xl { list-style: none; }
-  .u-list--circle-xl { list-style: circle; }
-  .u-list--square-xl { list-style: square; }
-  .u-list--uroman-xl { list-style: upper-roman; }
-  .u-list--lroman-xl { list-style: lower-roman; }
-  .u-list--ualpha-xl { list-style: upper-alpha; }
-  .u-list--lalpha-xl { list-style: lower-alpha; }
-  .u-list--decimal-xl { list-style: decimal; }
-  .u-list--decimalz-xl { list-style: decimal-leading-zero; }
-
-  .u-list--inside-xl { list-style-position: inside; }
-  .u-list--outside-xl { list-style-position: outside; }
-
-  .u-list--column-xl-1 { column-count: 1; }
-  .u-list--column-xl-2 { column-count: 2; }
-  .u-list--column-xl-3 { column-count: 3; }
-  .u-list--column-xl-4 { column-count: 4; }
-  .u-list--column-xl-5 { column-count: 5; }
-  .u-list--column-xl-6 { column-count: 6; }
-  .u-list--column-xl-7 { column-count: 7; }
-  .u-list--column-xl-8 { column-count: 8; }
-  .u-list--column-xl-9 { column-count: 9; }
-  .u-list--column-xl-10 { column-count: 10; }
-
-  .u-list--gap-xl-10 { column-gap: 10px; }
-  .u-list--gap-xl-20 { column-gap: 20px; }
-  .u-list--gap-xl-30 { column-gap: 30px; }
-  .u-list--gap-xl-40 { column-gap: 40px; }
-  .u-list--gap-xl-50 { column-gap: 50px; }
-  .u-list--gap-xl-60 { column-gap: 60px; }
-  .u-list--gap-xl-70 { column-gap: 70px; }
-  .u-list--gap-xl-80 { column-gap: 80px; }
-  .u-list--gap-xl-90 { column-gap: 90px; }
-  .u-list--gap-xl-100 { column-gap: 100px; }
-
+      &--gap-#{$breakpoint}-10 { column-gap: 10px; }
+      &--gap-#{$breakpoint}-20 { column-gap: 20px; }
+      &--gap-#{$breakpoint}-30 { column-gap: 30px; }
+      &--gap-#{$breakpoint}-40 { column-gap: 40px; }
+      &--gap-#{$breakpoint}-50 { column-gap: 50px; }
+      &--gap-#{$breakpoint}-60 { column-gap: 60px; }
+      &--gap-#{$breakpoint}-70 { column-gap: 70px; }
+      &--gap-#{$breakpoint}-80 { column-gap: 80px; }
+      &--gap-#{$breakpoint}-90 { column-gap: 90px; }
+      &--gap-#{$breakpoint}-100 { column-gap: 100px; }
+    }
+  }
 }

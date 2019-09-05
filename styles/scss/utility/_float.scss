@@ -6,34 +6,10 @@
 .u-float-right { float: right; }
 .u-float-none { float: none; }
 
-@include media-breakpoint-min(sm) {
-
-  .u-float-left-sm { float: left; }
-  .u-float-right-sm { float: right; }
-  .u-float-none-sm { float: none; }
-
-}
-
-@include media-breakpoint-min(md) {
-
-  .u-float-left-md { float: left; }
-  .u-float-right-md { float: right; }
-  .u-float-none-md { float: none; }
-
-}
-
-@include media-breakpoint-min(lg) {
-
-  .u-float-left-lg { float: left; }
-  .u-float-right-lg { float: right; }
-  .u-float-none-lg { float: none; }
-
-}
-
-@include media-breakpoint-min(xl) {
-
-  .u-float-left-xl { float: left; }
-  .u-float-right-xl { float: right; }
-  .u-float-none-xl { float: none; }
-
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .u-float-left-#{$breakpoint} { float: left; }
+    .u-float-right-#{$breakpoint} { float: right; }
+    .u-float-none-#{$breakpoint} { float: none; }
+  }
 }

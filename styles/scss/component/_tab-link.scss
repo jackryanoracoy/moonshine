@@ -6,27 +6,25 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
-}
 
-.c-tab-link__item {
-  display: inline-block;
-  padding: 10px 15px;
-  color: #212121;
-  background: none;
-  cursor: pointer;
-}
+  &__item {
+    display: inline-block;
+    padding: 10px 15px;
+    color: $dark;
+    background: none;
+    cursor: pointer;
+  }
 
-.c-tab-link__item.js-current {
-  background: #F5F5F5;
-  color: #212121;
+  &__item.js-current {
+    background-color: $light;
+    color: $dark;
+  }
 }
 
 .c-tab-content {
   display: none;
-  background: #F5F5F5;
+  background: $light;
   padding: 15px;
-}
 
-.c-tab-content.js-current {
-  display: inherit;
+  &.js-current { display: inherit; }
 }

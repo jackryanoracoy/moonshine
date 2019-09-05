@@ -46,7 +46,7 @@
 }
 
 // Media Queries
-// div {... @include media-breakpoint-min('md') {...} }
+// div {... @include media-breakpoint-min(md) {...} }
 @mixin media-breakpoint-min($width, $type: min) {
   @if map-has-key($breakpoints, $width) {
     $width: map-get($breakpoints, $width);
@@ -74,11 +74,69 @@
   }
 }
 
-// Container
+// Flex Column
+// @include col-width(1)
+@mixin col-width($size, $columns: $colum-count) {
+  -ms-flex: 0 0 percentage($size / $columns);
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
+}
 
-@mixin container() {
-  position: relative;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+@mixin col-width-auto() {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+@mixin basis-width($size, $columns: $colum-count) {
+  flex-basis: percentage($size / $columns);
+}
+
+// Font Face
+// @include font-face("My Font", my-font, 300);
+@mixin font-face($name, $file, $weight ) {
+  @font-face {
+    font-family: '#{$name}';
+    font-display: auto;
+    font-style: normal;
+    font-weight: #{$weight};
+    src: url(../assets/fonts/#{$file}.woff2) format('woff2'),
+         url(../assets/fonts/#{$file}.woff) format('woff'),
+         url(../assets/fonts/#{$file}.ttf) format('truetype'),
+  }
+}
+
+// Margin and Padding Reset
+@mixin ua-pad-mar-reset {
+  padding: 0;
+  margin: 0;
+}
+
+// Box Sizing
+@mixin box-sizing($box-size) {
+  -webkit-box-sizing: $box-size;
+  -moz-box-sizing: $box-size;
+  box-sizing: $box-size;
+}
+
+// Text Adjust
+@mixin text-size-adjust($text-size) {
+  -ms-text-size-adjust: $text-size;
+  -webkit-text-size-adjust: $text-size;
+}
+
+// Font Smoothing
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Image Render Crisp
+@mixin img-render-crisp {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }

@@ -31,134 +31,35 @@
 .u-white-space-normal { white-space: normal; }
 .u-white-space-nowrap { white-space: nowrap; }
 
-@media (min-width: 576px) {
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .u-text-center-#{$breakpoint} { text-align: center; }
+    .u-text-justify-#{$breakpoint} { text-align: justify; }
+    .u-text-right-#{$breakpoint} { text-align: right; }
+    .u-text-left-#{$breakpoint} { text-align: left; }
 
-  .u-text-center-sm { text-align: center; }
-  .u-text-justify-sm { text-align: justify; }
-  .u-text-right-sm { text-align: right; }
-  .u-text-left-sm { text-align: left; }
+    .u-text-overline-#{$breakpoint} { text-decoration: overline; }
+    .u-text-underline-#{$breakpoint} { text-decoration: underline; }
+    .u-text-linethrough-#{$breakpoint} { text-decoration: line-through; }
 
-  .u-text-overline-sm { text-decoration: overline; }
-  .u-text-underline-sm { text-decoration: underline; }
-  .u-text-linethrough-sm { text-decoration: line-through; }
+    .u-font-normal-#{$breakpoint} { font-weight: normal; }
+    .u-font-bold-#{$breakpoint} { font-weight: bold; }
+    .u-font-bolder-#{$breakpoint} { font-weight: bolder; }
+    .u-font-lighter-#{$breakpoint} { font-weight: lighter; }
 
-  .u-font-normal-sm { font-weight: normal; }
-  .u-font-bold-sm { font-weight: bold; }
-  .u-font-bolder-sm { font-weight: bolder; }
-  .u-font-lighter-sm { font-weight: lighter; }
+    .u-font-default-#{$breakpoint} { font-size: 1.6rem; }
+    .u-font-#{$breakpoint}all-#{$breakpoint} { font-size: 1.2rem; }
+    .u-font-medium-#{$breakpoint} { font-size: 1.4rem; }
+    .u-font-large-#{$breakpoint} { font-size: 2rem; }
+    .u-font-extra-large-#{$breakpoint} { font-size: 2.4rem; }
+    .u-font-super-large-#{$breakpoint} { font-size: 2.8rem; }
+    .u-font-mega-large-#{$breakpoint} { font-size: 3.4rem; }
 
-  .u-font-default-sm { font-size: 1.6rem; }
-  .u-font-small-sm { font-size: 1.2rem; }
-  .u-font-medium-sm { font-size: 1.4rem; }
-  .u-font-large-sm { font-size: 2rem; }
-  .u-font-extra-large-sm { font-size: 2.4rem; }
-  .u-font-super-large-sm { font-size: 2.8rem; }
-  .u-font-mega-large-sm { font-size: 3.4rem; }
+    .u-line-height-#{$breakpoint}all-#{$breakpoint} { line-height: 1.2; }
+    .u-line-height-normal-#{$breakpoint} { line-height: 1.5; }
+    .u-line-height-large-#{$breakpoint} { line-height: 2; }
 
-  .u-line-height-small-sm { line-height: 1.2; }
-  .u-line-height-normal-sm { line-height: 1.5; }
-  .u-line-height-large-sm { line-height: 2; }
-
-  .u-white-space-normal-sm { white-space: normal; }
-  .u-white-space-nowrap-sm { white-space: nowrap; }
-
-}
-
-@media (min-width: 768px) {
-
-  .u-text-center-md { text-align: center; }
-  .u-text-justify-md { text-align: justify; }
-  .u-text-right-md { text-align: right; }
-  .u-text-left-md { text-align: left; }
-
-  .u-text-overline-md { text-decoration: overline; }
-  .u-text-underline-md { text-decoration: underline; }
-  .u-text-linethrough-md { text-decoration: line-through; }
-
-  .u-font-normal-md { font-weight: normal; }
-  .u-font-bold-md { font-weight: bold; }
-  .u-font-bolder-md { font-weight: bolder; }
-  .u-font-lighter-md { font-weight: lighter; }
-
-  .u-font-default-md { font-size: 1.6rem; }
-  .u-font-small-md { font-size: 1.2rem; }
-  .u-font-medium-md { font-size: 1.4rem; }
-  .u-font-large-md { font-size: 2rem; }
-  .u-font-extra-large-md { font-size: 2.4rem; }
-  .u-font-super-large-md { font-size: 2.8rem; }
-  .u-font-mega-large-md { font-size: 3.4rem; }
-
-  .u-line-height-small-md { line-height: 1.2; }
-  .u-line-height-normal-md { line-height: 1.5; }
-  .u-line-height-large-md { line-height: 2; }
-
-  .u-white-space-normal-md { white-space: normal; }
-  .u-white-space-nowrap-md { white-space: nowrap; }
-
-}
-
-@media (min-width: 992px) {
-
-  .u-text-center-lg { text-align: center; }
-  .u-text-justify-lg { text-align: justify; }
-  .u-text-right-lg { text-align: right; }
-  .u-text-left-lg { text-align: left; }
-
-  .u-text-overline-lg { text-decoration: overline; }
-  .u-text-underline-lg { text-decoration: underline; }
-  .u-text-linethrough-lg { text-decoration: line-through; }
-
-  .u-font-normal-lg { font-weight: normal; }
-  .u-font-bold-lg { font-weight: bold; }
-  .u-font-bolder-lg { font-weight: bolder; }
-  .u-font-lighter-lg { font-weight: lighter; }
-
-  .u-font-default-lg { font-size: 1.6rem; }
-  .u-font-small-lg { font-size: 1.2rem; }
-  .u-font-medium-lg { font-size: 1.4rem; }
-  .u-font-large-lg { font-size: 2rem; }
-  .u-font-extra-large-lg { font-size: 2.4rem; }
-  .u-font-super-large-lg { font-size: 2.8rem; }
-  .u-font-mega-large-lg { font-size: 3.4rem; }
-
-  .u-line-height-small-lg { line-height: 1.2; }
-  .u-line-height-normal-lg { line-height: 1.5; }
-  .u-line-height-large-lg { line-height: 2; }
-
-  .u-white-space-normal-lg { white-space: normal; }
-  .u-white-space-nowrap-lg { white-space: nowrap; }
-
-}
-
-@media (min-width: 1200px) {
-
-  .u-text-center-xl { text-align: center; }
-  .u-text-justify-xl { text-align: justify; }
-  .u-text-right-xl { text-align: right; }
-  .u-text-left-xl { text-align: left; }
-
-  .u-text-overline-xl { text-decoration: overline; }
-  .u-text-underline-xl { text-decoration: underline; }
-  .u-text-linethrough-xl { text-decoration: line-through; }
-
-  .u-font-normal-xl { font-weight: normal; }
-  .u-font-bold-xl { font-weight: bold; }
-  .u-font-bolder-xl { font-weight: bolder; }
-  .u-font-lighter-xl { font-weight: lighter; }
-
-  .u-font-default-xl { font-size: 1.6rem; }
-  .u-font-small-xl { font-size: 1.2rem; }
-  .u-font-medium-xl { font-size: 1.4rem; }
-  .u-font-large-xl { font-size: 2rem; }
-  .u-font-extra-large-xl { font-size: 2.4rem; }
-  .u-font-super-large-xl { font-size: 2.8rem; }
-  .u-font-mega-large-xl { font-size: 3.4rem; }
-
-  .u-line-height-small-xl { line-height: 1.2; }
-  .u-line-height-normal-xl { line-height: 1.5; }
-  .u-line-height-large-xl { line-height: 2; }
-
-  .u-white-space-normal-xl { white-space: normal; }
-  .u-white-space-nowrap-xl { white-space: nowrap; }
-
+    .u-white-space-normal-#{$breakpoint} { white-space: normal; }
+    .u-white-space-nowrap-#{$breakpoint} { white-space: nowrap; }
+  }
 }

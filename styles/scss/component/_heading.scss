@@ -4,42 +4,34 @@
 
 .c-heading-above-the-fold,
 .c-heading-section {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-family: var(--font-family-open-sans-condensed, "Open Sans Condensed");
+  font-family: $open-sans-condensed;
 }
 
 .c-heading-above-the-fold {
-  color: #263238;
-  color: var(--primary, #263238);
+  color: $primary;
   font-size: 3rem;
   letter-spacing: 0.5rem;
+
+  @include media-breakpoint-min(md) {
+    font-size: 3.5rem;
+  }
 }
 
 .c-heading-section {
-  color: #212121;
-  color: var(--grey-700, #212121);
+  color: $grey-700;
   font-size: 2.4rem;
   letter-spacing: 0.2rem;
+
+  @include media-breakpoint-min(md) {
+    font-size: 2.8rem;
+  }
 }
 
 .c-heading-article {
-  color: #37474F;
-  color: var(--grey-900, #37474F);
+  color: $grey-900;
   font-size: 1.6rem;
-}
 
-@media (min-width: 768px) {
-
-  .c-heading-above-the-fold {
-    font-size: 3.5rem;
-  }
-
-  .c-heading-section {
-    font-size: 2.8rem;
-  }
-
-  .c-heading-article {
+  @include media-breakpoint-min(md) {
     font-size: 1.8rem;
   }
-
 }

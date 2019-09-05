@@ -2,14 +2,18 @@
   Hidden
 --------------------------------------------------*/
 
-.u-hidden { display: none; visibility: hidden; }
+.u-hidden {
+  display: none; visibility: hidden;
 
-@include media-breakpoint-min(sm) { .u-hidden-sm-min { display: none; visibility: hidden; } }
-@include media-breakpoint-min(md) { .u-hidden-md-min { display: none; visibility: hidden; } }
-@include media-breakpoint-min(lg) { .u-hidden-lg-min { display: none; visibility: hidden; } }
-@include media-breakpoint-min(xl) { .u-hidden-xl-min { display: none; visibility: hidden; } }
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      &-#{$breakpoint}-min { display: none; visibility: hidden; }
+    }
+  }
 
-@include media-breakpoint-max(sm) { .u-hidden-sm-max { display: none; visibility: hidden; } }
-@include media-breakpoint-max(md) { .u-hidden-md-max { display: none; visibility: hidden; } }
-@include media-breakpoint-max(lg) { .u-hidden-lg-max { display: none; visibility: hidden; } }
-@include media-breakpoint-max(xl) { .u-hidden-xl-max { display: none; visibility: hidden; } }
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-max($breakpoint) {
+      &-#{$breakpoint}-max { display: none; visibility: hidden; }
+    }
+  }
+}

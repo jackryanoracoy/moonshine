@@ -9,19 +9,18 @@
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
+
+  & a {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-min(md) {
+    font-size: 2.2rem;
+  }
 }
 
-.c-site-title a {
-  color: #FFF;
-  text-decoration: none;
-}
-
-.c-site-title img {
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-
-  .c-site-title { font-size: 2.2rem; }
-
-}
