@@ -16,35 +16,35 @@
   font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: url(../assets/fonts/Open-Sans-Light.woff2) format("woff2"), url(../assets/fonts/Open-Sans-Light.woff) format("woff"), url(../assets/fonts/Open-Sans-Light.ttf) format("truetype");
+  src: url(../../assets/fonts/Open-Sans-Light.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Light.woff) format("woff"), url(../../assets/fonts/Open-Sans-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
   font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: url(../assets/fonts/Open-Sans-Regular.woff2) format("woff2"), url(../assets/fonts/Open-Sans-Regular.woff) format("woff"), url(../assets/fonts/Open-Sans-Regular.ttf) format("truetype");
+  src: url(../../assets/fonts/Open-Sans-Regular.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Regular.woff) format("woff"), url(../../assets/fonts/Open-Sans-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url(../assets/fonts/Open-Sans-Bold.woff2) format("woff2"), url(../assets/fonts/Open-Sans-Bold.woff) format("woff"), url(../assets/fonts/Open-Sans-Bold.ttf) format("truetype");
+  src: url(../../assets/fonts/Open-Sans-Bold.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Bold.woff) format("woff"), url(../../assets/fonts/Open-Sans-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Open Sans Condensed";
   font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: url(../assets/fonts/Open-Sans-Condensed-Light.woff2) format("woff2"), url(../assets/fonts/Open-Sans-Condensed-Light.woff) format("woff"), url(../assets/fonts/Open-Sans-Condensed-Light.ttf) format("truetype");
+  src: url(../../assets/fonts/Open-Sans-Condensed-Light.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Condensed-Light.woff) format("woff"), url(../../assets/fonts/Open-Sans-Condensed-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Open Sans Condensed";
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url(../assets/fonts/Open-Sans-Condensed-Bold.woff2) format("woff2"), url(../assets/fonts/Open-Sans-Condensed-Bold.woff) format("woff"), url(../assets/fonts/Open-Sans-Condensed-Bold.ttf) format("truetype");
+  src: url(../../assets/fonts/Open-Sans-Condensed-Bold.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Condensed-Bold.woff) format("woff"), url(../../assets/fonts/Open-Sans-Condensed-Bold.ttf) format("truetype");
 }
 /*--------------------------------------------------------------
  Custom Properties (CSS Varialbles)
@@ -94,11 +94,8 @@
   /* Transition */
   --transition: all 300ms ease-in-out 120ms;
   /* font-family */
-  --font-family-noto-sans: "Noto Sans", sans-serif;
-  --font-family-noto-sans-jp: "Noto Sans JP", sans-serif;
-  --font-family-open-sans: "Open Sans", sans-serif;
-  --font-family-open-sans-condensed: "Open Sans Condensed", sans-serif;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif-condensed: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -132,7 +129,7 @@
 html {
   min-width: 320px;
   color: #212121;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 62.5%;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
@@ -2425,7 +2422,7 @@ textarea {
 --------------------------------------------------*/
 .c-heading-above-the-fold,
 .c-heading-section {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .c-heading-above-the-fold {
@@ -10642,155 +10639,155 @@ textarea {
 /*--------------------------------------------------
   Background
 --------------------------------------------------*/
-.u-background-color-primary {
+.u-background-primary {
   background-color: #263238;
 }
 
-.u-background-color-secondary {
+.u-background-secondary {
   background-color: #37474F;
 }
 
-.u-background-color-success {
+.u-background-success {
   background-color: #4CAF50;
 }
 
-.u-background-color-info {
+.u-background-info {
   background-color: #2196F3;
 }
 
-.u-background-color-warning {
+.u-background-warning {
   background-color: #FF5722;
 }
 
-.u-background-color-danger {
+.u-background-danger {
   background-color: #F44336;
 }
 
-.u-background-color-light {
+.u-background-light {
   background-color: #FAFAFA;
 }
 
-.u-background-color-dark {
+.u-background-dark {
   background-color: #212121;
 }
 
-.u-background-color-red {
+.u-background-red {
   background-color: #F44336;
 }
 
-.u-background-color-pink {
+.u-background-pink {
   background-color: #E91E63;
 }
 
-.u-background-color-purple {
+.u-background-purple {
   background-color: #9C27B0;
 }
 
-.u-background-color-deep-purple {
+.u-background-deep-purple {
   background-color: #673AB7;
 }
 
-.u-background-color-indigo {
+.u-background-indigo {
   background-color: #3F51B5;
 }
 
-.u-background-color-blue {
+.u-background-blue {
   background-color: #2196F3;
 }
 
-.u-background-color-light-blue {
+.u-background-light-blue {
   background-color: #03A9F4;
 }
 
-.u-background-color-cyan {
+.u-background-cyan {
   background-color: #00BCD4;
 }
 
-.u-background-color-teal {
+.u-background-teal {
   background-color: #009688;
 }
 
-.u-background-color-green {
+.u-background-green {
   background-color: #4CAF50;
 }
 
-.u-background-color-light-green {
+.u-background-light-green {
   background-color: #8BC34A;
 }
 
-.u-background-color-lime {
+.u-background-lime {
   background-color: #CDDC39;
 }
 
-.u-background-color-yellow {
+.u-background-yellow {
   background-color: #FFEB3B;
 }
 
-.u-background-color-amber {
+.u-background-amber {
   background-color: #FFC107;
 }
 
-.u-background-color-orange {
+.u-background-orange {
   background-color: #FF9800;
 }
 
-.u-background-color-deep-orange {
+.u-background-deep-orange {
   background-color: #FF5722;
 }
 
-.u-background-color-brown {
+.u-background-brown {
   background-color: #795548;
 }
 
-.u-background-color-blue-grey {
+.u-background-blue-grey {
   background-color: #607D8B;
 }
 
-.u-background-color-white {
+.u-background-white {
   background-color: #FFFFFF;
 }
 
-.u-background-color-black {
+.u-background-black {
   background-color: #000000;
 }
 
-.u-background-color-grey-50 {
+.u-background-color-50 {
   background-color: #FAFAFA;
 }
 
-.u-background-color-grey-100 {
+.u-background-color-100 {
   background-color: #F5F5F5;
 }
 
-.u-background-color-grey-200 {
+.u-background-color-200 {
   background-color: #EEEEEE;
 }
 
-.u-background-color-grey-300 {
+.u-background-color-300 {
   background-color: #E0E0E0;
 }
 
-.u-background-color-grey-400 {
+.u-background-color-400 {
   background-color: #BDBDBD;
 }
 
-.u-background-color-grey-500 {
+.u-background-color-500 {
   background-color: #9E9E9E;
 }
 
-.u-background-color-grey-600 {
+.u-background-color-600 {
   background-color: #757575;
 }
 
-.u-background-color-grey-700 {
+.u-background-color-700 {
   background-color: #616161;
 }
 
-.u-background-color-grey-800 {
+.u-background-color-800 {
   background-color: #424242;
 }
 
-.u-background-color-grey-900 {
+.u-background-color-900 {
   background-color: #212121;
 }
 

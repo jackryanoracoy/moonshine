@@ -144,7 +144,7 @@
 --------------------------------------------------*/
 .c-heading-above-the-fold,
 .c-heading-section {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .c-heading-above-the-fold {

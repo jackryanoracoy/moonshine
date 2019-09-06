@@ -133,13 +133,13 @@ $z-depth-2:             0 2px 2px 0 rgba(0, 0, 0, 0.15),
                         0 4px 4px -4px rgba(0, 0, 0, 0.2);
 
 // Font Family
-$noto-sans:             "Noto Sans", sans-serif;
-$noto-sans-jp:          "Noto Sans JP", sans-serif;
-$open-sans:             "Open Sans", sans-serif;
-$open-sans-condensed:   "Open Sans Condensed", sans-serif;
+$open-sans-condensed:   "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$open-sans:             "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$noto-sans:             "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$noto-sans-jp:          "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $sans-serif:            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $monospace:             SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 // Default Font Face
-$font-default:          $open-sans            !default;
+$font-primary:          $open-sans            !default;
 $font-secondary:        $open-sans-condensed  !default;

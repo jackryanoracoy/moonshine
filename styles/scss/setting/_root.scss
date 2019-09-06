@@ -23,10 +23,7 @@
   --transition: #{inspect($transition)};
 
   /* font-family */
-  --font-family-noto-sans: #{inspect($noto-sans)};
-  --font-family-noto-sans-jp: #{inspect($noto-sans-jp)};
-  --font-family-open-sans: #{inspect($open-sans)};
-  --font-family-open-sans-condensed: #{inspect($open-sans-condensed)};
-  --font-family-sans-serif: #{inspect($sans-serif)};
+  --font-family-sans-serif: #{inspect($font-primary)};
+  --font-family-sans-serif-condensed: #{inspect($font-secondary)};
   --font-family-monospace: #{inspect($monospace)};
 }

@@ -3,13 +3,13 @@
 --------------------------------------------------*/
 
 @each $color, $value in $theme-colors {
-  .u-background-color-#{$color} { background-color: #{$value}; }
+  .u-background-#{$color} { background-color: #{$value}; }
 }
 
 @each $color, $value in $colors {
-  .u-background-color-#{$color} { background-color: #{$value}; }
+  .u-background-#{$color} { background-color: #{$value}; }
 }
 
 @each $shade, $value in $greys {
-  .u-background-color-grey-#{$shade} { background-color: #{$value}; }
+  .u-background-color-#{$shade} { background-color: #{$value}; }
 }
