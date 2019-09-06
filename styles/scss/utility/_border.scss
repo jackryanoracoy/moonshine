@@ -1,0 +1,52 @@
+/*--------------------------------------------------
+  Bordered
+--------------------------------------------------*/
+
+.u-bordered {
+  position: relative;
+  border-width: $border-width;
+  border-style: solid;
+  border-color: #E0E0E0;
+
+  &--hidden { border-style: hidden; }
+  &--dashed { border-style: dashed; }
+  &--dotted { border-style: dotted; }
+  &--double { border-style: double; }
+  &--groove { border-style: groove; }
+  &--outset { border-style: outset; }
+  &--inset { border-style: inset; }
+  &--ridge { border-style: ridge; }
+  &--solid { border-style: solid; }
+
+  &--top { border-width: $border-width-top; }
+  &--right { border-width: $border-width-right; }
+  &--bottom { border-width: $border-width-bottom; }
+  &--left { border-width: $border-width-left; }
+  &--ver { border-width: $border-width-ver; }
+  &--hor { border-width: $border-width-hor; }
+
+  &--seq:last-of-type { border: none; }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      &--hidden-#{$breakpoint} { border-style: hidden; }
+      &--dashed-#{$breakpoint} { border-style: dashed; }
+      &--dotted-#{$breakpoint} { border-style: dotted; }
+      &--double-#{$breakpoint} { border-style: double; }
+      &--groove-#{$breakpoint} { border-style: groove; }
+      &--outset-#{$breakpoint} { border-style: outset; }
+      &--inset-#{$breakpoint} { border-style: inset; }
+      &--ridge-#{$breakpoint} { border-style: ridge; }
+      &--solid-#{$breakpoint} { border-style: solid; }
+
+      &--top-#{$breakpoint} { border-width: $border-width-top; }
+      &--right-#{$breakpoint} { border-width: $border-width-right; }
+      &--bottom-#{$breakpoint} { border-width: $border-width-bottom; }
+      &--left-#{$breakpoint} { border-width: $border-width-left; }
+      &--ver-#{$breakpoint} { border-width: $border-width-ver; }
+      &--hor-#{$breakpoint} { border-width: $border-width-hor; }
+      &--none-#{$breakpoint} { border: none !important; }
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+/*--------------------------------------------------
+  Site-main
+--------------------------------------------------*/
+
+.l-site-main {
+  position: relative;
+  padding: 60px 0 0;
+
+  @include media-breakpoint-min(md) {
+    padding: 125px 0 0;
+  }
+}

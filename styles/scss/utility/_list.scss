@@ -1,0 +1,81 @@
+/*--------------------------------------------------
+  List
+--------------------------------------------------*/
+
+.u-list {
+  position: relative;
+
+  &--none { list-style: none; }
+  &--circle { list-style: circle; }
+  &--square { list-style: square; }
+  &--uroman { list-style: upper-roman; }
+  &--lroman { list-style: lower-roman; }
+  &--ualpha { list-style: upper-alpha; }
+  &--lalpha { list-style: lower-alpha; }
+  &--decimal { list-style: decimal; }
+  &--decimalz { list-style: decimal-leading-zero; }
+
+  &--inside { list-style-position: inside; }
+  &--outside { list-style-position: outside; }
+
+  &--column-1 { column-count: 1; }
+  &--column-2 { column-count: 2; }
+  &--column-3 { column-count: 3; }
+  &--column-4 { column-count: 4; }
+  &--column-5 { column-count: 5; }
+  &--column-6 { column-count: 6; }
+  &--column-7 { column-count: 7; }
+  &--column-8 { column-count: 8; }
+  &--column-9 { column-count: 9; }
+  &--column-10 { column-count: 10; }
+
+  &--gap-10 { column-gap: 10px; }
+  &--gap-20 { column-gap: 20px; }
+  &--gap-30 { column-gap: 30px; }
+  &--gap-40 { column-gap: 40px; }
+  &--gap-50 { column-gap: 50px; }
+  &--gap-60 { column-gap: 60px; }
+  &--gap-70 { column-gap: 70px; }
+  &--gap-80 { column-gap: 80px; }
+  &--gap-90 { column-gap: 90px; }
+  &--gap-100 { column-gap: 100px; }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-min($breakpoint) {
+      &--none-#{$breakpoint} { list-style: none; }
+      &--circle-#{$breakpoint} { list-style: circle; }
+      &--square-#{$breakpoint} { list-style: square; }
+      &--uroman-#{$breakpoint} { list-style: upper-roman; }
+      &--lroman-#{$breakpoint} { list-style: lower-roman; }
+      &--ualpha-#{$breakpoint} { list-style: upper-alpha; }
+      &--lalpha-#{$breakpoint} { list-style: lower-alpha; }
+      &--decimal-#{$breakpoint} { list-style: decimal; }
+      &--decimalz-#{$breakpoint} { list-style: decimal-leading-zero; }
+
+      &--inside-#{$breakpoint} { list-style-position: inside; }
+      &--outside-#{$breakpoint} { list-style-position: outside; }
+
+      &--column-#{$breakpoint}-1 { column-count: 1; }
+      &--column-#{$breakpoint}-2 { column-count: 2; }
+      &--column-#{$breakpoint}-3 { column-count: 3; }
+      &--column-#{$breakpoint}-4 { column-count: 4; }
+      &--column-#{$breakpoint}-5 { column-count: 5; }
+      &--column-#{$breakpoint}-6 { column-count: 6; }
+      &--column-#{$breakpoint}-7 { column-count: 7; }
+      &--column-#{$breakpoint}-8 { column-count: 8; }
+      &--column-#{$breakpoint}-9 { column-count: 9; }
+      &--column-#{$breakpoint}-10 { column-count: 10; }
+
+      &--gap-#{$breakpoint}-10 { column-gap: 10px; }
+      &--gap-#{$breakpoint}-20 { column-gap: 20px; }
+      &--gap-#{$breakpoint}-30 { column-gap: 30px; }
+      &--gap-#{$breakpoint}-40 { column-gap: 40px; }
+      &--gap-#{$breakpoint}-50 { column-gap: 50px; }
+      &--gap-#{$breakpoint}-60 { column-gap: 60px; }
+      &--gap-#{$breakpoint}-70 { column-gap: 70px; }
+      &--gap-#{$breakpoint}-80 { column-gap: 80px; }
+      &--gap-#{$breakpoint}-90 { column-gap: 90px; }
+      &--gap-#{$breakpoint}-100 { column-gap: 100px; }
+    }
+  }
+}

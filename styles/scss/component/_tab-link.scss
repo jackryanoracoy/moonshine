@@ -1,0 +1,30 @@
+/*--------------------------------------------------
+  Tab
+--------------------------------------------------*/
+
+.c-tab-link {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+    padding: 10px 15px;
+    color: $dark;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__item.js-current {
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+.c-tab-content {
+  display: none;
+  background: $light;
+  padding: 15px;
+
+  &.js-current { display: inherit; }
+}

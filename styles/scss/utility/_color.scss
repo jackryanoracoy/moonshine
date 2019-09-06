@@ -1,0 +1,16 @@
+/*--------------------------------------------------
+  Color
+--------------------------------------------------*/
+
+@each $color, $value in $theme-colors {
+  .u-color-#{$color} { color: #{$value}; }
+}
+
+@each $color, $value in $colors {
+  .u-color-#{$color} { color: #{$value}; }
+}
+
+@each $shade, $value in $greys {
+  .u-color-grey-#{$shade} { color: #{$value}; }
+}
+

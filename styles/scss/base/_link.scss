@@ -1,0 +1,16 @@
+/*--------------------------------------------------
+  Links
+--------------------------------------------------*/
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+
+  &:hover, &:visited, &:active, &:focus {
+    color: #2962FF;
+    text-decoration: underline;
+  }
+
+  @media print { &, &:visited { text-decoration: underline; } }
+}
+

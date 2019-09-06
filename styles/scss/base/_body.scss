@@ -1,0 +1,26 @@
+/*--------------------------------------------------
+  Body
+--------------------------------------------------*/
+
+body {
+  min-width: inherit;
+  color: inherit;
+  font-size: 1.4rem;
+  font-family: inherit;
+
+  & ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #E0E0E0;
+  }
+
+  & ::-webkit-scrollbar-thumb {
+    background-color: #BDBDBD;
+  }
+
+  @include media-breakpoint-min(md) {
+    font-size: 1.5rem;
+  }
+
+  @media print { font-family: inherit; width: 100%; }
+}

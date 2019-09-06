@@ -1,0 +1,37 @@
+/*--------------------------------------------------
+  Heading
+--------------------------------------------------*/
+
+.c-heading-above-the-fold,
+.c-heading-section {
+  font-family: $font-secondary;
+}
+
+.c-heading-above-the-fold {
+  color: $primary;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+
+  @include media-breakpoint-min(md) {
+    font-size: 3.5rem;
+  }
+}
+
+.c-heading-section {
+  color: $grey-700;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+
+  @include media-breakpoint-min(md) {
+    font-size: 2.8rem;
+  }
+}
+
+.c-heading-article {
+  color: $grey-900;
+  font-size: 1.6rem;
+
+  @include media-breakpoint-min(md) {
+    font-size: 1.8rem;
+  }
+}

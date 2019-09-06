@@ -1,0 +1,67 @@
+/*--------------------------------------------------
+  Button
+--------------------------------------------------*/
+
+.c-button {
+  display: inline-block;
+  min-width: 50px;
+  padding: 0 15px;
+  color: $light !important;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background-color: $primary;
+  box-shadow: $z-depth-1;
+  white-space: nowrap;
+
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    box-shadow: $z-depth-2;
+  }
+
+  &--large {
+    min-width: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    padding: 0 20px;
+  }
+
+  &--light {
+    color: $dark !important;
+    background-color: $light;
+  }
+
+  &--dark {
+    color: $light !important;
+    background-color: $dark;
+  }
+
+  &--success {
+    color: $light !important;
+    background-color: $success;
+  }
+
+  &--warnig {
+    color: $light !important;
+    background-color: $warning;
+  }
+
+  &--danger {
+    color: $light!important;
+    background-color: $danger;
+  }
+
+  &--info {
+    color: $light !important;
+    background-color: $info;
+  }
+}

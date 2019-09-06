@@ -1,0 +1,23 @@
+/*--------------------------------------------------
+  Highlight
+--------------------------------------------------*/
+
+.c-highlight {
+  color: $light;
+  padding: 20px;
+  background-color: $secondary;
+  border-radius: 4px;
+  overflow: auto;
+
+
+  &--light {
+    color: $dark;
+    background-color: $light;
+  }
+
+  &--dark {
+    color: $light;
+    background-color: $dark;
+  }
+}
+

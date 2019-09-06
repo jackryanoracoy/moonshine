@@ -1,0 +1,76 @@
+/*--------------------------------------------------
+  Cluster Gap (Use this on Flex )
+--------------------------------------------------*/
+
+.l-cluster-gap-10 {
+  margin: -5px;
+
+  & > div,
+  & > .l-cluster-gap__item { padding: 5px; }
+}
+.l-cluster-gap-20 {
+  margin: -10px;
+
+  & > div,
+  & > .l-cluster-gap__item { padding: 10px; }
+}
+
+.l-cluster-gap-30 {
+  margin: -15px;
+
+  & > div,
+  & > .l-cluster-gap__item { padding: 15px; }
+}
+
+.l-cluster-gap-40 {
+  margin: -20px;
+
+  & > div,
+  & > .l-cluster-gap__item { padding: 20px; }
+}
+
+.l-cluster-gap-50 {
+  margin: -25px;
+
+  & > div,
+  & > .l-cluster-gap__item { padding: 25px; }
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-min($breakpoint) {
+    .l-cluster-gap-#{$breakpoint}-10 {
+      margin: -5px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 5px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-20 {
+      margin: -10px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 10px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-30 {
+      margin: -15px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 15px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-40 {
+      margin: -20px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 20px; }
+    }
+
+    .l-cluster-gap-#{$breakpoint}-50 {
+      margin: -25px;
+
+      & > div,
+      & > .l-cluster-gap__item { padding: 25px; }
+    }
+  }
+}
