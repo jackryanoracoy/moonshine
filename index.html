@@ -129,7 +129,7 @@
               <p class="u-bordered u-bordered--bottom u-pad-bottom-20 u-pad-bottom-md-50"><strong>Get started with Moonshine</strong>, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.
               <br>Moonshine helps you build not only fast but scalable and maintainable web apps or sites. With Moonshine you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...
               <br>
-              <br>Ready to kick-start your project using Moonshine? <a href="https://github.com/jackryanoracoy/moonshine/archive/1.4.zip">Download Moonshine package</a> or <a href="https://github.com/jackryanoracoy/moonshine/releases">check Moonshine releases</a>.
+              <br>Ready to kick-start your project using Moonshine? <a href="https://github.com/jackryanoracoy/moonshine/archive/1.5.zip">Download Moonshine package</a> or <a href="https://github.com/jackryanoracoy/moonshine/releases">check Moonshine releases</a>.
               <br>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Or you can use our <code class="u-color-danger">boilerplate.html</code> included in the package.</p>
 
               <div class="l-flex l-cluster-gap-20 l-cluster-gap-md-40">
@@ -264,8 +264,8 @@
 
                     <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Theming</h3>
 
-                    <p class="u-mar-bottom-20 u-mar-bottom-md-40">Customize Moonshine with CSS variables for global style preferences for easy theming and component changes.
-                    <br>Here are the CSS variables we include (note that the <code class="u-color-warning">:root</code> is required). Located at <code class="u-color-warning">setting.css</code> file.</p>
+                    <p class="u-mar-bottom-20 u-mar-bottom-md-40">Customize Moonshine with CSS variables or SASS variables for global style preferences for easy theming and component changes.
+                    <br>Here are the CSS variables we include (note that the <code class="u-color-warning">:root</code> is required). For more info, please check settings.css or the scss code base (mixins, variables etc...).</p>
 
                     <div class="c-highlight">
                       <pre><code>
@@ -315,13 +315,9 @@
                         --transition: all 300ms ease-in-out 120ms;
 
                         /* font-family */
-                        /* --font-family-noto-sans: "Noto Sans", sans-serif; */
-                        /* --font-family-noto-sans-jp: "Noto Sans JP", sans-serif; */
-                        --font-family-open-sans-condensed: "Open Sans Condensed", sans-serif;
-                        --font-family-open-sans: "Open Sans", sans-serif;
-                        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                        --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                        --font-family-sans-serif-condensed: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
                         --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
                       }
                       <!-- Sample Codes -->
                       </code></pre>
@@ -496,7 +492,7 @@
 
                     <div class="c-highlight">
                       <pre><code>
-                      // (import order)
+                      // Import order
                       @import "setting.css";
                       @import "base.css";
                       @import "layout.css";
@@ -579,7 +575,7 @@
 
               <h2 class="c-heading-section u-mar-bottom-20 u-mar-bottom-md-50">Sample</h2>
 
-              <p class="u-bordered u-bordered--bottom u-pad-bottom-20 u-pad-bottom-md-50">Here are some sample of what to expect on the Moonshine codebase, to know more about moonshine's codebase check <code class="u-color-danger">*.css</code> files.</p>
+              <p class="u-bordered u-bordered--bottom u-pad-bottom-20 u-pad-bottom-md-50">Here are some sample of what to expect on the Moonshine codebase, For more info, please check <code class="u-color-danger">*.css</code> or <code class="u-color-danger">*.scss</code> files or the scss code base (mixins, variables etc...).</p>
 
               <div class="l-flex l-cluster-gap-20 l-cluster-gap-md-40">
                 <div class="l-flex__item-12 l-flex__item-md-9 l-flex__item-lg-10 l-cluster-gap__item">
@@ -1697,7 +1693,7 @@
 
               <h2 class="c-heading-section u-mar-bottom-20 u-mar-bottom-md-40">What's new?</h2>
 
-              <p class="u-mar-bottom-20"><strong>Moonshine v1.5</strong> - Now in two version, Sassy CSS and Basic CSS</p>
+              <p class="u-mar-bottom-20"><strong>Moonshine v1.5</strong> - Moonshine-SCSS v1.5 / Moonshine-CSS v1.5b</p>
 
               <ul class="u-list u-list--square u-list--inside">
                 <li>Now in two versions, Sassy CSS and Basic CSS.</li>

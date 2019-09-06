@@ -1,6 +1,6 @@
 # Moonshine
   
-Moonshine (Front-end Web Development Template) - A Scalable and Maintainable Architecture.  
+Moonshine (Front-end Web Development Boilerplate) - A Scalable and Maintainable Architecture.  
   
   
 ## Getting Started  
@@ -26,13 +26,35 @@ moonshine/
 ├── scripts/
 │   ├── jquery-3.4.1.min.js
 │   ├── modernizr-3.7.1.min.js
-│   ├── object-fit.min.js
+│   ├── object-fit-images-3.2.3.min.js
 │   └── script.js
 ├── styles/
-│   ├── base.css
-│   ├── component.css
-│   ├── layout.css
-│   ├── setting.css
+│   ├── css
+│   │   ├── all.css
+│   │   ├── all.css.map
+│   │   ├── all.min.css
+│   │   ├── base.css
+│   │   ├── base.css.map
+│   │   ├── base.min.css
+│   │   ├── component.css
+│   │   ├── component.css.map
+│   │   ├── component.min.css
+│   │   ├── layout.css
+│   │   ├── layout.css.map
+│   │   ├── layout.min.css
+│   │   ├── setting.css
+│   │   ├── setting.css.map
+│   │   ├── setting.min.css
+│   │   ├── utility.css
+│   │   ├── utility.css.map
+│   │   └── utility.min.css
+│   ├── scss
+│   │   ├── all.scss
+│   │   ├── base.scss
+│   │   ├── component.scss
+│   │   ├── layout.scss
+│   │   ├── setting.scss
+│   │   └── utility.scss
 │   └── style.css
 ├── .editorconfig
 ├── .gitattributes
@@ -49,8 +71,8 @@ moonshine/
   
 ### Theming  
   
-Customize Moonshine with CSS variables for global style preferences for easy theming and component changes.  
-Here are the CSS variables we include (note that the :root is required). Located at setting.css file.  
+Customize Moonshine with CSS variables or SASS variables for global style preferences for easy theming and component changes.
+Here are the CSS variables we include (note that the :root is required). For more info, please check settings.css or the scss code base (mixins, variables etc...).
   
 ```
 :root {
@@ -99,13 +121,9 @@ Here are the CSS variables we include (note that the :root is required). Located
   --transition: all 300ms ease-in-out 120ms;
 
   /* font-family */
-  /* --font-family-noto-sans: "Noto Sans", sans-serif; */  
-  /* --font-family-noto-sans-jp: "Noto Sans", sans-serif; */  
-  --font-family-open-sans-condensed: "Open Sans Condensed", sans-serif;  
-  --font-family-open-sans: "Open Sans", sans-serif;  
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";  
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  
-
+  --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif-condensed: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 ```
   
@@ -166,6 +184,52 @@ utitity.css - utilities and helper classes with ability to override anything.
 layout.css - specific UI layouts.  
 component.css - specific UI components.  
   
+Sassy CSS  
+  
+```
+moonshine/
+└── styles/
+    ├── css
+    │   ├── all.css
+    │   ├── all.css.map
+    │   ├── all.min.css
+    │   ├── base.css
+    │   ├── base.css.map
+    │   ├── base.min.css
+    │   ├── component.css
+    │   ├── component.css.map
+    │   ├── component.min.css
+    │   ├── layout.css
+    │   ├── layout.css.map
+    │   ├── layout.min.css
+    │   ├── setting.css
+    │   ├── setting.css.map
+    │   ├── setting.min.css
+    │   ├── utility.css
+    │   ├── utility.css.map
+    │   └── utility.min.css
+    ├── scss
+    │   ├── base
+    │   │   └── *.scss
+    │   ├── component
+    │   │   └── *.scss
+    │   ├── layout
+    │   │   └── *.scss
+    │   ├── setting
+    │   │   └── *.scss
+    │   ├── utility
+    │   │   └── *.scss
+    │   ├── all.scss
+    │   ├── base.scss
+    │   ├── component.scss
+    │   ├── layout.scss
+    │   ├── setting.scss
+    │   └── utility.scss
+    └── style.css
+```
+  
+Basic CSS  
+  
 ```
 moonshine/
 └── styles/
@@ -215,6 +279,16 @@ Samples:
 .u-mar-top-10 {...}
 .u-mar-top-sm-20 {...}
 .u-mar-top-md-50 {...} 
+```
+  
+Import order:  
+  
+```
+@import "setting.css";
+@import "base.css";
+@import "layout.css";
+@import "component.css";
+@import "utility.css";
 ```
   
   
