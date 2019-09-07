@@ -11,5 +11,5 @@
 }
 
 @each $shade, $value in $greys {
-  .u-background-color-#{$shade} { background-color: #{$value}; }
+  .u-background-grey-#{$shade} { background-color: #{$value}; }
 }
