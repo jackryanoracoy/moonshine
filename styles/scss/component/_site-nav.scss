@@ -8,7 +8,6 @@
   list-style: none;
 
   &__item {
-    height: 50px;
     overflow: hidden;
   }
 
@@ -17,7 +16,7 @@
     padding: 0 10px;
     color: #FFF;
     font-size: 1.5rem;
-    line-height: 50px;
+    line-height: $nav-height;
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -26,8 +25,7 @@
 
   &__item a:hover,
   &__item--active a {
-    background-color: #263238;
-    background-color: var(--primary, #263238)
+    background-color: $primary;
   }
 
   @include media-breakpoint-min(md) {

@@ -245,25 +245,25 @@ moonshine/
 Highly useful, powerful, and simple naming convention that makes your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit, and a lot more strict.  
   
 prefix - (u) utility, (l) layout, (c) component, and (js) javascript related classes.  
-classname - preferred class/object name.  
+name - preferred class/object name.  
 modifier - preferred modifier name.  
 viewport - (sm) small, (md) medium, (lg) large, (xl) extra large.  
 int - integer (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).  
 others - min, max, auto.  
   
 ```
-.prefix-classname {...}
-.prefix-classname-int {...}
-.prefix-classname-viewport {...}
-.prefix-classname-viewport-int {...}
-.prefix-classname--modifier {...}
-.prefix-classname--modifier-int {...}
-.prefix-classname--modifier-viewport {...}
-.prefix-classname--modifier-viewport-int {...}
-.prefix-classname__child {...}
-.prefix-classname__child-int {...}
-.prefix-classname__child-viewport {...}
-.prefix-classname__child-viewport-int {...}
+.prefix-name {...}
+.prefix-name-int {...}
+.prefix-name-viewport {...}
+.prefix-name-viewport-int {...}
+.prefix-name--modifier {...}
+.prefix-name--modifier-int {...}
+.prefix-name--modifier-viewport {...}
+.prefix-name--modifier-viewport-int {...}
+.prefix-name__child {...}
+.prefix-name__child-int {...}
+.prefix-name__child-viewport {...}
+.prefix-name__child-viewport-int {...}
 ```  
   
 Samples:  

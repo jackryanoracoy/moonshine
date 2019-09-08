@@ -3,7 +3,6 @@
 --------------------------------------------------*/
 
 .l-flex {
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -52,32 +51,32 @@
   &--alt-stretch { align-items: stretch; }
   &--alt-baseline { align-items: baseline; }
 
-  &__item { @include col-width-auto(); }
-  &__item-1 { @include col-width(1); }
-  &__item-2 { @include col-width(2); }
-  &__item-3 { @include col-width(3); }
-  &__item-4 { @include col-width(4); }
-  &__item-5 { @include col-width(5); }
-  &__item-6 { @include col-width(6); }
-  &__item-7 { @include col-width(7); }
-  &__item-8 { @include col-width(8); }
-  &__item-9 { @include col-width(9); }
-  &__item-10 { @include col-width(10); }
-  &__item-11 { @include col-width(11); }
-  &__item-12 { @include col-width(12); }
+  &__item { @include flex-col-width-auto(); }
+  &__item-1 { @include flex-col-width(1); }
+  &__item-2 { @include flex-col-width(2); }
+  &__item-3 { @include flex-col-width(3); }
+  &__item-4 { @include flex-col-width(4); }
+  &__item-5 { @include flex-col-width(5); }
+  &__item-6 { @include flex-col-width(6); }
+  &__item-7 { @include flex-col-width(7); }
+  &__item-8 { @include flex-col-width(8); }
+  &__item-9 { @include flex-col-width(9); }
+  &__item-10 { @include flex-col-width(10); }
+  &__item-11 { @include flex-col-width(11); }
+  &__item-12 { @include flex-col-width(12); }
 
-  &__basis-1 { @include basis-width(1); }
-  &__basis-2 { @include basis-width(2); }
-  &__basis-3 { @include basis-width(3); }
-  &__basis-4 { @include basis-width(4); }
-  &__basis-5 { @include basis-width(5); }
-  &__basis-6 { @include basis-width(6); }
-  &__basis-7 { @include basis-width(7); }
-  &__basis-8 { @include basis-width(8); }
-  &__basis-9 { @include basis-width(9); }
-  &__basis-10 { @include basis-width(10); }
-  &__basis-11 { @include basis-width(11); }
-  &__basis-12 { @include basis-width(12); }
+  &__basis-1 { @include col-width(1); }
+  &__basis-2 { @include col-width(2); }
+  &__basis-3 { @include col-width(3); }
+  &__basis-4 { @include col-width(4); }
+  &__basis-5 { @include col-width(5); }
+  &__basis-6 { @include col-width(6); }
+  &__basis-7 { @include col-width(7); }
+  &__basis-8 { @include col-width(8); }
+  &__basis-9 { @include col-width(9); }
+  &__basis-10 { @include col-width(10); }
+  &__basis-11 { @include col-width(11); }
+  &__basis-12 { @include col-width(12); }
 
   &__grow { flex-grow: 1; }
   &__grow-no { flex-grow: 0; }
@@ -149,32 +148,32 @@
       &--alt-stretch-#{$breakpoint} { align-items: stretch; }
       &--alt-baseline-#{$breakpoint} { align-items: baseline; }
 
-      &__item-#{$breakpoint} { @include col-width-auto(); }
-      &__item-#{$breakpoint}-1 { @include col-width(1); }
-      &__item-#{$breakpoint}-2 { @include col-width(2); }
-      &__item-#{$breakpoint}-3 { @include col-width(3); }
-      &__item-#{$breakpoint}-4 { @include col-width(4); }
-      &__item-#{$breakpoint}-5 { @include col-width(5); }
-      &__item-#{$breakpoint}-6 { @include col-width(6); }
-      &__item-#{$breakpoint}-7 { @include col-width(7); }
-      &__item-#{$breakpoint}-8 { @include col-width(8); }
-      &__item-#{$breakpoint}-9 { @include col-width(9); }
-      &__item-#{$breakpoint}-10 { @include col-width(10); }
-      &__item-#{$breakpoint}-11 { @include col-width(11); }
-      &__item-#{$breakpoint}-12 { @include col-width(12); }
+      &__item-#{$breakpoint} { @include flex-col-width-auto(); }
+      &__item-#{$breakpoint}-1 { @include flex-col-width(1); }
+      &__item-#{$breakpoint}-2 { @include flex-col-width(2); }
+      &__item-#{$breakpoint}-3 { @include flex-col-width(3); }
+      &__item-#{$breakpoint}-4 { @include flex-col-width(4); }
+      &__item-#{$breakpoint}-5 { @include flex-col-width(5); }
+      &__item-#{$breakpoint}-6 { @include flex-col-width(6); }
+      &__item-#{$breakpoint}-7 { @include flex-col-width(7); }
+      &__item-#{$breakpoint}-8 { @include flex-col-width(8); }
+      &__item-#{$breakpoint}-9 { @include flex-col-width(9); }
+      &__item-#{$breakpoint}-10 { @include flex-col-width(10); }
+      &__item-#{$breakpoint}-11 { @include flex-col-width(11); }
+      &__item-#{$breakpoint}-12 { @include flex-col-width(12); }
 
-      &__basis-#{$breakpoint}-1 { @include basis-width(1); }
-      &__basis-#{$breakpoint}-2 { @include basis-width(2); }
-      &__basis-#{$breakpoint}-3 { @include basis-width(3); }
-      &__basis-#{$breakpoint}-4 { @include basis-width(4); }
-      &__basis-#{$breakpoint}-5 { @include basis-width(5); }
-      &__basis-#{$breakpoint}-6 { @include basis-width(6); }
-      &__basis-#{$breakpoint}-7 { @include basis-width(7); }
-      &__basis-#{$breakpoint}-8 { @include basis-width(8); }
-      &__basis-#{$breakpoint}-9 { @include basis-width(9); }
-      &__basis-#{$breakpoint}-10 { @include basis-width(10); }
-      &__basis-#{$breakpoint}-11 { @include basis-width(11); }
-      &__basis-#{$breakpoint}-12 { @include basis-width(12); }
+      &__basis-#{$breakpoint}-1 { @include col-width(1); }
+      &__basis-#{$breakpoint}-2 { @include col-width(2); }
+      &__basis-#{$breakpoint}-3 { @include col-width(3); }
+      &__basis-#{$breakpoint}-4 { @include col-width(4); }
+      &__basis-#{$breakpoint}-5 { @include col-width(5); }
+      &__basis-#{$breakpoint}-6 { @include col-width(6); }
+      &__basis-#{$breakpoint}-7 { @include col-width(7); }
+      &__basis-#{$breakpoint}-8 { @include col-width(8); }
+      &__basis-#{$breakpoint}-9 { @include col-width(9); }
+      &__basis-#{$breakpoint}-10 { @include col-width(10); }
+      &__basis-#{$breakpoint}-11 { @include col-width(11); }
+      &__basis-#{$breakpoint}-12 { @include col-width(12); }
 
       &__grow-#{$breakpoint} { flex-grow: 1; }
       &__grow-no-#{$breakpoint} { flex-grow: 0; }

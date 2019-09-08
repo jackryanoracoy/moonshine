@@ -75,21 +75,19 @@
 }
 
 // Flex Column
-// @include col-width(1)
-@mixin col-width($size, $columns: $colum-count) {
-  -ms-flex: 0 0 percentage($size / $columns);
+// @include flex-col-width(1)
+@mixin flex-col-width($size, $columns: $colum-count) {
   flex: 0 0 percentage($size / $columns);
   max-width: percentage($size / $columns);
 }
 
-@mixin col-width-auto() {
-  -ms-flex: 0 0 auto;
+@mixin flex-col-width-auto() {
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
 
-@mixin basis-width($size, $columns: $colum-count) {
+@mixin col-width($size, $columns: $colum-count) {
   flex-basis: percentage($size / $columns);
 }
 
@@ -101,9 +99,8 @@
     font-display: auto;
     font-style: normal;
     font-weight: #{$weight};
-    src: url(../../assets/fonts/#{$file}.woff2) format('woff2'),
-         url(../../assets/fonts/#{$file}.woff) format('woff'),
-         url(../../assets/fonts/#{$file}.ttf) format('truetype'),
+    src: url('../../assets/fonts/#{$file}.woff2') format('woff2'),
+         url('../../assets/fonts/#{$file}.woff') format('woff'),
   }
 }
 

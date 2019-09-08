@@ -6,4 +6,9 @@
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
+
+  @include media-breakpoint-min(md) {
+    max-height: calc(100vh - (#{$header-height} + #{$nav-height}));
+    overflow: auto;
+  }
 }

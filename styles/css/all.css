@@ -12,39 +12,35 @@
  font-face
 --------------------------------------------------------------*/
 @font-face {
-  font-family: "Open Sans";
-  font-display: auto;
-  font-style: normal;
-  font-weight: 300;
-  src: url(../../assets/fonts/Open-Sans-Light.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Light.woff) format("woff"), url(../../assets/fonts/Open-Sans-Light.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
+  font-family: "Noto Sans";
   font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: url(../../assets/fonts/Open-Sans-Regular.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Regular.woff) format("woff"), url(../../assets/fonts/Open-Sans-Regular.ttf) format("truetype");
+  src: url("../../assets/fonts/Noto-Sans.woff2") format("woff2"), url("../../assets/fonts/Noto-Sans.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Noto Sans";
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url(../../assets/fonts/Open-Sans-Bold.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Bold.woff) format("woff"), url(../../assets/fonts/Open-Sans-Bold.ttf) format("truetype");
+  src: url("../../assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("../../assets/fonts/Noto-Sans-Bold.woff") format("woff");
 }
+/*--------------------------------------------------------------
+ font-face Condensed
+--------------------------------------------------------------*/
 @font-face {
   font-family: "Open Sans Condensed";
   font-display: auto;
   font-style: normal;
   font-weight: 300;
-  src: url(../../assets/fonts/Open-Sans-Condensed-Light.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Condensed-Light.woff) format("woff"), url(../../assets/fonts/Open-Sans-Condensed-Light.ttf) format("truetype");
+  src: url("../../assets/fonts/Open-Sans-Condensed-Light.woff2") format("woff2"), url("../../assets/fonts/Open-Sans-Condensed-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Open Sans Condensed";
   font-display: auto;
   font-style: normal;
   font-weight: 700;
-  src: url(../../assets/fonts/Open-Sans-Condensed-Bold.woff2) format("woff2"), url(../../assets/fonts/Open-Sans-Condensed-Bold.woff) format("woff"), url(../../assets/fonts/Open-Sans-Condensed-Bold.ttf) format("truetype");
+  src: url("../../assets/fonts/Open-Sans-Condensed-Bold.woff2") format("woff2"), url("../../assets/fonts/Open-Sans-Condensed-Bold.woff") format("woff");
 }
 /*--------------------------------------------------------------
  Custom Properties (CSS Varialbles)
@@ -94,7 +90,7 @@
   /* Transition */
   --transition: all 300ms ease-in-out 120ms;
   /* font-family */
-  --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-sans-serif-condensed: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -129,7 +125,7 @@
 html {
   min-width: 320px;
   color: #212121;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 62.5%;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
@@ -444,7 +440,6 @@ textarea {
   Flex
 --------------------------------------------------*/
 .l-flex {
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -558,68 +553,55 @@ textarea {
   align-items: baseline;
 }
 .l-flex__item {
-  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
 .l-flex__item-1 {
-  -ms-flex: 0 0 8.3333333333%;
   flex: 0 0 8.3333333333%;
   max-width: 8.3333333333%;
 }
 .l-flex__item-2 {
-  -ms-flex: 0 0 16.6666666667%;
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
 }
 .l-flex__item-3 {
-  -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
 .l-flex__item-4 {
-  -ms-flex: 0 0 33.3333333333%;
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
 }
 .l-flex__item-5 {
-  -ms-flex: 0 0 41.6666666667%;
   flex: 0 0 41.6666666667%;
   max-width: 41.6666666667%;
 }
 .l-flex__item-6 {
-  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 .l-flex__item-7 {
-  -ms-flex: 0 0 58.3333333333%;
   flex: 0 0 58.3333333333%;
   max-width: 58.3333333333%;
 }
 .l-flex__item-8 {
-  -ms-flex: 0 0 66.6666666667%;
   flex: 0 0 66.6666666667%;
   max-width: 66.6666666667%;
 }
 .l-flex__item-9 {
-  -ms-flex: 0 0 75%;
   flex: 0 0 75%;
   max-width: 75%;
 }
 .l-flex__item-10 {
-  -ms-flex: 0 0 83.3333333333%;
   flex: 0 0 83.3333333333%;
   max-width: 83.3333333333%;
 }
 .l-flex__item-11 {
-  -ms-flex: 0 0 91.6666666667%;
   flex: 0 0 91.6666666667%;
   max-width: 91.6666666667%;
 }
 .l-flex__item-12 {
-  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -844,68 +826,55 @@ textarea {
     align-items: baseline;
   }
   .l-flex__item-sm {
-    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .l-flex__item-sm-1 {
-    -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
   .l-flex__item-sm-2 {
-    -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
   .l-flex__item-sm-3 {
-    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .l-flex__item-sm-4 {
-    -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
   .l-flex__item-sm-5 {
-    -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
   .l-flex__item-sm-6 {
-    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .l-flex__item-sm-7 {
-    -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
   .l-flex__item-sm-8 {
-    -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
   .l-flex__item-sm-9 {
-    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .l-flex__item-sm-10 {
-    -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
   .l-flex__item-sm-11 {
-    -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
   .l-flex__item-sm-12 {
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1131,68 +1100,55 @@ textarea {
     align-items: baseline;
   }
   .l-flex__item-md {
-    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .l-flex__item-md-1 {
-    -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
   .l-flex__item-md-2 {
-    -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
   .l-flex__item-md-3 {
-    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .l-flex__item-md-4 {
-    -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
   .l-flex__item-md-5 {
-    -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
   .l-flex__item-md-6 {
-    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .l-flex__item-md-7 {
-    -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
   .l-flex__item-md-8 {
-    -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
   .l-flex__item-md-9 {
-    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .l-flex__item-md-10 {
-    -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
   .l-flex__item-md-11 {
-    -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
   .l-flex__item-md-12 {
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1418,68 +1374,55 @@ textarea {
     align-items: baseline;
   }
   .l-flex__item-lg {
-    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .l-flex__item-lg-1 {
-    -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
   .l-flex__item-lg-2 {
-    -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
   .l-flex__item-lg-3 {
-    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .l-flex__item-lg-4 {
-    -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
   .l-flex__item-lg-5 {
-    -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
   .l-flex__item-lg-6 {
-    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .l-flex__item-lg-7 {
-    -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
   .l-flex__item-lg-8 {
-    -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
   .l-flex__item-lg-9 {
-    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .l-flex__item-lg-10 {
-    -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
   .l-flex__item-lg-11 {
-    -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
   .l-flex__item-lg-12 {
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1705,68 +1648,55 @@ textarea {
     align-items: baseline;
   }
   .l-flex__item-xl {
-    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .l-flex__item-xl-1 {
-    -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
   .l-flex__item-xl-2 {
-    -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
   .l-flex__item-xl-3 {
-    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .l-flex__item-xl-4 {
-    -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
   .l-flex__item-xl-5 {
-    -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
   .l-flex__item-xl-6 {
-    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .l-flex__item-xl-7 {
-    -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
   .l-flex__item-xl-8 {
-    -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
   .l-flex__item-xl-9 {
-    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .l-flex__item-xl-10 {
-    -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
   .l-flex__item-xl-11 {
-    -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
   .l-flex__item-xl-12 {
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -2167,7 +2097,6 @@ textarea {
   width: 100%;
   min-width: 320px;
   transition: all 300ms ease-in-out 120ms;
-  transition: var(--transition);
   z-index: 9;
 }
 .l-site-header, .l-site-header.js-active.js-show, .l-site-header.js-menu-opened {
@@ -2192,7 +2121,6 @@ textarea {
   width: 100%;
   max-height: 0;
   transition: all 300ms ease-in-out 120ms;
-  transition: var(--transition);
   overflow: hidden;
 }
 .l-site-header__navigation.js-show {
@@ -2284,6 +2212,12 @@ textarea {
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
+}
+@media (min-width: 768px) {
+  .l-aside {
+    max-height: calc(100vh - (75px + 50px));
+    overflow: auto;
+  }
 }
 
 /*--------------------------------------------------
@@ -2464,8 +2398,7 @@ textarea {
   position: relative;
   display: block;
   padding: 10px;
-  color: #FAFAFA !important;
-  color: var(--light, #FAFAFA) !important;
+  color: #FAFAFA;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
@@ -2523,7 +2456,6 @@ textarea {
   list-style: none;
 }
 .c-site-nav__item {
-  height: 50px;
   overflow: hidden;
 }
 .c-site-nav__item a {
@@ -2539,7 +2471,6 @@ textarea {
 }
 .c-site-nav__item a:hover, .c-site-nav__item--active a {
   background-color: #263238;
-  background-color: var(--primary, #263238);
 }
 @media (min-width: 768px) {
   .c-site-nav {

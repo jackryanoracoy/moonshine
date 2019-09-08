@@ -7,8 +7,7 @@
   top: 0;
   width: 100%;
   min-width: 320px;
-  transition: all 300ms ease-in-out 120ms;
-  transition: var(--transition);
+  transition: $transition;
   z-index: 9;
 
   &,
@@ -18,7 +17,7 @@
   }
 
   &.js-active {
-    top: -60px;
+    top: -$header-height_m;
   }
 
   &.js-active.js-show,
@@ -27,7 +26,7 @@
   }
 
   &__content:first-child {
-    height: 60px;
+    height: $header-height_m;
   }
 
   &__menu {
@@ -41,8 +40,7 @@
   &__navigation {
     width: 100%;
     max-height: 0;
-    transition: all 300ms ease-in-out 120ms;
-    transition: var(--transition);
+    transition: $transition;
     overflow: hidden;
   }
 
@@ -50,7 +48,7 @@
 
   @include media-breakpoint-min(md) {
     &.js-active {
-      top: -75px;
+      top: -$header-height;
     }
 
     &__content {
@@ -58,7 +56,7 @@
     }
 
     &__content:first-child {
-      height: 75px;
+      height: $header-height;
     }
 
     &__branding,

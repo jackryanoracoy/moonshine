@@ -186,8 +186,7 @@
   position: relative;
   display: block;
   padding: 10px;
-  color: #FAFAFA !important;
-  color: var(--light, #FAFAFA) !important;
+  color: #FAFAFA;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
@@ -245,7 +244,6 @@
   list-style: none;
 }
 .c-site-nav__item {
-  height: 50px;
   overflow: hidden;
 }
 .c-site-nav__item a {
@@ -261,7 +259,6 @@
 }
 .c-site-nav__item a:hover, .c-site-nav__item--active a {
   background-color: #263238;
-  background-color: var(--primary, #263238);
 }
 @media (min-width: 768px) {
   .c-site-nav {
