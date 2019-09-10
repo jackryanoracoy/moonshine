@@ -50,8 +50,8 @@
   --primary: #263238;
   --secondary: #37474F;
   --success: #4CAF50;
-  --info: #2196F3;
-  --warning: #FF5722;
+  --info: #00BCD4;
+  --warning: #FF9800;
   --danger: #F44336;
   --light: #FAFAFA;
   --dark: #212121;
@@ -2303,7 +2303,7 @@ textarea {
 }
 .c-button--warnig {
   color: #FAFAFA !important;
-  background-color: #FF5722;
+  background-color: #FF9800;
 }
 .c-button--danger {
   color: #FAFAFA !important;
@@ -2311,7 +2311,7 @@ textarea {
 }
 .c-button--info {
   color: #FAFAFA !important;
-  background-color: #2196F3;
+  background-color: #00BCD4;
 }
 
 /*--------------------------------------------------
@@ -2349,6 +2349,26 @@ textarea {
 .c-highlight--dark {
   color: #FAFAFA;
   background-color: #212121;
+}
+.c-highlight--success {
+  color: #FAFAFA;
+  background-color: #4CAF50;
+}
+.c-highlight--warning {
+  color: #FAFAFA;
+  background-color: #FF9800;
+}
+.c-highlight--danger {
+  color: #FAFAFA;
+  background-color: #F44336;
+}
+.c-highlight--info {
+  color: #FAFAFA;
+  background-color: #00BCD4;
+}
+.c-highlight--grey {
+  color: #212121;
+  background-color: #E0E0E0;
 }
 
 /*--------------------------------------------------
@@ -2681,6 +2701,10 @@ textarea {
   max-width: 100%;
 }
 
+.u-viewport-width-100 {
+  width: 100vw;
+}
+
 .u-height-25 {
   height: 25%;
 }
@@ -2699,6 +2723,10 @@ textarea {
 
 .u-max-height-100 {
   max-height: 100%;
+}
+
+.u-viewport-height-100 {
+  height: 100vh;
 }
 
 /*--------------------------------------------------
@@ -10428,11 +10456,11 @@ textarea {
 }
 
 .u-color-info {
-  color: #2196F3;
+  color: #00BCD4;
 }
 
 .u-color-warning {
-  color: #FF5722;
+  color: #FF9800;
 }
 
 .u-color-danger {
@@ -10583,11 +10611,11 @@ textarea {
 }
 
 .u-background-info {
-  background-color: #2196F3;
+  background-color: #00BCD4;
 }
 
 .u-background-warning {
-  background-color: #FF5722;
+  background-color: #FF9800;
 }
 
 .u-background-danger {

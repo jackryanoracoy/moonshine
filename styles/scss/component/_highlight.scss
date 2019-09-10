@@ -19,5 +19,31 @@
     color: $light;
     background-color: $dark;
   }
+
+  &--success {
+    color: $light;
+    background-color: $success;
+  }
+
+  &--warning {
+    color: $light;
+    background-color: $warning;
+  }
+
+  &--danger {
+    color: $light;
+    background-color: $danger;
+  }
+
+  &--info {
+    color: $light;
+    background-color: $info;
+  }
+
+
+  &--grey {
+    color: $dark;
+    background-color: $grey-300;
+  }
 }
 

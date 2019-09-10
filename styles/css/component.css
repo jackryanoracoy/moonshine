@@ -91,7 +91,7 @@
 }
 .c-button--warnig {
   color: #FAFAFA !important;
-  background-color: #FF5722;
+  background-color: #FF9800;
 }
 .c-button--danger {
   color: #FAFAFA !important;
@@ -99,7 +99,7 @@
 }
 .c-button--info {
   color: #FAFAFA !important;
-  background-color: #2196F3;
+  background-color: #00BCD4;
 }
 
 /*--------------------------------------------------
@@ -137,6 +137,26 @@
 .c-highlight--dark {
   color: #FAFAFA;
   background-color: #212121;
+}
+.c-highlight--success {
+  color: #FAFAFA;
+  background-color: #4CAF50;
+}
+.c-highlight--warning {
+  color: #FAFAFA;
+  background-color: #FF9800;
+}
+.c-highlight--danger {
+  color: #FAFAFA;
+  background-color: #F44336;
+}
+.c-highlight--info {
+  color: #FAFAFA;
+  background-color: #00BCD4;
+}
+.c-highlight--grey {
+  color: #212121;
+  background-color: #E0E0E0;
 }
 
 /*--------------------------------------------------

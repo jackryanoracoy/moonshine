@@ -267,7 +267,7 @@
                     <p class="u-mar-bottom-20 u-mar-bottom-md-40">Customize Moonshine with CSS variables or SASS variables for global style preferences for easy theming and component changes.
                     <br>Here are the CSS variables we include (note that the <code class="u-color-warning">:root</code> is required). For more info, please check settings.css or the scss code base (mixins, variables etc...).</p>
 
-                    <div class="c-highlight">
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
                       <pre><code>
                       :root {
 
@@ -322,6 +322,10 @@
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
+
+                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--success">
+                    <span>NOTE:&emsp;</span>
+                    <span>You can utilize our source Sass files to take advantage of variables, maps, mixins, and more.</span></p>
 
                   </article><!-- End - article -->
 
@@ -380,9 +384,9 @@
                       </code></pre>
                     </div>
 
-                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--light">
+                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--warning">
                     <span>NOTE:&emsp;</span>
-                    <span>To extend template's accessibility please see <a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a>, <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> and similar accessibility standards and requirements.</span></p>
+                    <span>To extend template's accessibility please see <a class="u-color-light" href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a>, <a class="u-color-light" href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> and similar accessibility standards and requirements.</span></p>
 
                   </article><!-- End - article -->
                 </div><!-- End - flex content -->
@@ -546,7 +550,7 @@
                       </code></pre>
                     </div>
 
-                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--light">
+                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--info">
                     <span>NOTE:&emsp;</span>
                     <span>Two dashes (also known as the modifier notation) imply that the class is a modifier and
                     two underscores (also known as the child notation) imply that the class is a child.</span></p>
@@ -579,6 +583,633 @@
 
               <div class="l-flex l-cluster-gap-20 l-cluster-gap-md-40">
                 <div class="l-flex__item-12 l-flex__item-md-9 l-flex__item-lg-10 l-cluster-gap__item">
+
+                  <article id="container" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Container</h3>
+
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
+                      <pre><code>
+                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-container"</span><span>&gt;</span>
+                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
+                      <span>&lt;/div&gt;</span>
+
+                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-container l-container--fluid"</span><span>&gt;</span>
+                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
+                      <span>&lt;/div&gt;</span>
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                    <div class="c-highlight">
+                      <pre><code>
+                      .l-container--fluid {
+                        max-width: 100% !important;
+                      }
+
+                      @media (min-width: 576px) {
+                        .l-container { max-width: 540px; }
+                      }
+
+                      @media (min-width: 768px) {
+                        .l-container { max-width: 720px; }
+                      }
+
+                      @media (min-width: 992px) {
+                        .l-container { max-width: 960px; }
+                      }
+
+                      @media (min-width: 1200px) {
+                        .l-container { max-width: 1140px; }
+                      }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
+
+                  <article id="flex" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Flex</h3>
+
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
+                      <pre><code>
+                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex"</span><span>&gt;</span>
+                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__item-12 l-flex__item-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
+                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__item-12 l-flex__item-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
+                      <span>&lt;/div&gt;</span>
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                    <div class="c-highlight c-highlight--grey u-mar-bottom-20 u-mar-bottom-md-40">
+                      <div class="l-flex">
+                        <div class="l-flex__item-12 l-flex__item-md-6">
+                          Column one - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          Aenean commodo ligula eget dolor.
+                          Aenean massa.
+                          Cum sociis natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus.
+                          Donec quam felis,
+                        </div>
+                        <div class="l-flex__item-12 l-flex__item-md-6">
+                          Column two - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          Aenean commodo ligula eget dolor.
+                          Aenean massa.
+                          Cum sociis natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus.
+                          Donec quam felis,
+                        </div>
+                      </div>
+                    </div><!-- End - Preview -->
+
+                    <div class="c-highlight">
+                      <pre><code>
+                      .l-flex {
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                      }
+
+                      .l-flex--row-wrp { flex-flow: row wrap; }
+                      .l-flex--row-wrp-no { flex-flow: row nowrap; }
+                      .l-flex--row-wrp-rev { flex-flow: row wrap-reverse; }
+                      .l-flex--row-rev-wrp { flex-flow: row-reverse wrap; }
+                      .l-flex--row-rev-wrp-no { flex-flow: row-reverse nowrap; }
+                      .l-flex--row-rev-wrp-rev { flex-flow: row-reverse wrap-reverse; }
+
+                      .l-flex--col-wrap { flex-flow: column wrap; }
+                      .l-flex--col-wrap-no { flex-flow: column nowrap; }
+                      .l-flex--col-wrap-reverse { flex-flow: column wrap-reverse; }
+                      .l-flex--col-rev-wrp { flex-flow: column-reverse wrap; }
+                      .l-flex--col-rev-wrp-no { flex-flow: column-reverse nowrap; }
+                      .l-flex--col-rev-wrp-rev { flex-flow: column-reverse wrap-reverse; }
+
+                      .l-flex--wrp { flex-wrap: wrap; }
+                      .l-flex--wrp-no { flex-wrap: nowrap; }
+                      .l-flex--wrp-rev { flex-wrap: wrap-reverse; }
+
+                      .l-flex--col { flex-direction: column; }
+                      .l-flex--col-rev { flex-direction: column-reverse; }
+
+                      .l-flex--row { flex-direction: row; }
+                      .l-flex--row-rev { flex-direction: row-reverse; }
+
+                      .l-flex--jus-start { justify-content: flex-start; }
+                      .l-flex--jus-end { justify-content: flex-end; }
+                      .l-flex--jus-center { justify-content: center; }
+                      .l-flex--jus-sparound { justify-content: space-around; }
+                      .l-flex--jus-spbetween { justify-content: space-between; }
+                      .l-flex--jus-spevenly { justify-content: space-evenly; }
+
+                      .l-flex--ali-start { align-content: flex-start; }
+                      .l-flex--ali-end { align-content: flex-end; }
+                      .l-flex--ali-center { align-content: center; }
+                      .l-flex--ali-stretch { align-content: stretch; }
+                      .l-flex--ali-sparound { align-content: space-around; }
+                      .l-flex--ali-spbetween { align-content: space-between; }
+
+                      .l-flex--alt-start { align-items: flex-start; }
+                      .l-flex--alt-end { align-items: flex-end; }
+                      .l-flex--alt-center { align-items: center; }
+                      .l-flex--alt-stretch { align-items: stretch; }
+                      .l-flex--alt-baseline { align-items: baseline; }
+
+                      .l-flex__item {
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: auto;
+                        max-width: 100%;
+                      }
+
+                      .l-flex__item-1 {
+                        -ms-flex: 0 0 8.333333%;
+                        flex: 0 0 8.333333%;
+                        max-width: 8.333333%;
+                      }
+
+                      .l-flex__item-2 {
+                        -ms-flex: 0 0 16.666667%;
+                        flex: 0 0 16.666667%;
+                        max-width: 16.666667%;
+                      }
+
+                      .l-flex__item-3 {
+                        -ms-flex: 0 0 25%;
+                        flex: 0 0 25%;
+                        max-width: 25%;
+                      }
+
+                      .l-flex__item-4 {
+                        -ms-flex: 0 0 33.333333%;
+                        flex: 0 0 33.333333%;
+                        max-width: 33.333333%;
+                      }
+
+                      .l-flex__item-5 {
+                        -ms-flex: 0 0 41.666667%;
+                        flex: 0 0 41.666667%;
+                        max-width: 41.666667%;
+                      }
+
+                      .l-flex__item-6 {
+                        -ms-flex: 0 0 50%;
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                      }
+
+                      .l-flex__item-7 {
+                        -ms-flex: 0 0 58.333333%;
+                        flex: 0 0 58.333333%;
+                        max-width: 58.333333%;
+                      }
+
+                      .l-flex__item-8 {
+                        -ms-flex: 0 0 66.666667%;
+                        flex: 0 0 66.666667%;
+                        max-width: 66.666667%;
+                      }
+
+                      .l-flex__item-9 {
+                        -ms-flex: 0 0 75%;
+                        flex: 0 0 75%;
+                        max-width: 75%;
+                      }
+
+                      .l-flex__item-10 {
+                        -ms-flex: 0 0 83.333333%;
+                        flex: 0 0 83.333333%;
+                        max-width: 83.333333%;
+                      }
+
+                      .l-flex__item-11 {
+                        -ms-flex: 0 0 91.666667%;
+                        flex: 0 0 91.666667%;
+                        max-width: 91.666667%;
+                      }
+
+                      .l-flex__item-12 {
+                        -ms-flex: 0 0 100%;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                      }
+
+                      .l-flex__order-1 { -ms-flex-order: 1; order: 1; }
+                      .l-flex__order-2 { -ms-flex-order: 2; order: 2; }
+                      .l-flex__order-3 { -ms-flex-order: 3; order: 3; }
+                      .l-flex__order-4 { -ms-flex-order: 4; order: 4; }
+                      .l-flex__order-5 { -ms-flex-order: 5; order: 5; }
+                      .l-flex__order-6 { -ms-flex-order: 6; order: 6; }
+                      .l-flex__order-7 { -ms-flex-order: 7; order: 7; }
+                      .l-flex__order-8 { -ms-flex-order: 8; order: 8; }
+                      .l-flex__order-9 { -ms-flex-order: 9; order: 9; }
+                      .l-flex__order-10 { -ms-flex-order: 10; order: 10; }
+                      .l-flex__order-11 { -ms-flex-order: 11; order: 11; }
+                      .l-flex__order-12 { -ms-flex-order: 12; order: 12; }
+
+                      .l-flex__als-start { align-self: flex-start; }
+                      .l-flex__als-end { align-self: flex-end; }
+                      .l-flex__als-center { align-self: center; }
+                      .l-flex__als-stretch { align-self: stretch; }
+                      .l-flex__als-baseline { align-self: baseline; }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
+
+                  <article id="cluster-gap" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Cluster Gap</h3>
+
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
+                      <pre><code>
+                      // You can omit adding class name "l-cluster-gap__item" on "l-cluster-gap" child item.
+                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex l-cluster-gap-20"</span><span>&gt;</span>
+                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-cluster-gap__item"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
+                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-cluster-gap__item"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
+                      <span>&lt;/div&gt;</span>
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                    <div class="c-highlight c-highlight--grey u-mar-bottom-20 u-mar-bottom-md-40">
+                      <div class="l-flex l-cluster-gap-20">
+                        <div class="l-flex__item-12 l-flex__item-md-6">
+                          Column one - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          Aenean commodo ligula eget dolor.
+                          Aenean massa.
+                          Cum sociis natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus.
+                          Donec quam felis,
+                        </div>
+                        <div class="l-flex__item-12 l-flex__item-md-6">
+                          Column two - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          Aenean commodo ligula eget dolor.
+                          Aenean massa.
+                          Cum sociis natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus.
+                          Donec quam felis,
+                        </div>
+                      </div>
+                    </div><!-- End - Preview -->
+
+                    <div class="c-highlight">
+                      <pre><code>
+                        .l-cluster-gap-md-10 { margin: -5px; }
+                        .l-cluster-gap-md-20 { margin: -10px; }
+                        .l-cluster-gap-md-30 { margin: -15px; }
+                        .l-cluster-gap-md-40 { margin: -20px; }
+                        .l-cluster-gap-md-50 { margin: -25px; }
+
+                        .l-cluster-gap-md-10 > div, .l-cluster-gap-md-10 > .l-cluster-gap__item { padding: 5px; }
+                        .l-cluster-gap-md-20 > div, .l-cluster-gap-md-20 > .l-cluster-gap__item { padding: 10px; }
+                        .l-cluster-gap-md-30 > div, .l-cluster-gap-md-30 > .l-cluster-gap__item { padding: 15px; }
+                        .l-cluster-gap-md-40 > div, .l-cluster-gap-md-40 > .l-cluster-gap__item { padding: 20px; }
+                        .l-cluster-gap-md-50 > div, .l-cluster-gap-md-50 > .l-cluster-gap__item { padding: 25px; }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
+
+                  <article id="parallax" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Parallax</h3>
+
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
+                      <pre><code>
+                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-parallax"</span><span>&gt;</span>
+                        <span>&lt;img</span> <span>class=</span><span class="u-font-bold">"u-parallax__image"</span> <span>src=</span><span>"/assets/images/xxx.jpg"</span> <span>alt=</span><span>"Image"</span><span>&gt;</span>
+                      <span>&lt;/div&gt;</span>
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                    <div class="c-highlight c-highlight--grey u-mar-bottom-20 u-mar-bottom-md-40">
+                      <div class="l-parallax u-viewport-height-100">
+                        <picture>
+                          <source media="(min-width: 992px)" srcset="assets/images/image-above-the-fold@2x.jpg 2x, assets/images/image-above-the-fold.jpg">
+                          <source media="(max-width: 991px)" srcset="assets/images/image-above-the-fold_m@2x.jpg 2x, assets/images/image-above-the-fold_m.jpg">
+                          <img class="l-parallax__image" data-speed="1" src="assets/images/image-above-the-fold.jpg" alt="Parallax Image">
+                        </picture>
+                      </div>
+                    </div><!-- End - Preview -->
+
+                    <div class="c-highlight">
+                      <pre><code>
+                      .l-parallax {
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+                      }
+
+                      .l-parallax picture,
+                      .l-parallax__image {
+                        position: absolute;
+                        z-index: -1;
+                        pointer-events: none;
+                      }
+
+                      .l-parallax picture {
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                      }
+
+                      .l-parallax__image {
+                        top: 50%;
+                        left: 50%;
+                        width: 100%;
+                        height: 150%;
+                        object-fit: cover;
+                        pointer-events: none;
+                        transform: translate(-50%, -50%);
+                        font-family: 'object-fit: cover;';
+                      }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
+
+                  <article id="tab" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Tab</h3>
+
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
+                      <pre><code>
+                      <span>&lt;ul</span> <span>class=</span><span class="u-font-bold">"c-tab-link"</span><span>&gt;</span>
+                        <span>&lt;li</span> <span>class=</span><span class="u-font-bold">"c-tab-link__item"</span> <span>data-tab="tab-1"</span><span>&gt;</span><span class="u-color-grey-500">Tab 1</span><span>&lt;/li&gt;</span>
+                        <span>&lt;li</span> <span>class=</span><span class="u-font-bold">"c-tab-link__item"</span> <span>data-tab="tab-2"</span><span>&gt;</span><span class="u-color-grey-500">Tab 2</span><span>&lt;/li&gt;</span>
+                      <span>&lt;/ul&gt;</span>
+
+                      <span>&lt;div</span> <span>id=</span><span class="u-font-bold">"tab-1"</span> <span>class=</span><span class="u-font-bold">"c-tab-content js-current"</span><span>&gt;</span>
+                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
+                      <span>&lt;/div&gt;</span>
+                      <span>&lt;div</span> <span>id=</span><span class="u-font-bold">"tab-2"</span> <span>class=</span><span class="u-font-bold">"c-tab-content"</span><span>&gt;</span>
+                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
+                      <span>&lt;/div&gt;</span>
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                    <div class="c-highlight c-highlight--grey u-mar-bottom-20 u-mar-bottom-md-40">
+                      <ul class="c-tab-link">
+                        <li class="c-tab-link__item js-current" data-tab="tab-1">Tab 1</li>
+                        <li class="c-tab-link__item" data-tab="tab-2">Tab 2</li>
+                      </ul>
+
+                      <div id="tab-1" class="c-tab-content js-current">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor.
+                        Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus.
+                        Donec quam felis,
+                      </div>
+                      <div id="tab-2" class="c-tab-content">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                      </div>
+                    </div><!-- End - Preview -->
+
+                    <div class="c-highlight">
+                      <pre><code>
+                      .c-tab-link {
+                        margin: 0px;
+                        padding: 0px;
+                        list-style: none;
+                      }
+
+                      .c-tab-link__item {
+                        display: inline-block;
+                        padding: 10px 15px;
+                        color: #212121;
+                        background: none;
+                        cursor: pointer;
+                      }
+
+                      .c-tab-link__item.js-current {
+                        background: #F5F5F5;
+                        color: #212121;
+                      }
+
+                      .c-tab-content {
+                        display: none;
+                        background: #F5F5F5;
+                        padding: 15px;
+                      }
+
+                      .c-tab-content.js-current {
+                        display: inherit;
+                      }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
+
+                  <article id="button" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Button</h3>
+
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
+                      <pre><code>
+                      <span>&lt;a</span> <span>class=</span><span class="u-font-bold">"c-button"</span> <span>href=</span><span>"#"</span><span>&gt;</span>Button<span>&lt;/a&gt;</span>
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                    <div class="c-highlight c-highlight--grey u-mar-bottom-20 u-mar-bottom-md-40">
+                      <div class="l-flex l-cluster-gap-20">
+                        <div class="l-flex__item">
+                          <a class="c-button" href="#!">Button Primary</a>
+                        </div><!-- End - flex item -->
+
+                        <div class="l-flex__item">
+                          <a class="c-button c-button--light" href="#!">Button Light</a>
+                        </div><!-- End - flex item -->
+
+                        <div class="l-flex__item">
+                          <a class="c-button c-button--dark" href="#!">Button Dark</a>
+                        </div><!-- End - flex item -->
+
+                        <div class="l-flex__item">
+                          <a class="c-button c-button--danger" href="#!">Button Danger</a>
+                        </div><!-- End - flex item -->
+                      </div><!-- End - flex -->
+                    </div><!-- End - Preview -->
+
+                    <div class="c-highlight">
+                      <pre><code>
+                      .c-button {
+                        display: inline-block;
+                        min-width: 50px;
+                        padding: 0 15px;
+                        color: #FFF !important;
+                        font-size: 1.5rem;
+                        line-height: 50px;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        border-radius: 25px;
+                        background-color: #263238;
+                        background-color: var(--primary, #263238);
+                        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+                        white-space: nowrap;
+                      }
+
+                      .c-button:hover,
+                      .c-button:visited,
+                      .c-button:active,
+                      .c-button:focus {
+                        text-decoration: none;
+                      }
+
+                      .c-button:hover {
+                        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+                      }
+
+                      .c-button--large {
+                        min-width: 60px;
+                        line-height: 60px;
+                        border-radius: 30px;
+                        padding: 0 20px;
+                      }
+
+                      .c-button--light {
+                        color: #212121 !important;
+                        color: var(--dark) !important;
+                        background-color: #FAFAFA;
+                        background-color: var(--light, #FAFAFA);
+                      }
+
+                      .c-button--dark {
+                        color: #FAFAFA !important;
+                        color: var(--light, #FAFAFA) !important;
+                        background-color: #212121;
+                        background-color: var(--dark, #212121);
+                      }
+
+                      .c-button--success {
+                        color: #FAFAFA !important;
+                        color: var(--light, #FAFAFA) !important;
+                        background-color: #4CAF50;
+                        background-color: var(--success, #4CAF50);
+                      }
+
+                      .c-button--warnig {
+                        color: #FAFAFA !important;
+                        color: var(--light, #FAFAFA) !important;
+                        background-color: #FF5722;
+                        background-color: var(--warning, #FF5722);
+                      }
+
+                      .c-button--danger {
+                        color: #FAFAFA !important;
+                        color: var(--light, #FAFAFA) !important;
+                        background-color: #F44336;
+                        background-color: var(--danger, #F44336);
+                      }
+
+                      .c-button--info {
+                        color: #FAFAFA !important;
+                        color: var(--light, #FAFAFA) !important;
+                        background-color: #2196F3;
+                        background-color: var(--info, #2196F3);
+                      }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
+
+                  <article id="card" class="l-article">
+
+                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Card</h3>
+
+                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
+                      <pre><code>
+                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"c-card"</span><span>&gt;</span>
+                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"c-card__content"</span><span>&gt;</span>
+                          <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
+                        <span>&lt;/div&gt;</span>
+                      <span>&lt;/div&gt;</span>
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                    <div class="c-highlight c-highlight--grey u-mar-bottom-20 u-mar-bottom-md-40">
+                      <div class="l-flex l-cluster-gap-20">
+                        <div class="l-flex__item-12 l-flex__item-sm-6 l-flex__item-lg-4">
+                          <div class="c-card">
+                            <div class="c-card__content">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean commodo ligula eget dolor.
+                              Aenean massa.
+                              Cum sociis natoque penatibus et magnis dis parturient montes,
+                              nascetur ridiculus mus.
+                              Donec quam felis,
+                            </div>
+                          </div>
+                        </div><!-- End - flex item -->
+
+                        <div class="l-flex__item-12 l-flex__item-sm-6 l-flex__item-lg-4">
+                          <div class="c-card">
+                            <div class="c-card__content">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean commodo ligula eget dolor.
+                              Aenean massa.
+                              Cum sociis natoque penatibus et magnis dis parturient montes,
+                              nascetur ridiculus mus.
+                              Donec quam felis,
+                            </div>
+                          </div>
+                        </div><!-- End - flex item -->
+
+                        <div class="l-flex__item-12 l-flex__item-sm-6 l-flex__item-lg-4">
+                          <div class="c-card">
+                            <div class="c-card__content">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean commodo ligula eget dolor.
+                              Aenean massa.
+                              Cum sociis natoque penatibus et magnis dis parturient montes,
+                              nascetur ridiculus mus.
+                              Donec quam felis,
+                            </div>
+                          </div>
+                        </div><!-- End - flex item -->
+                      </div><!-- End - flex -->
+                    </div><!-- End - Preview -->
+
+                    <div class="c-highlight">
+                      <pre><code>
+                      .c-card {
+                        height: auto;
+                        color: #212121 !important;
+                        color: var(--dark, #212121) !important;
+                        background-color: #FAFAFA;
+                        background-color: var(--light, #FAFAFA);
+                        border-radius: 2px;
+                        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+                      }
+
+                      .c-card--dark {
+                        color: #FAFAFA !important;
+                        color: var(--light, #FAFAFA) !important;
+                        background-color: #212121;
+                        background-color: var(--dark, #212121);
+                      }
+
+                      .c-card__content { padding: 20px; }
+                      <!-- Sample Codes -->
+                      </code></pre>
+                    </div>
+
+                  </article><!-- End - article -->
 
                   <article id="hidden" class="l-article">
 
@@ -685,12 +1316,14 @@
                       .u-width-75 { width: 75%; }
                       .u-width-100 { width: 100%; }
                       .u-max-width-100 { max-width: 100%; }
+                      .u-viewport-width-100 { width: 100vw; }
 
                       .u-height-25 { height: 25%; }
                       .u-height-50 { height: 50%; }
                       .u-height-75 { height: 75%; }
                       .u-height-100 { height: 100%; }
                       .u-max-height-100 { max-height: 100%; }
+                      .u-viewport-height-100 { height: 100vh; }
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
@@ -1022,6 +1655,12 @@
                       </code></pre>
                     </div>
 
+                    <div class="c-highlight c-highlight--grey u-mar-bottom-20 u-mar-bottom-md-40">
+                      <div class="u-background-dark">
+                        <p class="u-color-light">Text color is light, container color is dark.</p>
+                      </div>
+                    </div><!-- End - Preview -->
+
                     <div class="c-highlight">
                       <pre><code>
                         .u-xxx-primary {
@@ -1143,504 +1782,19 @@
 
                   </article><!-- End - article -->
 
-                  <article id="container" class="l-article">
-
-                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Container</h3>
-
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
-                      <pre><code>
-                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-container"</span><span>&gt;</span>
-                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
-                      <span>&lt;/div&gt;</span>
-
-                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-container l-container--fluid"</span><span>&gt;</span>
-                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
-                      <span>&lt;/div&gt;</span>
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                      .l-container--fluid {
-                        max-width: 100% !important;
-                      }
-
-                      @media (min-width: 576px) {
-                        .l-container { max-width: 540px; }
-                      }
-
-                      @media (min-width: 768px) {
-                        .l-container { max-width: 720px; }
-                      }
-
-                      @media (min-width: 992px) {
-                        .l-container { max-width: 960px; }
-                      }
-
-                      @media (min-width: 1200px) {
-                        .l-container { max-width: 1140px; }
-                      }
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                  </article><!-- End - article -->
-
-                  <article id="flex" class="l-article">
-
-                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Flex</h3>
-
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
-                      <pre><code>
-                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex"</span><span>&gt;</span>
-                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__item-12 l-flex__item-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
-                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex__item-12 l-flex__item-md-6"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
-                      <span>&lt;/div&gt;</span>
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                      .l-flex {
-                        display: -ms-flexbox;
-                        display: flex;
-                        -ms-flex-wrap: wrap;
-                        flex-wrap: wrap;
-                      }
-
-                      .l-flex--row-wrp { flex-flow: row wrap; }
-                      .l-flex--row-wrp-no { flex-flow: row nowrap; }
-                      .l-flex--row-wrp-rev { flex-flow: row wrap-reverse; }
-                      .l-flex--row-rev-wrp { flex-flow: row-reverse wrap; }
-                      .l-flex--row-rev-wrp-no { flex-flow: row-reverse nowrap; }
-                      .l-flex--row-rev-wrp-rev { flex-flow: row-reverse wrap-reverse; }
-
-                      .l-flex--col-wrap { flex-flow: column wrap; }
-                      .l-flex--col-wrap-no { flex-flow: column nowrap; }
-                      .l-flex--col-wrap-reverse { flex-flow: column wrap-reverse; }
-                      .l-flex--col-rev-wrp { flex-flow: column-reverse wrap; }
-                      .l-flex--col-rev-wrp-no { flex-flow: column-reverse nowrap; }
-                      .l-flex--col-rev-wrp-rev { flex-flow: column-reverse wrap-reverse; }
-
-                      .l-flex--wrp { flex-wrap: wrap; }
-                      .l-flex--wrp-no { flex-wrap: nowrap; }
-                      .l-flex--wrp-rev { flex-wrap: wrap-reverse; }
-
-                      .l-flex--col { flex-direction: column; }
-                      .l-flex--col-rev { flex-direction: column-reverse; }
-
-                      .l-flex--row { flex-direction: row; }
-                      .l-flex--row-rev { flex-direction: row-reverse; }
-
-                      .l-flex--jus-start { justify-content: flex-start; }
-                      .l-flex--jus-end { justify-content: flex-end; }
-                      .l-flex--jus-center { justify-content: center; }
-                      .l-flex--jus-sparound { justify-content: space-around; }
-                      .l-flex--jus-spbetween { justify-content: space-between; }
-                      .l-flex--jus-spevenly { justify-content: space-evenly; }
-
-                      .l-flex--ali-start { align-content: flex-start; }
-                      .l-flex--ali-end { align-content: flex-end; }
-                      .l-flex--ali-center { align-content: center; }
-                      .l-flex--ali-stretch { align-content: stretch; }
-                      .l-flex--ali-sparound { align-content: space-around; }
-                      .l-flex--ali-spbetween { align-content: space-between; }
-
-                      .l-flex--alt-start { align-items: flex-start; }
-                      .l-flex--alt-end { align-items: flex-end; }
-                      .l-flex--alt-center { align-items: center; }
-                      .l-flex--alt-stretch { align-items: stretch; }
-                      .l-flex--alt-baseline { align-items: baseline; }
-
-                      .l-flex__item {
-                        -ms-flex: 0 0 auto;
-                        flex: 0 0 auto;
-                        width: auto;
-                        max-width: 100%;
-                      }
-
-                      .l-flex__item-1 {
-                        -ms-flex: 0 0 8.333333%;
-                        flex: 0 0 8.333333%;
-                        max-width: 8.333333%;
-                      }
-
-                      .l-flex__item-2 {
-                        -ms-flex: 0 0 16.666667%;
-                        flex: 0 0 16.666667%;
-                        max-width: 16.666667%;
-                      }
-
-                      .l-flex__item-3 {
-                        -ms-flex: 0 0 25%;
-                        flex: 0 0 25%;
-                        max-width: 25%;
-                      }
-
-                      .l-flex__item-4 {
-                        -ms-flex: 0 0 33.333333%;
-                        flex: 0 0 33.333333%;
-                        max-width: 33.333333%;
-                      }
-
-                      .l-flex__item-5 {
-                        -ms-flex: 0 0 41.666667%;
-                        flex: 0 0 41.666667%;
-                        max-width: 41.666667%;
-                      }
-
-                      .l-flex__item-6 {
-                        -ms-flex: 0 0 50%;
-                        flex: 0 0 50%;
-                        max-width: 50%;
-                      }
-
-                      .l-flex__item-7 {
-                        -ms-flex: 0 0 58.333333%;
-                        flex: 0 0 58.333333%;
-                        max-width: 58.333333%;
-                      }
-
-                      .l-flex__item-8 {
-                        -ms-flex: 0 0 66.666667%;
-                        flex: 0 0 66.666667%;
-                        max-width: 66.666667%;
-                      }
-
-                      .l-flex__item-9 {
-                        -ms-flex: 0 0 75%;
-                        flex: 0 0 75%;
-                        max-width: 75%;
-                      }
-
-                      .l-flex__item-10 {
-                        -ms-flex: 0 0 83.333333%;
-                        flex: 0 0 83.333333%;
-                        max-width: 83.333333%;
-                      }
-
-                      .l-flex__item-11 {
-                        -ms-flex: 0 0 91.666667%;
-                        flex: 0 0 91.666667%;
-                        max-width: 91.666667%;
-                      }
-
-                      .l-flex__item-12 {
-                        -ms-flex: 0 0 100%;
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                      }
-
-                      .l-flex__order-1 { -ms-flex-order: 1; order: 1; }
-                      .l-flex__order-2 { -ms-flex-order: 2; order: 2; }
-                      .l-flex__order-3 { -ms-flex-order: 3; order: 3; }
-                      .l-flex__order-4 { -ms-flex-order: 4; order: 4; }
-                      .l-flex__order-5 { -ms-flex-order: 5; order: 5; }
-                      .l-flex__order-6 { -ms-flex-order: 6; order: 6; }
-                      .l-flex__order-7 { -ms-flex-order: 7; order: 7; }
-                      .l-flex__order-8 { -ms-flex-order: 8; order: 8; }
-                      .l-flex__order-9 { -ms-flex-order: 9; order: 9; }
-                      .l-flex__order-10 { -ms-flex-order: 10; order: 10; }
-                      .l-flex__order-11 { -ms-flex-order: 11; order: 11; }
-                      .l-flex__order-12 { -ms-flex-order: 12; order: 12; }
-
-                      .l-flex__als-start { align-self: flex-start; }
-                      .l-flex__als-end { align-self: flex-end; }
-                      .l-flex__als-center { align-self: center; }
-                      .l-flex__als-stretch { align-self: stretch; }
-                      .l-flex__als-baseline { align-self: baseline; }
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                  </article><!-- End - article -->
-
-                  <article id="cluster-gap" class="l-article">
-
-                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Cluster Gap</h3>
-
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
-                      <pre><code>
-                      // You can omit adding class name "l-cluster-gap__item" on "l-cluster-gap" child item.
-                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex l-cluster-gap"</span><span>&gt;</span>
-                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-cluster-gap__item"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
-                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-cluster-gap__item"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
-                      <span>&lt;/div&gt;</span>
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                        .l-cluster-gap-md-10 { margin: -5px; }
-                        .l-cluster-gap-md-20 { margin: -10px; }
-                        .l-cluster-gap-md-30 { margin: -15px; }
-                        .l-cluster-gap-md-40 { margin: -20px; }
-                        .l-cluster-gap-md-50 { margin: -25px; }
-
-                        .l-cluster-gap-md-10 > div, .l-cluster-gap-md-10 > .l-cluster-gap__item { padding: 5px; }
-                        .l-cluster-gap-md-20 > div, .l-cluster-gap-md-20 > .l-cluster-gap__item { padding: 10px; }
-                        .l-cluster-gap-md-30 > div, .l-cluster-gap-md-30 > .l-cluster-gap__item { padding: 15px; }
-                        .l-cluster-gap-md-40 > div, .l-cluster-gap-md-40 > .l-cluster-gap__item { padding: 20px; }
-                        .l-cluster-gap-md-50 > div, .l-cluster-gap-md-50 > .l-cluster-gap__item { padding: 25px; }
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                  </article><!-- End - article -->
-
-                  <article id="parallax" class="l-article">
-
-                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Parallax</h3>
-
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
-                      <pre><code>
-                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-parallax"</span><span>&gt;</span>
-                        <span>&lt;img</span> <span>class=</span><span class="u-font-bold">"u-parallax__image"</span> <span>src=</span><span>"/assets/images/xxx.jpg"</span> <span>alt=</span><span>"Image"</span><span>&gt;</span>
-                      <span>&lt;/div&gt;</span>
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                      .l-parallax {
-                        position: relative;
-                        overflow: hidden;
-                        z-index: 1;
-                      }
-
-                      .l-parallax picture,
-                      .l-parallax__image {
-                        position: absolute;
-                        z-index: -1;
-                        pointer-events: none;
-                      }
-
-                      .l-parallax picture {
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: 0;
-                      }
-
-                      .l-parallax__image {
-                        top: 50%;
-                        left: 50%;
-                        width: 100%;
-                        height: 150%;
-                        object-fit: cover;
-                        pointer-events: none;
-                        transform: translate(-50%, -50%);
-                        font-family: 'object-fit: cover;';
-                      }
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                  </article><!-- End - article -->
-
-                  <article id="tab" class="l-article">
-
-                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Tab</h3>
-
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
-                      <pre><code>
-                      <span>&lt;ul</span> <span>class=</span><span class="u-font-bold">"c-tab-link"</span><span>&gt;</span>
-                        <span>&lt;li</span> <span>class=</span><span class="u-font-bold">"c-tab-link__item"</span> <span>data-tab="tab-1"</span><span>&gt;</span><span class="u-color-grey-500">Tab 1</span><span>&lt;/li&gt;</span>
-                        <span>&lt;li</span> <span>class=</span><span class="u-font-bold">"c-tab-link__item"</span> <span>data-tab="tab-2"</span><span>&gt;</span><span class="u-color-grey-500">Tab 2</span><span>&lt;/li&gt;</span>
-                      <span>&lt;/ul&gt;</span>
-
-                      <span>&lt;div</span> <span>id=</span><span class="u-font-bold">"tab-1"</span> <span>class=</span><span class="u-font-bold">"c-tab-content js-current"</span><span>&gt;</span>
-                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
-                      <span>&lt;/div&gt;</span>
-                      <span>&lt;div</span> <span>id=</span><span class="u-font-bold">"tab-2"</span> <span>class=</span><span class="u-font-bold">"c-tab-content"</span><span>&gt;</span>
-                        <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
-                      <span>&lt;/div&gt;</span>
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                      .c-tab-link {
-                        margin: 0px;
-                        padding: 0px;
-                        list-style: none;
-                      }
-
-                      .c-tab-link__item {
-                        display: inline-block;
-                        padding: 10px 15px;
-                        color: #212121;
-                        background: none;
-                        cursor: pointer;
-                      }
-
-                      .c-tab-link__item.js-current {
-                        background: #F5F5F5;
-                        color: #212121;
-                      }
-
-                      .c-tab-content {
-                        display: none;
-                        background: #F5F5F5;
-                        padding: 15px;
-                      }
-
-                      .c-tab-content.js-current {
-                        display: inherit;
-                      }
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                  </article><!-- End - article -->
-
-                  <article id="button" class="l-article">
-
-                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Button</h3>
-
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
-                      <pre><code>
-                      <span>&lt;a</span> <span>class=</span><span class="u-font-bold">"c-button"</span> <span>href=</span><span>"#"</span><span>&gt;</span>Button<span>&lt;/a&gt;</span>
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                      .c-button {
-                        display: inline-block;
-                        min-width: 50px;
-                        padding: 0 15px;
-                        color: #FFF !important;
-                        font-size: 1.5rem;
-                        line-height: 50px;
-                        text-align: center;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        border-radius: 25px;
-                        background-color: #263238;
-                        background-color: var(--primary, #263238);
-                        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
-                        white-space: nowrap;
-                      }
-
-                      .c-button:hover,
-                      .c-button:visited,
-                      .c-button:active,
-                      .c-button:focus {
-                        text-decoration: none;
-                      }
-
-                      .c-button:hover {
-                        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
-                      }
-
-                      .c-button--large {
-                        min-width: 60px;
-                        line-height: 60px;
-                        border-radius: 30px;
-                        padding: 0 20px;
-                      }
-
-                      .c-button--light {
-                        color: #212121 !important;
-                        color: var(--dark) !important;
-                        background-color: #FAFAFA;
-                        background-color: var(--light, #FAFAFA);
-                      }
-
-                      .c-button--dark {
-                        color: #FAFAFA !important;
-                        color: var(--light, #FAFAFA) !important;
-                        background-color: #212121;
-                        background-color: var(--dark, #212121);
-                      }
-
-                      .c-button--success {
-                        color: #FAFAFA !important;
-                        color: var(--light, #FAFAFA) !important;
-                        background-color: #4CAF50;
-                        background-color: var(--success, #4CAF50);
-                      }
-
-                      .c-button--warnig {
-                        color: #FAFAFA !important;
-                        color: var(--light, #FAFAFA) !important;
-                        background-color: #FF5722;
-                        background-color: var(--warning, #FF5722);
-                      }
-
-                      .c-button--danger {
-                        color: #FAFAFA !important;
-                        color: var(--light, #FAFAFA) !important;
-                        background-color: #F44336;
-                        background-color: var(--danger, #F44336);
-                      }
-
-                      .c-button--info {
-                        color: #FAFAFA !important;
-                        color: var(--light, #FAFAFA) !important;
-                        background-color: #2196F3;
-                        background-color: var(--info, #2196F3);
-                      }
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                  </article><!-- End - article -->
-
-                  <article id="card" class="l-article">
-
-                    <h3 class="c-heading-article u-mar-bottom-20 u-mar-bottom-md-40">Card</h3>
-
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-md-40">
-                      <pre><code>
-                      <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"c-card"</span><span>&gt;</span>
-                        <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"c-card__content"</span><span>&gt;</span>
-                          <span class="u-color-grey-500">&lt;!-- Content here --&gt;</span>
-                        <span>&lt;/div&gt;</span>
-                      <span>&lt;/div&gt;</span>
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                      .c-card {
-                        height: auto;
-                        color: #212121 !important;
-                        color: var(--dark, #212121) !important;
-                        background-color: #FAFAFA;
-                        background-color: var(--light, #FAFAFA);
-                        border-radius: 2px;
-                        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-                      }
-
-                      .c-card--dark {
-                        color: #FAFAFA !important;
-                        color: var(--light, #FAFAFA) !important;
-                        background-color: #212121;
-                        background-color: var(--dark, #212121);
-                      }
-
-                      .c-card__content { padding: 20px; }
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                  </article><!-- End - article -->
-
                 </div><!-- End - flex content -->
 
                 <div class="l-flex__item-12 l-flex__item-md-3 l-flex__item-lg-2 l-cluster-gap__item">
                   <aside class="l-aside u-mar-top-md-50">
                     <h4 class="u-font-normal u-mar-bottom-20 u-mar-bottom-md-40">Sample</h4>
                     <ul class="u-list u-list--none u-font-medium u-color-grey-600">
+                      <li><a href="#container"><i class="fas fa-angle-right"></i>&nbsp;Container</a></li>
+                      <li><a href="#flex"><i class="fas fa-angle-right"></i>&nbsp;Flex</a></li>
+                      <li><a href="#cluster-gap"><i class="fas fa-angle-right"></i>&nbsp;Cluster Gap</a></li>
+                      <li><a href="#parallax"><i class="fas fa-angle-right"></i>&nbsp;Parallax</a></li>
+                      <li><a href="#tab"><i class="fas fa-angle-right"></i>&nbsp;Tab</a></li>
+                      <li><a href="#button"><i class="fas fa-angle-right"></i>&nbsp;Button</a></li>
+                      <li><a href="#card"><i class="fas fa-angle-right"></i>&nbsp;Card</a></li>
                       <li><a href="#hidden"><i class="fas fa-angle-right"></i>&nbsp;Hidden</a></li>
                       <li><a href="#float"><i class="fas fa-angle-right"></i>&nbsp;Float</a></li>
                       <li><a href="#width-height"><i class="fas fa-angle-right"></i>&nbsp;Width and Height</a></li>
@@ -1652,13 +1806,6 @@
                       <li><a href="#list"><i class="fas fa-angle-right"></i>&nbsp;List</a></li>
                       <li><a href="#color"><i class="fas fa-angle-right"></i>&nbsp;Color</a></li>
                       <li><a href="#image"><i class="fas fa-angle-right"></i>&nbsp;Image</a></li>
-                      <li><a href="#container"><i class="fas fa-angle-right"></i>&nbsp;Container</a></li>
-                      <li><a href="#flex"><i class="fas fa-angle-right"></i>&nbsp;Flex</a></li>
-                      <li><a href="#cluster-gap"><i class="fas fa-angle-right"></i>&nbsp;Cluster Gap</a></li>
-                      <li><a href="#parallax"><i class="fas fa-angle-right"></i>&nbsp;Parallax</a></li>
-                      <li><a href="#tab"><i class="fas fa-angle-right"></i>&nbsp;Tab</a></li>
-                      <li><a href="#button"><i class="fas fa-angle-right"></i>&nbsp;Button</a></li>
-                      <li><a href="#card"><i class="fas fa-angle-right"></i>&nbsp;Card</a></li>
                     </ul>
                   </aside>
                 </div><!-- End - flex content -->
