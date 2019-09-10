@@ -16,13 +16,13 @@
 .u-font-bolder { font-weight: bolder; }
 .u-font-lighter { font-weight: lighter; }
 
-.u-font-default { font-size: 1.6rem; }
-.u-font-small { font-size: 1.2rem; }
-.u-font-medium { font-size: 1.4rem; }
-.u-font-large { font-size: 2rem; }
-.u-font-extra-large { font-size: 2.4rem; }
-.u-font-super-large { font-size: 2.8rem; }
-.u-font-mega-large { font-size: 3.4rem; }
+.u-font-default { font-size: $font-nm; }
+.u-font-small { font-size: $font-sm; }
+.u-font-medium { font-size: $font-md; }
+.u-font-large { font-size: $font-lg; }
+.u-font-extra-large { font-size: $font-xl; }
+.u-font-super-large { font-size: $font-sl; }
+.u-font-mega-large { font-size: $font-ml; }
 
 .u-line-height-small { line-height: 1.2; }
 .u-line-height-normal { line-height: 1.5; }
@@ -47,13 +47,13 @@
     .u-font-bolder-#{$breakpoint} { font-weight: bolder; }
     .u-font-lighter-#{$breakpoint} { font-weight: lighter; }
 
-    .u-font-default-#{$breakpoint} { font-size: 1.6rem; }
-    .u-font-#{$breakpoint}all-#{$breakpoint} { font-size: 1.2rem; }
-    .u-font-medium-#{$breakpoint} { font-size: 1.4rem; }
-    .u-font-large-#{$breakpoint} { font-size: 2rem; }
-    .u-font-extra-large-#{$breakpoint} { font-size: 2.4rem; }
-    .u-font-super-large-#{$breakpoint} { font-size: 2.8rem; }
-    .u-font-mega-large-#{$breakpoint} { font-size: 3.4rem; }
+    .u-font-default-#{$breakpoint} { font-size: $font-nm; }
+    .u-font-#{$breakpoint}all-#{$breakpoint} { font-size: $font-sm; }
+    .u-font-medium-#{$breakpoint} { font-size: $font-md; }
+    .u-font-large-#{$breakpoint} { font-size: $font-lg; }
+    .u-font-extra-large-#{$breakpoint} { font-size: $font-xl; }
+    .u-font-super-large-#{$breakpoint} { font-size: $font-sl; }
+    .u-font-mega-large-#{$breakpoint} { font-size: $font-ml; }
 
     .u-line-height-#{$breakpoint}all-#{$breakpoint} { line-height: 1.2; }
     .u-line-height-normal-#{$breakpoint} { line-height: 1.5; }
