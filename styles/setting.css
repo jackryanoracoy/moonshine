@@ -2,7 +2,7 @@
  font-face - Noto Sans
 --------------------------------------------------------------*/
 
-/* @font-face {
+@font-face {
   font-family: 'Noto Sans';
   font-display: auto;
   font-style: normal;
@@ -24,7 +24,7 @@
        url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff2) format('woff2'),
        url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff) format('woff'),
        url(../assets/fonts/noto-sans/Noto-Sans-Bold.ttf) format('truetype');
-} */
+}
 
 /*--------------------------------------------------------------
  font-face - Noto Sans JP
@@ -65,46 +65,6 @@
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff) format('woff'),
        url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.ttf) format('truetype');
 } */
-
-/*--------------------------------------------------------------
- font-face - Open Sans
---------------------------------------------------------------*/
-
-@font-face {
-  font-family: 'Open Sans';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 300;
-  src: local("Open Sans Light"),
-       local("OpenSans-Light"),
-       url(../assets/fonts/open-sans/Open-Sans-Light.woff2) format("woff2"),
-       url(../assets/fonts/open-sans/Open-Sans-Light.woff) format("woff"),
-       url(../assets/fonts/open-sans/Open-Sans-Light.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans Regular"),
-       local("OpenSans-Regular"),
-       url(../assets/fonts/open-sans/Open-Sans-Regular.woff2) format("woff2"),
-       url(../assets/fonts/open-sans/Open-Sans-Regular.woff) format("woff"),
-       url(../assets/fonts/open-sans/Open-Sans-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Bold"),
-       local("OpenSans-Bold"),
-       url(../assets/fonts/open-sans/Open-Sans-Bold.woff2) format("woff2"),
-       url(../assets/fonts/open-sans/Open-Sans-Bold.woff) format("woff"),
-       url(../assets/fonts/open-sans/Open-Sans-Bold.ttf) format("truetype");
-}
 
 /*--------------------------------------------------------------
  font-face - Open Sans Condensed
@@ -184,11 +144,8 @@
   --transition: all 300ms ease-in-out 120ms;
 
   /* font-family */
-  /* --font-family-noto-sans: "Noto Sans", sans-serif; */
-  /* --font-family-noto-sans-jp: "Noto Sans JP", sans-serif; */
-  --font-family-open-sans-condensed: "Open Sans Condensed", sans-serif;
-  --font-family-open-sans: "Open Sans", sans-serif;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif-condensed: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 }

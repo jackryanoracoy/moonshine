@@ -254,45 +254,52 @@
   white-space: nowrap;
 }
 
-.c-site-nav__item a:hover,
-.c-site-nav__item--active a {
-  background-color: #263238;
-  background-color: var(--primary, #263238)
-}
-
 @media (min-width: 768px) {
 
   .c-site-nav {
     flex-direction: row;
   }
 
+  .c-site-nav__item a:hover,
+  .c-site-nav__item--active a {
+    background-color: #263238;
+    background-color: var(--primary, #263238)
+  }
+
 }
 
 /*--------------------------------------------------
-  Site-title
+  Site-branding
 --------------------------------------------------*/
 
-.c-site-title {
-  padding-left: 10px;
-  color: #FFF;
-  font-size: 1.8rem;
+.c-site-branding {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  color: #FFFFFF !important;
+  font-size: 2.4rem;
   font-weight: 700;
+  text-decoration: none !important;
   line-height: 1;
   white-space: nowrap;
 }
 
-.c-site-title a {
-  color: #FFF;
-  text-decoration: none;
+.c-site-branding__logo {
+  max-width: 100%;
+  max-height: calc(100% - 20px);
 }
 
-.c-site-title img {
-  max-width: 100%;
+.c-site-branding__title {
+  padding-left: 10px;
+  font-size: inherit;
 }
 
 @media (min-width: 768px) {
 
-  .c-site-title { font-size: 2.2rem; }
+  .c-site-branding {
+    height: 75px;
+    font-size: 2.8rem;
+  }
 
 }
 
@@ -302,8 +309,8 @@
 
 .c-heading-above-the-fold,
 .c-heading-section {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-family: var(--font-family-open-sans-condensed, "Open Sans Condensed");
+  font-family: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-family-sans-serif-condensed, "Open Sans Condensed");
 }
 
 .c-heading-above-the-fold {
