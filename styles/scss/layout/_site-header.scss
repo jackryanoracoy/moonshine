@@ -25,20 +25,22 @@
     top: 0 !important;
   }
 
-  &__content:first-child {
-    height: $header-height_m;
+  &__content {
+    padding: 0 10px;
+
+    &:first-child { height: $header-height_m; }
   }
 
   &__menu {
-    width: 40px;
+    max-width: 40px;
   }
 
   &__branding {
-    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
   }
 
   &__navigation {
-    width: 100%;
+    max-width: 100%;
     max-height: 0;
     transition: $transition;
     overflow: hidden;

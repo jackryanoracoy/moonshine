@@ -272,10 +272,10 @@ Samples:
 .l-flex {...}
 .l-flex--wrp-no {...}
 .l-flex--wrp-no-md {...}
-.l-flex__content {...}
-.l-flex__content-12 {...}
-.l-flex__content-md {...}
-.l-flex__content-md-12 {...}
+.l-flex__item {...}
+.l-flex__item-12 {...}
+.l-flex__item-md {...}
+.l-flex__item-md-12 {...}
 .u-mar-top-10 {...}
 .u-mar-top-sm-20 {...}
 .u-mar-top-md-50 {...} 

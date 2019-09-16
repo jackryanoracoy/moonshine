@@ -23,12 +23,12 @@
     white-space: nowrap;
   }
 
-  &__item a:hover,
-  &__item--active a {
-    background-color: $primary;
-  }
-
   @include media-breakpoint-min(md) {
     flex-direction: row;
+
+    &__item a:hover,
+    &__item--active a {
+      background-color: $primary;
+    }
   }
 }

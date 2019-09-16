@@ -6,6 +6,7 @@
   height: 480px;
 
   @include media-breakpoint-min(md) {
-    height: 500px;
+    height: calc(100vh - #{$header-height + $nav-height});
+    max-height: 1000px;
   }
 }
