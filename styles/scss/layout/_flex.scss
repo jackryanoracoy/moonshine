@@ -4,7 +4,6 @@
 
 .l-flex {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   &--row-wrp { flex-flow: row wrap; }
@@ -83,18 +82,18 @@
   &__shrink { flex-shrink: 1; }
   &__shrink-no { flex-shrink: 0; }
 
-  &__order-1 { -ms-flex-order: 1; order: 1; }
-  &__order-2 { -ms-flex-order: 2; order: 2; }
-  &__order-3 { -ms-flex-order: 3; order: 3; }
-  &__order-4 { -ms-flex-order: 4; order: 4; }
-  &__order-5 { -ms-flex-order: 5; order: 5; }
-  &__order-6 { -ms-flex-order: 6; order: 6; }
-  &__order-7 { -ms-flex-order: 7; order: 7; }
-  &__order-8 { -ms-flex-order: 8; order: 8; }
-  &__order-9 { -ms-flex-order: 9; order: 9; }
-  &__order-10 { -ms-flex-order: 10; order: 10; }
-  &__order-11 { -ms-flex-order: 11; order: 11; }
-  &__order-12 { -ms-flex-order: 12; order: 12; }
+  &__order-1 { order: 1; }
+  &__order-2 { order: 2; }
+  &__order-3 { order: 3; }
+  &__order-4 { order: 4; }
+  &__order-5 { order: 5; }
+  &__order-6 { order: 6; }
+  &__order-7 { order: 7; }
+  &__order-8 { order: 8; }
+  &__order-9 { order: 9; }
+  &__order-10 { order: 10; }
+  &__order-11 { order: 11; }
+  &__order-12 { order: 12; }
 
   &__als-start { align-self: flex-start; }
   &__als-end { align-self: flex-end; }
@@ -180,18 +179,18 @@
       &__shrink-#{$breakpoint} { flex-shrink: 1; }
       &__shrink-no-#{$breakpoint} { flex-shrink: 0; }
 
-      &__order-#{$breakpoint}-1 { -ms-flex-order: 1; order: 1; }
-      &__order-#{$breakpoint}-2 { -ms-flex-order: 2; order: 2; }
-      &__order-#{$breakpoint}-3 { -ms-flex-order: 3; order: 3; }
-      &__order-#{$breakpoint}-4 { -ms-flex-order: 4; order: 4; }
-      &__order-#{$breakpoint}-5 { -ms-flex-order: 5; order: 5; }
-      &__order-#{$breakpoint}-6 { -ms-flex-order: 6; order: 6; }
-      &__order-#{$breakpoint}-7 { -ms-flex-order: 7; order: 7; }
-      &__order-#{$breakpoint}-8 { -ms-flex-order: 8; order: 8; }
-      &__order-#{$breakpoint}-9 { -ms-flex-order: 9; order: 9; }
-      &__order-#{$breakpoint}-10 { -ms-flex-order: 10; order: 10; }
-      &__order-#{$breakpoint}-11 { -ms-flex-order: 11; order: 11; }
-      &__order-#{$breakpoint}-12 { -ms-flex-order: 12; order: 12; }
+      &__order-#{$breakpoint}-1 { order: 1; }
+      &__order-#{$breakpoint}-2 { order: 2; }
+      &__order-#{$breakpoint}-3 { order: 3; }
+      &__order-#{$breakpoint}-4 { order: 4; }
+      &__order-#{$breakpoint}-5 { order: 5; }
+      &__order-#{$breakpoint}-6 { order: 6; }
+      &__order-#{$breakpoint}-7 { order: 7; }
+      &__order-#{$breakpoint}-8 { order: 8; }
+      &__order-#{$breakpoint}-9 { order: 9; }
+      &__order-#{$breakpoint}-10 { order: 10; }
+      &__order-#{$breakpoint}-11 { order: 11; }
+      &__order-#{$breakpoint}-12 { order: 12; }
 
       &__als-start-#{$breakpoint} { align-self: flex-start; }
       &__als-end-#{$breakpoint} { align-self: flex-end; }
