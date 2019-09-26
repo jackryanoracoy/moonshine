@@ -9,29 +9,29 @@
 
 .c-heading-above-the-fold {
   color: $primary;
-  font-size: 3rem;
+  font-size: $font-sl;
   letter-spacing: 0.5rem;
 
   @include media-breakpoint-min(md) {
-    font-size: 3.5rem;
+    font-size: $font-ml;
   }
 }
 
 .c-heading-section {
   color: $grey-700;
-  font-size: 2.4rem;
+  font-size: $font-xl;
   letter-spacing: 0.2rem;
 
   @include media-breakpoint-min(md) {
-    font-size: 2.8rem;
+    font-size: $font-sl;
   }
 }
 
 .c-heading-article {
   color: $grey-900;
-  font-size: 1.6rem;
+  font-size: $font-nm;
 
   @include media-breakpoint-min(md) {
-    font-size: 1.8rem;
+    font-size: $font-lg;
   }
 }

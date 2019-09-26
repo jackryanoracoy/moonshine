@@ -4,18 +4,17 @@
 
 .l-section {
   position: relative;
-  padding: 30px 10px;
+  padding: ($section-gutter / 2) 10px;
 
+  &--padding-wide { padding: $section-gutter 10px; }
+  &--padding-narrow { padding: ($section-gutter / 4) 10px; }
   &--padding-no { padding: 0; }
-  &--padding-wide { padding: 50px 10px; }
-  &--padding-narrow { padding: 10px; }
 
-  @include media-breakpoint-min(md) {
-    padding: 50px 20px;
+  @include media-breakpoint-min(lg) {
+    padding: $section-gutter 20px;
 
-    &--padding-no { padding: 0; }
-    &--padding-wide { padding: 100px 20px; }
-    &--padding-narrow { padding: 20px 20px; }
+    &--padding-wide { padding: ($section-gutter * 2) 20px; }
+    &--padding-narrow { padding: ($section-gutter / 2) 20px; }
   }
 }
 

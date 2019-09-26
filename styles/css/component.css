@@ -172,12 +172,12 @@
 
 .c-heading-above-the-fold {
   color: #263238;
-  font-size: 3rem;
+  font-size: 2.8rem;
   letter-spacing: 0.5rem;
 }
 @media (min-width: 768px) {
   .c-heading-above-the-fold {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
   }
 }
 
@@ -338,5 +338,4 @@
     font-size: 2.8rem;
   }
 }
-
 /*# sourceMappingURL=component.css.map */

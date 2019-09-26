@@ -2730,27 +2730,24 @@ textarea {
   position: relative;
   padding: 30px 10px;
 }
+.l-section--padding-wide {
+  padding: 60px 10px;
+}
+.l-section--padding-narrow {
+  padding: 15px 10px;
+}
 .l-section--padding-no {
   padding: 0;
 }
-.l-section--padding-wide {
-  padding: 50px 10px;
-}
-.l-section--padding-narrow {
-  padding: 10px;
-}
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .l-section {
-    padding: 50px 20px;
-  }
-  .l-section--padding-no {
-    padding: 0;
+    padding: 60px 20px;
   }
   .l-section--padding-wide {
-    padding: 100px 20px;
+    padding: 120px 20px;
   }
   .l-section--padding-narrow {
-    padding: 20px 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -2758,7 +2755,13 @@ textarea {
   Article
 --------------------------------------------------*/
 .l-article {
-  padding: 20px 0 0;
+  padding: 30px 0 0;
+}
+.l-article--padding-wide {
+  padding: 60px 0 0;
+}
+.l-article--padding-narrow {
+  padding: 15px 0 0;
 }
 .l-article--padding-no {
   padding: 0;
@@ -2769,15 +2772,15 @@ textarea {
 .l-article--padding-narrow {
   padding: 10px 0 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .l-article {
-    padding: 50px 0 0;
+    padding: 60px 0 0;
   }
   .l-article--padding-wide {
-    padding: 100px 0 0;
+    padding: 120px 0 0;
   }
   .l-article--padding-narrow {
-    padding: 20px 0 0;
+    padding: 30px 0 0;
   }
 }
 @media print {
@@ -2902,12 +2905,12 @@ textarea {
 --------------------------------------------------*/
 .l-site-content {
   position: relative;
-  padding: 20px 0;
-  background-color: #F5F5F5;
+  padding: 30px 0;
+  background-color: #FAFAFA;
 }
 @media (min-width: 768px) {
   .l-site-content {
-    padding: 50px 0;
+    padding: 60px 0;
   }
 }
 
@@ -3090,12 +3093,12 @@ textarea {
 
 .c-heading-above-the-fold {
   color: #263238;
-  font-size: 3rem;
+  font-size: 2.8rem;
   letter-spacing: 0.5rem;
 }
 @media (min-width: 768px) {
   .c-heading-above-the-fold {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
   }
 }
 
@@ -11666,5 +11669,4 @@ textarea {
 .u-image-block {
   display: block;
 }
-
 /*# sourceMappingURL=all.css.map */
