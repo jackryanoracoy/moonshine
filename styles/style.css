@@ -10,7 +10,8 @@
  */
 
 
-/* GETTING STARTED
+/*
+ * GETTING STARTED
  *
  * Get started with Moonshine, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.
  * Moonshine helps you build not only fast but scalable and maintainable web apps or sites.
@@ -51,3 +52,10 @@
 @import "css/layout.css";
 @import "css/component.css";
 @import "css/utility.css";
+
+
+/*
+ * NOTE:
+ * You can use the minified version of the styles above (e.g. setting.min.css).
+ * You can also use "all.css or all.min.css" instead of this file.
+ */

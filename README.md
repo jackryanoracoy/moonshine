@@ -296,11 +296,13 @@ Import order:
   
 Some great works that are included in this template.  
    
-* [Normalize](https://necolas.github.io/normalize.css/)  
-* [jQuery](https://jquery.com/)  
-* [Modernizr](https://modernizr.com/)  
-* [ObjectFit](https://github.com/fregante/object-fit-images/)  
-* [FontAwesome](https://fontawesome.com/)  
+* [jQuery (v3.4.1)](https://jquery.com/)  
+* [Modernizr (v3.7.1)](https://modernizr.com/)  
+* [Object-Fit Images (v3.2.3)](https://github.com/fregante/object-fit-images/)  
+* [Apache Server Configs (v3.2.1)](https://github.com/h5bp/server-configs-apache)  
+* [Font Awesome (v5.10.1)](https://fontawesome.com/)  
+* [Google Fonts](https://fonts.google.com/)  
+* [EditorConfig](https://editorconfig.org)  
   
   
 ## Author  
