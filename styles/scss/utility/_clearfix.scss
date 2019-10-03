@@ -1,8 +1,17 @@
+// Moonshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/moonshine
+// License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
+
 /*--------------------------------------------------
-  Clearfix, Group, Row
+  Clearfix
 --------------------------------------------------*/
 
-.row::after, .group::after, .clearfix::after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;

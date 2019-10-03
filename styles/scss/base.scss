@@ -9,7 +9,8 @@
  * License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
  */
 
-
+ $responsive: true;
+ 
  @import 'setting/variable';
  @import 'setting/mixin';
  @import 'base/reset';
