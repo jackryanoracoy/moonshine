@@ -1,26 +1,39 @@
+// Moonshine
+// Scalable and Maintainable Architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/moonshine
+// License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
+
 // Breakpoint (min)
 // @include media-breakpoint-min(sm) {...}
 @mixin media-breakpoint-min($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
-    @media (min-width: $breakpoint-value) {
-      @content;
+  @if ($MQs) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
     }
-  } @else {
-    @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
 
 // Breakpoint (max)
 // @include media-breakpoint-max(sm) {...}
 @mixin media-breakpoint-max($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
-    @media (max-width: ($breakpoint-value - 1)) {
-      @content;
+  @if ($MQs) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      @media (max-width: ($breakpoint-value - 1)) {
+        @content;
+      }
+    } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
     }
-  } @else {
-    @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
 
