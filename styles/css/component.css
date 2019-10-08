@@ -175,7 +175,7 @@
   font-size: 2.8rem;
   letter-spacing: 0.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .c-heading-above-the-fold {
     font-size: 3.4rem;
   }
@@ -186,7 +186,7 @@
   font-size: 2.4rem;
   letter-spacing: 0.2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .c-heading-section {
     font-size: 2.8rem;
   }
@@ -196,7 +196,7 @@
   color: #212121;
   font-size: 1.6rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .c-heading-article {
     font-size: 1.8rem;
   }
@@ -208,7 +208,6 @@
 .c-site-menu {
   position: relative;
   display: block;
-  padding: 10px;
   color: #FAFAFA;
   font-size: 1rem;
   text-align: center;
@@ -224,14 +223,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 .c-site-menu__inner {
   position: relative;
   display: block;
   width: inherit;
-  height: 3px;
+  height: 4px;
   background-color: #FAFAFA;
 }
 .c-site-menu__inner::after, .c-site-menu__inner::before {
@@ -239,7 +238,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #FAFAFA;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
@@ -248,10 +247,10 @@
   margin: 4px 0 0;
 }
 .c-site-menu__inner::before {
-  top: -8px;
+  top: -10px;
 }
 .c-site-menu__inner::after {
-  bottom: -8px;
+  bottom: -10px;
 }
 .c-site-menu.js-active .c-site-menu__inner {
   background-color: rgba(0, 0, 0, 0);
@@ -294,7 +293,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .c-site-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -332,7 +331,7 @@
   padding-left: 10px;
   font-size: inherit;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .c-site-branding {
     height: 75px;
     font-size: 2.8rem;

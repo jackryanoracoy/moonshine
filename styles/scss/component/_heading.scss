@@ -21,7 +21,7 @@
   font-size: $font-sl;
   letter-spacing: 0.5rem;
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     font-size: $font-ml;
   }
 }
@@ -31,7 +31,7 @@
   font-size: $font-xl;
   letter-spacing: 0.2rem;
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     font-size: $font-sl;
   }
 }
@@ -40,7 +40,7 @@
   color: $grey-900;
   font-size: $font-nm;
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     font-size: $font-lg;
   }
 }

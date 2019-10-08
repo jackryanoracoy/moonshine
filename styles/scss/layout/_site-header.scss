@@ -21,7 +21,7 @@
 
   &,
   &.js-active.js-show,
-  &.js-menu-opened {
+  &.js-active.js-menu-opened {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -41,11 +41,11 @@
   }
 
   &__menu {
-    max-width: 40px;
+    max-width: 50px;
   }
 
   &__branding {
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 50px);
   }
 
   &__navigation {
@@ -57,7 +57,7 @@
 
   &__navigation.js-show { max-height: 100vh; }
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     &.js-active {
       top: -$header-height;
     }
@@ -85,7 +85,7 @@
     }
   }
 
-  @include media-breakpoint-max(md) {
+  @include media-breakpoint-max(lg) {
     &.js-active {
       box-shadow: none;
     }

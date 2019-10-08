@@ -32,7 +32,7 @@
     font-size: inherit;
   }
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     height: $header-height;
     font-size: $font-sl;
   }

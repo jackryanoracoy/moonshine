@@ -32,7 +32,7 @@
     white-space: nowrap;
   }
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     flex-direction: row;
 
     &__item a:hover,

@@ -15,7 +15,7 @@
   position: sticky;
   top: 100px;
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     max-height: calc(100vh - (#{$header-height} + #{$nav-height}));
     overflow: auto;
   }

@@ -16,7 +16,7 @@
   padding: ($section-gutter / 2) 0;
   background-color: $light;
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     padding: $section-gutter 0;
   }
 }

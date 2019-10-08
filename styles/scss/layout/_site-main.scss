@@ -13,9 +13,9 @@
 
 .l-site-main {
   position: relative;
-  padding: 60px 0 0;
+  padding: $header-height_m 0 0;
 
-  @include media-breakpoint-min(md) {
-    padding: 125px 0 0;
+  @include media-breakpoint-min(lg) {
+    padding: #{$header-height + $nav-height} 0 0;
   }
 }
