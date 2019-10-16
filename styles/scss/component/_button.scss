@@ -13,15 +13,15 @@
 
 .c-button {
   display: inline-block;
-  min-width: 50px;
+  min-width: $button-height;
   padding: 0 15px;
   color: $light !important;
   font-size: 1.5rem;
-  line-height: 50px;
+  line-height: $button-height;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 25px;
+  border-radius: $button-height / 2;
   background-color: $primary;
   box-shadow: $z-depth-1;
   white-space: nowrap;
@@ -38,9 +38,9 @@
   }
 
   &--large {
-    min-width: 60px;
-    line-height: 60px;
-    border-radius: 30px;
+    min-width: $button-height-lg;
+    line-height: $button-height-lg;
+    border-radius: $button-height-lg / 2;
     padding: 0 20px;
   }
 

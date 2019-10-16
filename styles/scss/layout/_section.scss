@@ -12,12 +12,11 @@
 --------------------------------------------------*/
 
 .l-section {
-  position: relative;
   padding: ($section-gutter / 2) 10px;
 
   &--padding-wide { padding: $section-gutter 10px; }
   &--padding-narrow { padding: ($section-gutter / 4) 10px; }
-  &--padding-no { padding: 0; }
+  &--padding-no { padding: 0 !important; }
 
   @include media-breakpoint-min(lg) {
     padding: $section-gutter 20px;

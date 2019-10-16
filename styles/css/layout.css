@@ -2333,7 +2333,6 @@
   Section
 --------------------------------------------------*/
 .l-section {
-  position: relative;
   padding: 30px 10px;
 }
 .l-section--padding-wide {
@@ -2343,7 +2342,7 @@
   padding: 15px 10px;
 }
 .l-section--padding-no {
-  padding: 0;
+  padding: 0 !important;
 }
 @media (min-width: 992px) {
   .l-section {
@@ -2370,13 +2369,7 @@
   padding: 15px 0 0;
 }
 .l-article--padding-no {
-  padding: 0;
-}
-.l-article--padding-wide {
-  padding: 50px 0 0;
-}
-.l-article--padding-narrow {
-  padding: 10px 0 0;
+  padding: 0 !important;
 }
 @media (min-width: 992px) {
   .l-article {
@@ -2534,4 +2527,5 @@
     overflow: auto;
   }
 }
+
 /*# sourceMappingURL=layout.css.map */

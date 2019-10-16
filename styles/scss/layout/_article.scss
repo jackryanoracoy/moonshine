@@ -16,10 +16,7 @@
 
   &--padding-wide { padding: $section-gutter 0 0; }
   &--padding-narrow { padding: ($section-gutter / 4) 0 0; }
-
-  &--padding-no { padding: 0; }
-  &--padding-wide { padding: 50px 0 0; }
-  &--padding-narrow { padding: 10px 0 0; }
+  &--padding-no { padding: 0 !important; }
 
   @include media-breakpoint-min(lg) {
     padding: $section-gutter 0 0;
