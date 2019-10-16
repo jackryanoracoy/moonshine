@@ -57,14 +57,14 @@
     .u-font-lighter-#{$breakpoint} { font-weight: lighter; }
 
     .u-font-default-#{$breakpoint} { font-size: $font-nm; }
-    .u-font-#{$breakpoint}all-#{$breakpoint} { font-size: $font-sm; }
+    .u-font-small-#{$breakpoint} { font-size: $font-sm; }
     .u-font-medium-#{$breakpoint} { font-size: $font-md; }
     .u-font-large-#{$breakpoint} { font-size: $font-lg; }
     .u-font-extra-large-#{$breakpoint} { font-size: $font-xl; }
     .u-font-super-large-#{$breakpoint} { font-size: $font-sl; }
     .u-font-mega-large-#{$breakpoint} { font-size: $font-ml; }
 
-    .u-line-height-#{$breakpoint}all-#{$breakpoint} { line-height: 1.2; }
+    .u-line-height-small-#{$breakpoint} { line-height: 1.2; }
     .u-line-height-normal-#{$breakpoint} { line-height: 1.5; }
     .u-line-height-large-#{$breakpoint} { line-height: 2; }
 

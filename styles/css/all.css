@@ -2942,7 +2942,7 @@ textarea {
   width: 100%;
   max-width: 100%;
   height: 60px;
-  min-height: 80px;
+  min-height: 40px;
   resize: vertical;
 }
 .c-form input[type=checkbox] {
@@ -10089,7 +10089,7 @@ textarea {
     font-size: 1.6rem;
   }
 
-  .u-font-mdall-md {
+  .u-font-small-md {
     font-size: 1.2rem;
   }
 
@@ -10113,7 +10113,7 @@ textarea {
     font-size: 3.4rem;
   }
 
-  .u-line-height-mdall-md {
+  .u-line-height-small-md {
     line-height: 1.2;
   }
 
@@ -10182,7 +10182,7 @@ textarea {
     font-size: 1.6rem;
   }
 
-  .u-font-lgall-lg {
+  .u-font-small-lg {
     font-size: 1.2rem;
   }
 
@@ -10206,7 +10206,7 @@ textarea {
     font-size: 3.4rem;
   }
 
-  .u-line-height-lgall-lg {
+  .u-line-height-small-lg {
     line-height: 1.2;
   }
 
@@ -10275,7 +10275,7 @@ textarea {
     font-size: 1.6rem;
   }
 
-  .u-font-xlall-xl {
+  .u-font-small-xl {
     font-size: 1.2rem;
   }
 
@@ -10299,7 +10299,7 @@ textarea {
     font-size: 3.4rem;
   }
 
-  .u-line-height-xlall-xl {
+  .u-line-height-small-xl {
     line-height: 1.2;
   }
 
@@ -11739,5 +11739,4 @@ textarea {
 .u-image-block {
   display: block;
 }
-
 /*# sourceMappingURL=all.css.map */
