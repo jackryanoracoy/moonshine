@@ -87,19 +87,19 @@
       -ms-flex-flow: row-reverse wrap-reverse;
           flex-flow: row-reverse wrap-reverse;
 }
-.l-flex--col-wrap {
+.l-flex--col-wrp {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
 }
-.l-flex--col-wrap-no {
+.l-flex--col-wrp-no {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
-.l-flex--col-wrap-reverse {
+.l-flex--col-wrp-reverse {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap-reverse;
@@ -499,19 +499,19 @@
         -ms-flex-flow: row-reverse wrap-reverse;
             flex-flow: row-reverse wrap-reverse;
   }
-  .l-flex--col-wrap-sm {
+  .l-flex--col-wrp-sm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  .l-flex--col-wrap-no-sm {
+  .l-flex--col-wrp-no-sm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrap-reverse-sm {
+  .l-flex--col-wrp-reverse-sm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -912,19 +912,19 @@
         -ms-flex-flow: row-reverse wrap-reverse;
             flex-flow: row-reverse wrap-reverse;
   }
-  .l-flex--col-wrap-md {
+  .l-flex--col-wrp-md {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  .l-flex--col-wrap-no-md {
+  .l-flex--col-wrp-no-md {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrap-reverse-md {
+  .l-flex--col-wrp-reverse-md {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -1325,19 +1325,19 @@
         -ms-flex-flow: row-reverse wrap-reverse;
             flex-flow: row-reverse wrap-reverse;
   }
-  .l-flex--col-wrap-lg {
+  .l-flex--col-wrp-lg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  .l-flex--col-wrap-no-lg {
+  .l-flex--col-wrp-no-lg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrap-reverse-lg {
+  .l-flex--col-wrp-reverse-lg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -1738,19 +1738,19 @@
         -ms-flex-flow: row-reverse wrap-reverse;
             flex-flow: row-reverse wrap-reverse;
   }
-  .l-flex--col-wrap-xl {
+  .l-flex--col-wrp-xl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  .l-flex--col-wrap-no-xl {
+  .l-flex--col-wrp-no-xl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrap-reverse-xl {
+  .l-flex--col-wrp-reverse-xl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
