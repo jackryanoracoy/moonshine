@@ -24,7 +24,7 @@
 
   &--col-wrp { flex-flow: column wrap; }
   &--col-wrp-no { flex-flow: column nowrap; }
-  &--col-wrp-reverse { flex-flow: column wrap-reverse; }
+  &--col-wrp-rev { flex-flow: column wrap-reverse; }
   &--col-rev-wrp { flex-flow: column-reverse wrap; }
   &--col-rev-wrp-no { flex-flow: column-reverse nowrap; }
   &--col-rev-wrp-rev { flex-flow: column-reverse wrap-reverse; }
@@ -121,7 +121,7 @@
 
       &--col-wrp-#{$breakpoint} { flex-flow: column wrap; }
       &--col-wrp-no-#{$breakpoint} { flex-flow: column nowrap; }
-      &--col-wrp-reverse-#{$breakpoint} { flex-flow: column wrap-reverse; }
+      &--col-wrp-rev-#{$breakpoint} { flex-flow: column wrap-reverse; }
       &--col-rev-wrp-#{$breakpoint} { flex-flow: column-reverse wrap; }
       &--col-rev-wrp-no-#{$breakpoint} { flex-flow: column-reverse nowrap; }
       &--col-rev-wrp-rev-#{$breakpoint} { flex-flow: column-reverse wrap-reverse; }

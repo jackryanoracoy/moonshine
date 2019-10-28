@@ -14,14 +14,11 @@
 .c-form {
   position: relative;
 
-  &--full { width: 100%; }
+  &--fuid { width: 100%; }
 
   & label {
     display: block;
-    font-weight: 700;
     text-transform: uppercase;
-    line-height: 1;
-    white-space: nowrap;
   }
 
   & textarea {
@@ -49,12 +46,12 @@
   & input[type=text],
   & input[type=email],
   & input[type=number] {
-    padding: 0 10px;
+    padding: 10px;
     color: inherit;
     font-size: $font-md;
     font-family: inherit;
     font-weight: inherit;
-    line-height: $input-height;
+    line-height: $line-height-normal;
     background-color: transparent;
     border: 1px solid $grey-600;
   }

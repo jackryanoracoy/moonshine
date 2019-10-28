@@ -493,7 +493,7 @@ textarea {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
-.l-flex--col-wrp-reverse {
+.l-flex--col-wrp-rev {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap-reverse;
@@ -905,7 +905,7 @@ textarea {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-sm {
+  .l-flex--col-wrp-rev-sm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -1318,7 +1318,7 @@ textarea {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-md {
+  .l-flex--col-wrp-rev-md {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -1731,7 +1731,7 @@ textarea {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-lg {
+  .l-flex--col-wrp-rev-lg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -2144,7 +2144,7 @@ textarea {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-xl {
+  .l-flex--col-wrp-rev-xl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -2928,15 +2928,12 @@ textarea {
 .c-form {
   position: relative;
 }
-.c-form--full {
+.c-form--fuid {
   width: 100%;
 }
 .c-form label {
   display: block;
-  font-weight: 700;
   text-transform: uppercase;
-  line-height: 1;
-  white-space: nowrap;
 }
 .c-form textarea {
   width: 100%;
@@ -2955,12 +2952,12 @@ textarea {
   height: 40px;
 }
 .c-form textarea, .c-form input[type=text], .c-form input[type=email], .c-form input[type=number] {
-  padding: 0 10px;
+  padding: 10px;
   color: inherit;
   font-size: 1.4rem;
   font-family: inherit;
   font-weight: inherit;
-  line-height: 40px;
+  line-height: 1.6;
   background-color: transparent;
   border: 1px solid #757575;
 }
@@ -11739,5 +11736,4 @@ textarea {
 .u-image-block {
   display: block;
 }
-
 /*# sourceMappingURL=all.css.map */

@@ -14,15 +14,12 @@
 .c-form {
   position: relative;
 }
-.c-form--full {
+.c-form--fuid {
   width: 100%;
 }
 .c-form label {
   display: block;
-  font-weight: 700;
   text-transform: uppercase;
-  line-height: 1;
-  white-space: nowrap;
 }
 .c-form textarea {
   width: 100%;
@@ -41,12 +38,12 @@
   height: 40px;
 }
 .c-form textarea, .c-form input[type=text], .c-form input[type=email], .c-form input[type=number] {
-  padding: 0 10px;
+  padding: 10px;
   color: inherit;
   font-size: 1.4rem;
   font-family: inherit;
   font-weight: inherit;
-  line-height: 40px;
+  line-height: 1.6;
   background-color: transparent;
   border: 1px solid #757575;
 }

@@ -99,7 +99,7 @@
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
-.l-flex--col-wrp-reverse {
+.l-flex--col-wrp-rev {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap-reverse;
@@ -511,7 +511,7 @@
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-sm {
+  .l-flex--col-wrp-rev-sm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -924,7 +924,7 @@
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-md {
+  .l-flex--col-wrp-rev-md {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -1337,7 +1337,7 @@
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-lg {
+  .l-flex--col-wrp-rev-lg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
@@ -1750,7 +1750,7 @@
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .l-flex--col-wrp-reverse-xl {
+  .l-flex--col-wrp-rev-xl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap-reverse;
