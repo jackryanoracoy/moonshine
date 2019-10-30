@@ -2395,9 +2395,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  min-width: 320px;
-  -webkit-transition: all 300ms ease-in-out 120ms;
-  transition: all 300ms ease-in-out 120ms;
+  min-width: 240px;
   z-index: 9;
 }
 .l-site-header, .l-site-header.js-active.js-show, .l-site-header.js-active.js-menu-opened {
@@ -2406,6 +2404,8 @@
 }
 .l-site-header.js-active {
   top: -60px;
+  -webkit-transition: all 300ms ease-in-out 120ms;
+  transition: all 300ms ease-in-out 120ms;
 }
 .l-site-header.js-active.js-show, .l-site-header.js-menu-opened {
   top: 0 !important;
@@ -2527,5 +2527,4 @@
     overflow: auto;
   }
 }
-
 /*# sourceMappingURL=layout.css.map */

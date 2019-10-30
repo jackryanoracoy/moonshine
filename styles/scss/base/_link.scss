@@ -12,11 +12,11 @@
 --------------------------------------------------*/
 
 a {
-  color: #2196F3;
+  color: $primary;
   text-decoration: none;
 
   &:hover, &:visited, &:active, &:focus {
-    color: #2962FF;
+    color: $secondary;
     text-decoration: underline;
   }
 

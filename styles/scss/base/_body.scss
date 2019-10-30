@@ -14,21 +14,21 @@
 body {
   min-width: inherit;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: $font-md;
   font-family: inherit;
 
   & ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    background-color: #E0E0E0;
+    width: 5px;
+    height: 5px;
+    background-color: $grey-300;
   }
 
   & ::-webkit-scrollbar-thumb {
-    background-color: #BDBDBD;
+    background-color: $grey-400;
   }
 
   @include media-breakpoint-min(md) {
-    font-size: 1.5rem;
+    font-size: $font-nm;
   }
 
   @media print { font-family: inherit; width: 100%; }

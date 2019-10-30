@@ -11,6 +11,6 @@
   Focus
 --------------------------------------------------*/
 
-*:focus { outline: 1px dotted #2196F3; }
+*:focus { outline: 1px dotted $info; }
 
 body:not(.tab-used) *:focus { outline: none; }

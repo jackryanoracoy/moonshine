@@ -359,7 +359,6 @@
 }
 .c-site-nav__item a {
   display: block;
-  padding: 0 10px;
   color: #FFF;
   font-size: 1.5rem;
   line-height: 50px;
@@ -374,6 +373,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .c-site-nav__item a {
+    padding: 0 10px;
   }
   .c-site-nav__item a:hover, .c-site-nav__item--active a {
     background-color: #263238;
@@ -405,6 +407,8 @@
 .c-site-branding__title {
   padding-left: 10px;
   font-size: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   .c-site-branding {

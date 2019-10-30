@@ -15,8 +15,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  min-width: 320px;
-  transition: $transition;
+  min-width: 240px;
   z-index: 9;
 
   &,
@@ -27,6 +26,7 @@
 
   &.js-active {
     top: -$header-height_m;
+    transition: $transition;
   }
 
   &.js-active.js-show,

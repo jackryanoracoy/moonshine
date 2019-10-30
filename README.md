@@ -8,7 +8,7 @@ Moonshine (Front-end Web Development Boilerplate) - A Scalable and Maintainable 
 Get started with Moonshine, a scalable and maintainable architecture for building responsive, mobile-first web apps or sites.  
 Moonshine helps you build not only fast but scalable and maintainable web apps or sites. With Moonshine you have a package that is built with the combined knowledge and effort of some great developers, from their methodology, codes, packages, etc...  
   
-Ready to kick-start your project using Moonshine? Download Moonshine package or check Moonshine releases.  
+Ready to kick-start your project using Moonshine? [Read the documentation page](https://jackryanoracoy.github.io/moonshine).  
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Or you can use our boilerplate.html included in the package.  
   
 ### Content  
@@ -308,7 +308,7 @@ Some great works that are included in this template.
 ## Author  
   
 Jack Ryan Oracoy  
-https://jackryanoracoy.github.io  
+[https://jackryanoracoy.github.io](https://jackryanoracoy.github.io)  
 jackryanoracoy@gmail.com  
   
 [Github](https://github.com/jackryanoracoy), 

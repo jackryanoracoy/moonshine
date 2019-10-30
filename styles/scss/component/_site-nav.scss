@@ -22,7 +22,6 @@
 
   &__item a {
     display: block;
-    padding: 0 10px;
     color: #FFF;
     font-size: 1.5rem;
     line-height: $nav-height;
@@ -34,6 +33,8 @@
 
   @include media-breakpoint-min(lg) {
     flex-direction: row;
+
+    &__item a { padding: 0 10px; }
 
     &__item a:hover,
     &__item--active a {
