@@ -2464,6 +2464,14 @@
     bottom: 10px;
   }
 }
+@media print {
+  .l-site-header {
+    position: absolute;
+  }
+  .l-site-header__action {
+    display: none;
+  }
+}
 
 /*--------------------------------------------------
   Site-main
@@ -2527,4 +2535,5 @@
     overflow: auto;
   }
 }
+
 /*# sourceMappingURL=layout.css.map */

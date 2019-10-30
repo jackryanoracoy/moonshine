@@ -2858,6 +2858,14 @@ textarea {
     bottom: 10px;
   }
 }
+@media print {
+  .l-site-header {
+    position: absolute;
+  }
+  .l-site-header__action {
+    display: none;
+  }
+}
 
 /*--------------------------------------------------
   Site-main
@@ -3044,7 +3052,7 @@ textarea {
   min-width: 50px;
   padding: 0 15px;
   color: #FAFAFA !important;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 50px;
   text-align: center;
   text-decoration: none;
@@ -3273,8 +3281,9 @@ textarea {
 }
 .c-site-nav__item a {
   display: block;
+  padding: 0 10px;
   color: #FFF;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 50px;
   text-decoration: none;
   overflow: hidden;
@@ -3287,9 +3296,6 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .c-site-nav__item a {
-    padding: 0 10px;
   }
   .c-site-nav__item a:hover, .c-site-nav__item--active a {
     background-color: #263238;
