@@ -262,7 +262,7 @@
   display: block;
   padding: 0 10px;
   color: #FFF;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 50px;
   text-decoration: none;
   overflow: hidden;
@@ -270,7 +270,7 @@
   white-space: nowrap;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
   .c-site-nav {
     -webkit-box-orient: horizontal;
@@ -278,6 +278,8 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
+
+  .c-site-nav__item a { padding: 0 10px; }
 
   .c-site-nav__item a:hover,
   .c-site-nav__item--active a {
@@ -315,9 +317,11 @@
 .c-site-branding__title {
   padding-left: 10px;
   font-size: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
   .c-site-branding {
     height: 75px;
@@ -356,7 +360,7 @@
   font-size: 1.6rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
   .c-heading-above-the-fold {
     font-size: 3.5rem;

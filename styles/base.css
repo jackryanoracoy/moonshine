@@ -30,7 +30,7 @@
 --------------------------------------------------*/
 
 html {
-  min-width: 320px;
+  min-width: 240px;
   color: #212121;
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-family: var(--font-family-sans-serif, "Noto Sans");
@@ -65,8 +65,8 @@ body {
 }
 
 body ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background-color: #E0E0E0;
 }
 
@@ -74,7 +74,7 @@ body ::-webkit-scrollbar-thumb {
   background-color: #BDBDBD;
 }
 
-@media (min-width: 768px) { body { font-size: 1.5rem; } }
+@media (min-width: 768px) { body { font-size: 1.6rem; } }
 
 @media print { body { font-family: inherit; width: 100%; } }
 
