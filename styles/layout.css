@@ -729,7 +729,7 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 
   .l-flex--row-wrp-xl { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; }
   .l-flex--row-wrp-no-xl { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; }
