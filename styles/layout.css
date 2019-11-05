@@ -161,7 +161,7 @@
 .l-flex__item-12 {
   -ms-flex: 0 0 100%;
   -webkit-box-flex: 0;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   max-width: 100%;
 }
 
@@ -853,14 +853,14 @@
   .l-flex__item-xl-11 {
     -ms-flex: 0 0 91.666667%;
     -webkit-box-flex: 0;
-            flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
 
   .l-flex__item-xl-12 {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
 

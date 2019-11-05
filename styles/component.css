@@ -87,7 +87,7 @@
 
 .c-button--light {
   color: #212121 !important;
-  color: var(--dark) !important;
+  color: var(--dark, #212121) !important;
   background-color: #FAFAFA;
   background-color: var(--light, #FAFAFA);
 }
