@@ -2465,7 +2465,7 @@
 
 .u-color-grey-800 {
   color: #424242;
-  color: var(--grey-800, #212121);
+  color: var(--grey-800, #424242);
 }
 
 .u-color-grey-900 {
@@ -2563,7 +2563,7 @@
 
 .u-background-grey-800 {
   background-color: #424242;
-  background-color: var(--grey-800, #212121);
+  background-color: var(--grey-800, #424242);
 }
 
 .u-background-grey-900 {
