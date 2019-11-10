@@ -16,7 +16,7 @@
   position: relative;
   border-width: $border-width;
   border-style: solid;
-  border-color: #E0E0E0;
+  border-color: $grey-200;
 
   &--hidden { border-style: hidden; }
   &--dashed { border-style: dashed; }

@@ -12,17 +12,7 @@
 --------------------------------------------------*/
 
 .u-list {
-  position: relative;
-
-  &--none { list-style: none; }
-  &--circle { list-style: circle; }
-  &--square { list-style: square; }
-  &--uroman { list-style: upper-roman; }
-  &--lroman { list-style: lower-roman; }
-  &--ualpha { list-style: upper-alpha; }
-  &--lalpha { list-style: lower-alpha; }
-  &--decimal { list-style: decimal; }
-  &--decimalz { list-style: decimal-leading-zero; }
+  list-style-type: none;
 
   &--inside { list-style-position: inside; }
   &--outside { list-style-position: outside; }
@@ -51,19 +41,6 @@
 
   @each $breakpoint in map-keys($breakpoints) {
     @include media-breakpoint-min($breakpoint) {
-      &--none-#{$breakpoint} { list-style: none; }
-      &--circle-#{$breakpoint} { list-style: circle; }
-      &--square-#{$breakpoint} { list-style: square; }
-      &--uroman-#{$breakpoint} { list-style: upper-roman; }
-      &--lroman-#{$breakpoint} { list-style: lower-roman; }
-      &--ualpha-#{$breakpoint} { list-style: upper-alpha; }
-      &--lalpha-#{$breakpoint} { list-style: lower-alpha; }
-      &--decimal-#{$breakpoint} { list-style: decimal; }
-      &--decimalz-#{$breakpoint} { list-style: decimal-leading-zero; }
-
-      &--inside-#{$breakpoint} { list-style-position: inside; }
-      &--outside-#{$breakpoint} { list-style-position: outside; }
-
       &--column-#{$breakpoint}-1 { column-count: 1; }
       &--column-#{$breakpoint}-2 { column-count: 2; }
       &--column-#{$breakpoint}-3 { column-count: 3; }

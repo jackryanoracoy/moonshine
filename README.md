@@ -1,3 +1,7 @@
+<a href="https://jackryanoracoy.github.com/">
+  <img src="https://github.com/jackryanoracoy/moonshine/blob/master/assets/images/image-above-the-fold.jpg" alt="Moonshine" style="max-width: 100%;">
+</a>
+
 # Moonshine
   
 Moonshine (Front-end Web Development Boilerplate) - A Scalable and Maintainable Architecture.  
@@ -300,6 +304,7 @@ Some great works that are included in this template.
 * [Modernizr (v3.7.1)](https://modernizr.com/)  
 * [Object-Fit Images (v3.2.3)](https://github.com/fregante/object-fit-images/)  
 * [Apache Server Configs (v3.2.1)](https://github.com/h5bp/server-configs-apache)  
+* [Normalize (v8.0.1)](https://necolas.github.io/normalize.css/)  
 * [Font Awesome (v5.10.1)](https://fontawesome.com/)  
 * [Google Fonts](https://fonts.google.com/)  
 * [EditorConfig](https://editorconfig.org)  
