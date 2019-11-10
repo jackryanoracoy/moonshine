@@ -1,5 +1,5 @@
 /*--------------------------------------------------
-  Reset
+  Global Reset
 --------------------------------------------------*/
 
 *,
@@ -138,7 +138,29 @@ table {
   border-spacing: 0;
 }
 
-@media print { thead { display: table-header-group; } }
+@media print { table thead { display: table-header-group; } }
+
+/*--------------------------------------------------
+  Add the correct box sizing in Firefox.
+  Show the overflow in Edge and IE.
+--------------------------------------------------*/
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/*--------------------------------------------------
+  Correct the inheritance and scaling of font size in all browsers.
+  Correct the odd `em` font sizing in all browsers.
+--------------------------------------------------*/
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
 
 /*--------------------------------------------------
   Add the correct text decoration
@@ -151,6 +173,19 @@ abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
+
+/*--------------------------------------------------
+  Remove the bottom border in Chrome 57-
+  Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+--------------------------------------------------*/
+
+b, strong { font-weight: bolder; }
+
+/*--------------------------------------------------
+  Add the correct font size in all browsers.
+--------------------------------------------------*/
+
+small { font-size: 80%; }
 
 /*--------------------------------------------------
   Correct the inheritance and scaling of font size
@@ -177,7 +212,6 @@ sub, sup {
 }
 
 sub { bottom: -0.25em; }
-
 sup { top: -0.5em; }
 
 /*--------------------------------------------------
@@ -186,7 +220,18 @@ sup { top: -0.5em; }
 
 img { border-style: none; }
 
-@media print { img {  page-break-inside: avoid; } }
+@media print { img { page-break-inside: avoid; } }
+
+/*--------------------------------------------------
+  Change the font styles in all browsers.
+  Remove the margin in Firefox and Safari
+--------------------------------------------------*/
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
 
 /*--------------------------------------------------
   Show the overflow in IE.
@@ -202,6 +247,17 @@ button, input { overflow: visible; }
 --------------------------------------------------*/
 
 button, select { text-transform: none; }
+
+/*--------------------------------------------------
+  Correct the inability to style clickable types in iOS and Safari.
+--------------------------------------------------*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
 
 /*--------------------------------------------------
   Remove the inner border and padding in Firefox.
@@ -230,7 +286,31 @@ button:-moz-focusring,
   Correct the padding in Firefox.
 --------------------------------------------------*/
 
-fieldset { padding: 0.35em 0.75em 0.625em; }
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/*--------------------------------------------------
+  Correct the text wrapping in Edge and IE.
+  Correct the color inheritance from `fieldset` elements in IE.
+  Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers.
+--------------------------------------------------*/
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/*--------------------------------------------------
+  Add the correct vertical alignment in Chrome, Firefox, and Opera.
+--------------------------------------------------*/
+
+progress { vertical-align: baseline; }
 
 /*--------------------------------------------------
   Remove the default vertical scrollbar in IE.
@@ -254,9 +334,10 @@ textarea { overflow: auto; }
 --------------------------------------------------*/
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
+
 /*--------------------------------------------------
   Remove the inner padding and cancel buttons
   in Chrome and Safari on macOS.
@@ -279,7 +360,25 @@ textarea { overflow: auto; }
 }
 
 /*--------------------------------------------------
-  Add the correct display in IE 10-.
+  Add the correct display in Edge, IE 10+, and Firefox.
+--------------------------------------------------*/
+
+details { display: block; }
+
+/*--------------------------------------------------
+  Add the correct display in all browsers.
+--------------------------------------------------*/
+
+summary { display: list-item; }
+
+/*--------------------------------------------------
+  Add the correct display in IE 10+.
+--------------------------------------------------*/
+
+template { display: none; }
+
+/*--------------------------------------------------
+  Add the correct display in IE 10.
 --------------------------------------------------*/
 
 [hidden] { display: none; }
