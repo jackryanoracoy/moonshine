@@ -119,6 +119,64 @@
 }
 
 /*--------------------------------------------------
+  HTML
+--------------------------------------------------*/
+html {
+  min-width: 240px;
+  color: #212121;
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 62.5%;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--------------------------------------------------
+  Focus
+--------------------------------------------------*/
+*:focus {
+  outline: 1px dotted #00BCD4;
+}
+
+body:not(.tab-used) *:focus {
+  outline: none;
+}
+
+/*--------------------------------------------------
+  Body
+--------------------------------------------------*/
+body {
+  min-width: inherit;
+  color: inherit;
+  font-size: 1.4rem;
+  font-family: inherit;
+}
+body ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #E0E0E0;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+@media print {
+  body {
+    font-family: inherit;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------
   Main
 --------------------------------------------------*/
 main {
@@ -385,64 +443,6 @@ template {
 --------------------------------------------------*/
 [hidden] {
   display: none;
-}
-
-/*--------------------------------------------------
-  HTML
---------------------------------------------------*/
-html {
-  min-width: 240px;
-  color: #212121;
-  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 62.5%;
-  line-height: 1.6;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/*--------------------------------------------------
-  Focus
---------------------------------------------------*/
-*:focus {
-  outline: 1px dotted #00BCD4;
-}
-
-body:not(.tab-used) *:focus {
-  outline: none;
-}
-
-/*--------------------------------------------------
-  Body
---------------------------------------------------*/
-body {
-  min-width: inherit;
-  color: inherit;
-  font-size: 1.4rem;
-  font-family: inherit;
-}
-body ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  background-color: #E0E0E0;
-}
-body ::-webkit-scrollbar-thumb {
-  background-color: #BDBDBD;
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 1.6rem;
-  }
-}
-@media print {
-  body {
-    font-family: inherit;
-    width: 100%;
-  }
 }
 
 /*--------------------------------------------------
