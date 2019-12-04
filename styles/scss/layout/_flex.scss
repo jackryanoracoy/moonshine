@@ -73,18 +73,27 @@
   &__item-11 { @include flex-col-width(11); }
   &__item-12 { @include flex-col-width(12); }
 
-  &__basis-1 { @include col-width(1); }
-  &__basis-2 { @include col-width(2); }
-  &__basis-3 { @include col-width(3); }
-  &__basis-4 { @include col-width(4); }
-  &__basis-5 { @include col-width(5); }
-  &__basis-6 { @include col-width(6); }
-  &__basis-7 { @include col-width(7); }
-  &__basis-8 { @include col-width(8); }
-  &__basis-9 { @include col-width(9); }
-  &__basis-10 { @include col-width(10); }
-  &__basis-11 { @include col-width(11); }
-  &__basis-12 { @include col-width(12); }
+  &__item-a { @include flex-col-width-alt(1); }
+  &__item-b { @include flex-col-width-alt(2); }
+  &__item-c { @include flex-col-width-alt(3); }
+  &__item-d { @include flex-col-width-alt(4); }
+  &__item-e { @include flex-col-width-alt(6); }
+  &__item-f { @include flex-col-width-alt(7); }
+  &__item-g { @include flex-col-width-alt(8); }
+  &__item-h { @include flex-col-width-alt(9); }
+
+  &__basis-1 { @include basis-col-width(1); }
+  &__basis-2 { @include basis-col-width(2); }
+  &__basis-3 { @include basis-col-width(3); }
+  &__basis-4 { @include basis-col-width(4); }
+  &__basis-5 { @include basis-col-width(5); }
+  &__basis-6 { @include basis-col-width(6); }
+  &__basis-7 { @include basis-col-width(7); }
+  &__basis-8 { @include basis-col-width(8); }
+  &__basis-9 { @include basis-col-width(9); }
+  &__basis-10 { @include basis-col-width(10); }
+  &__basis-11 { @include basis-col-width(11); }
+  &__basis-12 { @include basis-col-width(12); }
 
   &__grow { flex-grow: 1; }
   &__grow-no { flex-grow: 0; }
@@ -170,18 +179,27 @@
       &__item-#{$breakpoint}-11 { @include flex-col-width(11); }
       &__item-#{$breakpoint}-12 { @include flex-col-width(12); }
 
-      &__basis-#{$breakpoint}-1 { @include col-width(1); }
-      &__basis-#{$breakpoint}-2 { @include col-width(2); }
-      &__basis-#{$breakpoint}-3 { @include col-width(3); }
-      &__basis-#{$breakpoint}-4 { @include col-width(4); }
-      &__basis-#{$breakpoint}-5 { @include col-width(5); }
-      &__basis-#{$breakpoint}-6 { @include col-width(6); }
-      &__basis-#{$breakpoint}-7 { @include col-width(7); }
-      &__basis-#{$breakpoint}-8 { @include col-width(8); }
-      &__basis-#{$breakpoint}-9 { @include col-width(9); }
-      &__basis-#{$breakpoint}-10 { @include col-width(10); }
-      &__basis-#{$breakpoint}-11 { @include col-width(11); }
-      &__basis-#{$breakpoint}-12 { @include col-width(12); }
+      &__item-#{$breakpoint}-a { @include flex-col-width-alt(1); }
+      &__item-#{$breakpoint}-b { @include flex-col-width-alt(2); }
+      &__item-#{$breakpoint}-c { @include flex-col-width-alt(3); }
+      &__item-#{$breakpoint}-d { @include flex-col-width-alt(4); }
+      &__item-#{$breakpoint}-e { @include flex-col-width-alt(6); }
+      &__item-#{$breakpoint}-f { @include flex-col-width-alt(7); }
+      &__item-#{$breakpoint}-g { @include flex-col-width-alt(8); }
+      &__item-#{$breakpoint}-h { @include flex-col-width-alt(9); }
+
+      &__basis-#{$breakpoint}-1 { @include basis-col-width(1); }
+      &__basis-#{$breakpoint}-2 { @include basis-col-width(2); }
+      &__basis-#{$breakpoint}-3 { @include basis-col-width(3); }
+      &__basis-#{$breakpoint}-4 { @include basis-col-width(4); }
+      &__basis-#{$breakpoint}-5 { @include basis-col-width(5); }
+      &__basis-#{$breakpoint}-6 { @include basis-col-width(6); }
+      &__basis-#{$breakpoint}-7 { @include basis-col-width(7); }
+      &__basis-#{$breakpoint}-8 { @include basis-col-width(8); }
+      &__basis-#{$breakpoint}-9 { @include basis-col-width(9); }
+      &__basis-#{$breakpoint}-10 { @include basis-col-width(10); }
+      &__basis-#{$breakpoint}-11 { @include basis-col-width(11); }
+      &__basis-#{$breakpoint}-12 { @include basis-col-width(12); }
 
       &__grow-#{$breakpoint} { flex-grow: 1; }
       &__grow-no-#{$breakpoint} { flex-grow: 0; }

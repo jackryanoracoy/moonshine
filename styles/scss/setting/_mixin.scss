@@ -91,14 +91,20 @@
   max-width: percentage($size / $columns);
 }
 
+@mixin flex-col-width-alt($size, $columns: $colum-count-alt) {
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
+}
+
+@mixin basis-col-width($size, $columns: $colum-count) {
+  flex-basis: percentage($size / $columns);
+  max-width: percentage($size / $columns);
+}
+
 @mixin flex-col-width-auto() {
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
-}
-
-@mixin col-width($size, $columns: $colum-count) {
-  flex-basis: percentage($size / $columns);
 }
 
 // Font Face

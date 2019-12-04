@@ -102,6 +102,7 @@ $greys: map-merge( (
 
 // Breakpoints
 $breakpoints: (
+  "xs":                 410px,
   "sm":                 576px,
   "md":                 768px,
   "lg":                 992px,
@@ -109,6 +110,7 @@ $breakpoints: (
 )                                             !default;
 
 // Container
+$container-xs:          395px                 !default;
 $container-sm:          540px                 !default;
 $container-md:          720px                 !default;
 $container-lg:          960px                 !default;
@@ -116,6 +118,7 @@ $container-xl:          1140px                !default;
 
 // Column Count
 $colum-count:           12                    !default;
+$colum-count-alt:       10                    !default;
 
 // Font Size
 $font-nm:               1.6rem                !default;
@@ -133,12 +136,6 @@ $line-height-large:     1.8                   !default;
 
 // Border
 $border-width:          1px                   !default;
-$border-width-top:      1px 0 0 0             !default;
-$border-width-right:    0 1px 0 0             !default;
-$border-width-bottom:   0 0 1px 0             !default;
-$border-width-left:     0 0 0 1px             !default;
-$border-width-ver:      1px 0 1px 0           !default;
-$border-width-hor:      0 1px 0 1px           !default;
 
 // Header Height
 $header-height:         75px                  !default;
@@ -156,7 +153,8 @@ $input-height:          40px                  !default;
 $textarea-height:       60px                  !default;
 
 // Section Gutter
-$section-gutter:        60px                  !default;
+$section-gutter-ver:    60px                  !default;
+$section-gutter-hor:    10px                  !default;
 
 // Transition
 $transition:            all 300ms ease-in-out 120ms;

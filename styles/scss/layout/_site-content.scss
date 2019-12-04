@@ -13,10 +13,5 @@
 
 .l-site-content {
   position: relative;
-  padding: ($section-gutter / 2) 0;
   background-color: $light;
-
-  @include media-breakpoint-min(lg) {
-    padding: $section-gutter 0;
-  }
 }

@@ -28,12 +28,19 @@
   &--ridge { border-style: ridge; }
   &--solid { border-style: solid; }
 
-  &--top { border-width: $border-width-top; }
-  &--right { border-width: $border-width-right; }
-  &--bottom { border-width: $border-width-bottom; }
-  &--left { border-width: $border-width-left; }
-  &--ver { border-width: $border-width-ver; }
-  &--hor { border-width: $border-width-hor; }
+  &--top,
+  &--right,
+  &--bottom,
+  &--left,
+  &--ver,
+  &--hor { border-width: 0; }
+
+  &--top { border-top-width: $border-width; }
+  &--right { border-right-width: $border-width; }
+  &--bottom { border-bottom-width: $border-width; }
+  &--left { border-left-width: $border-width; }
+  &--ver { border-top-width: $border-width; border-bottom-width: $border-width; }
+  &--hor { border-right-width: $border-width; border-left-width: $border-width; }
 
   &--seq:last-of-type { border: none; }
 
@@ -49,12 +56,12 @@
       &--ridge-#{$breakpoint} { border-style: ridge; }
       &--solid-#{$breakpoint} { border-style: solid; }
 
-      &--top-#{$breakpoint} { border-width: $border-width-top; }
-      &--right-#{$breakpoint} { border-width: $border-width-right; }
-      &--bottom-#{$breakpoint} { border-width: $border-width-bottom; }
-      &--left-#{$breakpoint} { border-width: $border-width-left; }
-      &--ver-#{$breakpoint} { border-width: $border-width-ver; }
-      &--hor-#{$breakpoint} { border-width: $border-width-hor; }
+      &--top-#{$breakpoint} { border-top-width: $border-width; }
+      &--right-#{$breakpoint} { border-right-width: $border-width; }
+      &--bottom-#{$breakpoint} { border-bottom-width: $border-width; }
+      &--left-#{$breakpoint} { border-left-width: $border-width; }
+      &--ver-#{$breakpoint} { border-top-width: $border-width; border-bottom-width: $border-width; }
+      &--hor-#{$breakpoint} { border-right-width: $border-width; border-left-width: $border-width; }
       &--none-#{$breakpoint} { border: none !important; }
     }
   }

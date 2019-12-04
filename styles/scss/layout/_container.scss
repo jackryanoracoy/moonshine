@@ -19,6 +19,10 @@
 
   &--fluid { max-width: 100% !important; }
 
+  @include media-breakpoint-min(xs) {
+    max-width: $container-xs;
+  }
+
   @include media-breakpoint-min(sm) {
     max-width: $container-sm;
   }
