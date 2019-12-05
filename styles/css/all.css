@@ -3672,7 +3672,7 @@ pre {
   }
   .l-section--padding-narrow {
     padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 30px;
   }
 }
 
@@ -14099,5 +14099,4 @@ pre {
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
-
 /*# sourceMappingURL=all.css.map */

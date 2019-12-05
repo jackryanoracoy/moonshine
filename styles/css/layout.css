@@ -3180,7 +3180,7 @@
   }
   .l-section--padding-narrow {
     padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 30px;
   }
 }
 
@@ -3357,5 +3357,4 @@
     overflow: auto;
   }
 }
-
 /*# sourceMappingURL=layout.css.map */
