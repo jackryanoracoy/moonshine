@@ -28,42 +28,13 @@
   &--ridge { border-style: ridge; }
   &--solid { border-style: solid; }
 
-  &--top,
-  &--right,
-  &--bottom,
-  &--left,
-  &--ver,
-  &--hor { border-width: 0; }
-
-  &--top { border-top-width: $border-width; }
-  &--right { border-right-width: $border-width; }
-  &--bottom { border-bottom-width: $border-width; }
-  &--left { border-left-width: $border-width; }
-  &--ver { border-top-width: $border-width; border-bottom-width: $border-width; }
-  &--hor { border-right-width: $border-width; border-left-width: $border-width; }
+  &--top { border-width: $border-width 0 0 0; }
+  &--right { border-width: 0 0 0 $border-width; }
+  &--bottom { border-width: 0 0 $border-width 0; }
+  &--left { border-width: 0 $border-width 0 0; }
+  &--ver { border-width: $border-width 0; }
+  &--hor { border-width: 0 $border-width; }
 
   &--seq:last-of-type { border: none; }
-
-  @each $breakpoint in map-keys($breakpoints) {
-    @include media-breakpoint-min($breakpoint) {
-      &--hidden-#{$breakpoint} { border-style: hidden; }
-      &--dashed-#{$breakpoint} { border-style: dashed; }
-      &--dotted-#{$breakpoint} { border-style: dotted; }
-      &--double-#{$breakpoint} { border-style: double; }
-      &--groove-#{$breakpoint} { border-style: groove; }
-      &--outset-#{$breakpoint} { border-style: outset; }
-      &--inset-#{$breakpoint} { border-style: inset; }
-      &--ridge-#{$breakpoint} { border-style: ridge; }
-      &--solid-#{$breakpoint} { border-style: solid; }
-
-      &--top-#{$breakpoint} { border-top-width: $border-width; }
-      &--right-#{$breakpoint} { border-right-width: $border-width; }
-      &--bottom-#{$breakpoint} { border-bottom-width: $border-width; }
-      &--left-#{$breakpoint} { border-left-width: $border-width; }
-      &--ver-#{$breakpoint} { border-top-width: $border-width; border-bottom-width: $border-width; }
-      &--hor-#{$breakpoint} { border-right-width: $border-width; border-left-width: $border-width; }
-      &--none-#{$breakpoint} { border: none !important; }
-    }
-  }
 }
 
