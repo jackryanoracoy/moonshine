@@ -319,15 +319,14 @@
                         --transition: all 300ms ease-in-out 120ms;
 
                         /* font-family */
-                        --font-family-sans-serif: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                        --font-family-sans-serif-condensed: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
                         --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
                       }
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
 
-                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--success">
+                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--grey">
                     <span>NOTE:&emsp;</span>
                     <span>You can utilize our source Sass files to take advantage of variables, maps, mixins, and more.</span></p>
 
@@ -391,9 +390,9 @@
                       </code></pre>
                     </div>
 
-                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--warning">
+                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--grey">
                     <span>NOTE:&emsp;</span>
-                    <span>To extend Moonshine's accessibility please see <a class="u-color-light" href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a>, <a class="u-color-light" href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> and similar accessibility standards and requirements.</span></p>
+                    <span>To extend Moonshine's accessibility please see <a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a>, <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> and similar accessibility standards and requirements.</span></p>
 
                   </article><!-- End - article -->
                 </div><!-- End - flex content -->
@@ -559,7 +558,7 @@
                       </code></pre>
                     </div>
 
-                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--info">
+                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--grey">
                     <span>NOTE:&emsp;</span>
                     <span>Two dashes (also known as the modifier notation) imply that the class is a modifier and
                     two underscores (also known as the child notation) imply that the class is a child.</span></p>
@@ -725,6 +724,25 @@
                       .l-flex--alt-stretch { align-items: stretch; }
                       .l-flex--alt-baseline { align-items: baseline; }
 
+                      .l-flex__order-1 { order: 1; }
+                      .l-flex__order-2 { order: 2; }
+                      .l-flex__order-3 { order: 3; }
+                      .l-flex__order-4 { order: 4; }
+                      .l-flex__order-5 { order: 5; }
+                      .l-flex__order-6 { order: 6; }
+                      .l-flex__order-7 { order: 7; }
+                      .l-flex__order-8 { order: 8; }
+                      .l-flex__order-9 { order: 9; }
+                      .l-flex__order-10 { order: 10; }
+                      .l-flex__order-11 { order: 11; }
+                      .l-flex__order-12 { order: 12; }
+
+                      .l-flex__als-start { align-self: flex-start; }
+                      .l-flex__als-end { align-self: flex-end; }
+                      .l-flex__als-center { align-self: center; }
+                      .l-flex__als-stretch { align-self: stretch; }
+                      .l-flex__als-baseline { align-self: baseline; }
+
                       .l-flex__item {
                         flex: 0 0 auto;
                         width: auto;
@@ -830,25 +848,6 @@
                         flex: 0 0 90%;
                         max-width: 90%;
                       }
-
-                      .l-flex__order-1 { order: 1; }
-                      .l-flex__order-2 { order: 2; }
-                      .l-flex__order-3 { order: 3; }
-                      .l-flex__order-4 { order: 4; }
-                      .l-flex__order-5 { order: 5; }
-                      .l-flex__order-6 { order: 6; }
-                      .l-flex__order-7 { order: 7; }
-                      .l-flex__order-8 { order: 8; }
-                      .l-flex__order-9 { order: 9; }
-                      .l-flex__order-10 { order: 10; }
-                      .l-flex__order-11 { order: 11; }
-                      .l-flex__order-12 { order: 12; }
-
-                      .l-flex__als-start { align-self: flex-start; }
-                      .l-flex__als-end { align-self: flex-end; }
-                      .l-flex__als-center { align-self: center; }
-                      .l-flex__als-stretch { align-self: stretch; }
-                      .l-flex__als-baseline { align-self: baseline; }
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
@@ -861,7 +860,7 @@
 
                     <div class="c-highlight u-mar-bottom-20 u-mar-bottom-lg-40">
                       <pre><code>
-                      // You can omit adding class name "l-gap__item" on "l-gap" child item.
+                      // You can omit adding class name "l-gap__item" on "l-gap" child item (only if the child item is a "div").
                       <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-flex l-gap-20"</span><span>&gt;</span>
                         <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-gap__item"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
                         <span>&lt;div</span> <span>class=</span><span class="u-font-bold">"l-gap__item"</span><span>&gt;</span><span class="u-color-grey-500">&lt;!-- Content here --&gt;</span><span>&lt;/div&gt;</span>
@@ -893,17 +892,17 @@
 
                     <div class="c-highlight">
                       <pre><code>
-                        .l-gap-md-10 { margin: -5px; }
-                        .l-gap-md-20 { margin: -10px; }
-                        .l-gap-md-30 { margin: -15px; }
-                        .l-gap-md-40 { margin: -20px; }
-                        .l-gap-md-50 { margin: -25px; }
+                      .l-gap-10 { margin: -5px; }
+                      .l-gap-20 { margin: -10px; }
+                      .l-gap-30 { margin: -15px; }
+                      .l-gap-40 { margin: -20px; }
+                      .l-gap-50 { margin: -25px; }
 
-                        .l-gap-md-10 > div, .l-gap-md-10 > .l-gap__item { padding: 5px; }
-                        .l-gap-md-20 > div, .l-gap-md-20 > .l-gap__item { padding: 10px; }
-                        .l-gap-md-30 > div, .l-gap-md-30 > .l-gap__item { padding: 15px; }
-                        .l-gap-md-40 > div, .l-gap-md-40 > .l-gap__item { padding: 20px; }
-                        .l-gap-md-50 > div, .l-gap-md-50 > .l-gap__item { padding: 25px; }
+                      .l-gap-10 > div, .l-gap-10 > .l-gap__item { padding: 5px; }
+                      .l-gap-20 > div, .l-gap-20 > .l-gap__item { padding: 10px; }
+                      .l-gap-30 > div, .l-gap-30 > .l-gap__item { padding: 15px; }
+                      .l-gap-40 > div, .l-gap-40 > .l-gap__item { padding: 20px; }
+                      .l-gap-50 > div, .l-gap-50 > .l-gap__item { padding: 25px; }
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
@@ -1077,8 +1076,8 @@
                           <a class="c-button c-button--dark" href="#!">Button Dark</a>
                         </div><!-- End - flex item -->
 
-                        <div class="l-flex__item">
-                          <a class="c-button c-button--danger" href="#!">Button Danger</a>
+                        <div class="l-flex__item l-flex__grow">
+                          <a class="c-button c-button--danger c-button--block" href="#!">Button Danger</a>
                         </div><!-- End - flex item -->
                       </div><!-- End - flex -->
                     </div><!-- End - Preview -->
@@ -1542,29 +1541,27 @@
 
                       .u-object-fit--contain {
                         object-fit: contain;
+                        object-position: center;
+                        font-family: "object-fit: contain; object-position: center;";
                       }
 
                       .u-object-fit--cover {
                         object-fit: cover;
+                        object-position: center;
+                        font-family: "object-fit: cover; object-position: center;";
                       }
 
                       .u-object-fit--fill {
                         object-fit: fill;
+                        object-position: center;
+                        font-family: "object-fit: fill; object-position: center;";
                       }
 
                       .u-object-fit--scale_down {
                         object-fit: scale-down;
+                        object-position: center;
+                        font-family: "object-fit: scale-down; object-position: center;";
                       }
-
-                      .u-object-fit--none {
-                        object-fit: none;
-                      }
-
-                      .u-object-fit--top { object-position: top; }
-                      .u-object-fit--right { object-position: right; }
-                      .u-object-fit--bottom { object-position: bottom; }
-                      .u-object-fit--left { object-position: left; }
-                      .u-object-fit--center { object-position: center; }
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
@@ -1609,11 +1606,6 @@
                       .u-bordered--solid { border-style: solid; }
 
                       .u-bordered--seq:last-of-type { border: none !important; }
-
-                      .u-bordered--none-sm { border: none !important; }
-                      .u-bordered--none-md { border: none !important; }
-                      .u-bordered--none-lg { border: none !important; }
-                      .u-bordered--none-xl { border: none !important; }
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
@@ -1636,9 +1628,6 @@
                     <div class="c-highlight">
                       <pre><code>
                       .u-list { list-style-type: none; }
-
-                      .u-list--inside { list-style-position: inside; }
-                      .u-list--outside { list-style-position: outside; }
 
                       .u-list--column-1 { column-count: 1; }
                       .u-list--column-2 { column-count: 2; }
@@ -1806,6 +1795,12 @@
                       <pre><code>
                       .u-image-fluid { max-width: 100%; }
                       .u-image-block { display: block; }
+
+                      .u-object-fit {
+                        object-fit: inherit;
+                        width: 100%;
+                        height: 100%;
+                      }
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
@@ -1906,7 +1901,7 @@
         <div class="l-container">
           <div class="l-section l-section--padding-narrow">
 
-            <ul class="l-gap-10 l-flex l-flex--jus-center u-list">
+            <ul class="u-list l-flex l-flex--jus-center l-gap-10">
               <li class="l-gap__item"><a href="https://github.com/jackryanoracoy/"><i class="fab fa-github"></i>&nbsp;GitHub</a></li>
               <li class="l-gap__item"><a href="https://www.facebook.com/JackRyanOracoy"><i class="fab fa-facebook"></i>&nbsp;Facebook</a></li>
               <li class="l-gap__item"><a href="https://twitter.com/JackRyanOracoy"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
