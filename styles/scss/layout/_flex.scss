@@ -59,6 +59,25 @@
   &--alt-stretch { align-items: stretch; }
   &--alt-baseline { align-items: baseline; }
 
+  &__order-1 { order: 1; }
+  &__order-2 { order: 2; }
+  &__order-3 { order: 3; }
+  &__order-4 { order: 4; }
+  &__order-5 { order: 5; }
+  &__order-6 { order: 6; }
+  &__order-7 { order: 7; }
+  &__order-8 { order: 8; }
+  &__order-9 { order: 9; }
+  &__order-10 { order: 10; }
+  &__order-11 { order: 11; }
+  &__order-12 { order: 12; }
+
+  &__als-start { align-self: flex-start; }
+  &__als-end { align-self: flex-end; }
+  &__als-center { align-self: center; }
+  &__als-stretch { align-self: stretch; }
+  &__als-baseline { align-self: baseline; }
+
   &__item { @include flex-col-width-auto(); }
   &__item-1 { @include flex-col-width(1); }
   &__item-2 { @include flex-col-width(2); }
@@ -99,25 +118,6 @@
   &__grow-no { flex-grow: 0; }
   &__shrink { flex-shrink: 1; }
   &__shrink-no { flex-shrink: 0; }
-
-  &__order-1 { order: 1; }
-  &__order-2 { order: 2; }
-  &__order-3 { order: 3; }
-  &__order-4 { order: 4; }
-  &__order-5 { order: 5; }
-  &__order-6 { order: 6; }
-  &__order-7 { order: 7; }
-  &__order-8 { order: 8; }
-  &__order-9 { order: 9; }
-  &__order-10 { order: 10; }
-  &__order-11 { order: 11; }
-  &__order-12 { order: 12; }
-
-  &__als-start { align-self: flex-start; }
-  &__als-end { align-self: flex-end; }
-  &__als-center { align-self: center; }
-  &__als-stretch { align-self: stretch; }
-  &__als-baseline { align-self: baseline; }
 
   @each $breakpoint in map-keys($breakpoints) {
     @include media-breakpoint-min($breakpoint) {
@@ -165,6 +165,25 @@
       &--alt-stretch-#{$breakpoint} { align-items: stretch; }
       &--alt-baseline-#{$breakpoint} { align-items: baseline; }
 
+      &__order-#{$breakpoint}-1 { order: 1; }
+      &__order-#{$breakpoint}-2 { order: 2; }
+      &__order-#{$breakpoint}-3 { order: 3; }
+      &__order-#{$breakpoint}-4 { order: 4; }
+      &__order-#{$breakpoint}-5 { order: 5; }
+      &__order-#{$breakpoint}-6 { order: 6; }
+      &__order-#{$breakpoint}-7 { order: 7; }
+      &__order-#{$breakpoint}-8 { order: 8; }
+      &__order-#{$breakpoint}-9 { order: 9; }
+      &__order-#{$breakpoint}-10 { order: 10; }
+      &__order-#{$breakpoint}-11 { order: 11; }
+      &__order-#{$breakpoint}-12 { order: 12; }
+
+      &__als-start-#{$breakpoint} { align-self: flex-start; }
+      &__als-end-#{$breakpoint} { align-self: flex-end; }
+      &__als-center-#{$breakpoint} { align-self: center; }
+      &__als-stretch-#{$breakpoint} { align-self: stretch; }
+      &__als-baseline-#{$breakpoint} { align-self: baseline; }
+
       &__item-#{$breakpoint} { @include flex-col-width-auto(); }
       &__item-#{$breakpoint}-1 { @include flex-col-width(1); }
       &__item-#{$breakpoint}-2 { @include flex-col-width(2); }
@@ -205,25 +224,6 @@
       &__grow-no-#{$breakpoint} { flex-grow: 0; }
       &__shrink-#{$breakpoint} { flex-shrink: 1; }
       &__shrink-no-#{$breakpoint} { flex-shrink: 0; }
-
-      &__order-#{$breakpoint}-1 { order: 1; }
-      &__order-#{$breakpoint}-2 { order: 2; }
-      &__order-#{$breakpoint}-3 { order: 3; }
-      &__order-#{$breakpoint}-4 { order: 4; }
-      &__order-#{$breakpoint}-5 { order: 5; }
-      &__order-#{$breakpoint}-6 { order: 6; }
-      &__order-#{$breakpoint}-7 { order: 7; }
-      &__order-#{$breakpoint}-8 { order: 8; }
-      &__order-#{$breakpoint}-9 { order: 9; }
-      &__order-#{$breakpoint}-10 { order: 10; }
-      &__order-#{$breakpoint}-11 { order: 11; }
-      &__order-#{$breakpoint}-12 { order: 12; }
-
-      &__als-start-#{$breakpoint} { align-self: flex-start; }
-      &__als-end-#{$breakpoint} { align-self: flex-end; }
-      &__als-center-#{$breakpoint} { align-self: center; }
-      &__als-stretch-#{$breakpoint} { align-self: stretch; }
-      &__als-baseline-#{$breakpoint} { align-self: baseline; }
     }
   }
 }
