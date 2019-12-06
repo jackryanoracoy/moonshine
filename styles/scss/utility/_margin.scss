@@ -121,6 +121,7 @@
 .u-mar-left-95 { margin-left: 95px; }
 .u-mar-left-100 { margin-left: 100px; }
 
+.u-mar-ver { margin-top: auto; margin-bottom: auto; }
 .u-mar-ver-5 { margin-top: 5px; margin-bottom: 5px; }
 .u-mar-ver-10 { margin-top: 10px; margin-bottom: 10px; }
 .u-mar-ver-15 { margin-top: 15px; margin-bottom: 15px; }
@@ -142,6 +143,7 @@
 .u-mar-ver-95 { margin-top: 95px; margin-bottom: 95px; }
 .u-mar-ver-100 { margin-top: 100px; margin-bottom: 100px; }
 
+.u-mar-hor { margin-right: auto; margin-left: auto; }
 .u-mar-hor-5 { margin-right: 5px; margin-left: 5px; }
 .u-mar-hor-10 { margin-right: 10px; margin-left: 10px; }
 .u-mar-hor-15 { margin-right: 15px; margin-left: 15px; }
@@ -280,6 +282,7 @@
     .u-mar-left-#{$breakpoint}-95 { margin-left: 95px; }
     .u-mar-left-#{$breakpoint}-100 { margin-left: 100px; }
 
+    .u-mar-ver-#{$breakpoint} { margin-top: auto; margin-bottom: auto; }
     .u-mar-ver-#{$breakpoint}-5 { margin-top: 5px; margin-bottom: 5px; }
     .u-mar-ver-#{$breakpoint}-10 { margin-top: 10px; margin-bottom: 10px; }
     .u-mar-ver-#{$breakpoint}-15 { margin-top: 15px; margin-bottom: 15px; }
@@ -301,6 +304,7 @@
     .u-mar-ver-#{$breakpoint}-95 { margin-top: 95px; margin-bottom: 95px; }
     .u-mar-ver-#{$breakpoint}-100 { margin-top: 100px; margin-bottom: 100px; }
 
+    .u-mar-hor-#{$breakpoint} { margin-right: auto; margin-left: auto; }
     .u-mar-hor-#{$breakpoint}-5 { margin-right: 5px; margin-left: 5px; }
     .u-mar-hor-#{$breakpoint}-10 { margin-right: 10px; margin-left: 10px; }
     .u-mar-hor-#{$breakpoint}-15 { margin-right: 15px; margin-left: 15px; }

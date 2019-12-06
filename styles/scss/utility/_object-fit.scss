@@ -18,22 +18,122 @@
 
   &--contain {
     object-fit: contain;
-    font-family: "object-fit: contain;";
+    object-position: center;
+    font-family: "object-fit: contain; object-position: center;";
   }
 
   &--cover {
     object-fit: cover;
-    font-family: "object-fit: cover;";
+    object-position: center;
+    font-family: "object-fit: cover; object-position: center;";
   }
 
   &--fill {
     object-fit: fill;
-    font-family: "object-fit: fill;";
+    object-position: center;
+    font-family: "object-fit: fill; object-position: center;";
   }
 
   &--scale_down {
     object-fit: scale-down;
-    font-family: "object-fit: scale-down;";
+    object-position: center;
+    font-family: "object-fit: scale-down; object-position: center;";
+  }
+
+  &--contain-top {
+    object-fit: contain;
+    object-position: top;
+    font-family: "object-fit: contain; object-position: top;";
+  }
+
+  &--cover-top {
+    object-fit: cover;
+    object-position: top;
+    font-family: "object-fit: cover; object-position: top;";
+  }
+
+  &--fill-top {
+    object-fit: fill;
+    object-position: top;
+    font-family: "object-fit: fill; object-position: top;";
+  }
+
+  &--scale_down-top {
+    object-fit: scale-down;
+    object-position: top;
+    font-family: "object-fit: scale-down; object-position: top;";
+  }
+
+  &--contain-right {
+    object-fit: contain;
+    object-position: right;
+    font-family: "object-fit: contain; object-position: right;";
+  }
+
+  &--cover-right {
+    object-fit: cover;
+    object-position: right;
+    font-family: "object-fit: cover; object-position: right;";
+  }
+
+  &--fill-right {
+    object-fit: fill;
+    object-position: right;
+    font-family: "object-fit: fill; object-position: right;";
+  }
+
+  &--scale_down-right {
+    object-fit: scale-down;
+    object-position: right;
+    font-family: "object-fit: scale-down; object-position: right;";
+  }
+
+  &--contain-bottom {
+    object-fit: contain;
+    object-position: bottom;
+    font-family: "object-fit: contain; object-position: bottom;";
+  }
+
+  &--cover-bottom {
+    object-fit: cover;
+    object-position: bottom;
+    font-family: "object-fit: cover; object-position: bottom;";
+  }
+
+  &--fill-bottom {
+    object-fit: fill;
+    object-position: bottom;
+    font-family: "object-fit: fill; object-position: bottom;";
+  }
+
+  &--scale_down-bottom {
+    object-fit: scale-down;
+    object-position: bottom;
+    font-family: "object-fit: scale-down; object-position: bottom;";
+  }
+
+  &--contain-left {
+    object-fit: contain;
+    object-position: left;
+    font-family: "object-fit: contain; object-position: left;";
+  }
+
+  &--cover-left {
+    object-fit: cover;
+    object-position: left;
+    font-family: "object-fit: cover; object-position: left;";
+  }
+
+  &--fill-left {
+    object-fit: fill;
+    object-position: left;
+    font-family: "object-fit: fill; object-position: left;";
+  }
+
+  &--scale_down-left {
+    object-fit: scale-down;
+    object-position: left;
+    font-family: "object-fit: scale-down; object-position: left;";
   }
 
   &--none {
@@ -41,44 +141,132 @@
     font-family: "object-fit: none;";
   }
 
-  &--top { object-position: top; }
-  &--right { object-position: right; }
-  &--bottom { object-position: bottom; }
-  &--left { object-position: left; }
-  &--center { object-position: center; }
-
   @each $breakpoint in map-keys($breakpoints) {
     @include media-breakpoint-min($breakpoint) {
       &--contain-#{$breakpoint} {
         object-fit: contain;
-        font-family: "object-fit: contain;";
+        object-position: center;
+        font-family: "object-fit: contain; object-position: center;";
       }
 
       &--cover-#{$breakpoint} {
         object-fit: cover;
-        font-family: "object-fit: cover;";
+        object-position: center;
+        font-family: "object-fit: cover; object-position: center;";
       }
 
       &--fill-#{$breakpoint} {
         object-fit: fill;
-        font-family: "object-fit: fill;";
+        object-position: center;
+        font-family: "object-fit: fill; object-position: center;";
       }
 
       &--scale_down-#{$breakpoint} {
         object-fit: scale-down;
-        font-family: "object-fit: scale-down;";
+        object-position: center;
+        font-family: "object-fit: scale-down; object-position: center;";
+      }
+
+      &--contain-top-#{$breakpoint} {
+        object-fit: contain;
+        object-position: top;
+        font-family: "object-fit: contain; object-position: top;";
+      }
+
+      &--cover-top-#{$breakpoint} {
+        object-fit: cover;
+        object-position: top;
+        font-family: "object-fit: cover; object-position: top;";
+      }
+
+      &--fill-top-#{$breakpoint} {
+        object-fit: fill;
+        object-position: top;
+        font-family: "object-fit: fill; object-position: top;";
+      }
+
+      &--scale_down-top-#{$breakpoint} {
+        object-fit: scale-down;
+        object-position: top;
+        font-family: "object-fit: scale-down; object-position: top;";
+      }
+
+      &--contain-right-#{$breakpoint} {
+        object-fit: contain;
+        object-position: right;
+        font-family: "object-fit: contain; object-position: right;";
+      }
+
+      &--cover-right-#{$breakpoint} {
+        object-fit: cover;
+        object-position: right;
+        font-family: "object-fit: cover; object-position: right;";
+      }
+
+      &--fill-right-#{$breakpoint} {
+        object-fit: fill;
+        object-position: right;
+        font-family: "object-fit: fill; object-position: right;";
+      }
+
+      &--scale_down-right-#{$breakpoint} {
+        object-fit: scale-down;
+        object-position: right;
+        font-family: "object-fit: scale-down; object-position: right;";
+      }
+
+      &--contain-bottom-#{$breakpoint} {
+        object-fit: contain;
+        object-position: bottom;
+        font-family: "object-fit: contain; object-position: bottom;";
+      }
+
+      &--cover-bottom-#{$breakpoint} {
+        object-fit: cover;
+        object-position: bottom;
+        font-family: "object-fit: cover; object-position: bottom;";
+      }
+
+      &--fill-bottom-#{$breakpoint} {
+        object-fit: fill;
+        object-position: bottom;
+        font-family: "object-fit: fill; object-position: bottom;";
+      }
+
+      &--scale_down-bottom-#{$breakpoint} {
+        object-fit: scale-down;
+        object-position: bottom;
+        font-family: "object-fit: scale-down; object-position: bottom;";
+      }
+
+      &--contain-left-#{$breakpoint} {
+        object-fit: contain;
+        object-position: left;
+        font-family: "object-fit: contain; object-position: left;";
+      }
+
+      &--cover-left-#{$breakpoint} {
+        object-fit: cover;
+        object-position: left;
+        font-family: "object-fit: cover; object-position: left;";
+      }
+
+      &--fill-left-#{$breakpoint} {
+        object-fit: fill;
+        object-position: left;
+        font-family: "object-fit: fill; object-position: left;";
+      }
+
+      &--scale_down-left-#{$breakpoint} {
+        object-fit: scale-down;
+        object-position: left;
+        font-family: "object-fit: scale-down; object-position: left;";
       }
 
       &--none-#{$breakpoint} {
         object-fit: none;
         font-family: "object-fit: none;";
       }
-
-      &--top-#{$breakpoint} { object-position: top; }
-      &--right-#{$breakpoint} { object-position: right; }
-      &--bottom-#{$breakpoint} { object-position: bottom; }
-      &--left-#{$breakpoint} { object-position: left; }
-      &--center-#{$breakpoint} { object-position: center; }
     }
   }
 }

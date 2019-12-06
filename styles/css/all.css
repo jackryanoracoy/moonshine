@@ -8671,6 +8671,11 @@ pre {
   margin-left: 100px;
 }
 
+.u-mar-ver {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .u-mar-ver-5 {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -8769,6 +8774,11 @@ pre {
 .u-mar-ver-100 {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.u-mar-hor {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .u-mar-hor-5 {
@@ -9312,6 +9322,11 @@ pre {
     margin-left: 100px;
   }
 
+  .u-mar-ver-xs {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .u-mar-ver-xs-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -9410,6 +9425,11 @@ pre {
   .u-mar-ver-xs-100 {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+
+  .u-mar-hor-xs {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .u-mar-hor-xs-5 {
@@ -9953,6 +9973,11 @@ pre {
     margin-left: 100px;
   }
 
+  .u-mar-ver-sm {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .u-mar-ver-sm-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -10051,6 +10076,11 @@ pre {
   .u-mar-ver-sm-100 {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+
+  .u-mar-hor-sm {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .u-mar-hor-sm-5 {
@@ -10594,6 +10624,11 @@ pre {
     margin-left: 100px;
   }
 
+  .u-mar-ver-md {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .u-mar-ver-md-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -10692,6 +10727,11 @@ pre {
   .u-mar-ver-md-100 {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+
+  .u-mar-hor-md {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .u-mar-hor-md-5 {
@@ -11235,6 +11275,11 @@ pre {
     margin-left: 100px;
   }
 
+  .u-mar-ver-lg {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .u-mar-ver-lg-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -11333,6 +11378,11 @@ pre {
   .u-mar-ver-lg-100 {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+
+  .u-mar-hor-lg {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .u-mar-hor-lg-5 {
@@ -11876,6 +11926,11 @@ pre {
     margin-left: 100px;
   }
 
+  .u-mar-ver-xl {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .u-mar-ver-xl-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -11974,6 +12029,11 @@ pre {
   .u-mar-ver-xl-100 {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+
+  .u-mar-hor-xl {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .u-mar-hor-xl-5 {
@@ -12648,281 +12708,881 @@ pre {
 .u-object-fit--contain {
   -o-object-fit: contain;
      object-fit: contain;
-  font-family: "object-fit: contain;";
+  -o-object-position: center;
+     object-position: center;
+  font-family: "object-fit: contain; object-position: center;";
 }
 .u-object-fit--cover {
   -o-object-fit: cover;
      object-fit: cover;
-  font-family: "object-fit: cover;";
+  -o-object-position: center;
+     object-position: center;
+  font-family: "object-fit: cover; object-position: center;";
 }
 .u-object-fit--fill {
   -o-object-fit: fill;
      object-fit: fill;
-  font-family: "object-fit: fill;";
+  -o-object-position: center;
+     object-position: center;
+  font-family: "object-fit: fill; object-position: center;";
 }
 .u-object-fit--scale_down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
-  font-family: "object-fit: scale-down;";
+  -o-object-position: center;
+     object-position: center;
+  font-family: "object-fit: scale-down; object-position: center;";
+}
+.u-object-fit--contain-top {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  font-family: "object-fit: contain; object-position: top;";
+}
+.u-object-fit--cover-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  font-family: "object-fit: cover; object-position: top;";
+}
+.u-object-fit--fill-top {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: top;
+     object-position: top;
+  font-family: "object-fit: fill; object-position: top;";
+}
+.u-object-fit--scale_down-top {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: top;
+     object-position: top;
+  font-family: "object-fit: scale-down; object-position: top;";
+}
+.u-object-fit--contain-right {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right;
+     object-position: right;
+  font-family: "object-fit: contain; object-position: right;";
+}
+.u-object-fit--cover-right {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  font-family: "object-fit: cover; object-position: right;";
+}
+.u-object-fit--fill-right {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: right;
+     object-position: right;
+  font-family: "object-fit: fill; object-position: right;";
+}
+.u-object-fit--scale_down-right {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: right;
+     object-position: right;
+  font-family: "object-fit: scale-down; object-position: right;";
+}
+.u-object-fit--contain-bottom {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+  font-family: "object-fit: contain; object-position: bottom;";
+}
+.u-object-fit--cover-bottom {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  font-family: "object-fit: cover; object-position: bottom;";
+}
+.u-object-fit--fill-bottom {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: bottom;
+     object-position: bottom;
+  font-family: "object-fit: fill; object-position: bottom;";
+}
+.u-object-fit--scale_down-bottom {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: bottom;
+     object-position: bottom;
+  font-family: "object-fit: scale-down; object-position: bottom;";
+}
+.u-object-fit--contain-left {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+  font-family: "object-fit: contain; object-position: left;";
+}
+.u-object-fit--cover-left {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  font-family: "object-fit: cover; object-position: left;";
+}
+.u-object-fit--fill-left {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: left;
+     object-position: left;
+  font-family: "object-fit: fill; object-position: left;";
+}
+.u-object-fit--scale_down-left {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: left;
+     object-position: left;
+  font-family: "object-fit: scale-down; object-position: left;";
 }
 .u-object-fit--none {
   -o-object-fit: none;
      object-fit: none;
   font-family: "object-fit: none;";
 }
-.u-object-fit--top {
-  -o-object-position: top;
-     object-position: top;
-}
-.u-object-fit--right {
-  -o-object-position: right;
-     object-position: right;
-}
-.u-object-fit--bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-.u-object-fit--left {
-  -o-object-position: left;
-     object-position: left;
-}
-.u-object-fit--center {
-  -o-object-position: center;
-     object-position: center;
-}
 @media (min-width: 410px) {
   .u-object-fit--contain-xs {
     -o-object-fit: contain;
        object-fit: contain;
-    font-family: "object-fit: contain;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: contain; object-position: center;";
   }
   .u-object-fit--cover-xs {
     -o-object-fit: cover;
        object-fit: cover;
-    font-family: "object-fit: cover;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: cover; object-position: center;";
   }
   .u-object-fit--fill-xs {
     -o-object-fit: fill;
        object-fit: fill;
-    font-family: "object-fit: fill;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: fill; object-position: center;";
   }
   .u-object-fit--scale_down-xs {
     -o-object-fit: scale-down;
        object-fit: scale-down;
-    font-family: "object-fit: scale-down;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: scale-down; object-position: center;";
+  }
+  .u-object-fit--contain-top-xs {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: contain; object-position: top;";
+  }
+  .u-object-fit--cover-top-xs {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: cover; object-position: top;";
+  }
+  .u-object-fit--fill-top-xs {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: fill; object-position: top;";
+  }
+  .u-object-fit--scale_down-top-xs {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: scale-down; object-position: top;";
+  }
+  .u-object-fit--contain-right-xs {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: contain; object-position: right;";
+  }
+  .u-object-fit--cover-right-xs {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: cover; object-position: right;";
+  }
+  .u-object-fit--fill-right-xs {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: fill; object-position: right;";
+  }
+  .u-object-fit--scale_down-right-xs {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: scale-down; object-position: right;";
+  }
+  .u-object-fit--contain-bottom-xs {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: contain; object-position: bottom;";
+  }
+  .u-object-fit--cover-bottom-xs {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: cover; object-position: bottom;";
+  }
+  .u-object-fit--fill-bottom-xs {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: fill; object-position: bottom;";
+  }
+  .u-object-fit--scale_down-bottom-xs {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: scale-down; object-position: bottom;";
+  }
+  .u-object-fit--contain-left-xs {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: contain; object-position: left;";
+  }
+  .u-object-fit--cover-left-xs {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: cover; object-position: left;";
+  }
+  .u-object-fit--fill-left-xs {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: fill; object-position: left;";
+  }
+  .u-object-fit--scale_down-left-xs {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-xs {
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
   }
-  .u-object-fit--top-xs {
-    -o-object-position: top;
-       object-position: top;
-  }
-  .u-object-fit--right-xs {
-    -o-object-position: right;
-       object-position: right;
-  }
-  .u-object-fit--bottom-xs {
-    -o-object-position: bottom;
-       object-position: bottom;
-  }
-  .u-object-fit--left-xs {
-    -o-object-position: left;
-       object-position: left;
-  }
-  .u-object-fit--center-xs {
-    -o-object-position: center;
-       object-position: center;
-  }
 }
 @media (min-width: 576px) {
   .u-object-fit--contain-sm {
     -o-object-fit: contain;
        object-fit: contain;
-    font-family: "object-fit: contain;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: contain; object-position: center;";
   }
   .u-object-fit--cover-sm {
     -o-object-fit: cover;
        object-fit: cover;
-    font-family: "object-fit: cover;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: cover; object-position: center;";
   }
   .u-object-fit--fill-sm {
     -o-object-fit: fill;
        object-fit: fill;
-    font-family: "object-fit: fill;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: fill; object-position: center;";
   }
   .u-object-fit--scale_down-sm {
     -o-object-fit: scale-down;
        object-fit: scale-down;
-    font-family: "object-fit: scale-down;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: scale-down; object-position: center;";
+  }
+  .u-object-fit--contain-top-sm {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: contain; object-position: top;";
+  }
+  .u-object-fit--cover-top-sm {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: cover; object-position: top;";
+  }
+  .u-object-fit--fill-top-sm {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: fill; object-position: top;";
+  }
+  .u-object-fit--scale_down-top-sm {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: scale-down; object-position: top;";
+  }
+  .u-object-fit--contain-right-sm {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: contain; object-position: right;";
+  }
+  .u-object-fit--cover-right-sm {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: cover; object-position: right;";
+  }
+  .u-object-fit--fill-right-sm {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: fill; object-position: right;";
+  }
+  .u-object-fit--scale_down-right-sm {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: scale-down; object-position: right;";
+  }
+  .u-object-fit--contain-bottom-sm {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: contain; object-position: bottom;";
+  }
+  .u-object-fit--cover-bottom-sm {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: cover; object-position: bottom;";
+  }
+  .u-object-fit--fill-bottom-sm {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: fill; object-position: bottom;";
+  }
+  .u-object-fit--scale_down-bottom-sm {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: scale-down; object-position: bottom;";
+  }
+  .u-object-fit--contain-left-sm {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: contain; object-position: left;";
+  }
+  .u-object-fit--cover-left-sm {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: cover; object-position: left;";
+  }
+  .u-object-fit--fill-left-sm {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: fill; object-position: left;";
+  }
+  .u-object-fit--scale_down-left-sm {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-sm {
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
   }
-  .u-object-fit--top-sm {
-    -o-object-position: top;
-       object-position: top;
-  }
-  .u-object-fit--right-sm {
-    -o-object-position: right;
-       object-position: right;
-  }
-  .u-object-fit--bottom-sm {
-    -o-object-position: bottom;
-       object-position: bottom;
-  }
-  .u-object-fit--left-sm {
-    -o-object-position: left;
-       object-position: left;
-  }
-  .u-object-fit--center-sm {
-    -o-object-position: center;
-       object-position: center;
-  }
 }
 @media (min-width: 768px) {
   .u-object-fit--contain-md {
     -o-object-fit: contain;
        object-fit: contain;
-    font-family: "object-fit: contain;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: contain; object-position: center;";
   }
   .u-object-fit--cover-md {
     -o-object-fit: cover;
        object-fit: cover;
-    font-family: "object-fit: cover;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: cover; object-position: center;";
   }
   .u-object-fit--fill-md {
     -o-object-fit: fill;
        object-fit: fill;
-    font-family: "object-fit: fill;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: fill; object-position: center;";
   }
   .u-object-fit--scale_down-md {
     -o-object-fit: scale-down;
        object-fit: scale-down;
-    font-family: "object-fit: scale-down;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: scale-down; object-position: center;";
+  }
+  .u-object-fit--contain-top-md {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: contain; object-position: top;";
+  }
+  .u-object-fit--cover-top-md {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: cover; object-position: top;";
+  }
+  .u-object-fit--fill-top-md {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: fill; object-position: top;";
+  }
+  .u-object-fit--scale_down-top-md {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: scale-down; object-position: top;";
+  }
+  .u-object-fit--contain-right-md {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: contain; object-position: right;";
+  }
+  .u-object-fit--cover-right-md {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: cover; object-position: right;";
+  }
+  .u-object-fit--fill-right-md {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: fill; object-position: right;";
+  }
+  .u-object-fit--scale_down-right-md {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: scale-down; object-position: right;";
+  }
+  .u-object-fit--contain-bottom-md {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: contain; object-position: bottom;";
+  }
+  .u-object-fit--cover-bottom-md {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: cover; object-position: bottom;";
+  }
+  .u-object-fit--fill-bottom-md {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: fill; object-position: bottom;";
+  }
+  .u-object-fit--scale_down-bottom-md {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: scale-down; object-position: bottom;";
+  }
+  .u-object-fit--contain-left-md {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: contain; object-position: left;";
+  }
+  .u-object-fit--cover-left-md {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: cover; object-position: left;";
+  }
+  .u-object-fit--fill-left-md {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: fill; object-position: left;";
+  }
+  .u-object-fit--scale_down-left-md {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-md {
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
   }
-  .u-object-fit--top-md {
-    -o-object-position: top;
-       object-position: top;
-  }
-  .u-object-fit--right-md {
-    -o-object-position: right;
-       object-position: right;
-  }
-  .u-object-fit--bottom-md {
-    -o-object-position: bottom;
-       object-position: bottom;
-  }
-  .u-object-fit--left-md {
-    -o-object-position: left;
-       object-position: left;
-  }
-  .u-object-fit--center-md {
-    -o-object-position: center;
-       object-position: center;
-  }
 }
 @media (min-width: 992px) {
   .u-object-fit--contain-lg {
     -o-object-fit: contain;
        object-fit: contain;
-    font-family: "object-fit: contain;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: contain; object-position: center;";
   }
   .u-object-fit--cover-lg {
     -o-object-fit: cover;
        object-fit: cover;
-    font-family: "object-fit: cover;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: cover; object-position: center;";
   }
   .u-object-fit--fill-lg {
     -o-object-fit: fill;
        object-fit: fill;
-    font-family: "object-fit: fill;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: fill; object-position: center;";
   }
   .u-object-fit--scale_down-lg {
     -o-object-fit: scale-down;
        object-fit: scale-down;
-    font-family: "object-fit: scale-down;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: scale-down; object-position: center;";
+  }
+  .u-object-fit--contain-top-lg {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: contain; object-position: top;";
+  }
+  .u-object-fit--cover-top-lg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: cover; object-position: top;";
+  }
+  .u-object-fit--fill-top-lg {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: fill; object-position: top;";
+  }
+  .u-object-fit--scale_down-top-lg {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: scale-down; object-position: top;";
+  }
+  .u-object-fit--contain-right-lg {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: contain; object-position: right;";
+  }
+  .u-object-fit--cover-right-lg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: cover; object-position: right;";
+  }
+  .u-object-fit--fill-right-lg {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: fill; object-position: right;";
+  }
+  .u-object-fit--scale_down-right-lg {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: scale-down; object-position: right;";
+  }
+  .u-object-fit--contain-bottom-lg {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: contain; object-position: bottom;";
+  }
+  .u-object-fit--cover-bottom-lg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: cover; object-position: bottom;";
+  }
+  .u-object-fit--fill-bottom-lg {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: fill; object-position: bottom;";
+  }
+  .u-object-fit--scale_down-bottom-lg {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: scale-down; object-position: bottom;";
+  }
+  .u-object-fit--contain-left-lg {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: contain; object-position: left;";
+  }
+  .u-object-fit--cover-left-lg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: cover; object-position: left;";
+  }
+  .u-object-fit--fill-left-lg {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: fill; object-position: left;";
+  }
+  .u-object-fit--scale_down-left-lg {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-lg {
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
   }
-  .u-object-fit--top-lg {
-    -o-object-position: top;
-       object-position: top;
-  }
-  .u-object-fit--right-lg {
-    -o-object-position: right;
-       object-position: right;
-  }
-  .u-object-fit--bottom-lg {
-    -o-object-position: bottom;
-       object-position: bottom;
-  }
-  .u-object-fit--left-lg {
-    -o-object-position: left;
-       object-position: left;
-  }
-  .u-object-fit--center-lg {
-    -o-object-position: center;
-       object-position: center;
-  }
 }
 @media (min-width: 1200px) {
   .u-object-fit--contain-xl {
     -o-object-fit: contain;
        object-fit: contain;
-    font-family: "object-fit: contain;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: contain; object-position: center;";
   }
   .u-object-fit--cover-xl {
     -o-object-fit: cover;
        object-fit: cover;
-    font-family: "object-fit: cover;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: cover; object-position: center;";
   }
   .u-object-fit--fill-xl {
     -o-object-fit: fill;
        object-fit: fill;
-    font-family: "object-fit: fill;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: fill; object-position: center;";
   }
   .u-object-fit--scale_down-xl {
     -o-object-fit: scale-down;
        object-fit: scale-down;
-    font-family: "object-fit: scale-down;";
+    -o-object-position: center;
+       object-position: center;
+    font-family: "object-fit: scale-down; object-position: center;";
+  }
+  .u-object-fit--contain-top-xl {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: contain; object-position: top;";
+  }
+  .u-object-fit--cover-top-xl {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: cover; object-position: top;";
+  }
+  .u-object-fit--fill-top-xl {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: fill; object-position: top;";
+  }
+  .u-object-fit--scale_down-top-xl {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: top;
+       object-position: top;
+    font-family: "object-fit: scale-down; object-position: top;";
+  }
+  .u-object-fit--contain-right-xl {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: contain; object-position: right;";
+  }
+  .u-object-fit--cover-right-xl {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: cover; object-position: right;";
+  }
+  .u-object-fit--fill-right-xl {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: fill; object-position: right;";
+  }
+  .u-object-fit--scale_down-right-xl {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: right;
+       object-position: right;
+    font-family: "object-fit: scale-down; object-position: right;";
+  }
+  .u-object-fit--contain-bottom-xl {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: contain; object-position: bottom;";
+  }
+  .u-object-fit--cover-bottom-xl {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: cover; object-position: bottom;";
+  }
+  .u-object-fit--fill-bottom-xl {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: fill; object-position: bottom;";
+  }
+  .u-object-fit--scale_down-bottom-xl {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: bottom;
+       object-position: bottom;
+    font-family: "object-fit: scale-down; object-position: bottom;";
+  }
+  .u-object-fit--contain-left-xl {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: contain; object-position: left;";
+  }
+  .u-object-fit--cover-left-xl {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: cover; object-position: left;";
+  }
+  .u-object-fit--fill-left-xl {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: fill; object-position: left;";
+  }
+  .u-object-fit--scale_down-left-xl {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: left;
+       object-position: left;
+    font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-xl {
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
-  }
-  .u-object-fit--top-xl {
-    -o-object-position: top;
-       object-position: top;
-  }
-  .u-object-fit--right-xl {
-    -o-object-position: right;
-       object-position: right;
-  }
-  .u-object-fit--bottom-xl {
-    -o-object-position: bottom;
-       object-position: bottom;
-  }
-  .u-object-fit--left-xl {
-    -o-object-position: left;
-       object-position: left;
-  }
-  .u-object-fit--center-xl {
-    -o-object-position: center;
-       object-position: center;
   }
 }
 
@@ -12989,12 +13649,6 @@ pre {
 --------------------------------------------------*/
 .u-list {
   list-style-type: none;
-}
-.u-list--inside {
-  list-style-position: inside;
-}
-.u-list--outside {
-  list-style-position: outside;
 }
 .u-list--column-1 {
   -webkit-column-count: 1;
@@ -13834,4 +14488,5 @@ pre {
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
+
 /*# sourceMappingURL=all.css.map */

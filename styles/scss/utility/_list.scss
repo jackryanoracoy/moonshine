@@ -14,9 +14,6 @@
 .u-list {
   list-style-type: none;
 
-  &--inside { list-style-position: inside; }
-  &--outside { list-style-position: outside; }
-
   &--column-1 { column-count: 1; }
   &--column-2 { column-count: 2; }
   &--column-3 { column-count: 3; }
