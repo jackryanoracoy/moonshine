@@ -37,6 +37,8 @@
     box-shadow: $z-depth-2;
   }
 
+  &--block { display: block; }
+
   &--large {
     min-width: $button-height-lg;
     line-height: $button-height-lg;
