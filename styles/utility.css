@@ -3302,6 +3302,10 @@
   margin: auto;
 }
 
+.u-mar-0 {
+  margin: 0;
+}
+
 .u-mar-5 {
   margin: 5px;
 }
@@ -3384,6 +3388,10 @@
 
 .u-mar-top {
   margin-top: auto;
+}
+
+.u-mar-top-0 {
+  margin-top: 0;
 }
 
 .u-mar-top-5 {
@@ -3470,6 +3478,10 @@
   margin-right: auto;
 }
 
+.u-mar-right-0 {
+  margin-right: 0;
+}
+
 .u-mar-right-5 {
   margin-right: 5px;
 }
@@ -3552,6 +3564,10 @@
 
 .u-mar-bottom {
   margin-bottom: auto;
+}
+
+.u-mar-bottom-0 {
+  margin-bottom: 0;
 }
 
 .u-mar-bottom-5 {
@@ -3638,6 +3654,10 @@
   margin-left: auto;
 }
 
+.u-mar-left-0 {
+  margin-left: 0;
+}
+
 .u-mar-left-5 {
   margin-left: 5px;
 }
@@ -3721,6 +3741,11 @@
 .u-mar-ver {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.u-mar-ver-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .u-mar-ver-5 {
@@ -3826,6 +3851,11 @@
 .u-mar-hor {
   margin-right: auto;
   margin-left: auto;
+}
+
+.u-mar-hor-0 {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .u-mar-hor-5 {
@@ -8727,6 +8757,38 @@
 
 .u-overflow-visible {
   overflow: visible;
+}
+
+.u-overflow-x-auto {
+  overflow-x: auto;
+}
+
+.u-overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.u-overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.u-overflow-x-visible {
+  overflow-x: visible;
+}
+
+.u-overflow-y-auto {
+  overflow-y: auto;
+}
+
+.u-overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.u-overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.u-overflow-y-visible {
+  overflow-y: visible;
 }
 
 /*--------------------------------------------------
