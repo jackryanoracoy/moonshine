@@ -27,9 +27,6 @@
   src: url("../assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("../assets/fonts/Noto-Sans-Bold.woff") format("woff");
 }
 
-/*--------------------------------------------------------------
- font-face Condensed
---------------------------------------------------------------*/
 @font-face {
   font-family: "Open Sans Condensed";
   font-display: auto;

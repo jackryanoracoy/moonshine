@@ -27,9 +27,6 @@
   src: url("../assets/fonts/Noto-Sans-Bold.woff2") format("woff2"), url("../assets/fonts/Noto-Sans-Bold.woff") format("woff");
 }
 
-/*--------------------------------------------------------------
- font-face Condensed
---------------------------------------------------------------*/
 @font-face {
   font-family: "Open Sans Condensed";
   font-display: auto;
@@ -4541,15 +4538,15 @@ pre {
 /*--------------------------------------------------
   Disyplay
 --------------------------------------------------*/
-.u-display-inline {
+.u-inline {
   display: inline;
 }
 
-.u-display-block {
+.u-block {
   display: block;
 }
 
-.u-display-inline-block {
+.u-inline-block {
   display: inline-block;
 }
 
@@ -11417,10 +11414,10 @@ pre {
   Object-fit
 --------------------------------------------------*/
 .u-object-fit {
-  -o-object-fit: inherit;
-     object-fit: inherit;
   width: 100%;
   height: 100%;
+  -o-object-fit: inherit;
+     object-fit: inherit;
 }
 
 .u-object-fit--contain {
@@ -11584,6 +11581,8 @@ pre {
 }
 
 .u-object-fit--none {
+  width: auto;
+  width: auto;
   -o-object-fit: none;
      object-fit: none;
   font-family: "object-fit: none;";
@@ -11731,6 +11730,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-xs {
+    width: auto;
+    width: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -11879,6 +11880,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-sm {
+    width: auto;
+    width: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12027,6 +12030,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-md {
+    width: auto;
+    width: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12175,6 +12180,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-lg {
+    width: auto;
+    width: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12323,6 +12330,8 @@ pre {
     font-family: "object-fit: scale-down; object-position: left;";
   }
   .u-object-fit--none-xl {
+    width: auto;
+    width: auto;
     -o-object-fit: none;
        object-fit: none;
     font-family: "object-fit: none;";
@@ -12332,74 +12341,74 @@ pre {
 /*--------------------------------------------------
   Bordered
 --------------------------------------------------*/
-.u-bordered {
+.u-border {
   position: relative;
   border-width: 1px;
   border-style: solid;
   border-color: #EEEEEE;
 }
 
-.u-bordered--hidden {
+.u-border--hidden {
   border-style: hidden;
 }
 
-.u-bordered--dashed {
+.u-border--dashed {
   border-style: dashed;
 }
 
-.u-bordered--dotted {
+.u-border--dotted {
   border-style: dotted;
 }
 
-.u-bordered--double {
+.u-border--double {
   border-style: double;
 }
 
-.u-bordered--groove {
+.u-border--groove {
   border-style: groove;
 }
 
-.u-bordered--outset {
+.u-border--outset {
   border-style: outset;
 }
 
-.u-bordered--inset {
+.u-border--inset {
   border-style: inset;
 }
 
-.u-bordered--ridge {
+.u-border--ridge {
   border-style: ridge;
 }
 
-.u-bordered--solid {
+.u-border--solid {
   border-style: solid;
 }
 
-.u-bordered--top {
+.u-border--top {
   border-width: 1px 0 0 0;
 }
 
-.u-bordered--right {
+.u-border--right {
   border-width: 0 0 0 1px;
 }
 
-.u-bordered--bottom {
+.u-border--bottom {
   border-width: 0 0 1px 0;
 }
 
-.u-bordered--left {
+.u-border--left {
   border-width: 0 1px 0 0;
 }
 
-.u-bordered--ver {
+.u-border--ver {
   border-width: 1px 0;
 }
 
-.u-bordered--hor {
+.u-border--hor {
   border-width: 0 1px;
 }
 
-.u-bordered--seq:last-of-type {
+.u-border--seq:last-of-type {
   border: none;
 }
 
