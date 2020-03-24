@@ -33,33 +33,36 @@ moonshine/
 │   ├── object-fit-images-3.2.3.min.js
 │   └── script.js
 ├── styles/
-│   ├── css
-│   │   ├── all.css
-│   │   ├── all.css.map
-│   │   ├── all.min.css
-│   │   ├── base.css
-│   │   ├── base.css.map
-│   │   ├── base.min.css
-│   │   ├── component.css
-│   │   ├── component.css.map
-│   │   ├── component.min.css
-│   │   ├── layout.css
-│   │   ├── layout.css.map
-│   │   ├── layout.min.css
-│   │   ├── setting.css
-│   │   ├── setting.css.map
-│   │   ├── setting.min.css
-│   │   ├── utility.css
-│   │   ├── utility.css.map
-│   │   └── utility.min.css
-│   ├── scss
+│   ├── source
+│   │   ├── base
+│   │   │   └── *.scss
+│   │   ├── component
+│   │   │   └── *.scss
+│   │   ├── layout
+│   │   │   └── *.scss
+│   │   ├── setting
+│   │   │   └── *.scss
+│   │   ├── utility
+│   │   │   └── *.scss
 │   │   ├── all.scss
 │   │   ├── base.scss
 │   │   ├── component.scss
 │   │   ├── layout.scss
 │   │   ├── setting.scss
 │   │   └── utility.scss
-│   └── style.css
+│   ├── all.css
+│   ├── all.css.map
+│   ├── base.css
+│   ├── base.css.map
+│   ├── component.css
+│   ├── component.css.map
+│   ├── layout.css
+│   ├── layout.css.map
+│   ├── setting.css
+│   ├── setting.css.map
+│   ├── style.css
+│   ├── utility.css
+│   └── utility.css.map
 ├── .editorconfig
 ├── .gitattributes
 ├── .gitignore
@@ -192,26 +195,7 @@ Sassy CSS
 ```
 moonshine/
 └── styles/
-    ├── css
-    │   ├── all.css
-    │   ├── all.css.map
-    │   ├── all.min.css
-    │   ├── base.css
-    │   ├── base.css.map
-    │   ├── base.min.css
-    │   ├── component.css
-    │   ├── component.css.map
-    │   ├── component.min.css
-    │   ├── layout.css
-    │   ├── layout.css.map
-    │   ├── layout.min.css
-    │   ├── setting.css
-    │   ├── setting.css.map
-    │   ├── setting.min.css
-    │   ├── utility.css
-    │   ├── utility.css.map
-    │   └── utility.min.css
-    ├── scss
+    ├── source
     │   ├── base
     │   │   └── *.scss
     │   ├── component
@@ -228,7 +212,19 @@ moonshine/
     │   ├── layout.scss
     │   ├── setting.scss
     │   └── utility.scss
-    └── style.css
+    ├── all.css
+    ├── all.css.map
+    ├── base.css
+    ├── base.css.map
+    ├── component.css
+    ├── component.css.map
+    ├── layout.css
+    ├── layout.css.map
+    ├── setting.css
+    ├── setting.css.map
+    ├── style.css
+    ├── utility.css
+    └── utility.css.map
 ```
   
 Basic CSS  
@@ -496,7 +492,7 @@ Color
    
 ### Image
 ```
-<img class="u-image-fluid u-display-block u-mar" src="/assets/images/xxx.jpg" alt="Center Block Fluid Image">
+<img class="u-image-fluid u-block u-mar" src="/assets/images/xxx.jpg" alt="Center Block Fluid Image">
 ```
   
 ## Includes  
