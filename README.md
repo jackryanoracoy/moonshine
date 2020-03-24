@@ -295,6 +295,209 @@ Import order:
 @import "utility.css";
 ```
   
+## Template Samples
+Here are some sample of what to expect on this template, For more info please check *.css.     
+  
+Container:  
+  
+```
+<div class="l-container">
+  <!-- Content here -->
+</div>
+
+<div class="l-container l-container--fluid">
+  <!-- Content here -->
+</div>
+```
+  
+Flex:  
+  
+```
+<div class="l-flex">
+  <div class="l-flex-item-12 l-flex-item-md-6"><!-- Content here --></div>
+  <div class="l-flex-item-12 l-flex-item-md-6"><!-- Content here --></div>
+</div>
+```
+  
+Cluster Gap:  
+  
+```
+// You can omit adding class name "l-gap-item" on "l-gap" child item (only if the child item is a "div").
+<div class="l-flex l-gap-20">
+  <div class="l-gap-item"><!-- Content here --></div>
+  <div class="l-gap-item"><!-- Content here --></div>
+</div>
+```
+  
+Parallax:  
+  
+```
+<div class="l-parallax">
+  <img class="u-parallax-image" src="/assets/images/xxx.jpg" alt="Image">
+</div>
+```
+  
+Tab:  
+  
+```
+<ul class="c-tab-link">
+  <li class="c-tab-link-item" data-tab="tab-1">Tab 1</li>
+  <li class="c-tab-link-item" data-tab="tab-2">Tab 2</li>
+</ul>
+
+<div id="tab-1" class="c-tab-content js-current">
+  <!-- Content here -->
+</div>
+<div id="tab-2" class="c-tab-content">
+  <!-- Content here -->
+</div>
+```
+  
+Button:  
+  
+```
+<a class="c-button" href="#">Button</a>
+```
+  
+Card:  
+  
+```
+<div class="c-card">
+  <div class="c-card-content">
+    <!-- Content here -->
+  </div>
+</div>
+```
+  
+Hidden:  
+  
+```
+<div class="u-hidden">
+  <!-- Hidden content here (all screen) -->
+</div>
+
+<div class="u-hidden-xs-min">
+  <!-- Hidden content here (411px and up) -->
+</div>
+
+<div class="u-hidden-sm-min">
+  <!-- Hidden content here (576px and up) -->
+</div>
+
+<div class="u-hidden-md-min">
+  <!-- Hidden content here (768px and up) -->
+</div>
+
+<div class="u-hidden-lg-min">
+  <!-- Hidden content here (992px and up) -->
+</div>
+
+<div class="u-hidden-xl-min">
+  <!-- Hidden content here (1200px and up) -->
+</div>
+
+<div class="u-hidden-xs-max">
+  <!-- Hidden content here (410px and down) -->
+</div>
+
+<div class="u-hidden-sm-max">
+  <!-- Hidden content here (575px and down) -->
+</div>
+
+<div class="u-hidden-md-max">
+  <!-- Hidden content here (767px and down) -->
+</div>
+
+<div class="u-hidden-lg-max">
+  <!-- Hidden content here (991px and down) -->
+</div>
+
+<div class="u-hidden-xl-max">
+  <!-- Hidden content here (1199px and down) -->
+</div>
+```
+  
+Float:  
+  
+```
+<div class="clearfix">
+  <div class="u-float-left">
+    <!-- Floating content here -->
+  </div>
+</div>
+
+<div class="clearfix">
+  <div class="u-float-left u-float-right-sm u-float-none-md">
+    <!-- Floating content here (float left on 575px below, float right on 576px and above, no float on 768px and above) -->
+  </div>
+</div>
+```
+  
+Width and Height:  
+  
+```
+<div class="u-width-100 u-height-100">
+  <!-- 100& width and height -->
+</div>
+```
+  
+Padding:  
+  
+```
+<div class="u-pad-bottom-10 u-pad-bottom-sm-20">
+  <!-- Add padding (10px padding on 575px below, 20px padding on 576 and above) -->
+</div>
+```
+  
+Margin:  
+  
+```
+<div class="u-mar-bottom-10 u-mar-bottom-sm-20">
+  <!-- Add margin (10px margin on 575px below, 20px margin on 576 and above) -->
+</div>
+```
+    
+Typography:  
+  
+```
+<div class="u-text-center u-text-left-md">
+  <!-- Align text (align center on 575px below, align left on 576 and above) -->
+</div>
+```
+  
+Object fit:  
+  
+```
+<img class="u-object-fit u-object-fit--cover" src="/assets/images/xxx.jpg" alt="Image">
+```
+  
+Bordered:  
+  
+```
+<div class="u-bordered u-bordered--bottom u-bordered--top-sm">
+  <!-- Add border (bottom border on 575px below, top border on 576 and above) -->
+</div>
+```
+  
+List:  
+  
+```
+<ul class="u-list">
+  <li><!-- List (Without style) --></li>
+</ul>
+```
+  
+Color
+```
+<div class="u-background-color-dark">
+  <p class="u-color-light">Text color is light, container color is dark.</p>
+</div>
+```
+   
+### Image
+```
+<img class="u-image-fluid u-display-block u-mar" src="/assets/images/xxx.jpg" alt="Center Block Fluid Image">
+```
   
 ## Includes  
   

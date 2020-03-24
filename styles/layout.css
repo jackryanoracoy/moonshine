@@ -3303,13 +3303,6 @@
   padding: 0 !important;
 }
 
-@media (min-width: 410px) {
-  .l-section {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 @media (min-width: 992px) {
   .l-section {
     padding-top: 60px;
@@ -3389,7 +3382,8 @@
 }
 
 .l-site-header__content {
-  padding: 0 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .l-site-header__content:first-child {
@@ -3419,9 +3413,6 @@
 @media (min-width: 992px) {
   .l-site-header.js-active {
     top: -75px;
-  }
-  .l-site-header__content {
-    padding: 0 20px;
   }
   .l-site-header__content:first-child {
     height: 75px;

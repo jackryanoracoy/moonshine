@@ -17,9 +17,10 @@
 }
 
 .c-heading-above-the-fold {
-  color: $primary;
+  color: $grey-200;
   font-size: $font-sl;
   letter-spacing: 0.5rem;
+  text-shadow: 0 4px 4px rgba($color: $dark, $alpha: 0.2);
 
   @include media-breakpoint-min(lg) {
     font-size: $font-ml;

@@ -29,11 +29,6 @@
 
   &--padding-no { padding: 0 !important; }
 
-  @include media-breakpoint-min(xs) {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
   @include media-breakpoint-min(lg) {
     padding-top: $section-gutter-ver;
     padding-bottom: $section-gutter-ver;

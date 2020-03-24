@@ -97,13 +97,12 @@
           <div class="l-flex__item-12">
             <section class="l-section l-section--padding-narrow">
 
-              <h2 class="c-heading-above-the-fold u-text-center">Moonshine</h2>
-              <p class="u-text-center u-mar-bottom-20 u-mar-bottom-lg-40">Scalable and Maintainable Architecture</p>
-              <div class="l-flex l-flex--jus-center l-gap-20 u-mar-bottom-10">
-                <div class="l-gap__item"><a class="c-button c-button--success" href="https://github.com/jackryanoracoy/moonshine/archive/1.6.zip"><i class="fas fa-cloud-download-alt"></i>&nbsp;Download</a></div>
+              <h2 class="c-heading-above-the-fold u-mar-bottom-20 u-mar-bottom-lg-40">Get started with <br>MOONSHINE, <br>download now!</h2>
+              <div class="l-flex l-gap-20 u-mar-bottom-10">
+                <div class="l-gap__item"><a class="c-button c-button--success" href="https://github.com/jackryanoracoy/moonshine/archive/1.6.5.zip"><i class="fas fa-cloud-download-alt"></i>&nbsp;Download</a></div>
                 <div class="l-gap__item"><a class="c-button" href="https://github.com/jackryanoracoy/moonshine/releases"><i class="fas fa-folder-open"></i><span class="u-hidden-lg-max">&nbsp;All Version</span></a></div>
               </div>
-              <p class="u-text-center u-font-small">Latest available version - v1.6</p>
+              <p class="u-color-grey-400 u-font-small">Latest available version - v1.6.5</p>
 
             </section><!-- End - section -->
           </div><!-- End - flex content -->
@@ -159,33 +158,36 @@
                       │   ├── object-fit-images-3.2.3.min.js
                       │   └── script.js
                       ├── styles/
-                      │   ├── css
-                      │   │   ├── all.css
-                      │   │   ├── all.css.map
-                      │   │   ├── all.min.css
-                      │   │   ├── base.css
-                      │   │   ├── base.css.map
-                      │   │   ├── base.min.css
-                      │   │   ├── component.css
-                      │   │   ├── component.css.map
-                      │   │   ├── component.min.css
-                      │   │   ├── layout.css
-                      │   │   ├── layout.css.map
-                      │   │   ├── layout.min.css
-                      │   │   ├── setting.css
-                      │   │   ├── setting.css.map
-                      │   │   ├── setting.min.css
-                      │   │   ├── utility.css
-                      │   │   ├── utility.css.map
-                      │   │   └── utility.min.css
-                      │   ├── scss
+                      │   ├── source
+                      │   │   ├── base
+                      │   │   │   └── *.scss
+                      │   │   ├── component
+                      │   │   │   └── *.scss
+                      │   │   ├── layout
+                      │   │   │   └── *.scss
+                      │   │   ├── setting
+                      │   │   │   └── *.scss
+                      │   │   ├── utility
+                      │   │   │   └── *.scss
                       │   │   ├── all.scss
                       │   │   ├── base.scss
                       │   │   ├── component.scss
                       │   │   ├── layout.scss
                       │   │   ├── setting.scss
                       │   │   └── utility.scss
-                      │   └── style.css
+                      │   ├── all.css
+                      │   ├── all.css.map
+                      │   ├── base.css
+                      │   ├── base.css.map
+                      │   ├── component.css
+                      │   ├── component.css.map
+                      │   ├── layout.css
+                      │   ├── layout.css.map
+                      │   ├── setting.css
+                      │   ├── setting.css.map
+                      │   ├── style.css
+                      │   ├── utility.css
+                      │   └── utility.css.map
                       ├── .editorconfig
                       ├── .gitattributes
                       ├── .gitignore
@@ -201,66 +203,9 @@
                       </code></pre>
                     </div>
 
-                    <div class="c-highlight u-mar-bottom-20 u-mar-bottom-lg-40">
-                      <pre><code>
-                      // Sassy CSS version
-                      moonshine/
-                      └── styles/
-                          ├── css
-                          │   ├── all.css
-                          │   ├── all.css.map
-                          │   ├── all.min.css
-                          │   ├── base.css
-                          │   ├── base.css.map
-                          │   ├── base.min.css
-                          │   ├── component.css
-                          │   ├── component.css.map
-                          │   ├── component.min.css
-                          │   ├── layout.css
-                          │   ├── layout.css.map
-                          │   ├── layout.min.css
-                          │   ├── setting.css
-                          │   ├── setting.css.map
-                          │   ├── setting.min.css
-                          │   ├── utility.css
-                          │   ├── utility.css.map
-                          │   └── utility.min.css
-                          ├── scss
-                          │   ├── base
-                          │   │   └── *.scss
-                          │   ├── component
-                          │   │   └── *.scss
-                          │   ├── layout
-                          │   │   └── *.scss
-                          │   ├── setting
-                          │   │   └── *.scss
-                          │   ├── utility
-                          │   │   └── *.scss
-                          │   ├── all.scss
-                          │   ├── base.scss
-                          │   ├── component.scss
-                          │   ├── layout.scss
-                          │   ├── setting.scss
-                          │   └── utility.scss
-                          └── style.css
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
-
-                    <div class="c-highlight">
-                      <pre><code>
-                      // Basic CSS version
-                      moonshine/
-                      └── styles/
-                          ├── base.css
-                          ├── component.css
-                          ├── layout.css
-                          ├── setting.css
-                          ├── utility.css
-                          └── style.css
-                      <!-- Sample Codes -->
-                      </code></pre>
-                    </div>
+                    <p class="l-flex l-flex--wrp-no u-font-small c-highlight c-highlight--grey">
+                    <span>NOTE:&emsp;</span>
+                    <span>You can delete source SASS files, SASS map files and other unnecessary files if you intend not to use it.</span></p>
 
                   </article><!-- End - article -->
 
@@ -446,26 +391,7 @@
                       // Sassy CSS
                       moonshine/
                       └── styles/
-                          ├── css
-                          │   ├── all.css
-                          │   ├── all.css.map
-                          │   ├── all.min.css
-                          │   ├── base.css
-                          │   ├── base.css.map
-                          │   ├── base.min.css
-                          │   ├── component.css
-                          │   ├── component.css.map
-                          │   ├── component.min.css
-                          │   ├── layout.css
-                          │   ├── layout.css.map
-                          │   ├── layout.min.css
-                          │   ├── setting.css
-                          │   ├── setting.css.map
-                          │   ├── setting.min.css
-                          │   ├── utility.css
-                          │   ├── utility.css.map
-                          │   └── utility.min.css
-                          ├── scss
+                          ├── source
                           │   ├── base
                           │   │   └── *.scss
                           │   ├── component
@@ -482,7 +408,19 @@
                           │   ├── layout.scss
                           │   ├── setting.scss
                           │   └── utility.scss
-                          └── style.css
+                          ├── all.css
+                          ├── all.css.map
+                          ├── base.css
+                          ├── base.css.map
+                          ├── component.css
+                          ├── component.css.map
+                          ├── layout.css
+                          ├── layout.css.map
+                          ├── setting.css
+                          ├── setting.css.map
+                          ├── style.css
+                          ├── utility.css
+                          └── utility.css.map
                       <!-- Sample Codes -->
                       </code></pre>
                     </div>
@@ -1794,7 +1732,6 @@
                     <div class="c-highlight">
                       <pre><code>
                       .u-image-fluid { max-width: 100%; }
-                      .u-block { display: block; }
 
                       .u-object-fit {
                         object-fit: inherit;
@@ -1869,13 +1806,20 @@
 
               <h2 class="c-heading-section u-mar-bottom-20 u-mar-bottom-lg-40">What's new?</h2>
 
+              <h3 class="u-mar-bottom-20">Moonshine v1.6.5</h3>
+
+              <ul class="u-list u-mar-bottom-20">
+                <li>Code improvements.</li>
+                <li>Minor changes and fixes.</li>
+              </ul>
+
               <h3 class="u-mar-bottom-20">Moonshine v1.6</h3>
 
               <ul class="u-list u-mar-bottom-20">
-                <li>Added extra-small(xs) media query</li>
-                <li>Added alternative grid system (10 columns)</li>
-                <li>Made changes to some utility styles</li>
-                <li>Some minor changes and fixes</li>
+                <li>Added extra-small(xs) media query.</li>
+                <li>Added alternative grid system (10 columns).</li>
+                <li>Made changes to some utility styles.</li>
+                <li>Some minor changes and fixe.s</li>
               </ul>
 
               <h3 class="u-mar-bottom-20">Moonshine v1.5.4</h3>
@@ -1924,7 +1868,7 @@
         <div class="l-container">
           <section class="l-section l-section--padding-narrow">
 
-            <h5 class="u-text-center u-font-small u-font-medium-md">Moonshine v1.6 - Licensed <a href="https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt">MIT</a>, <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></h5>
+            <h5 class="u-text-center u-font-small u-font-medium-md">Moonshine v1.6.5 - Licensed <a href="https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt">MIT</a>, <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></h5>
 
           </section><!-- End - section -->
         </div><!-- End - container -->

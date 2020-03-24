@@ -35,7 +35,8 @@
   }
 
   &__content {
-    padding: 0 10px;
+    padding-right: $section-gutter-hor;
+    padding-left: $section-gutter-hor;
 
     &:first-child { height: $header-height_m; }
   }
@@ -60,10 +61,6 @@
   @include media-breakpoint-min(lg) {
     &.js-active {
       top: -$header-height;
-    }
-
-    &__content {
-      padding: 0 20px;
     }
 
     &__content:first-child {
